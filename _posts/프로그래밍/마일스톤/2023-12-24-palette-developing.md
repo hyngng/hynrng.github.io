@@ -2,7 +2,7 @@
 title: "모바일 슈팅 게임: 나머지 개발과 스토어 등록"
 
 categories: [프로그래밍, 마일스톤]
-tags: [프로그래밍, 유니티, C#]
+tags: [프로그래밍, 유니티, C#, URP, 개발일지]
 image: /2023-12-13-cubic-survival-beta/gameplay.gif
 
 toc: true

@@ -2,7 +2,7 @@
 title: "모바일 슈팅 게임: 기획과 초기 개발 과정"
 
 categories: [프로그래밍, 마일스톤]
-tags: [프로그래밍, 유니티, 조이스틱, URP]
+tags: [프로그래밍, 유니티, C#, 기획, 조이스틱, URP, 개발일지]
 image: /2023-12-13-cubic-survival-alpha/playscene.gif
 
 toc: true
