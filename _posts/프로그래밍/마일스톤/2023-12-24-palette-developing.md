@@ -206,7 +206,7 @@ public class Pistol : Weapon
 
 그래서 씬 전환시 플레이버튼을 누르면 버튼으로부터 플레이어가 등장하도록 만들었습니다. 경험치, 일시정지 버튼 등등 UI 또한 화면 가장자리에서 등장하도록 만들었어요.
 
-## **이미지 애셋 생성**
+## **이미지 애셋**
 
 ![object-design](/2023-12-13-cubic-survival-beta/object-design.png){: w="960" .shadow }
 _태블릿으로 그려낸 이미지._
