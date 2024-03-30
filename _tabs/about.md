@@ -7,6 +7,8 @@ order: 4
 
 ![hynrng](/info/hynrng.png)
 
+<br>
+
 - 김태현 (Kim TaeHyun)
 - hynrng@gmail.com
 
