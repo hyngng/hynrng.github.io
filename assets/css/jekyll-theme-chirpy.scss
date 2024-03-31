@@ -3,6 +3,7 @@
 
 @import 'main';
 
+/* 덮어쓰기 */
 /* 게시물 글씨크기 */
 .content {
   font-size: 0.97rem;
@@ -11,6 +12,16 @@
 
 p {
   margin-top: 1.5rem;
+}
+
+.card-title {
+  font-weight: bold;
+}
+
+/* 새로 만들어 쓰기 */
+
+.post-title {
+  font-weight: bold;
 }
 
 /* 메모장
