@@ -5,7 +5,7 @@ order: 4
 
 <!-- fas fa-info-circle -->
 
-![hynrng](/info/hynrng.png){: lqip="/path/to/lqip-file" }
+![hynrng](/info/hynrng.png){: lqip="/info/LQIP.png" }
 
 <br>
 
