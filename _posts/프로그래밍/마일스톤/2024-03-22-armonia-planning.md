@@ -7,6 +7,7 @@ tags: [프로그래밍, 유니티, C#, 기획, 개발일지]
 image:
     path: /2024-03-22-waybound/concept-art-simple.png
     lqip: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAMAAADTRh9nAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAACxIAAAsSAdLdfvwAAABsUExURSwdOi0ePD4qVEArVkIsWEIsW0MtW0MtXEYvXUYwXkcvYkkxYkoyY0oyZEw2ZEw3Yk00Z1U9blxFdF5OcF9HeWFLeGJKfGVNf2tThXBchXNfiHVejnVgjXdgkHhhkn9tkoBpmoZwoKufuMa+zt2Z9XsAAABISURBVBjTYxDAAhhIFxQUxSIoqSyPKSikJIUhqIjdIkY+CW4mFhRBEQEGfgEOLnYeJEFWNmlhGTlONmZeFO1iCrLiFPiIoCAAtXUS7YfByTQAAAAASUVORK5CYII=
+    alt: concept-art-simple
 
 toc: true
 toc_sticky: true
@@ -41,7 +42,7 @@ _친구와 떠들면서 그린 간이 컨셉아트_
 - 형식: 2.5D 모바일
 
 게임플레이
-: - 플레이어는 도시 외곽 환경에서 사람, 강아지, 고양이, 개미 등 환경을 구성하는 생물이 되어 해당 생물에게 주어진 상호작용을 하게 됨. 사람은 예를 들어 자판기에서 음료를 꺼내 먹거나 길거리 의자에 앉을 수 있고, 강아지는 예를 들어 주인과 산책을 하거나 전봇대에 영역표시를 할 수 있음.  
+: - 플레이어는 도시 외곽 환경에서 사람, 강아지, 고양이, 개미 등 환경을 구성하는 생물이 되어 해당 생물에게 주어진 상호작용을 함. 예를 들어 사람은 자판기에서 음료를 꺼내 마시고, 강아지는 길거리 벤치의 냄새를 맡음.  
 플레이어가 특별히 생물을 조종하지 않더라도 생물은 서로 상호작용을 하고 도시 외곽 분위기를 구성하며, 각각의 생물은 사전 설정된 값에 따라 외형적인 개성을 가짐.
 
 주요 특징
