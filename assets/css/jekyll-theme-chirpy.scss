@@ -4,9 +4,10 @@
 @import 'main';
 
 /* 덮어쓰기 */
-/* 게시물 글씨크기 */
 .content {
-  font-size: 0.97rem;
+  font-size: 0.98rem;
+  letter-spacing: -0.03rem;
+  word-spacing: 0.01rem;
   /*word-break: keep-all;*/ /* 단어기준 줄넘김인데, 안 예뻐서 보류. */
 }
 
@@ -22,13 +23,20 @@ blockquote p {
 }
 
 /* 새로 만들어 쓰기 */
-
 .post-title {
   font-weight: bold;
 }
 
 .related-post-title {
   font-weight: bold;
+}
+
+/* 폰트 모음 */
+
+.nanum-myeongjo-regular {
+  font-family: "Nanum Myeongjo", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .song-myung-regular {
