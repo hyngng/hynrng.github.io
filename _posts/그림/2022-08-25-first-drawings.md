@@ -16,8 +16,6 @@ date: 2022-08-25
 last_modified_at: 2022-08-25
 ---
 
-<br>
-
 ![221025-반도체칩](/drawing/221025-반도체칩.png){: .shadow }
 _PPT 발표자료용 그림_
 
