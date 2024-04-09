@@ -1,8 +1,8 @@
 ---
 title: "차분한 감성 게임: 기획 및 구성 과정"
-
 categories: [프로그래밍, 마일스톤]
 tags: [프로그래밍, 유니티, C#, 기획, 개발일지]
+start_with_ads: true
 
 image:
     path: /2024-03-22-waybound/concept-art-simple.png

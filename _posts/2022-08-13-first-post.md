@@ -1,8 +1,8 @@
 ---
 title: "블로그 개설했습니다!"
-
 categories: [블로그]
 tags: [깃허브, 블로그, Github, Chirpy, Blog]
+start_with_ads: true
 
 toc: false
 toc_sticky: true

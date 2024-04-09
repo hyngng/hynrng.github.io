@@ -1,8 +1,8 @@
 ---
 title: "드로잉 모음 #4"
-
 categories: [그림]
 tags: [그림, 드로잉, 스케치, 채색, 아트]
+start_with_ads: false
 
 image:
     path: /drawing/240128-야자로봇.png

@@ -76,10 +76,9 @@ tail_includes:
     </div>
     <!-- .post-meta -->
 
-    <br>
-    <br>
-
     <!-- 포스트 상단 광고 -->
+    {% if page.start_with_ads %}
+      <br><br>
       <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2168910631722247"
       crossorigin="anonymous"></script>
       <ins class="adsbygoogle"
@@ -87,10 +86,12 @@ tail_includes:
           data-ad-client="ca-pub-2168910631722247"
           data-ad-slot="6444841387"
           data-ad-format="auto"
-          data-full-width-responsive="true"></ins>
+          data-full-width-responsive="true">
+      </ins>
       <script>
           (adsbygoogle = window.adsbygoogle || []).push({});
       </script>
+    {% endif %}
   </header>
 
   <br>

@@ -1,8 +1,8 @@
 ---
 title: "깃허브 블로그에서 특정 태그 내용 제거하기"
-
 categories: [블로그]
 tags: [깃허브 블로그, 깃허브, 블로그, 커스텀, 커스터마이징, Github, Chirpy, Blog, Liquid]
+start_with_ads: true
 
 toc: true
 toc_sticky: true

@@ -1,8 +1,8 @@
 ---
 title: "임인년의 사진 결산"
-
 categories: [사진]
 tags: [사진, 일상, 풍경, 스냅샷, 폰카]
+start_with_ads: false
 
 image:
     path: '/photo/20220605_121958.jpg'
