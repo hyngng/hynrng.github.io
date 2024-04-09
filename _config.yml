@@ -48,7 +48,7 @@ avatar: "/favicons/hynrng.png"
 toc: true # boolean type, the global switch for TOC in posts.
 
 comments:
-  active: # keeping it empty means none
+  active: giscus # keeping it empty means none
   disqus:
     shortname: # fill with the Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
   # utterances settings › https://utteranc.es/
