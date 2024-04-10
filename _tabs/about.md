@@ -5,7 +5,8 @@ order: 4
 
 <!-- fas fa-info-circle -->
 
-![hynrng](/info/hynrng.png){: lqip="/info/LQIP.png" }
+![hynrng](/info/hynrng_black.png){: .light lqip="/info/LQIP_BLACK.png" }
+![hynrng](/info/hynrng_white.png){: .dark lqip="/info/LQIP_WHITE.png" }
 
 <br>
 

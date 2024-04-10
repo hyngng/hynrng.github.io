@@ -7,7 +7,7 @@ start_with_ads: true
 image:
     path: /2023-12-13-cubic-survival-beta/gameplay.gif
     lqip: data:image/gif;base64,R0lGODlhFAAJAPcAAAQEBAgGBwYIBggIBgYECAgFCAYICAoLCxANDg4QDRARDg4OEBANEA4REBARERYYFxoYFxYVGBgVGRoaGh4gHyAeISQjIyglJiYlKCgmKSoqKi4wLzAuMjIyMjg1OTw8PFJSLT4+QUA9QEJCQ0hGR0hFSUpLS1JQT1BOUVJSUlhVVlZUWFhXWFpbXGBfXXp4QGJgXG5pXWBeYWJhY2hmZm5qYGZlaGhmaW5qbXJtYXJrbG5wb3Z0Z3Jwbn55a25rcXBscHJzc3x8fIB4b4qNRZifRpycTYiJX5ycUJSUWJycWKCdTqCeUZygTZ6gUaCgT6CgUaimVKKjWaqrXZyWd5yaeqSmb7a3Zbi4Zr6/bcDBcoKDg4aFiIiGiYqLi5qZgJKNkJKTk5iVmZqbm56gn6CdoaKko6imqa6urq6wr7Kzs7a4t7a0uLq6utLShOLhj+TllOzrnPDuncDBv+zsouzwoPLxor68wMC+wcLDxMjFxMbJx8bEyMjGyMrLy9DOz9DQz87O0dDO0dDQ0djU09zZ1drX29zc3ODazuje1eTh0+rj1Oro1+Dg3+jj2eDh4err6/Lz8/j2+f7+/gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEAADEALAAAAAAUAAkAhQQEBAQFBQYGBgcHBwgJCQwMDCoqHjExJRwcGAsMDB8gIG1ubgUFBWZmZj8/PwgICAkKCgsLCwoLCwwNDQ8QEJ2dnhITE1NTVDMyMwkJCQ0ODg4PDxARES8wMBUWFhQUFCMkJDEyMouLi319fgwNDiAgIRESEjY3NykpKRsbHAYHBxQVFZOUlHFycjY2NwcICAUGBgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZcQIBwGAEhDkgOANQQNjBDgDJCjUgrHJgScIEKs5wIZzzGjGGkrZSkJbvdaBKArW2DMCKRO43+akFgHBiAHGyAWkNaFW1kbTAtGHJDknR1WXUwMFEAmlJ1nhGZUUEAOw==
-    alt: 데모 플레이씬
+    alt: 예시 게임플레이
 
 toc: true
 toc_sticky: true
@@ -31,13 +31,11 @@ gantt
     스토어 재등록: crit, 2023-10-29, 18d
 ```
 
-# **후기 개발**
+# **후기 개발: 무기 디자인**
 
 이 기간에 만들면서 든 생각이 많다 보니 정리하면서 글이 조금 길어졌습니다. 주로 만들면서 어떤 생각을 했고, 어떻게 만들었는지에 대한 경험을 최대한 구체적으로 정리했습니다.
 
-## **무기 디자인**
-
-### **동작 애니메이션**
+## **동작 애니메이션**
 
 <!--유니티 에디터 -> 탄피배출 GIF-->
 <!--탄피배출 효과는 파티클이펙트로 구현했습니다.-->
@@ -68,7 +66,7 @@ shotTimer += Time.deltaTime;
 
 오브젝트가 새로 나타날때의 부자연스러움을 덜기 위해 무기를 바꾸거나 새로 얻었을 때에만 재생되는 애니메이션도 만들었습니다. 무기 전체를 덮는 실루엣 이미지가 서서히 투명해지는 사이에 플레이어가 총기를 살짝 조작하는 듯한 느낌이 나타나도록 했어요.
 
-### **적 피격 이펙트**
+## **적 피격 이펙트**
 
 ![hit-particle](/2023-12-13-cubic-survival-beta/hit-particle.gif){: w="960" .shadow }
 ![particle-graph](/2023-12-13-cubic-survival-beta/particle-graph.gif){: w="960" .shadow }
@@ -85,7 +83,7 @@ public void Hit()
 
 이는 좀 우연찮게 해결했는데요, 위처럼 Velocity over Lifetime 모듈에서 선형 속도와 공전 속도를 Random between two curves로 설정하고 그래프를 두번 꼬았더니 마치 먼지가 이는 듯한 효과가 만들어지더라구요. 보기에도 괜찮고 타격감도 꽤나 좋게 만들어주는 것 같아 그대로 사용했습니다.
 
-### **장탄수 시스템**
+## **장탄수 시스템**
 
 ![pistol-reload](/2023-12-13-cubic-survival-beta/pistol-reload.gif){: w="960" .shadow }
 ![pistol-animation](/2023-12-13-cubic-survival-beta/pistol-animation.png){: w="960" .shadow }
@@ -114,7 +112,7 @@ public virtual void Fire()
 
 재장전 애니메이션이 재생되는 도중에 무기가 바뀔 경우 장탄수가 제대로 채워지지 않은 채 무기 애니메이터 컴포넌트의 `bool`형 `magazineIsEmpty` 변수가 `true`로 설정되어 앞서 정리한  `Gained` 애니메이션과 구별되는 `GainedEmpty` 애니메이션이 재생되도록 만들었습니다.
 
-### **데미지 이펙트**
+## **데미지 이펙트**
 
 ![damage-effect](/2023-12-13-cubic-survival-beta/damage-effect.gif){: w="960" .shadow }
 ![damage-effect-animation](/2023-12-13-cubic-survival-beta/damage-effect-animation.png){: w="960" .shadow }
@@ -123,7 +121,7 @@ public virtual void Fire()
 
 만들면서 크리티컬 시스템도 간단하게 구현했습니다. 데미지가 2배가 될 때 전용 애니메이션이 재생되도록 했어요. 애니메이션은 크리티컬 데미지가 들어갔음을 쉽게 알 수 있도록 일반 데미지 애니메이션과 비교했을 때 크기와 색상에 가시적인 차이가 있도록 만들었습니다.
 
-### **무기 다양화**
+## **무기 다양화**
 
 ```mermaid
 classDiagram
@@ -176,7 +174,7 @@ public class Pistol : Weapon
 
 만들면서는 객체지향 프로그래밍의 다형성을 의식하며 부모 역할을 하는 `Weapon` 클래스에 기본적인 것들을 작성하고 `Minigun`, `Shotgun`, `SMG` 등의 세부 무기 클래스가 이를 상속하도록 했습니다.
 
-## **애니메이션**
+# **후기 개발: 애니메이션**
 
 <!--
 개인적으로 저는 게임이 재미있는 이유 중에는 "화면 속 캐릭터가 힘차게 움직이는 모습을 구경하는 재미"가 있다고 생각합니다.
@@ -184,7 +182,7 @@ public class Pistol : Weapon
 찾아보니 스켈레톤 애니메이션이라던가, 절차적 애니메이션이라던가 등등 유니티가 제공하는 애니메이션 시스템 속에도 흥미로운 스킬이 많이 있는 것 같아 다음에 시도해보려고 합니다.
 -->
 
-### **플레이어 이동**
+## **플레이어 이동**
 
 ![player-moving](/2023-12-13-cubic-survival-beta/player-moving.gif){: w="960" .shadow }
 ![player-animation](/2023-12-13-cubic-survival-beta/player-animation.png){: w="960" .shadow }
@@ -193,7 +191,7 @@ public class Pistol : Weapon
 
 애니메이션 동작의 어색함을 덜기 위해 조이스틱을 당긴 정도에 따라 걷는 애니메이션 재생 속도가 유동적으로 조절되고, 또 조준 방향에 따라 플레이어가 뒤로 걸어가도록 만들었어요.
 
-### **경험치 시스템**
+## **경험치 시스템**
 
 ![exp-bar](/2023-12-13-cubic-survival-beta/exp-bar.gif){: w="960" .shadow }
 ![exp-bar-animation](/2023-12-13-cubic-survival-beta/exp-bar-animation.png){: w="960" .shadow }
@@ -202,7 +200,7 @@ public class Pistol : Weapon
 
 처음에는 플레이어가 경험치 파티클을 직접 얻어야 경험치를 획득할 수 있도록 만들었는데, 플레이 후반부로 가면 갈수록 화면이 지저분해지는 문제가 있어서 적을 처치한 즉시 경험치를 획득하는 방식으로 변경하게 되었습니다.
 
-### **플레이 화면 진입**
+## **플레이 화면 진입**
 
 ![game-enter](/2023-12-13-cubic-survival-beta/game-enter.gif){: w="960" .shadow }
 
@@ -210,7 +208,9 @@ public class Pistol : Weapon
 
 그래서 씬 전환시 플레이버튼을 누르면 버튼으로부터 플레이어가 등장하도록 만들었습니다. 경험치, 일시정지 버튼 등등 UI 또한 화면 가장자리에서 등장하도록 만들었어요.
 
-## **이미지 애셋**
+# **후기 개발: 기타 작업**
+
+## **이미지 에셋**
 
 ![object-design](/2023-12-13-cubic-survival-beta/object-design.png){: w="960" .shadow }
 _태블릿으로 그려낸 이미지._
