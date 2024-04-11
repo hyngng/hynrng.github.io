@@ -75,11 +75,10 @@ assets:
     env: # [development|production]
 
 pwa:
-  enabled: true # the option for PWA feature
+  enabled: true
 
-paginate: 5
+paginate: 6
 
-# The base URL of your site
 baseurl: ""
 
 # ------------ The following options are not recommended to be modified ------------------
