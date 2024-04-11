@@ -35,7 +35,7 @@ _최근에 추가한 특정 태그 내용 삭제 기능과 적용 화면_
 
 ![markdown_black](/2024-04-09-github-blog-thoughts/markdown_black.png){: .dark }
 ![markdown_white](/2024-04-09-github-blog-thoughts/markdown_white.png){: .light }
-_지금 읽고 있는 글 단락의 작성화면_
+_지금 보고 있는 글 단락의 작성화면_
 
 이외에 깃허브 블로그의 가장 큰 특징 중 하나는 바로 글을 쓸 때 마크다운(Markdown)이라는 마크업 언어를 사용해야 한다는 겁니다. 마크다운을 사용하는 것에는 장단점이 있지만 개인적으로는 표(table) 작성 방법이 괴랄하게 복잡하다는 점을 제외하면 좋은 점이 더 많다고 생각합니다. 익숙해지면 웬만한 글 편집기보다 편한 것 같아요.
 
