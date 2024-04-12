@@ -15,7 +15,7 @@ last_modified_at: 2024-03-25
 
 Chirpy 테마는 깔끔하고 단정하지만 순정으로 사용하다보면 개선 여지가 간혹 보입니다. **[몇 가지는](https://hynrng.github.io/posts/%EB%B8%94%EB%A1%9C%EA%B7%B8-%EC%83%88%EB%8B%A8%EC%9E%A5/)** 전에 수정해주었지만 거슬리는 점이 여전히 남아있었죠.
 
-![before](/2024-03-21-blog-customization/before.png){: .shadow }
+![before](/2024-03-21-blog-content-remove/before.png){: .shadow }
 _수정 전_
 
 그 중 하나는 블로그 홈에서 글 요약본이 이미지 캡션이나 헤더 등을 포함하여 날것 그대로 보인다는 겁니다. 위처럼 "아침 산책 중에 ...", "들어가며" 같은 쓸데없는 글이 섞여 있어요. 이런건 당연히 처리가 되어있어야 하는게 아닌가 싶은데, 이번에 방법을 찾아서 수정해주었습니다.
@@ -88,7 +88,7 @@ Ruby나 Liquid에 대해서는 배경지식이 없어 방법을 알아내느라 
 
 ## **개선 확인**
 
-![after](/2024-03-21-blog-customization/after.png){: .shadow }
+![after](/2024-03-21-blog-content-remove/after.png){: .shadow }
 _수정 후_
 
 코드를 작성하니 잘 동작합니다. 수정 전에 비해 가독성이 대폭 개선되었어요. 수정 전의 난해한 느낌이 사라지고 훨씬 자연스러워졌습니다.

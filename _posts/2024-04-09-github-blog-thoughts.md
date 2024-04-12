@@ -19,8 +19,8 @@ last_modified_at: 2024-04-09
 
 # **자유로운 커스텀**
 
-![customizing_black](/2024-04-09-github-blog-thoughts/customizing_black.png){: .dark }
-![customizing_white](/2024-04-09-github-blog-thoughts/customizing_white.png){: .light }
+![customizing-dark](/2024-04-09-github-blog-thoughts/customizing-dark.png){: .dark }
+![customizing-light](/2024-04-09-github-blog-thoughts/customizing-light.png){: .light }
 _최근에 추가한 특정 태그 내용 삭제 기능과 적용 화면_
 
 깃허브 블로그는 전체적으로 운영 난이도가 타 플랫폼에 비해 매우 높은 편입니다. 그만큼 관심을 갖고 이것저것 직접 설정해야 하는 번거로움이 많죠. 그럼에도 불구하고 깃허브 블로그를 선택하는 이유는 블로그 운영 경험이 매우 자유롭기 때문입니다.
@@ -33,8 +33,8 @@ _최근에 추가한 특정 태그 내용 삭제 기능과 적용 화면_
 
 # **글은 마크다운으로**
 
-![markdown_black](/2024-04-09-github-blog-thoughts/markdown_black.png){: .dark }
-![markdown_white](/2024-04-09-github-blog-thoughts/markdown_white.png){: .light }
+![markdown-dark](/2024-04-09-github-blog-thoughts/markdown-dark.png){: .dark }
+![markdown-light](/2024-04-09-github-blog-thoughts/markdown-light.png){: .light }
 _지금 보고 있는 글 단락의 작성화면_
 
 이외에 깃허브 블로그의 가장 큰 특징 중 하나는 바로 글을 쓸 때 마크다운(Markdown)이라는 마크업 언어를 사용해야 한다는 겁니다. 마크다운을 사용하는 것에는 장단점이 있지만 개인적으로는 표(table) 작성 방법이 괴랄하게 복잡하다는 점을 제외하면 좋은 점이 더 많다고 생각합니다. 익숙해지면 웬만한 글 편집기보다 편한 것 같아요.
@@ -45,8 +45,8 @@ _지금 보고 있는 글 단락의 작성화면_
 
 # **유용한 테마 고유 기능**
 
-![config_black](/2024-04-09-github-blog-thoughts/config_black.png){: .dark }
-![config_white](/2024-04-09-github-blog-thoughts/config_white.png){: .light }
+![config-dark](/2024-04-09-github-blog-thoughts/config-dark.png){: .dark }
+![config-light](/2024-04-09-github-blog-thoughts/config-light.png){: .light }
 _Chirpy 테마의 설정화면(config.yml) 일부_
 
 제가 사용하는 템플릿은 **[Chirpy(깃허브 주소)](https://github.com/cotes2020/jekyll-theme-chirpy)**인데요, 처음에는 깔끔한 디자인과 다크모드 토글 지원, 관련 글 추천 기능이 마음에 들어 선택했는데 사용하다보니 이 템플릿이 지원하는 여러 자잘한 기능이 꽤 강력합니다. 만약 깃허브 블로그를 개설하면서 Chirpy 테마를 이용하실 생각이라면 아래 항목은 꼭 숙지하여 활용해보시길 바랍니다.
