@@ -41,8 +41,9 @@ google_analytics:
 theme_mode: # [light|dark]
 
 # 이미지 정상 업로드 위한 주석처리
-img_cdn: "https://raw.githubusercontent.com/hynrng/hynrng.github.io-image/master"
-# https://cdn.jsdelivr.net/gh/hynrang/hynrng.github.io-image@master
+img_cdn: "https://cdn.jsdelivr.net/gh/hynrang/hynrng.github.io-image@master"
+# https://cdn.jsdelivr.net/gh/hynrang/hynrng.github.io-image@master (빠름)
+# https://raw.githubusercontent.com/hynrng/hynrng.github.io-image/master (느림)
 
 avatar: "/favicons/hynrng.png"
 
