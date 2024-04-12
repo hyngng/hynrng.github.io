@@ -1,5 +1,5 @@
 ---
-title: "드로잉 모음 #2"
+title: "디지털 드로잉 모음 #2"
 categories: [그림]
 tags: [그림, 드로잉, 스케치, 채색, 아트]
 start_with_ads: false

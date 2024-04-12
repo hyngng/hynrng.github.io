@@ -1,5 +1,5 @@
 ---
-title: "깃허브 블로그 테마 커스터마이징하기"
+title: "깃허브 블로그 템플릿 테마 커스터마이징하기"
 categories: [블로그]
 tags: [깃허브 블로그, 깃허브, 블로그, 커스텀, 커스터마이징, Github, Chirpy, Blog, Liquid, CSS]
 start_with_ads: true

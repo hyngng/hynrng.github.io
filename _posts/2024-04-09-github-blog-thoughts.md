@@ -1,5 +1,5 @@
 ---
-title: "깃허브 블로그에 대한 단상"
+title: "깃허브 블로그가 가지는 매력"
 categories: [블로그]
 tags: [깃허브 블로그, 깃허브, 블로그, 커스텀, 커스터마이징, Github, Chirpy, Blog]
 start_with_ads: true
