@@ -264,7 +264,7 @@ void PlayerDied()
 
 ## **IAP (인앱 결제)**
 
-![iap](/2023-12-13-cubic-survival-beta/iap.png){: w="960" .shadow }
+![iap](/2023-12-13-cubic-survival-beta/iap.png){: w="960" }
 ```cs
 void Purchase()
 {
@@ -294,7 +294,7 @@ _어플 로고_
 
 ## **스토어 등록**
 
-![google-play-console](/2023-12-13-cubic-survival-beta/google-play-console.png){: w="960" .shadow }
+![google-play-console](/2023-12-13-cubic-survival-beta/google-play-console.png){: w="960" }
 _신기한 구글 콘솔 창_
 
 어플 등록은 플레이스토어로 한정했고, 이를 위해 구글 콘솔을 이용했습니다.
