@@ -138,3 +138,21 @@ refactor: true
 {% if paginator.total_pages > 1 %}
   {% include post-paginator.html %}
 {% endif %}
+
+<!-- 네이버 사이트 연관 채널 -->
+<span itemscope="" itemtype="http://schema.org/Organization">
+  <link itemprop="url" href="https://hynrng.github.io/">
+  <a itemprop="sameAs" href="https://www.instagram.com/hynrng"></a>
+</span>
+
+<!-- 네이버 자주 묻는 질문 (FAQ) -->
+<div itemscope itemtype="https://schema.org/FAQPage">
+  <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <span itemprop="name">주로 어떤 일상을 다루고 있나요?</span>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <div itemprop="text">
+        그림, 사진, 블로그 관리 과정 등의 일상을 다루고 있습니다!
+      </div>
+    </div>
+  </div>
+</div>
