@@ -1,5 +1,5 @@
 ---
-title: "깃허브 블로그를 쓰는 이유"
+title: "깃허브 블로그를 계속 이용하는 이유"
 categories: [블로그]
 tags: [깃허브 블로그, 깃허브, 블로그, 커스텀, 커스터마이징, Github, Chirpy, Blog]
 start_with_ads: true
