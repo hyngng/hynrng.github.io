@@ -326,7 +326,7 @@ _구글 플레이 스토어_
 
 # **후기**
 
-> 관심이 있는 분들은 **[플레이스토어](https://play.google.com/store/apps/details?id=com.payang.palette&hl=ko-KR)**에서 다운받아 플레이해보실 수 있습니다.
+> **[플레이스토어](https://play.google.com/store/apps/details?id=com.payang.palette&hl=ko-KR)**에서 다운받아 플레이해보실 수 있습니다.
 {: .prompt-tip }
 
 이것으로 하나의 게임 개발을 마쳤습니다. 반 년 정도 신경을 쓰면서 시간을 보냈네요. 게임 개발을 하면서 개인적으로 가장 크게 느꼈던 것이 세 가지 정도 있습니다.
