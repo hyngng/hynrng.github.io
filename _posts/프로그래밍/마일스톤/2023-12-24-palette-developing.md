@@ -314,11 +314,13 @@ _구글 플레이 스토어_
 
 그런데 이 게임은 처음부터 플레이하라고 만들었다기보단 토이 프로젝트로 도전했던 게 재미를 붙이다보니 스케일이 점점 커진 경우에 가깝다 보니, 이걸 홍보하는게 맞는건가 하는 걱정이 들고, 또 막상 제가 만든 것을 알리려니 부끄러움이 앞서더라구요.
 
-![reddit](/2023-12-13-cubic-survival-beta/reddit.png){: w="960" }
+![reddit-light](/2023-12-13-cubic-survival-beta/reddit-light.png){: .light w="960" }
+![reddit-dark](/2023-12-13-cubic-survival-beta/reddit-dark.png){: .dark w="960" }
 
 그래도 용기를 내서 해외 **[Unity2D 서브레딧](https://www.reddit.com/r/Unity2D/)**에 짧은 글을 올렸습니다. 한 100명 봐주면 정말 감사하겠다 하는 마음가짐으로 글을 올렸는데, 일주일만에 조회수가 2만을 넘더니 한달 정도가 지나자 무려 10만에 가까운 분들이 관심을 가져주셨어요.
 
-![reddit-feedback](/2023-12-13-cubic-survival-beta/reddit-feedback.png){: w="960" }
+![reddit-feedback-light](/2023-12-13-cubic-survival-beta/reddit-feedback-light.png){: .light w="960" }
+![reddit-feedback-dark](/2023-12-13-cubic-survival-beta/reddit-feedback-dark.png){: .light w="960" }
 
 그중에 몇몇 분은 정말 감사하게도 직접 플레이하셔서 위와 같이 상세한 피드백까지 남겨주셨습니다. "조이스틱의 위치가 수정 불가능한 채로 고정되어 있어 불편하다", "블룸(Bloom)이 과한 것 같다", "타 게임과 비슷해 보인다" 정도의 피드백이 있었네요.
 
@@ -341,13 +343,7 @@ _구글 플레이 스토어_
 
 <br>
 
-<div class="row">
-    <div class="col-md-6">
-        <img src="/2023-12-13-cubic-survival-beta/notion-first.png" alt="notion-first">
-    </div>
-    <div class="col-md-6">
-        <img src="/2023-12-13-cubic-survival-beta/notion-second.png" alt="notion-second">
-    </div>
-</div>
+![notion-light](/2023-12-13-cubic-survival-beta/notion-light.png){: .light w="960" }
+![notion-dark](/2023-12-13-cubic-survival-beta/notion-dark.png){: .dark w="960" }
 
 그래도 만드는 과정이 너무 재미있고 뿌듯한 경험으로 남아서 다음의 마일스톤 또한 유니티로 만들게 되지 않을까 싶습니다. 처음이 어렵지, 두번이 어려울 것 같지 않기도 하구요.
