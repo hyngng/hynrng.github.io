@@ -320,13 +320,13 @@ _구글 플레이 스토어_
 그래도 용기를 내서 해외 **[Unity2D 서브레딧](https://www.reddit.com/r/Unity2D/)**에 짧은 글을 올렸습니다. 한 100명 봐주면 정말 감사하겠다 하는 마음가짐으로 글을 올렸는데, 일주일만에 조회수가 2만을 넘더니 한달 정도가 지나자 무려 10만에 가까운 분들이 관심을 가져주셨어요.
 
 ![reddit-feedback-light](/2023-12-13-cubic-survival-beta/reddit-feedback-light.png){: .light w="960" }
-![reddit-feedback-dark](/2023-12-13-cubic-survival-beta/reddit-feedback-dark.png){: .light w="960" }
+![reddit-feedback-dark](/2023-12-13-cubic-survival-beta/reddit-feedback-dark.png){: .dark w="960" }
 
 그중에 몇몇 분은 정말 감사하게도 직접 플레이하셔서 위와 같이 상세한 피드백까지 남겨주셨습니다. "조이스틱의 위치가 수정 불가능한 채로 고정되어 있어 불편하다", "블룸(Bloom)이 과한 것 같다", "타 게임과 비슷해 보인다" 정도의 피드백이 있었네요.
 
 피드백은 공감이 드는 부분이 있지만, 당장은 더 이상 개발을 진행하고 싶지는 않아서 시간이 날 때 수정하거나 차기 프로젝트를 진행하게 되면 반영하고자 합니다.
 
-# **후기**
+# **마치며**
 
 > **[플레이스토어](https://play.google.com/store/apps/details?id=com.payang.palette&hl=ko-KR)**에서 다운받아 플레이해보실 수 있습니다.
 {: .prompt-tip }
@@ -341,9 +341,8 @@ _구글 플레이 스토어_
 - 마지막으로 시간관리에 대한 부분입니다. 이 프로젝트는 원래 겨울방학에 길어야 한 달 정도 짧게 진행하고자 시작한 프로젝트였는데, 재미가 있다보니 여름방학 프로젝트가 되고, 또 그 다음 겨울방학 프로젝트가 될 뻔했어요.  
 학기중에 개발을 병행하면서 게임을 만드는 일이 너무 재미있다보니 학업이 심리적 2순위로 밀리는 일이 일어나기도 했습니다. 자연스레 성적에 영향이 가면서 시간관리를 잘 못했다는 아쉬움이 남았네요.
 
-<br>
+![notion-light](/2023-12-13-cubic-survival-beta/notion-light.png){: .light }
+![notion-dark](/2023-12-13-cubic-survival-beta/notion-dark.png){: .dark }
+_사용했던 노션 페이지 일부_
 
-![notion-light](/2023-12-13-cubic-survival-beta/notion-light.png){: .light w="960" }
-![notion-dark](/2023-12-13-cubic-survival-beta/notion-dark.png){: .dark w="960" }
-
-그래도 만드는 과정이 너무 재미있고 뿌듯한 경험으로 남아서 다음의 마일스톤 또한 유니티로 만들게 되지 않을까 싶습니다. 처음이 어렵지, 두번이 어려울 것 같지 않기도 하구요.
+그래도 만드는 과정이 너무 재미있고 뿌듯한 경험으로 남아서 조만간 유니티로 아쉬움을 보완한 다음 마일스톤을 만들게 되지 않을까 싶습니다. 개발하면서 도중도중 알게 된 팁이나 패턴을 새로 적용해보고 싶기도 하고, 처음이 어렵지 두번이 어려울 것 같지 않기도 하고요.
