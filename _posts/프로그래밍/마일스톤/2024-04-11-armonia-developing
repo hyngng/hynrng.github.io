@@ -7,6 +7,8 @@ start_with_ads: true
 toc: true
 toc_sticky: true
 
+mermaid: true
+
 date: 2024-04-11
 last_modified_at: 2024-04-11
 ---
@@ -15,7 +17,38 @@ last_modified_at: 2024-04-11
 
 **[전 글](https://hynrng.github.io/posts/armonia-planning/)**로부터 이어집니다.
 
-# **이미지**
+# **이미지 제작**
+
+## **기조**
+
+- 사전에 어떤 느낌이 들면 좋을지 어떻게 생각했는지.
+
+## **단락2**
+
+![buildings](/2024-04-11-armonia-developing/buildings.png)
+_그린 건물 이미지_
+
+- 그래서 이런 이미지가 만들어졌음.
+- 마음에 든다고 생각함.
 
 # **개발**
 
+## **클래스 설계**
+
+```mermaid
+classDiagram
+```
+
+- 생명체와 비생명체 오브젝트를 구분함
+
+## **오브젝트의 스폰**
+
+```mermaid
+
+```
+
+## **오브젝트의 상호작용**
+
+```mermaid
+상호작용이 좀 복잡한데, 상호작용이 오브젝트간 어떤 데이터 흐름에 따라 작동하는지 간략한 도표.
+```

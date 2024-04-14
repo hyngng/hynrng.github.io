@@ -1,0 +1,83 @@
+---
+title: "유니티 싱글톤 패턴"
+categories: [프로그래밍, 패러다임]
+tags: [유니티, C#, 프로그래밍 패턴]
+start_with_ads: true
+
+toc: true
+toc_sticky: true
+
+mermaid: true
+
+date: 2024-04-13
+last_modified_at: 2024-04-14
+---
+
+# **들어가며**
+
+싱글톤 패턴은 특정 클래스의 인스턴스가 단 하나만 존재하도록 보장하는 디자인 패턴으로, 일반적으로 데이터 접근이나 공유 리소스 관리를 용이하게 하기 위해 사용합니다.
+
+제 경우에는 `GameManager.cs`{: .filepath }를 싱글톤 패턴으로 활용하고 있으며 
+
+정리해두려고 합니다.
+
+# **코드 구조**
+
+```mermaid
+flowchart TD
+    subgraph "GameSystem.cs"
+        subgraph "변수 선언부"
+            A[인스턴스 변수가 null인가]
+            B[null 반환]
+            C[인스턴스 변수 반환]
+
+            A -->|예| B
+            A -->|아니오| C
+        end
+
+        subgraph "Awake() 함수"
+            D[인스턴스 변수가 null인가]
+            E[현 클래스를 인스턴스 변수에 할당]
+            F[오브젝트가 씬 전환시에도 파괴되지 않도록 처리]
+            G[오브젝트를 파괴]
+
+            D -->|예| E
+            E --> F
+            D -->|아니오| G
+        end
+    end
+```
+
+# **코드**
+
+```cs
+public class GameManager : MonoBehaviour
+{
+    private static GameManager instance = null;
+    public static GameManager Instance
+    {
+        get
+        {
+            if (instance == null)
+                return null;
+                
+            return instance;
+        }
+    }
+
+    void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+
+            DontDestroyOnLoad(this.gameObject);
+        }
+        else
+            Destroy(this.gameObject);
+    }
+}
+```
+{: file="GameManager.cs" }
+
+코드도 기능도 매우 단순합니다. 상단의 get set 프로퍼티 부분와 하단의 `Awake()` 모두 인스턴스가 단 한 개만 존재하도록 보장합니다.
