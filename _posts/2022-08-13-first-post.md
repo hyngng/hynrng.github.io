@@ -1,7 +1,9 @@
 ---
 title: "블로그 개설했습니다!"
+description: "깃허브 블로그 개설을 성공적으로 마친 이후 작성한 글입니다."
+
 categories: [블로그]
-tags: [깃허브, 블로그, Github, Chirpy, Blog]
+tags: [깃허브, 블로그, Chirpy]
 start_with_ads: true
 
 toc: false

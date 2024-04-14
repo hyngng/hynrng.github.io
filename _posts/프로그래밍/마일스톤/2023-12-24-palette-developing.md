@@ -1,11 +1,13 @@
 ---
 title: "유니티로 모바일 슈팅 게임 개발하기: 후기 개발과 스토어 등록 과정"
+description: "유니티를 이용한 모바일 슈팅 게임 개발기와 출시과정을 정리합니다."
+
 categories: [프로그래밍, 마일스톤]
 tags: [프로그래밍, 유니티, C#, URP, 개발일지]
 start_with_ads: true
 
 image:
-    path: /2023-12-13-cubic-survival-beta/gameplay.gif
+    path: /2023-12-13-palette-developing/gameplay.gif
     lqip: data:image/gif;base64,R0lGODlhFAAJAPcAAAQEBAgGBwYIBggIBgYECAgFCAYICAoLCxANDg4QDRARDg4OEBANEA4REBARERYYFxoYFxYVGBgVGRoaGh4gHyAeISQjIyglJiYlKCgmKSoqKi4wLzAuMjIyMjg1OTw8PFJSLT4+QUA9QEJCQ0hGR0hFSUpLS1JQT1BOUVJSUlhVVlZUWFhXWFpbXGBfXXp4QGJgXG5pXWBeYWJhY2hmZm5qYGZlaGhmaW5qbXJtYXJrbG5wb3Z0Z3Jwbn55a25rcXBscHJzc3x8fIB4b4qNRZifRpycTYiJX5ycUJSUWJycWKCdTqCeUZygTZ6gUaCgT6CgUaimVKKjWaqrXZyWd5yaeqSmb7a3Zbi4Zr6/bcDBcoKDg4aFiIiGiYqLi5qZgJKNkJKTk5iVmZqbm56gn6CdoaKko6imqa6urq6wr7Kzs7a4t7a0uLq6utLShOLhj+TllOzrnPDuncDBv+zsouzwoPLxor68wMC+wcLDxMjFxMbJx8bEyMjGyMrLy9DOz9DQz87O0dDO0dDQ0djU09zZ1drX29zc3ODazuje1eTh0+rj1Oro1+Dg3+jj2eDh4err6/Lz8/j2+f7+/gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEAADEALAAAAAAUAAkAhQQEBAQFBQYGBgcHBwgJCQwMDCoqHjExJRwcGAsMDB8gIG1ubgUFBWZmZj8/PwgICAkKCgsLCwoLCwwNDQ8QEJ2dnhITE1NTVDMyMwkJCQ0ODg4PDxARES8wMBUWFhQUFCMkJDEyMouLi319fgwNDiAgIRESEjY3NykpKRsbHAYHBxQVFZOUlHFycjY2NwcICAUGBgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZcQIBwGAEhDkgOANQQNjBDgDJCjUgrHJgScIEKs5wIZzzGjGGkrZSkJbvdaBKArW2DMCKRO43+akFgHBiAHGyAWkNaFW1kbTAtGHJDknR1WXUwMFEAmlJ1nhGZUUEAOw==
     alt: 예시 게임플레이
 
@@ -20,7 +22,7 @@ last_modified_at: 2024-03-20
 
 # **들어가며**
 
-**[전 포스트](https://hynrng.github.io/posts/Cubic-Survival-Alpha/)**에서 이어지는 모바일 게임 개발기입니다. 위에서 정리한 대로 개발기간이 초기와 후기로 나뉘기 때문에 포스트를 분리해 정리했어요. 따라서 이 포스트에서는 후기 개발과 스토어등록 부분을 다룹니다.
+**[전 포스트](https://hynrng.github.io/posts/palette-planning/)**에서 이어지는 모바일 게임 개발기입니다. 위에서 정리한 대로 개발기간이 초기와 후기로 나뉘기 때문에 포스트를 분리해 정리했어요. 따라서 이 포스트에서는 후기 개발과 스토어등록 부분을 다룹니다.
 
 ```mermaid
 gantt
@@ -40,8 +42,8 @@ gantt
 <!--유니티 에디터 -> 탄피배출 GIF-->
 <!--탄피배출 효과는 파티클이펙트로 구현했습니다.-->
 
-![flare](/2023-12-13-cubic-survival-beta/flare.gif){: w="960" .shadow }
-![flare-animation](/2023-12-13-cubic-survival-beta/flare-animation.png){: w="960" .shadow }
+![flare](/2023-12-13-palette-developing/flare.gif){: w="960" .shadow }
+![flare-animation](/2023-12-13-palette-developing/flare-animation.png){: w="960" .shadow }
 ```cs
 if (shotTimer > fireThreshold)
 {
@@ -56,20 +58,20 @@ shotTimer += Time.deltaTime;
 
 처음 만들었을 때는 어딘가 부족한 느낌이 있었는데, 화염 크기를 과장하고 URP Light2D를 활용하니 훨씬 화려한 효과를 얻을 수 있었습니다.
 
-![flare-clipstudio](/2023-12-13-cubic-survival-beta/flare-clipstudio.png){: w="480" .shadow }
-![flare-images](/2023-12-13-cubic-survival-beta/flare-images.png){: w="480" .shadow }
+![flare-clipstudio](/2023-12-13-palette-developing/flare-clipstudio.png){: w="480" .shadow }
+![flare-images](/2023-12-13-palette-developing/flare-images.png){: w="480" .shadow }
 
 총구 화염은 클립스튜디오의 애니메이션 기능을 활용해 구현했습니다. 이전에 공식 에셋을 잘 활용한 경험이 있어서 이번에도 만들어져 있는 에셋을 사용할까 했지만, 제가 원하는 느낌에 딱 맞는 에셋을 찾아보기 힘들기도 했어서 이번에는 직접 만들어 썼어요. 만들면서는 **[다른 슈팅 애니메이션](https://www.youtube.com/watch?v=kAafHZcT2fc)** 등을 참고하면서 제가 원하는 느낌을 잡아갔습니다.
 
-![gained-animation](/2023-12-13-cubic-survival-beta/gained-animation.gif){: w="960" .shadow }
+![gained-animation](/2023-12-13-palette-developing/gained-animation.gif){: w="960" .shadow }
 <!--코드-->
 
 오브젝트가 새로 나타날때의 부자연스러움을 덜기 위해 무기를 바꾸거나 새로 얻었을 때에만 재생되는 애니메이션도 만들었습니다. 무기 전체를 덮는 실루엣 이미지가 서서히 투명해지는 사이에 플레이어가 총기를 살짝 조작하는 듯한 느낌이 나타나도록 했어요.
 
 ## **적 피격 이펙트**
 
-![hit-particle](/2023-12-13-cubic-survival-beta/hit-particle.gif){: w="960" .shadow }
-![particle-graph](/2023-12-13-cubic-survival-beta/particle-graph.gif){: w="960" .shadow }
+![hit-particle](/2023-12-13-palette-developing/hit-particle.gif){: w="960" .shadow }
+![particle-graph](/2023-12-13-palette-developing/particle-graph.gif){: w="960" .shadow }
 ```cs
 public void Hit()
 {
@@ -85,8 +87,8 @@ public void Hit()
 
 ## **장탄수 시스템**
 
-![pistol-reload](/2023-12-13-cubic-survival-beta/pistol-reload.gif){: w="960" .shadow }
-![pistol-animation](/2023-12-13-cubic-survival-beta/pistol-animation.png){: w="960" .shadow }
+![pistol-reload](/2023-12-13-palette-developing/pistol-reload.gif){: w="960" .shadow }
+![pistol-animation](/2023-12-13-palette-developing/pistol-animation.png){: w="960" .shadow }
 ```cs
 public virtual void Update()
 {
@@ -114,8 +116,8 @@ public virtual void Fire()
 
 ## **데미지 이펙트**
 
-![damage-effect](/2023-12-13-cubic-survival-beta/damage-effect.gif){: w="960" .shadow }
-![damage-effect-animation](/2023-12-13-cubic-survival-beta/damage-effect-animation.png){: w="960" .shadow }
+![damage-effect](/2023-12-13-palette-developing/damage-effect.gif){: w="960" .shadow }
+![damage-effect-animation](/2023-12-13-palette-developing/damage-effect-animation.png){: w="960" .shadow }
 
 데미지 이펙트 기능 자체는 초기 개발 때 구현했지만, 애니메이션이 아닌 코드로 구현되어 있기도 했고 그 비주얼도 많이 아쉬워서 조금 다듬어주었습니다.
 
@@ -184,8 +186,8 @@ public class Pistol : Weapon
 
 ## **플레이어 이동**
 
-![player-moving](/2023-12-13-cubic-survival-beta/player-moving.gif){: w="960" .shadow }
-![player-animation](/2023-12-13-cubic-survival-beta/player-animation.png){: w="960" .shadow }
+![player-moving](/2023-12-13-palette-developing/player-moving.gif){: w="960" .shadow }
+![player-animation](/2023-12-13-palette-developing/player-animation.png){: w="960" .shadow }
 
 플레이어에게 새 몸통과 움직이는 다리를 달아주었습니다. 플레이어가 조이스틱을 최대 범위로 끌었는지의 여부에 따라 걷는 애니메이션과 달리는 애니메이션이 적절하게 재생되도록 했어요.
 
@@ -193,8 +195,8 @@ public class Pistol : Weapon
 
 ## **경험치 시스템**
 
-![exp-bar](/2023-12-13-cubic-survival-beta/exp-bar.gif){: w="960" .shadow }
-![exp-bar-animation](/2023-12-13-cubic-survival-beta/exp-bar-animation.png){: w="960" .shadow }
+![exp-bar](/2023-12-13-palette-developing/exp-bar.gif){: w="960" .shadow }
+![exp-bar-animation](/2023-12-13-palette-developing/exp-bar-animation.png){: w="960" .shadow }
 
 플레이 도중의 지루함을 덜기 위해 추가한 시스템입니다. 적을 처치하면 플레이어는 경험치를 얻고, 경험치가 일정량 도달하면 레벨이 오르며 플레이어가 강화되는 식이죠.
 
@@ -202,7 +204,7 @@ public class Pistol : Weapon
 
 ## **플레이 화면 진입**
 
-![game-enter](/2023-12-13-cubic-survival-beta/game-enter.gif){: w="960" .shadow }
+![game-enter](/2023-12-13-palette-developing/game-enter.gif){: w="960" .shadow }
 
 개인적으로 프로그램이 돌아갈 때 딱딱 끊기는 것보다는 수평적으로 경험이 부드럽게 이어지는 것을 좋아합니다. 이 부분을 제 게임에도 적용해보고 싶었어요.
 
@@ -212,7 +214,7 @@ public class Pistol : Weapon
 
 ## **이미지 에셋**
 
-![object-design](/2023-12-13-cubic-survival-beta/object-design.png){: w="960" .shadow }
+![object-design](/2023-12-13-palette-developing/object-design.png){: w="960" .shadow }
 _태블릿으로 그려낸 이미지._
 
 이미지 애셋은 유니티 애셋스토어를 이용하지 않고 모두 스스로 만들어 사용했습니다. 앞서 무기를 픽셀아트 느낌으로 만들었더니 느낌이 생각보다 좋아서 다른 이미지도 픽셀아트로 만들었어요.
@@ -227,10 +229,10 @@ _태블릿으로 그려낸 이미지._
 
 <div class="row">
     <div class="col-md-6">
-        <img src="/2023-12-13-cubic-survival-beta/pistol-reload.gif" alt="pistol-reload">
+        <img src="/2023-12-13-palette-developing/pistol-reload.gif" alt="pistol-reload">
     </div>
     <div class="col-md-6">
-        <img src="/2023-12-13-cubic-survival-beta/game-enter-cropped.gif" alt="game-enter-cropped">
+        <img src="/2023-12-13-palette-developing/game-enter-cropped.gif" alt="game-enter-cropped">
     </div>
 </div>
 
@@ -240,7 +242,7 @@ _태블릿으로 그려낸 이미지._
 
 ## **오디오**
 
-![audacity](/2023-12-13-cubic-survival-beta/audacity.png){: .shadow }
+![audacity](/2023-12-13-palette-developing/audacity.png){: .shadow }
 _크리티컬 효과음_
 
 배경음, 효과음 등 소리 관련된 것들이 막상 하자니 조금 당혹스러웠던 부분이었습니다. 사운드를 어디서 어떻게 구해야 하는지도 잘 몰랐고, 어떻게 편집해야 하는지도 잘 몰랐거든요.
@@ -249,7 +251,7 @@ _크리티컬 효과음_
 
 ## **IAA (인앱 광고)**
 
-![iaa](/2023-12-13-cubic-survival-beta/iaa.gif){: w="960" .shadow }
+![iaa](/2023-12-13-palette-developing/iaa.gif){: w="960" .shadow }
 ```cs
 void PlayerDied()
 {
@@ -264,7 +266,7 @@ void PlayerDied()
 
 ## **IAP (인앱 결제)**
 
-![iap](/2023-12-13-cubic-survival-beta/iap.png){: w="960" }
+![iap](/2023-12-13-palette-developing/iap.png){: w="960" }
 ```cs
 void Purchase()
 {
@@ -285,7 +287,7 @@ void Purchase()
 
 ## **등록 준비**
 
-![logo](/2023-12-13-cubic-survival-beta/logo.png){: w="240" .shadow }
+![logo](/2023-12-13-palette-developing/logo.png){: w="240" .shadow }
 _어플 로고_
 
 통일성을 위해 어플 로고는 플레이버튼과 동일한 이미지로 만들었습니다. 이 프로젝트에 있어서 스토어 등록은 약간의 상징적인 의미가 있는 것이지, 이 게임으로 관심을 끌고 싶다 이런 생각은 없어서 직관성이 떨어지는 것은 감수하기로 했어요.
@@ -294,7 +296,7 @@ _어플 로고_
 
 ## **스토어 등록**
 
-![google-play-console](/2023-12-13-cubic-survival-beta/google-play-console.png){: w="960" }
+![google-play-console](/2023-12-13-palette-developing/google-play-console.png){: w="960" }
 _신기한 구글 콘솔 창_
 
 어플 등록은 플레이스토어로 한정했고, 이를 위해 구글 콘솔을 이용했습니다.
@@ -303,7 +305,7 @@ _신기한 구글 콘솔 창_
 
 그리고 반년 넘게 시간이 지나고 이제 슬슬 그만 만들고 싶기도 하고, 게임의 완성도가 처음보다 조금 봐줄만해졌다 싶어서 어플을 업데이트한 후 활성화하기로 했어요. 등록중에 있어서는 어플명과 어플 설명을 작성했고, 앱 아이콘과 그래픽 이미지, 그리고 자체 스크린샷 3장을 업데이트했습니다.
 
-![play-store](/2023-12-13-cubic-survival-beta/play-store.png){: w="960" }
+![play-store](/2023-12-13-palette-developing/play-store.png){: w="960" }
 _구글 플레이 스토어_
 
 최종적으로 어플이 다시 활성화되어 다운로드받을 수 있게 되었습니다. 어플 활성화 후 일주일 정도의 시간도 지나서, 제목을 검색하면 노출이 되는 상태에요.
@@ -314,13 +316,13 @@ _구글 플레이 스토어_
 
 그런데 이 게임은 처음부터 플레이하라고 만들었다기보단 토이 프로젝트로 도전했던 게 재미를 붙이다보니 스케일이 점점 커진 경우에 가깝다 보니, 이걸 홍보하는게 맞는건가 하는 걱정이 들고, 또 막상 제가 만든 것을 알리려니 부끄러움이 앞서더라구요.
 
-![reddit-light](/2023-12-13-cubic-survival-beta/reddit-light.png){: .light w="960" }
-![reddit-dark](/2023-12-13-cubic-survival-beta/reddit-dark.png){: .dark w="960" }
+![reddit-light](/2023-12-13-palette-developing/reddit-light.png){: .light w="960" }
+![reddit-dark](/2023-12-13-palette-developing/reddit-dark.png){: .dark w="960" }
 
 그래도 용기를 내서 해외 **[Unity2D 서브레딧](https://www.reddit.com/r/Unity2D/)**에 짧은 글을 올렸습니다. 한 100명 봐주면 정말 감사하겠다 하는 마음가짐으로 글을 올렸는데, 일주일만에 조회수가 2만을 넘더니 한달 정도가 지나자 무려 10만에 가까운 분들이 관심을 가져주셨어요.
 
-![reddit-feedback-light](/2023-12-13-cubic-survival-beta/reddit-feedback-light.png){: .light w="960" }
-![reddit-feedback-dark](/2023-12-13-cubic-survival-beta/reddit-feedback-dark.png){: .dark w="960" }
+![reddit-feedback-light](/2023-12-13-palette-developing/reddit-feedback-light.png){: .light w="960" }
+![reddit-feedback-dark](/2023-12-13-palette-developing/reddit-feedback-dark.png){: .dark w="960" }
 
 그중에 몇몇 분은 정말 감사하게도 직접 플레이하셔서 위와 같이 상세한 피드백까지 남겨주셨습니다. "조이스틱의 위치가 수정 불가능한 채로 고정되어 있어 불편하다", "블룸(Bloom)이 과한 것 같다", "타 게임과 비슷해 보인다" 정도의 피드백이 있었네요.
 
@@ -341,8 +343,8 @@ _구글 플레이 스토어_
 - 마지막으로 시간관리에 대한 부분입니다. 이 프로젝트는 원래 겨울방학에 길어야 한 달 정도 짧게 진행하고자 시작한 프로젝트였는데, 재미가 있다보니 여름방학 프로젝트가 되고, 또 그 다음 겨울방학 프로젝트가 될 뻔했어요.  
 학기중에 개발을 병행하면서 게임을 만드는 일이 너무 재미있다보니 학업이 심리적 2순위로 밀리는 일이 일어나기도 했습니다. 자연스레 성적에 영향이 가면서 시간관리를 잘 못했다는 아쉬움이 남았네요.
 
-![notion-light](/2023-12-13-cubic-survival-beta/notion-light.png){: .light }
-![notion-dark](/2023-12-13-cubic-survival-beta/notion-dark.png){: .dark }
+![notion-light](/2023-12-13-palette-developing/notion-light.png){: .light }
+![notion-dark](/2023-12-13-palette-developing/notion-dark.png){: .dark }
 _사용했던 노션 페이지 일부_
 
 그래도 만드는 과정이 너무 재미있고 뿌듯한 경험으로 남아서 조만간 유니티로 아쉬움을 보완한 다음 마일스톤을 만들게 되지 않을까 싶습니다. 개발하면서 도중도중 알게 된 팁이나 패턴을 새로 적용해보고 싶기도 하고, 처음이 어렵지 두번이 어려울 것 같지 않기도 하고요.

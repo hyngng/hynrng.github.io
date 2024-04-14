@@ -1,5 +1,7 @@
 ---
 title: "임인년의 폰카 결산"
+description: "임인년(2022)에 스마트폰으로 남긴 사진을 정리합니다."
+
 categories: [사진]
 tags: [사진, 일상, 풍경, 스냅샷, 폰카]
 start_with_ads: false

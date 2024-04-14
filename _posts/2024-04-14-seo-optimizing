@@ -1,0 +1,52 @@
+---
+title: "깃허브 블로그에서 SEO 최적화하기"
+description: "Chirpy 테마의 깃허브 블로그에서 SEO 관련 문제를 해결하는 법을 정리합니다."
+
+categories: [블로그]
+tags: [깃허브 블로그, 깃허브, 블로그, SEO, Chirpy]
+start_with_ads: true
+
+toc: true
+toc_sticky: true
+
+date: 2024-04-14
+last_modified_at: 2024-04-14
+---
+
+# **들어가며**
+
+![]()
+_네이버 SEO 사진_
+
+# **동일 설명문 발견**
+
+> `<meta name="description">` 태그에 동일 설명문 발견
+
+저는 어쩌구저쩌구 하는데 이것이 문제가 되었습니다.
+
+![]()
+_문제가 되는 "들어가며" 문구._
+
+![]()
+_적용 완료_
+
+# **H1태그 중복**
+
+{% raw %}
+```liquid
+<h1 class="site-title">
+    <a href="{{ '/' | relative_url }}">{{ site.title }}</a>
+</h1>
+```
+{: file="_includes/sidebar.html" }
+{% endraw %}
+
+{% raw %}
+```liquid
+<h1 data-toc-skip class="post-title">{{ page.title }}</h1>
+```
+{: file="_layouts/post.html" }
+{% endraw %}
+
+- 구글에서는 크게 상관없다고 함.
+- 네이버가 지적함.

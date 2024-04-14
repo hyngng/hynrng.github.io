@@ -1,5 +1,7 @@
 ---
 title: "아두이노에서 객체지향 활용하기"
+description: "아두이노에서 객체지향을 구현하는 방법을 정리합니다."
+
 categories: [프로그래밍, 튜토리얼]
 tags: [아두이노, 객체지향, 프로그래밍]
 start_with_ads: true
