@@ -23,7 +23,7 @@ last_modified_at: 2024-04-09
 
 ![customizing-dark](/2024-04-09-github-blog-thoughts/customizing-dark.png){: .dark }
 ![customizing-light](/2024-04-09-github-blog-thoughts/customizing-light.png){: .light }
-_최근에 추가한 특정 태그 내용 삭제 기능과 적용 화면_
+_최근에 추가한 특정 태그 내용 삭제 기능과 기능이 성공적으로 적용된 화면_
 
 깃허브 블로그는 전체적으로 운영 난이도가 타 플랫폼에 비해 매우 높은 편입니다. 그만큼 관심을 갖고 이것저것 직접 설정해야 하는 번거로움이 많죠. 그럼에도 불구하고 깃허브 블로그를 선택하는 이유는 블로그 운영 경험이 매우 자유롭기 때문입니다.
 
