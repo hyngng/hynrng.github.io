@@ -107,7 +107,7 @@ public class OtherClass : MonoBehaviour
 ```
 {: file="OtherClass.cs" }
 
-단순 동작을 보여주기 위해 게임 매니저에 사용한 예시입니다. 예시의 `OtherClass.cs`{: .filepath }는 클래스 내부에서 필드나 메서드를 선언하지 않고 외부의 게임 매니저 인스턴스에서 `Number` 필드와 게임 매니저의 `DisplayNumber()` 메서드만을 사용하고 있죠. 게임 매니저의 `Number`는 314로 선언되었으므로 실행 결과는 아래와 같이 표시됩니다.
+게임 매니저에 사용한 예시입니다. 예시의 `OtherClass.cs`{: .filepath }는 클래스 내부에서 필드나 메서드를 선언하지 않고 외부의 게임 매니저 인스턴스에서 `Number` 필드와 게임 매니저의 `DisplayNumber()` 메서드만을 사용하고 있죠. 게임 매니저의 `Number`는 314로 선언되었으므로 실행 결과는 아래와 같이 표시됩니다.
 
 ```bash
 The number is 314
