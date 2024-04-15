@@ -68,7 +68,7 @@ public class Singleton : MonoBehaviour
             Destroy(this.gameObject);
     }
 
-    /* 추가적인 함수 작성 */
+    /* 함수 작성란 */
 }
 ```
 {: file="Singleton.cs" }
