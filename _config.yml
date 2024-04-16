@@ -56,7 +56,7 @@ comments:
   # utterances settings › https://utteranc.es/
   utterances:
     repo: hynrng/hynrng.github.io
-    issue_term: title
+    issue_term: pathname
   # Giscus options › https://giscus.app
   giscus:
     repo: hynrng/hynrng.github.io
