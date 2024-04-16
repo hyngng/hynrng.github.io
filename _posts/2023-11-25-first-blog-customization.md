@@ -74,18 +74,38 @@ _적용 전후 비교_
 ![post-nav-dark](/2023-11-25-first-blog-customization/post-nav-dark.png){: .dark }
 _포스트 네비게이션. "이전 글"과 "다음 글"로 유저를 안내하고 있다._
 
-포스트 네비게이션은 게시글의 가장 아래에서 현재 글이 작성되기 바로 이전의 글과 다음의 글로 연결하는 기능인데 개인적으로는 왜 있는지 의문입니다. 같은 카테고리의 글을 보여주는 것도 아니고, 단순히 시간선상에서 가장 연관성이 있다고 노출을 시키기에는 글 주제가 연관이 전혀 없기 때문이죠. 오히려 페이지 하단을 난잡하게 만드는 것 같아 "관련된 글" 섹션만 남기고 싶었고 포스트 네비게이션과 관련된 코드를 모두 주석처리했습니다.
+포스트 네비게이션은 게시글의 가장 아래에서 현재 글이 작성되기 바로 이전의 글과 다음의 글로 연결하는 기능인데 개인적으로는 왜 있는지 의문입니다. 같은 카테고리의 글을 보여주는 것도 아니고, 단순히 시간선상에서 가장 연관성이 있다고 노출을 시키기에는 글 주제가 연관이 전혀 없기 때문이죠.
+
+저는 포스트 네비게이션이 오히려 페이지 하단을 난잡하게 만드는 것 같아 "관련된 글" 섹션만 남기고 싶었고, `_layouts/post.html`{: .filepath}에서 포스트 네비게이션 부분을 불러오는 `- post-nav` 코드를 찾아 제거했습니다.
 
 {% raw %}
 ```liquid
-<!--
-<nav class="post-navigation d-flex justify-content-between" aria-label="Post Navigation">
-  ...
-</nav>
--->
+---
+layout: default
+refactor: true
+panel_includes:
+  - toc
+tail_includes:
+  - comments
+  - related-posts
+---
 ```
-{: file="_includes/post-nav.html" }
+{: file="_layouts/post.html" }
 {% endraw %}
+
+> **24.04.16 수정!**
+{: .prompt-info }
+
+블로그에 글을 계속 작성하다보니 제가 생각보다 다양한 주제로 글을 작성하고 있다는 것을 알았습니다. 포스트 네비게이션을 유지하면 사용자의 흥미를 유발하고 체류시간도 늘릴 수 있을 것이라는 생각이 들었고, 위의 변경은 원상 복구했습니다.
+
+대신 복구하는 김에 글 제목이 볼드체로 강조되어 표시되도록 살짝 수정해 주었습니다. 코드는 `assets/css/jekyll-theme-chirpy.scss`{: .filepath }에서 아래와 같이 작성해주었습니다.
+
+```css
+.btn-outline-primary {
+  font-weight: bold;
+}
+```
+{: file="assets/css/jekyll-theme-chirpy.scss" }
 
 ## **사이드바 배경색 수정**
 
