@@ -15,7 +15,7 @@ toc: false
 toc_sticky: true
  
 date: 2024-04-02
-last_modified_at: 2024-04-10
+last_modified_at: 2024-04-15
 ---
 
 ![240128-몰카](/drawing/240128-카메라.png){: .light .border }
@@ -31,7 +31,13 @@ _좀 화난듯_
 <br>
 
 ![200000-무서운여자옆모습](/drawing/200000-무서운여자옆모습.png)
-_인상이 강한편_
+_인상이 강한 편_
+
+<br>
+
+![20240415-헤드폰목도리](/drawing/20240415-헤드폰목도리.png){: .light .border }
+![20240415-헤드폰목도리](/drawing/20240415-헤드폰목도리.png){: .dark }
+_인상이 약한 편_
 
 <br>
 
