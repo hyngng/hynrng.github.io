@@ -13,7 +13,7 @@ date: 2023-11-25
 last_modified_at: 2024-04-16
 ---
 
-# **들어가며**
+## **들어가며**
 
 ![new-files-dark](/2023-11-25-first-blog-customization/new-files-dark.png){: .dark .w-50 .right .shadow }
 ![new-files-light](/2023-11-25-first-blog-customization/new-files-light.png){: .light .w-50 .right .border }
@@ -25,9 +25,9 @@ last_modified_at: 2024-04-16
 
 차근차근 이 방식을 따라하니 블로그 파일 개수가 확연히 늘어났습니다. 새로 생긴 `_includes`{: .filepath }, `_javascript`{: .filepath }, `_layouts`{: .filepath }, `_sass`{: .filepath } 폴더를 확인해보니 저장되어 있는 자바스크립트, CSS 파일을 수정하여 블로그 페이지 구성요소를 직접 편집할 수 있도록 되어있어서 몇 가지를 만져줬습니다.
 
-# **템플릿 수정**
+## **템플릿 수정**
 
-## **글씨 크기와 단락 간격 수정**
+### **글씨 크기와 단락 간격 수정**
 
 그동안 신경쓰였던 것 중 하나가 폰트 크기가 살짝 크다는 것이었습니다. 글씨 크기를 어떻게 수정하는지 잘 모르기도 했고 기능적으로 불편한 것도 아니었기 때문에 지금까지는 그려러니 하고 넘겼지만 이번에 블로그 새단장을 한 김에 수정하기로 했습니다.
 
@@ -43,7 +43,7 @@ last_modified_at: 2024-04-16
 ```
 {: file="assets/css/jekyll-theme-chirpy.scss" }
 
-## **Footer 제거**
+### **Footer 제거**
 
 ![footer-remove-light](/2023-11-25-first-blog-customization/footer-remove-light.png){: .light .border }
 ![footer-remove-dark](/2023-11-25-first-blog-customization/footer-remove-dark.png){: .dark }
@@ -68,7 +68,7 @@ _적용 전후 비교_
 {: file="_includes/Footer.html" }
 {% endraw %}
 
-## **포스트 네비게이션 제거**
+### **포스트 네비게이션 제거**
 
 ![post-nav-light](/2023-11-25-first-blog-customization/post-nav-light.png){: .light .border }
 ![post-nav-dark](/2023-11-25-first-blog-customization/post-nav-dark.png){: .dark }
@@ -87,7 +87,7 @@ _포스트 네비게이션. "이전 글"과 "다음 글"로 유저를 안내하�
 {: file="_includes/post-nav.html" }
 {% endraw %}
 
-## **사이드바 배경색 수정**
+### **사이드바 배경색 수정**
 
 사이드바의 배경 색을 수정하고 싶은데 `background-color` 속성을 바로 사용했다간 색상이 다크모드 여부에 상관없이 고정됩니다. 제가 원하는 것은 라이트모드 전용 색상은 그대로 놔두고 다크모드의 색상만 변경하는 것인데, 다행히 Chirpy 테마는 `_sass/colors`{: .filepath } 경로에 다크모드용 `typography-dark.scss`{: .filepath }를 라이트모드용과 구분하고 있어 이 파일에서 다크모드시 사이드바 배경색을 **#1D1D1E**정도로 변경했습니다.
 
@@ -96,7 +96,7 @@ _포스트 네비게이션. "이전 글"과 "다음 글"로 유저를 안내하�
 ```
 {: file="_sass/colors/typography-dark.scss" }
 
-## **TOC 수정**
+### **TOC 수정**
 
 Chirpy 테마는 기본적으로 포스트 페이지창 우측에 TOC(Table Of Contents)를 지원합니다. 게시글의 읽고 있는 지점을 확인하거나 원하는 지점으로 바로 이동할 수 있는 등 유용한 기능이기는 하지만, 문제는 테마를 업데이트하니 동작 방식이 불편하게 바뀌었습니다.
 
@@ -135,7 +135,7 @@ export function toc() {
 
 <br>
 
-# **마치며**
+## **마치며**
 
 ![post-push-light](/2023-11-25-first-blog-customization/post-push-light.png){: .light .border }
 ![post-push-dark](/2023-11-25-first-blog-customization/post-push-dark.png){: .dark }
