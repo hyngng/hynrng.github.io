@@ -2,17 +2,11 @@
 ---
 
 @import 'main';
-@font-face {
-  font-family: 'Pretendard';
-  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
-  font-weight: 400;
-  font-style: normal;
-}
 
-/* 폰트 */
 /* 덮어쓰기 */
 
 /* _sass/addon/commons.scss */
+
 .content {
   font-family: 'Pretendard', 'Source Sans Pro', 'Microsoft Yahei', sans-serif;
   font-size: 1rem;
