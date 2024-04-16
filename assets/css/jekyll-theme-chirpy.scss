@@ -2,15 +2,21 @@
 ---
 
 @import 'main';
+@font-face {
+  font-family: 'Pretendard';
+  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
 
+/* 폰트 */
 /* 덮어쓰기 */
 
 /* _sass/addon/commons.scss */
 .content {
-  font-size: .97rem;
+  font-family: 'Pretendard', 'Source Sans Pro', 'Microsoft Yahei', sans-serif;
+  font-size: 1rem;
   margin-top: 1rem;
-  letter-spacing : -.04rem;
-  word-spacing : .04rem;
   /*word-break: keep-all;*/ /* 단어기준 줄넘김인데, 안 예뻐서 보류. */
 }
 
@@ -33,20 +39,6 @@ blockquote p {
 
 .related-post-title {
   font-weight: bold;
-}
-
-/* 폰트 모음 */
-
-.nanum-myeongjo-regular {
-  font-family: "Nanum Myeongjo", serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.song-myung-regular {
-  font-family: "Song Myung", serif;
-  font-weight: 400;
-  font-style: normal;
 }
 
 /* 메모장
