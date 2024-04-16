@@ -18,27 +18,32 @@ date: 2023-03-19
 last_modified_at: 2023-03-26
 ---
 
-![230319-왜곡쩜](/drawing/230319-왜곡쩜.png){: .shadow }
+![230319-왜곡쩜](/drawing/230319-왜곡쩜.png){: .light .border }
+![230319-왜곡쩜](/drawing/230319-왜곡쩜.png){: .dark }
 _화각 왜곡이 재미있어 보였음_
 
 <br>
 
-![230307-구닌](/drawing/230307-구닌.png){: .shadow }
+![230307-구닌](/drawing/230307-구닌.png){: .light .border }
+![230307-구닌](/drawing/230307-구닌.png){: .dark }
 _그릴 게 없을 때 그리는 구닌 그림_
 
 <br>
 
-![230329-흑백선화](/drawing/230329_흑백선화.png){: .shadow }
-_양뿔을 그려보고 싶었음_
+![230329-흑백선화](/drawing/230329_흑백선화.png){: .light .border }
+![230329-흑백선화](/drawing/230329_흑백선화.png){: .dark }
+_양뿔의 저 질감을 그려보고 싶었음_
 
 <br>
 
-![230302-토착민](/drawing/230302-토착민.png){: .shadow }
+![230302-토착민](/drawing/230302-토착민.png){: .light .border }
+![230302-토착민](/drawing/230302-토착민.png){: .dark }
 _얕은 심도 효과를 흉내내보고 싶었음_
 
 <br>
 
-![230319-꼬깔구닌](/drawing/230319-꼬깔구닌.png){: .shadow }
+![230319-꼬깔구닌](/drawing/230319-꼬깔구닌.png){: .light .border }
+![230319-꼬깔구닌](/drawing/230319-꼬깔구닌.png){: .dark }
 _얘도 할 게 없을 때 그리는 구닌 그림_
 
 <br>
