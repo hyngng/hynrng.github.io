@@ -4,14 +4,20 @@
 @import 'main';
 
 /* 덮어쓰기 */
+
+/* _sass/addon/commons.scss */
 .content {
-  font-size: 0.98rem;
+  font-size: .97rem;
+  margin-top: 1rem;
+  letter-spacing : -.04rem;
+  word-spacing : .04rem;
   /*word-break: keep-all;*/ /* 단어기준 줄넘김인데, 안 예뻐서 보류. */
 }
 
 p {
   margin-top: 1.5rem;
 }
+
 blockquote p {
   margin-top: 0;
 }

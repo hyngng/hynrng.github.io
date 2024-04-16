@@ -10,13 +10,13 @@ toc: true
 toc_sticky: true
 
 date: 2023-11-25
-last_modified_at: 2023-12-12
+last_modified_at: 2024-04-16
 ---
 
 # **들어가며**
 
 ![new-files-dark](/2023-11-25-first-blog-customization/new-files-dark.png){: .dark .w-50 .right .shadow }
-![new-files-light](/2023-11-25-first-blog-customization/new-files-light.png){: .light .w-50 .right .shadow }
+![new-files-light](/2023-11-25-first-blog-customization/new-files-light.png){: .light .w-50 .right .border }
 
 지금 사용중인 블로그 템플릿이 그동안 꾸준히 **[개선](https://github.com/cotes2020/jekyll-theme-chirpy)**되었나 봅니다. 버전이 어느새 **6.3.1**로 올라갔습니다. 새단장을 한 테마를 살펴보니 메인 페이지의 포스트에 미리보기 이미지를 띄우는 기능이 생겼고, 전체적으로 색감이 정갈하게 다듬어졌다는 점이 눈에 띕니다.
 
@@ -27,39 +27,25 @@ last_modified_at: 2023-12-12
 
 # **템플릿 수정**
 
-## **글씨 크기 수정**
+## **글씨 크기와 단락 간격 수정**
 
 그동안 신경쓰였던 것 중 하나가 폰트 크기가 살짝 크다는 것이었습니다. 글씨 크기를 어떻게 수정하는지 잘 모르기도 했고 기능적으로 불편한 것도 아니었기 때문에 지금까지는 그려러니 하고 넘겼지만 이번에 블로그 새단장을 한 김에 수정하기로 했습니다.
 
-포스트의 글 속성은 `_scss/addon/commons.scss`{: .filepath }의 `.content` 선택자가 담당하는 식으로 되어 있었고, `_scss`{: .filepath }폴더의 CSS 파일은 모두 `assets/css/jekyll-theme-chirpy.scss`{: .filepath }로 `@import`되고 있어 이 파일에 `font-size` 값을 0.98정도로 설정해주었습니다.
+포스트의 글 속성은 `_scss/addon/commons.scss`{: .filepath }의 `.content` 선택자가 담당하는 식으로 되어 있었고, `_scss`{: .filepath }폴더의 CSS 파일은 모두 `assets/css/jekyll-theme-chirpy.scss`{: .filepath }로 `@import`되고 있어 `font-size` 값을 0.98정도로 설정해주었습니다.
+
+설정해주는김에 단락 간격도 조절해주었습니다. 티스토리나 네이버 등 타 블로그 플랫폼과 비교했을 때 글이 너무 빽빽하고 읽기 힘들다는 느낌이 들어 1.25rem에서 1.5rem 정도로 늘려주었습니다.
 
 ```css
 .content {
   font-size: 0.98rem;
-}
-```
-{: file="assets/css/jekyll-theme-chirpy.scss" }
-
-## **단락 간격 조정**
-
-마찬가지로 `assets/css/jekyll-theme-chirpy.scss`{: .filepath }에서 단락 간격도 수정해주었습니다. 기본값은 1.25rem 정도로 주어져 있던데 티스토리나 네이버 등 타 블로그 플랫폼과 비교했을 때 글이 너무 빽빽하고 읽기 힘들다는 느낌이 들어 1.5rem 정도로 늘려주었습니다.
-
-다만 이렇게 사용해보니 prompt 또한 `<p>` 태그를 이용하는 관계로 상단에 공백을 같이 생성하는 문제가 있어 `<blockquote>` 태그에 한해 공백이 생성되지 않도록 코드를 별도로 작성했습니다.
-
-```css
-p {
-  margin-top: 1.5rem;
-}
-
-blockquote p {
-  margin-top: 0;
+  margin-top: 1rem;
 }
 ```
 {: file="assets/css/jekyll-theme-chirpy.scss" }
 
 ## **Footer 제거**
 
-![footer-remove-light](/2023-11-25-first-blog-customization/footer-remove-light.png){: .light }
+![footer-remove-light](/2023-11-25-first-blog-customization/footer-remove-light.png){: .light .border }
 ![footer-remove-dark](/2023-11-25-first-blog-customization/footer-remove-dark.png){: .dark }
 _적용 전후 비교_
 
@@ -84,7 +70,7 @@ _적용 전후 비교_
 
 ## **포스트 네비게이션 제거**
 
-![post-nav-light](/2023-11-25-first-blog-customization/post-nav-light.png){: .light }
+![post-nav-light](/2023-11-25-first-blog-customization/post-nav-light.png){: .light .border }
 ![post-nav-dark](/2023-11-25-first-blog-customization/post-nav-dark.png){: .dark }
 _포스트 네비게이션. "이전 글"과 "다음 글"로 유저를 안내하고 있다._
 
@@ -151,7 +137,7 @@ export function toc() {
 
 # **마치며**
 
-![post-push-light](/2023-11-25-first-blog-customization/post-push-light.png){: .light }
+![post-push-light](/2023-11-25-first-blog-customization/post-push-light.png){: .light .border }
 ![post-push-dark](/2023-11-25-first-blog-customization/post-push-dark.png){: .dark }
 _워크플로우에 걸리는 시간이 2m 내외로 줄어들었다!_
 

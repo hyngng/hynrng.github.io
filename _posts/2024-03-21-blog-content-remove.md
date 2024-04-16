@@ -17,7 +17,7 @@ last_modified_at: 2024-03-25
 
 Chirpy 테마는 깔끔하고 단정하지만 순정으로 사용하다보면 개선 여지가 간혹 보입니다. **[몇 가지](https://hynrng.github.io/posts/%EB%B8%94%EB%A1%9C%EA%B7%B8-%EC%83%88%EB%8B%A8%EC%9E%A5/)**는 전에 수정해주었지만 거슬리는 점이 여전히 남아있었죠.
 
-![before-light](/2024-03-21-blog-content-remove/before-light.png){: .light }
+![before-light](/2024-03-21-blog-content-remove/before-light.png){: .light .border }
 ![before-dark](/2024-03-21-blog-content-remove/before-dark.png){: .dark }
 _수정 전 블로그 홈에 표시되는 포스트 요약본_
 
@@ -89,7 +89,7 @@ Ruby나 Liquid에 대해서는 배경지식이 없어 방법을 알아내느라 
 
 # **개선 확인**
 
-![after-light](/2024-03-21-blog-content-remove/after-light.png){: .light }
+![after-light](/2024-03-21-blog-content-remove/after-light.png){: .light .border}
 ![after-dark](/2024-03-21-blog-content-remove/after-dark.png){: .dark }
 _코드 적용 후 개선된 포스트 요약본_
 
