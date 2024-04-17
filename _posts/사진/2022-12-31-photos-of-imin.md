@@ -3,7 +3,7 @@ title: "임인년의 폰카 결산"
 description: "임인년(2022)에 스마트폰으로 남긴 사진을 정리합니다."
 
 categories: [사진]
-tags: [사진, 일상, 풍경, 스냅샷, 폰카]
+tags: [사진, 감자튀김, 복도, 친구, 눈, 벚꽃, 구름, 크레인]
 start_with_ads: false
 
 image:
