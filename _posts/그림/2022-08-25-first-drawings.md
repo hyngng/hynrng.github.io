@@ -3,7 +3,7 @@ title: "디지털 드로잉 모음 #1"
 description: "디지털 환경의 그림을 정리한 첫 번째 글입니다."
 
 categories: [그림]
-tags: [그림, 드로잉, 스케치, 채색, 아트]
+tags: [그림, 드로잉, 사람, 총, 우비, 상자]
 start_with_ads: false
 
 image:

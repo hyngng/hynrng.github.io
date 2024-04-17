@@ -76,7 +76,7 @@ tail_includes:
     </div>
     <!-- .post-meta -->
 
-    <!-- 포스트 상단 광고 -->
+    <!-- 포스트 상단 광고, 수정함 -->
     {% if page.start_with_ads %}
       <br><br>
       <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2168910631722247"
@@ -104,7 +104,7 @@ tail_includes:
   <br>
   <br>
 
-  <!-- Applause-Button -->
+  <!-- 박수 버튼, 수정함 -->
   <applause-button class="mb6"
     color="rgb(79,177,186)"
     url="{{ page.url | absolute_url }}">
@@ -112,7 +112,7 @@ tail_includes:
 
   <br>
 
-  <!-- Post Script -->
+  <!-- 포스트 서명, 수정함 -->
   <center style="font-size: 1.15rem; opacity: 0.5; color: gray;">
     <b><i>hynrng ✒️</i></b>
   </center>
@@ -129,16 +129,13 @@ tail_includes:
       </div>
     {% endif %}
 
-    <!-- tags -->
+    <!-- tags, 수정함 -->
     {% if page.tags.size > 0 %}
       <div class="post-tags">
         <i class="fa fa-tags fa-fw me-1"></i>
         {% for tag in page.tags %}
-          <a
-            href="{{ site.baseurl }}/tags/{{ tag | slugify | url_encode }}/"
-            class="post-tag no-text-decoration"
-          >
-            {{- tag -}}
+          <a href="{{ site.baseurl }}/tags/{{ tag | slugify | url_encode }}/" class="post-tag no-text-decoration">
+            {% include icons.html %} {{- tag -}}
           </a>
         {% endfor %}
       </div>

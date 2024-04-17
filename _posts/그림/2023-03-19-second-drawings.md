@@ -3,7 +3,7 @@ title: "디지털 드로잉 모음 #2"
 description: "디지털 환경의 그림을 정리한 두 번째 글입니다."
 
 categories: [그림]
-tags: [그림, 드로잉, 스케치, 채색, 아트]
+tags: [그림, 드로잉, 비니, 광각, 총, 양뿔, 망토, 트래픽콘]
 start_with_ads: false
 
 image:
