@@ -3,7 +3,7 @@ title: "깃허브 블로그에서 특정 태그 내용 제거하기"
 description: "Chirpy 테마의 깃허브 블로그에서 특정 태그의 내용을 코드로 제거하는 방법을 정리합니다."
 
 categories: [블로그]
-tags: [깃허브, 블로그, 커스텀, 커스터마이징, Chirpy, Liquid]
+tags: [깃허브, 블로그, HTML, 커스텀, 커스터마이징, Chirpy]
 start_with_ads: true
 
 toc: true
