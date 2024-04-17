@@ -59,7 +59,7 @@ post:
   pageview_measure: 조회
   read_time:
     unit: 분
-    prompt: 걸림
+    prompt: " 걸림"
   relate_posts: 더 보기
   share: 공유하기
   button:
