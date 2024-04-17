@@ -3,7 +3,7 @@ title: "유니티로 모바일 감성 게임 개발하기: 기획 및 구성 과
 description: "개발을 앞둔 감성 모바일 게임에 대한 기획안을 정리합니다."
 
 categories: [프로그래밍, 마일스톤]
-tags: [유니티, C#, 프로그래밍, 기획, 개발일지]
+tags: [프로그래밍, 유니티, C#, 기획, 개발일지]
 start_with_ads: true
 
 image:

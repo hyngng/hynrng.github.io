@@ -3,8 +3,6 @@
 
 @import 'main';
 
-
-
 /* 덮어쓰기 */
 
 .content {
@@ -44,6 +42,16 @@ blockquote p {
 
 .card-title {
   font-weight: bold;
+}
+
+/* 부드러운 모드 변경 */
+
+* {
+  transition: background-color 0.25s ease, border-color 0.25s ease;
+}
+
+a, p, h1, h2, h3, h4, h5, h6, button {
+  transition: color 0.25s ease-in;
 }
 
 /* 새로 만들어 쓰기 */

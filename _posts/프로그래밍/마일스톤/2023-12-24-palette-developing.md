@@ -3,7 +3,7 @@ title: "유니티로 모바일 슈팅 게임 개발하기: 후기 개발과 스�
 description: "유니티를 이용한 모바일 슈팅 게임 개발기와 출시과정을 정리합니다."
 
 categories: [프로그래밍, 마일스톤]
-tags: [유니티, C#, 프로그래밍, 개발일지, URP]
+tags: [프로그래밍, 유니티, C#, 개발일지, URP]
 start_with_ads: true
 
 image:
