@@ -3,7 +3,7 @@ title: "유니티에서 싱글톤 패턴 구현하기, 활용하기"
 description: "싱글톤 패턴의 특징과 사용 양상을 유니티 중심으로 정리합니다."
 
 categories: [프로그래밍, 패러다임]
-tags: [유니티, C#, C#,  프로그래밍, 패턴]
+tags: [유니티, C#, 프로그래밍, 패턴]
 start_with_ads: true
 
 toc: true
