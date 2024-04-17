@@ -20,7 +20,7 @@ date: 2023-12-22
 last_modified_at: 2024-03-20
 ---
 
-# **들어가며**
+## **들어가며**
 
 **[전 포스트](https://hynrng.github.io/posts/palette-planning/)**에서 이어지는 모바일 게임 개발기입니다. 위에서 정리한 대로 개발기간이 초기와 후기로 나뉘기 때문에 포스트를 분리해 정리했어요. 따라서 이 포스트에서는 후기 개발과 스토어등록 부분을 다룹니다.
 
@@ -33,11 +33,11 @@ gantt
     스토어 재등록: crit, 2023-10-29, 18d
 ```
 
-# **후기 개발: 무기 디자인**
+## **후기 개발: 무기 디자인**
 
 이 기간에 만들면서 든 생각이 많다 보니 정리하면서 글이 조금 길어졌습니다. 주로 만들면서 어떤 생각을 했고, 어떻게 만들었는지에 대한 경험을 최대한 구체적으로 정리했습니다.
 
-## **동작 애니메이션**
+### **동작 애니메이션**
 
 <!--유니티 에디터 -> 탄피배출 GIF-->
 <!--탄피배출 효과는 파티클이펙트로 구현했습니다.-->
@@ -68,7 +68,7 @@ shotTimer += Time.deltaTime;
 
 오브젝트가 새로 나타날때의 부자연스러움을 덜기 위해 무기를 바꾸거나 새로 얻었을 때에만 재생되는 애니메이션도 만들었습니다. 무기 전체를 덮는 실루엣 이미지가 서서히 투명해지는 사이에 플레이어가 총기를 살짝 조작하는 듯한 느낌이 나타나도록 했어요.
 
-## **적 피격 이펙트**
+### **적 피격 이펙트**
 
 ![hit-particle](/2023-12-13-palette-developing/hit-particle.gif){: w="960" .shadow }
 ![particle-graph](/2023-12-13-palette-developing/particle-graph.gif){: w="960" .shadow }
@@ -85,7 +85,7 @@ public void Hit()
 
 이는 좀 우연찮게 해결했는데요, 위처럼 Velocity over Lifetime 모듈에서 선형 속도와 공전 속도를 Random between two curves로 설정하고 그래프를 두번 꼬았더니 마치 먼지가 이는 듯한 효과가 만들어지더라구요. 보기에도 괜찮고 타격감도 꽤나 좋게 만들어주는 것 같아 그대로 사용했습니다.
 
-## **장탄수 시스템**
+### **장탄수 시스템**
 
 ![pistol-reload](/2023-12-13-palette-developing/pistol-reload.gif){: w="960" .shadow }
 ![pistol-animation](/2023-12-13-palette-developing/pistol-animation.png){: w="960" .shadow }
@@ -114,7 +114,7 @@ public virtual void Fire()
 
 재장전 애니메이션이 재생되는 도중에 무기가 바뀔 경우 장탄수가 제대로 채워지지 않은 채 무기 애니메이터 컴포넌트의 `bool`형 `magazineIsEmpty` 변수가 `true`로 설정되어 앞서 정리한  `Gained` 애니메이션과 구별되는 `GainedEmpty` 애니메이션이 재생되도록 만들었습니다.
 
-## **데미지 이펙트**
+### **데미지 이펙트**
 
 ![damage-effect](/2023-12-13-palette-developing/damage-effect.gif){: w="960" .shadow }
 ![damage-effect-animation](/2023-12-13-palette-developing/damage-effect-animation.png){: w="960" .shadow }
@@ -123,7 +123,7 @@ public virtual void Fire()
 
 만들면서 크리티컬 시스템도 간단하게 구현했습니다. 데미지가 2배가 될 때 전용 애니메이션이 재생되도록 했어요. 애니메이션은 크리티컬 데미지가 들어갔음을 쉽게 알 수 있도록 일반 데미지 애니메이션과 비교했을 때 크기와 색상에 가시적인 차이가 있도록 만들었습니다.
 
-## **무기 다양화**
+### **무기 다양화**
 
 ```mermaid
 classDiagram
@@ -176,7 +176,7 @@ public class Pistol : Weapon
 
 만들면서는 객체지향 프로그래밍의 다형성을 의식하며 부모 역할을 하는 `Weapon` 클래스에 기본적인 것들을 작성하고 `Minigun`, `Shotgun`, `SMG` 등의 세부 무기 클래스가 이를 상속하도록 했습니다.
 
-# **후기 개발: 애니메이션**
+## **후기 개발: 애니메이션**
 
 <!--
 개인적으로 저는 게임이 재미있는 이유 중에는 "화면 속 캐릭터가 힘차게 움직이는 모습을 구경하는 재미"가 있다고 생각합니다.
@@ -184,7 +184,7 @@ public class Pistol : Weapon
 찾아보니 스켈레톤 애니메이션이라던가, 절차적 애니메이션이라던가 등등 유니티가 제공하는 애니메이션 시스템 속에도 흥미로운 스킬이 많이 있는 것 같아 다음에 시도해보려고 합니다.
 -->
 
-## **플레이어 이동**
+### **플레이어 이동**
 
 ![player-moving](/2023-12-13-palette-developing/player-moving.gif){: w="960" .shadow }
 ![player-animation](/2023-12-13-palette-developing/player-animation.png){: w="960" .shadow }
@@ -193,7 +193,7 @@ public class Pistol : Weapon
 
 애니메이션 동작의 어색함을 덜기 위해 조이스틱을 당긴 정도에 따라 걷는 애니메이션 재생 속도가 유동적으로 조절되고, 또 조준 방향에 따라 플레이어가 뒤로 걸어가도록 만들었어요.
 
-## **경험치 시스템**
+### **경험치 시스템**
 
 ![exp-bar](/2023-12-13-palette-developing/exp-bar.gif){: w="960" .shadow }
 ![exp-bar-animation](/2023-12-13-palette-developing/exp-bar-animation.png){: w="960" .shadow }
@@ -202,7 +202,7 @@ public class Pistol : Weapon
 
 처음에는 플레이어가 경험치 파티클을 직접 얻어야 경험치를 획득할 수 있도록 만들었는데, 플레이 후반부로 가면 갈수록 화면이 지저분해지는 문제가 있어서 적을 처치한 즉시 경험치를 획득하는 방식으로 변경하게 되었습니다.
 
-## **플레이 화면 진입**
+### **플레이 화면 진입**
 
 ![game-enter](/2023-12-13-palette-developing/game-enter.gif){: w="960" .shadow }
 
@@ -210,9 +210,9 @@ public class Pistol : Weapon
 
 그래서 씬 전환시 플레이버튼을 누르면 버튼으로부터 플레이어가 등장하도록 만들었습니다. 경험치, 일시정지 버튼 등등 UI 또한 화면 가장자리에서 등장하도록 만들었어요.
 
-# **후기 개발: 기타 작업**
+## **후기 개발: 기타 작업**
 
-## **이미지 에셋**
+### **이미지 에셋**
 
 ![object-design](/2023-12-13-palette-developing/object-design.png){: w="960" .shadow }
 _태블릿으로 그려낸 이미지._
@@ -221,7 +221,7 @@ _태블릿으로 그려낸 이미지._
 
 만들 때는 클립스튜디오를 사용했고, 이미지가 완성되면 배경이 제거된 png 확장자로 내보낸 뒤 이미지 각각의 크기대로 잘라내어 프로젝트에 임포트했습니다.
 
-## **카메라**
+### **카메라**
 
 **[사진 취미](https://hynrng.github.io/posts/%EC%9E%84%EC%9D%B8%EB%85%84%EC%9D%98-%EC%82%AC%EC%A7%84/)**를 통해 화각(FOV)이 중요함을 느낀 적이 있습니다. 그림이든 사진이든 영상이든, 2차원 형식을 공유한다면 화상 왜곡 효과와 함께 더 많이, 혹은 더 적게 보여줌으로서 생각보다 많은 것을 표현할 수 있거든요.
 
@@ -240,7 +240,7 @@ _태블릿으로 그려낸 이미지._
 
 이외에 URP를 통해 블룸(Bloom) 포스트 프로세싱 효과도 신경을 썼습니다. 다른 포스트 프로세스 효과 중에 블러, 모션블러 정도도 시도는 해봤지만 결과물을 보니 너무 과하다는 생각이 들어 블룸 하나만 적용하게 되었네요.
 
-## **오디오**
+### **오디오**
 
 ![audacity](/2023-12-13-palette-developing/audacity.png){: .shadow }
 _크리티컬 효과음_
@@ -249,7 +249,7 @@ _크리티컬 효과음_
 
 **[유니티 에셋 스토어](https://assetstore.unity.com/ko)**에도 제가 원하는 효과음이 없어서, 대신 주로 **[Pixabay](https://pixabay.com/ko/sound-effects/)**나 **[GDC Game Audio](https://sonniss.com/gameaudiogdc)**에서 무료 오디오를 얻은 후**[Audacity](https://www.audacityteam.org/)** 오디오 편집 프로그램을 이용해 노이즈 감소나 저음 증가 등의 효과를 준 뒤 임포트하여 사용했습니다.
 
-## **IAA (인앱 광고)**
+### **IAA (인앱 광고)**
 
 ![iaa](/2023-12-13-palette-developing/iaa.gif){: w="960" .shadow }
 ```cs
@@ -264,7 +264,7 @@ void PlayerDied()
 
 만들면서는 **[구글 애드몹 공식 문서](https://developers.google.com/admob/unity/banner?hl=ko)**를 참고했어요. SDK 가이드를 따라가니 제 예상보다 너무 간단하고 깔끔하게 잘 작동해서 신기했습니다.
 
-## **IAP (인앱 결제)**
+### **IAP (인앱 결제)**
 
 ![iap](/2023-12-13-palette-developing/iap.png){: w="960" }
 ```cs
@@ -283,9 +283,9 @@ void Purchase()
 
 구현 도중에 인앱결제를 구현할 때 조심해야 하는 것이 보안이라는 말을 들었습니다. 지금의 경우에는 실질적인 소득을 상정한 것은 아니기 때문에 큰 상관은 없지만,  다음에 인앱결제를 또다시 구현하게 될 경우에는 조금 주의해야겠다는 생각이 들었습니다.
 
-# **스토어 등록**
+## **스토어 등록**
 
-## **등록 준비**
+### **등록 준비**
 
 ![logo](/2023-12-13-palette-developing/logo.png){: w="240" .shadow }
 _어플 로고_
@@ -294,7 +294,7 @@ _어플 로고_
 
 어플의 패키지명은 `com.payang.palette`로 정했습니다. `payang`은 개발자 계정 이름으로부터, `palette`는 개인적으로 어플명 대신 부르던 프로젝트명에서 따왔습니다.
 
-## **스토어 등록**
+### **스토어 등록**
 
 ![google-play-console](/2023-12-13-palette-developing/google-play-console.png){: w="960" }
 _신기한 구글 콘솔 창_
@@ -310,7 +310,7 @@ _구글 플레이 스토어_
 
 최종적으로 어플이 다시 활성화되어 다운로드받을 수 있게 되었습니다. 어플 활성화 후 일주일 정도의 시간도 지나서, 제목을 검색하면 노출이 되는 상태에요.
 
-## **홍보와 피드백**
+### **홍보와 피드백**
 
 게임이 만들어졌으면 플레이해주는 사람이 있어야겠죠. 홍보도 마찬가지로 생각을 해본 적이 없었는데 그래도 만든 것이 '게임'이니 플레이해주는 사람이 있으면 좋겠다는 생각이 들었습니다.
 
@@ -328,7 +328,7 @@ _구글 플레이 스토어_
 
 피드백은 공감이 드는 부분이 있지만, 당장은 더 이상 개발을 진행하고 싶지는 않아서 시간이 날 때 수정하거나 차기 프로젝트를 진행하게 되면 반영하고자 합니다.
 
-# **마치며**
+## **마치며**
 
 > **[플레이스토어](https://play.google.com/store/apps/details?id=com.payang.palette&hl=ko-KR)**에서 다운받아 플레이해보실 수 있습니다.
 {: .prompt-tip }

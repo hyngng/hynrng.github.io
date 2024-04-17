@@ -13,7 +13,7 @@ date: 2023-11-25
 last_modified_at: 2024-04-16
 ---
 
-# **들어가며**
+## **들어가며**
 
 ![new-files-dark](/2023-11-25-first-blog-customization/new-files-dark.png){: .dark .w-50 .right .shadow }
 ![new-files-light](/2023-11-25-first-blog-customization/new-files-light.png){: .light .w-50 .right .border }
@@ -25,9 +25,9 @@ last_modified_at: 2024-04-16
 
 차근차근 이 방식을 따라하니 블로그 파일 개수가 확연히 늘어났습니다. 새로 생긴 `_includes`{: .filepath }, `_javascript`{: .filepath }, `_layouts`{: .filepath }, `_sass`{: .filepath } 폴더를 확인해보니 저장되어 있는 자바스크립트, CSS 파일을 수정하여 블로그 페이지 구성요소를 직접 편집할 수 있도록 되어있어서 몇 가지를 만져줬습니다.
 
-# **템플릿 수정**
+## **템플릿 수정**
 
-## **글씨 크기와 단락 간격 수정**
+### **글씨 크기와 단락 간격 수정**
 
 그동안 신경쓰였던 것 중 하나가 폰트 크기가 살짝 크다는 것이었습니다. 글씨 크기를 어떻게 수정하는지 잘 모르기도 했고 기능적으로 불편한 것도 아니었기 때문에 지금까지는 그려러니 하고 넘겼지만 이번에 블로그 새단장을 한 김에 수정하기로 했습니다.
 
@@ -43,7 +43,7 @@ last_modified_at: 2024-04-16
 ```
 {: file="assets/css/jekyll-theme-chirpy.scss" }
 
-## **Footer 제거**
+### **Footer 제거**
 
 ![footer-remove-light](/2023-11-25-first-blog-customization/footer-remove-light.png){: .light .border }
 ![footer-remove-dark](/2023-11-25-first-blog-customization/footer-remove-dark.png){: .dark }
@@ -70,7 +70,7 @@ _적용 전후 비교_
 {: file="_includes/Footer.html" }
 {% endraw %}
 
-## **포스트 네비게이션 제거**
+### **포스트 네비게이션 제거**
 
 ![post-nav-light](/2023-11-25-first-blog-customization/post-nav-light.png){: .light .border }
 ![post-nav-dark](/2023-11-25-first-blog-customization/post-nav-dark.png){: .dark }
@@ -98,9 +98,9 @@ tail_includes:
 > **24.04.16 수정!**
 {: .prompt-info }
 
-블로그에 글을 계속 작성하다보니 제가 생각보다 다양한 주제로 작성하고 있더라구요. 포스트 네비게이션을 유지하면 사용자의 흥미를 유발하고 체류시간도 늘릴 수 있을 것이라는 생각이 들었고, 위의 변경은 원상 복구했습니다.
+블로그에 글을 계속 작성하다보니 제가 생각보다 다양한 주제로 작성하고 있더라구요. 포스트 네비게이션을 유지하면 사용자의 흥미를 유발하고 체류시간도 늘릴 수 있을 것이라는 생각이 들었고, 제거한 `- post-nav` 부분은 원상 복구했습니다.
 
-대신 복구하는 김에 글 제목이 볼드체로 강조되어 표시되도록 살짝 수정해 주었습니다. 코드는 `assets/css/jekyll-theme-chirpy.scss`{: .filepath }에서 아래와 같이 작성해주었습니다.
+대신 복구하는 김에 글 제목이 볼드체로 강조되도록 `assets/css/jekyll-theme-chirpy.scss`{: .filepath }에 아래의 코드를 작성해주었습니다.
 
 ```css
 .btn-outline-primary {
@@ -109,7 +109,7 @@ tail_includes:
 ```
 {: file="assets/css/jekyll-theme-chirpy.scss" }
 
-## **사이드바 배경색 수정**
+### **사이드바 배경색 수정**
 
 사이드바의 배경 색을 수정하고 싶은데 `background-color` 속성을 바로 사용했다간 색상이 다크모드 여부에 상관없이 고정됩니다. 제가 원하는 것은 라이트모드 전용 색상은 그대로 놔두고 다크모드의 색상만 변경하는 것인데, 다행히 Chirpy 테마는 `_sass/colors`{: .filepath } 경로에 다크모드용 `typography-dark.scss`{: .filepath }를 라이트모드용과 구분하고 있어 이 파일에서 다크모드시 사이드바 배경색을 **#1D1D1E**정도로 변경했습니다.
 
@@ -118,7 +118,7 @@ tail_includes:
 ```
 {: file="_sass/colors/typography-dark.scss" }
 
-## **TOC 수정**
+### **TOC 수정**
 
 Chirpy 테마는 기본적으로 포스트 페이지창 우측에 TOC(Table Of Contents)를 지원합니다. 게시글의 읽고 있는 지점을 확인하거나 원하는 지점으로 바로 이동할 수 있는 등 유용한 기능이기는 하지만, 문제는 테마를 업데이트하니 동작 방식이 불편하게 바뀌었습니다.
 
@@ -155,9 +155,31 @@ export function toc() {
 {: file="_includes/js-selector.html" }
 {% endraw %}
 
-<br>
+> **24.04.16 수정!**
+{: .prompt-info }
 
-# **마치며**
+h2 이하 태그부터 TOC를 생성하도록 변경된 것은 SEO 작업을 해보니 이유를 알 것 같습니다. 예를 들어 **[위키백과](https://ko.wikipedia.org/wiki/%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD)**와 같이 글 목차가 뚜렷한 웹페이지에서 크롬 개발자 도구를 이용해 페이지 구성 요소의 태그 유형을 확인해보면 글 제목은 h1인 반면 글 목차부터는 h2로 구분하여 처리하는 것을 볼 수 있습니다.
+
+그 명확한 이유를 찾을 수 있다거나 하는 것은 아니지만, 어떤 페이지에서 h1태그가 여럿 발견되면 구글 서치 콘솔이나 네이버 서치어드바이저, 특히 빙 웹마스터 등의 검색등록 서비스에서 공통적으로 경고를 준다는 점을 토대로 추측해보건대 h1 태그를 제한해 보다 높은 수준의 SEO 최적화를 달성하기 위함인 것 같습니다.
+
+따라서 TOC의 경우에는 변경한 코드를 원상복구하지는 않았지만 블로그 포스팅에서 사용한 모든 태그의 단위를 한 단계 낮춰주었습니다. 다만 목차의 글씨 크기는 그대로 유지되었으면 해서, `jekyll-theme-chirpy.scss`{: .filepath }에서 헤더의 `font-size` 속성만 별도로 설정해주었습니다.
+
+```css
+h2 {
+  font-size: 1.9rem;
+}
+
+h3 {
+  font-size: 1.6rem;
+}
+
+h4 {
+  font-size: 1.3rem;
+}
+```
+{: file="assets/css/jekyll-theme-chirpy.scss" }
+
+## **마치며**
 
 ![post-push-light](/2023-11-25-first-blog-customization/post-push-light.png){: .light .border }
 ![post-push-dark](/2023-11-25-first-blog-customization/post-push-dark.png){: .dark }
