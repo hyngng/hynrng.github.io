@@ -143,6 +143,7 @@ td.rouge-code {
   }
 }
 
+/* 수정됨 */
 div[class^='language-'] {
   @extend %rounded;
   @extend %code-snippet-bg;
@@ -269,6 +270,7 @@ div {
 
       $dot-margin: 1rem;
 
+      /* 수정됨 */
       &::before {
         content: '';
         display: inline-block;
@@ -276,11 +278,11 @@ div {
         width: $code-dot-size;
         height: $code-dot-size;
         border-radius: 50%;
-        background-color: var(--code-header-muted-color);
+        background-color: #e06156; /* var(--code-header-muted-color); */
         box-shadow: ($code-dot-size + $code-dot-gap) 0 0
-            var(--code-header-muted-color),
+        #eec052, /* var(--code-header-muted-color), */
           ($code-dot-size + $code-dot-gap) * 2 0 0
-            var(--code-header-muted-color);
+        #6dc455; /* var(--code-header-muted-color); */
       }
 
       span {

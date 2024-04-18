@@ -69,8 +69,9 @@
   --btn-share-hover-color: #bfc1ca;
   --card-bg: #1e1e1e;
   --card-hovor-bg: #464d51;
-  --card-shadow: rgb(21, 21, 21, 0.72) 0 6px 18px 0,
-    rgb(137, 135, 135, 0.24) 0 0 0 1px;
+  /* 수정됨 */
+  --card-shadow: rgb(21, 21, 21, 0.1) 0 6px 18px 0,
+    rgb(137, 135, 135, 0.15) 0 0 0 1px;
   --kbd-wrap-color: #6a6a6a;
   --kbd-text-color: #d3d3d3;
   --kbd-bg-color: #242424;
@@ -100,9 +101,35 @@
   --timeline-color: rgb(63, 65, 68);
   --timeline-year-dot-color: var(--timeline-color);
 
+  /* 수정됨 */
   .light {
+    animation: fadeOut 0.2s ease-in-out forwards;
     display: none;
   }
+  
+  .dark {
+    animation: fadeIn 0.2s ease-in-out forwards;
+  }
+
+  @keyframes fadeOut {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+      display: none;
+    }
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  /* 수정끝 */
 
   hr {
     border-color: var(--main-border-color);

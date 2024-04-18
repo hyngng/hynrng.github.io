@@ -3,7 +3,9 @@
 
 @import 'main';
 
-/* 덮어쓰기 */
+/* =============== */
+/*     덮어쓰기     */
+/* =============== */
 
 .content {
   font-family: 'Pretendard', 'Source Sans Pro', 'Microsoft Yahei', sans-serif;
@@ -44,17 +46,91 @@ blockquote p {
   font-weight: bold;
 }
 
+/* 코드 블록 */
+
+@media all and (min-width: 576px) {
+  .code-header {
+    &::before {
+      background-color: #e06156;
+      box-shadow: ($code-dot-size + $code-dot-gap) 0 0
+      #eec052,
+        ($code-dot-size + $code-dot-gap) * 2 0 0
+      #6dc455;
+    }
+  }
+}
+
 /* 부드러운 모드 변경 */
 
 * {
-  transition: background-color 0.25s ease, border-color 0.25s ease;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
 }
 
-a, p, h1, h2, h3, h4, h5, h6, button {
-  transition: color 0.25s ease-in;
+a, p, h1, h2, h3, h4, h5, h6, li {
+  /* common text */
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
 }
 
+#back-to-top {
+  /* button */
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+.mode-toggle .icon-border {
+  /* sidebar-bottom button */
+  transition: background-color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.sidebar-bottom {
+  %button {
+    transition: background-color 0.2s ease, box-shadow 0.2s ease;
+    &:hover {
+      transition: background-color 0.2s ease;
+    }
+  }
+}
+
+.post-preview, .page-item, .nav-link {
+  /* sidebar */
+  transition: background-color 0.22s ease, border-color 0.22s ease, color 0.22s ease;
+}
+
+g, rect {
+  /* mermaid */
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+#sidebar, #topbar-wrapper, header, footer {
+  /* mobile */
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+.code-header span i, .post-navigation  {
+  transition: background-color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease, color 0.2s ease;
+}
+
+div[class^='language-'] {
+  /* code */
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+@media (hover: hover) {
+  /* post-navigation hovering */
+  .post-navigation {
+    .btn,
+    .btn::before {
+      transition: all 0.2s ease-in-out;
+    }
+  }
+}
+
+/* 부드러운 이미지 변경 */
+
+
+
+/* =============== */
 /* 새로 만들어 쓰기 */
+/* =============== */
 
 .post-title {
   font-weight: bold;
