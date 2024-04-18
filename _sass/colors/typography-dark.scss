@@ -108,13 +108,15 @@
   }
   
   .dark {
-    animation: fadeIn 0.2s ease-in-out forwards;
+    animation: darkFadeIn 0.2s ease-in-out forwards;
   }
 
+  /*
   img:not([alt="avatar"]) {
     opacity: 0;
     animation: darkFadeIn 0.2s ease-in-out forwards;
   }
+  */
 
   @keyframes fadeOut {
     0% {

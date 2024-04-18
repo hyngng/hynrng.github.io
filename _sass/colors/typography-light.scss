@@ -104,11 +104,6 @@
   }
   
   .light {
-    animation: fadeIn 0.2s ease-in-out forwards;
-  }
-
-  img:not([alt="avatar"]) {
-    opacity: 0;
     animation: lightFadeIn 0.2s ease-in-out forwards;
   }
 

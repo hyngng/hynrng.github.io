@@ -34,8 +34,12 @@ h4 {
   font-size: 1.3rem;
 }
 
-p {
-  margin-top: 1.5rem;
+p, .language-cs {
+  margin-top: 1.75rem;
+}
+
+ul:not(.list-unstyled) {
+  margin-top: 1.75rem;
 }
 
 blockquote p {
@@ -66,9 +70,14 @@ blockquote p {
   transition: background-color 0.2s ease, border-color 0.2s ease;
 }
 
-a, p, h1, h2, h3, h4, h5, h6, li {
+p, h2, h3, h4, h5, h6, li {
   /* common text */
-  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+a, h1, code {
+  /* another text */
+  transition: background-color 0.2s ease, color 0.1s ease;
 }
 
 #back-to-top {
@@ -90,6 +99,11 @@ a, p, h1, h2, h3, h4, h5, h6, li {
   }
 }
 
+.list-group-item {
+  /* categories */
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
 .post-preview, .page-item, .nav-link {
   /* sidebar */
   transition: background-color 0.22s ease, border-color 0.22s ease, color 0.22s ease;
@@ -106,6 +120,7 @@ g, rect {
 }
 
 .code-header span i, .post-navigation  {
+  /* original troublemakers */
   transition: background-color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease, color 0.2s ease;
 }
 
