@@ -12,7 +12,7 @@ toc_sticky: true
 mermaid: true
 
 date: 2024-04-15
-last_modified_at: 2024-04-15
+last_modified_at: 2024-04-18
 ---
 
 ## **들어가며**
@@ -123,7 +123,7 @@ public class GameManager : Singleton<GameManager>
 ```
 {: file="GameManager.cs" }
 
-이 경우 다른 클래스도 상속을 통해 통해 간단히 싱글톤으로 변경할 수 있게 해줍니다. 예를 들어 `GameManager.cs`{: .filepath }에 싱글톤을 적용하고 싶다면 위와 같이 `Singleton<T>`를 상속하여 사용할 수 있습니다.
+이 경우 다른 클래스도 상속을 통해 통해 간단히 싱글톤으로 변경할 수 있게 해줍니다. 예를 들어 `GameManager.cs`{: .filepath }에 싱글톤을 적용하고 싶다면 위와 같이 `Singleton<T>`를 상속하는 형태로 사용할 수 있습니다.
 
 ## **인스턴스 생성**
 
