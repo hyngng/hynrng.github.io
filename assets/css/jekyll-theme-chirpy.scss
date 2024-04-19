@@ -22,6 +22,10 @@
   font-weight: bold;
 }
 
+.card-title {
+  font-weight: bold;
+}
+
 h2 {
   font-size: 1.9rem;
 }
@@ -34,7 +38,8 @@ h4 {
   font-size: 1.3rem;
 }
 
-p, .language-cs {
+/* region 줄간격 */
+p:not(blockquote p), .language-cs {
   margin-top: 1.75rem;
 }
 
@@ -42,106 +47,15 @@ ul:not(.list-unstyled) {
   margin-top: 1.75rem;
 }
 
-blockquote p {
-  margin-top: 0;
+dd {
+  margin-top: -1.75rem;
 }
+/* endregion 줄간격 */
 
-.card-title {
-  font-weight: bold;
+a, .post-preview, .post-tag, .mode-toggle, .page-item, .page-link, .nav-link {
+  /* remove mode-toggle effect */
+  transition: none !important;
 }
-
-/* 코드 블록 */
-
-@media all and (min-width: 576px) {
-  .code-header {
-    &::before {
-      background-color: #e06156;
-      box-shadow: ($code-dot-size + $code-dot-gap) 0 0
-      #eec052,
-        ($code-dot-size + $code-dot-gap) * 2 0 0
-      #6dc455;
-    }
-  }
-}
-
-/* 부드러운 모드 변경 */
-
-* {
-  transition: background-color 0.2s ease, border-color 0.2s ease;
-}
-
-p, h2, h3, h4, h5, h6, li {
-  /* common text */
-  transition: background-color 0.2s ease, color 0.2s ease;
-}
-
-a, h1, code {
-  /* another text */
-  transition: background-color 0.2s ease, color 0.1s ease;
-}
-
-#back-to-top {
-  /* button */
-  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
-}
-
-.mode-toggle .icon-border {
-  /* sidebar-bottom button */
-  transition: background-color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
-}
-
-.sidebar-bottom {
-  %button {
-    transition: background-color 0.2s ease, box-shadow 0.2s ease;
-    &:hover {
-      transition: background-color 0.2s ease;
-    }
-  }
-}
-
-.list-group-item {
-  /* categories */
-  transition: background-color 0.2s ease, border-color 0.2s ease;
-}
-
-.post-preview, .page-item, .nav-link {
-  /* sidebar */
-  transition: background-color 0.22s ease, border-color 0.22s ease, color 0.22s ease;
-}
-
-g, rect {
-  /* mermaid */
-  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
-}
-
-#sidebar, #topbar-wrapper, header, footer {
-  /* mobile */
-  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
-}
-
-.code-header span i, .post-navigation  {
-  /* original troublemakers */
-  transition: background-color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease, color 0.2s ease;
-}
-
-div[class^='language-'] {
-  /* code */
-  transition: background-color 0.2s ease, box-shadow 0.2s ease;
-}
-
-@media (hover: hover) {
-  /* post-navigation hovering */
-  .post-navigation {
-    .btn,
-    .btn::before {
-      transition: all 0.2s ease-in-out;
-    }
-  }
-}
-
-/* 부드러운 이미지 변경 */
-
-
 
 /* =============== */
 /* 새로 만들어 쓰기 */

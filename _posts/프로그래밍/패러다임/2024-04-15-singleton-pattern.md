@@ -164,11 +164,6 @@ public class GameManager : MonoBehaviour
 
     public int Score;
 
-    void Start()
-    {
-        Score = 0;
-    }
-
     public void ResetScore()
     {
         Score = 0;

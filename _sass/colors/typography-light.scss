@@ -99,34 +99,8 @@
 
   /* 수정됨 */
   .dark {
-    animation: fadeOut 0.2s ease-in-out forwards;
     display: none;
   }
-  
-  .light {
-    animation: lightFadeIn 0.2s ease-in-out forwards;
-  }
-
-  @keyframes fadeOut {
-    0% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 0;
-    }
-  }
-
-  /* typography-dark와 이름을 다르게 해놓아야 작동함 */
-  
-  @keyframes lightFadeIn {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-  /* 수정끝 */
 
   /* Categories */
   --categories-border: rgba(0, 0, 0, 0.125);

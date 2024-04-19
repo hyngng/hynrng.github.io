@@ -103,41 +103,8 @@
 
   /* 수정됨 */
   .light {
-    animation: fadeOut 0.2s ease-in-out forwards;
     display: none;
   }
-  
-  .dark {
-    animation: darkFadeIn 0.2s ease-in-out forwards;
-  }
-
-  /*
-  img:not([alt="avatar"]) {
-    opacity: 0;
-    animation: darkFadeIn 0.2s ease-in-out forwards;
-  }
-  */
-
-  @keyframes fadeOut {
-    0% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 0;
-    }
-  }
-  
-  /* typography-light와 이름을 다르게 해놓아야 작동함 */
-
-  @keyframes darkFadeIn {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-  /* 수정끝 */
 
   hr {
     border-color: var(--main-border-color);

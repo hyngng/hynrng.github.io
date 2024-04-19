@@ -1,0 +1,108 @@
+/* region 부드러운 모드 변경 */
+
+* {
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+p, h2, h3, h4, h5, h6, {
+    /* common text */
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+a, h1, li, dt {
+    /* another text */
+    transition: background-color 0.1s ease, border-color 0.1s ease, color 0.1s ease;
+}
+
+#back-to-top {
+    /* button */
+    transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+.mode-toggle .icon-border {
+    /* sidebar-bottom button */
+    transition: background-color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.sidebar-bottom {
+    %button {
+    transition: background-color 0.2s ease, box-shadow 0.2s ease;
+    &:hover {
+        transition: background-color 0.2s ease;
+    }
+    }
+}
+
+.list-group-item {
+    /* categories */
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.post-preview, .page-item, .nav-link {
+    /* sidebar */
+    transition: background-color 0.22s ease, border-color 0.22s ease, color 0.22s ease;
+}
+
+g, rect {
+    /* mermaid */
+    transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+#sidebar, #topbar-wrapper, header, footer {
+    /* mobile */
+    transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+.code-header span i, .post-navigation  {
+    /* original troublemakers */
+    transition: background-color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease, color 0.2s ease;
+}
+
+div[class^='language-'] {
+    /* code */
+    transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+@media (hover: hover) {
+    /* post-navigation hovering */
+        .post-navigation {
+        .btn,
+        .btn::before {
+            transition: all 0.2s ease-in-out;
+        }
+    }
+}
+/* endregion 부드러운 모드 변경 */
+
+@media all and (min-width: 576px) {
+    /* code block */
+    .code-header {
+      &::before {
+        background-color: #e06156;
+        box-shadow: ($code-dot-size + $code-dot-gap) 0 0
+        #eec052,
+          ($code-dot-size + $code-dot-gap) * 2 0 0
+        #6dc455;
+      }
+    }
+  }
+
+  /*
+  .dark {
+    animation: darkFadeIn 0.2s ease-in-out forwards;
+  }
+
+  img:not([alt="avatar"]) {
+    opacity: 0;
+    animation: darkFadeIn 0.2s ease-in-out forwards;
+  }
+
+  @keyframes fadeOut {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  */
