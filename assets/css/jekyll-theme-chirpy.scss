@@ -54,13 +54,30 @@ h4 {
 }
 /* endregion 텍스트 */
 
-a:not(.post-tag, a.btn), div.btn, .post-preview, .page-item, .page-link, .nav-link {
+a:not(.post-tag, a.btn /*, li a*/), div.btn, .post-preview, .page-item, .page-link {
   /* remove mode-toggle effect */
   transition: none !important;
 }
 
 .post-tag, %btn-post-nav {
   transition-property: background-color;
+}
+
+#sidebar {
+  ul {
+    li.nav-item {
+      &.active {
+        .nav-link {
+          transition-property: color, background-color;
+        }
+      }
+    }
+  }
+  .sidebar-bottom {
+    %button {
+      transition-property: background-color;
+    }
+  }
 }
 
 /* =============== */
