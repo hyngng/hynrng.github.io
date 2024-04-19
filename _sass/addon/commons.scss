@@ -347,7 +347,7 @@ sup {
     position: absolute;
     background-color: var(--card-hovor-bg);
     opacity: 0;
-    /* transition: opacity 0.35s ease-in-out; */
+    transition: opacity 0.35s ease-in-out;
   }
 
   &:hover {

@@ -10,10 +10,25 @@
 .content {
   font-family: 'Pretendard', 'Source Sans Pro', 'Microsoft Yahei', sans-serif;
   font-size: 1rem;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
   /*word-break: keep-all;*/ /* 단어기준 줄넘김인데, 안 예뻐서 보류. */
 }
 
+/* region 줄간격 */
+p:not(blockquote p), .language-cs {
+  margin-top: 1.75rem;
+}
+
+ul:not(.list-unstyled) {
+  margin-top: 1.75rem;
+}
+
+dd {
+  margin-top: -1.75rem;
+}
+/* endregion 줄간격 */
+
+/* region 텍스트 속성 */
 #topbar-title {
   font-weight: bold;
 }
@@ -37,24 +52,15 @@ h3 {
 h4 {
   font-size: 1.3rem;
 }
+/* endregion 텍스트 */
 
-/* region 줄간격 */
-p:not(blockquote p), .language-cs {
-  margin-top: 1.75rem;
-}
-
-ul:not(.list-unstyled) {
-  margin-top: 1.75rem;
-}
-
-dd {
-  margin-top: -1.75rem;
-}
-/* endregion 줄간격 */
-
-a, .post-preview, .post-tag, .mode-toggle, .page-item, .page-link, .nav-link {
+a:not(.post-tag, a.btn), div.btn, .post-preview, .page-item, .page-link, .nav-link {
   /* remove mode-toggle effect */
   transition: none !important;
+}
+
+.post-tag, %btn-post-nav {
+  transition-property: background-color;
 }
 
 /* =============== */
