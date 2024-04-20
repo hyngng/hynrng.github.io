@@ -79,7 +79,7 @@ assets:
 pwa:
   enabled: true
 
-paginate: 6
+paginate: 5
 
 baseurl: ""
 
