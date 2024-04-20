@@ -15,7 +15,7 @@ last_modified_at: 2024-03-25
 
 ## **들어가며**
 
-Chirpy 테마는 깔끔하고 단정하지만 순정으로 사용하다보면 개선 여지가 간혹 보입니다. **[몇 가지](https://hynrng.github.io/posts/%EB%B8%94%EB%A1%9C%EA%B7%B8-%EC%83%88%EB%8B%A8%EC%9E%A5/)**는 전에 수정해주었지만 거슬리는 점이 여전히 남아있었죠.
+Chirpy 테마는 깔끔하고 단정하지만 순정으로 사용하다보면 개선 여지가 간혹 보입니다. **[몇 가지 사항](https://hynrng.github.io/posts/first-blog-customization/)**은 전에 수정해주었지만 거슬리는 점이 여전히 남아있었죠.
 
 ![before-light](/2024-03-21-blog-content-remove/before-light.png){: .light .border }
 ![before-dark](/2024-03-21-blog-content-remove/before-dark.png){: .dark }
