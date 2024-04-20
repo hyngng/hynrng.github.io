@@ -15,16 +15,12 @@
 }
 
 /* region 줄간격 */
-p:not(blockquote p), .language-cs {
+p:not(blockquote p), .language-cs, dl {
   margin-top: 1.75rem;
 }
 
-ul:not(.list-unstyled, .toc-list) {
+ul:not(.list-unstyled, .toc-list, dd ul) {
   margin-top: 1.75rem;
-}
-
-dd {
-  margin-top: -1.75rem;
 }
 /* endregion 줄간격 */
 
