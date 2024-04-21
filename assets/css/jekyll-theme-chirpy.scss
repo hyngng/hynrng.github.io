@@ -19,21 +19,13 @@ p:not(blockquote p), .language-cs, dl {
   margin-top: 1.75rem;
 }
 
-ul:not(.list-unstyled, .toc-list, dd ul) {
+ul:not(.list-unstyled, .toc-list, dd ul, .list-group) {
   margin-top: 1.75rem;
 }
 /* endregion 줄간격 */
 
 /* region 텍스트 속성 */
-#topbar-title {
-  font-weight: bold;
-}
-
-.btn-outline-primary {
-  font-weight: bold;
-}
-
-.card-title {
+#topbar-title, .btn-outline-primary, .card-title, .card-header, .tag {
   font-weight: bold;
 }
 
