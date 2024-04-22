@@ -75,7 +75,7 @@ public class Singleton : MonoBehaviour
 ```
 {: file="Singleton.cs" }
 
-싱글톤 패턴의 규칙은 유니티의 표현을 빌려, 아래와 같이 두 개로 정리할 수 있습니다.
+싱글톤 패턴의 규칙은 다음의 두 개로 정리할 수 있습니다.
 
 - 클래스의 인스턴스를 단 한 개로 보장한다 (Ensures that a class can only instantiate one instance of itself)
 - 한 개의 인스턴스로 전역적인 접근을 제공한다 (Gives easy global access to that single instance)
