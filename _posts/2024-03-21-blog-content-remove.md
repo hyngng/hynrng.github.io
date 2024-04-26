@@ -10,7 +10,7 @@ toc: true
 toc_sticky: true
 
 date: 2024-03-21
-last_modified_at: 2024-03-25
+last_modified_at: 2024-04-24
 ---
 
 ## **들어가며**
@@ -37,55 +37,50 @@ _수정 전 블로그 홈에 표시되는 포스트 요약본_
 {: file="_layouts/home.html" }
 {% endraw %}
 
-깃허브 블로그 홈에 대한 내역은 `_layouts/home.html`{: .filepath }에 작성되어 있습니다. 이 파일을 열어보면 `<div class="card-text content mt-0 mb-3">` 단락에서 포스트 요약본에 작성될 글을 생성하는 것을 볼 수 있는데, 순정 코드는 Chirpy 테마 버전에 따라 다를 수 있으나 저의 경우 위와 같이 작성되어 있었습니다.
+깃허브 블로그 홈에 대한 내역은 `_layouts/home.html`{: .filepath }에 작성되어 있습니다. 순정 코드는 저의 경우 위와 같이 작성되어 있었으며, `<div class="card-text content mt-0 mb-3">` 단락에서 포스트 요약본을 생성하고 있었습니다.
 
-코드를 보니 `markdownify`와 `strip_html` 정도만 주어졌을 뿐 별다른 처리가 되어있지 않습니다. Ruby나 Liquid에 대해서는 배경지식이 없어 방법을 찾느라 조금 고생했는데, 결과적으로는 아래의 코드를 추가해주었습니다.
+> **2024/04/24 수정!**  
+`_includes/related-posts.html`{: .filepath } 파일도 같이 수정해줄 수 있습니다. 이 파일은 포스트 최하단에서 나열하는 같은 카테고리의 다른 글에 대한 부분을 다루며, 블로그 홈에 나열된 포스트와 같은 원리로 포스트 요약본을 생성합니다.
+{: .prompt-info }
 
 ## **코드 작성**
 
 {% raw %}
 ```liquid
-{% assign cleaned_content = content %}
+{% include no-linenos.html content=post.content %}
 
-{% if content contains '<h1' %}
-    {% assign cleaned_content = cleaned_content | remove_h1_tag %}
-{% endif %}
-
-{% if cleaned_content contains '<em' %}
-    {% assign cleaned_content = cleaned_content | remove_em_tag %}
-{% endif %}
-
-{% assign cleaned_content = cleaned_content | replace: '들어가며', '' %}
-{% assign cleaned_content = cleaned_content | replace: '스포일러가 있습니다!', '' %}
+{% assign cleaned_content = content | remove_tag: 'h2', 'em', 'blockquote' %}
 
 {{ cleaned_content | markdownify | strip_html | truncate: 200 | escape }}
 ```
-{: file="_layouts/home.html" }
+{: file="_layouts/home.html, _includes/related-posts.html" }
 {% endraw %}
 
 ```ruby
-# remove-tags.rb
+require 'nokogiri'
+
 module Jekyll
-    module RemoveEmTagFilter
-        def remove_h1_tag(input)
-            input.gsub(/<h1>.*?<\/h1>/m, '')
+  module RemoveTagFilter
+    def remove_tag(input, *tags)
+      doc = Nokogiri::HTML(input)
+      doc.remove_namespaces!
+      tags.each do |tag|
+        doc.search(tag).each do |node|
+          node.content = ''
         end
-        
-        def remove_em_tag(input)
-            input.gsub(/<em>.*?<\/em>/m, '')
-        end
+      end
+      doc.to_html.gsub(/\A<!DOCTYPE .*?>\n?/, '').gsub(/\n\z/, '')
     end
+  end
 end
 
-Liquid::Template.register_filter(Jekyll::RemoveEmTagFilter)
+Liquid::Template.register_filter(Jekyll::RemoveTagFilter)
 ```
 {: file="_plugins/remove-tags.rb" }
 
-Ruby나 Liquid에 대해서는 배경지식이 없어 방법을 알아내느라 조금 고생했는데, 처음에는 split과 join으로 문제를 해결하려고 해도 제가 원하는 결과물이 도통 나오질 않더라구요. 좋은 방법이 아닌 것 같기도 하고요.
+Ruby나 Liquid에 대해서는 배경지식이 없어 방법을 알아내느라 조금 고생했습니다. 처음에는 Liquid만을 이용해 split과 join으로 문제를 해결하려고 했는데 제가 원하는 결과물이 도통 나오질 않더라구요. 좋은 방법이 아닌 것 같기도 하고요.
 
-그래서 결과적으로는 위와 같은 코드를 작성했습니다. h1태그와 em태그를 찾아 태그 내부 텍스트를 제거하고, 블로그 글마다 반복되는 "들어가며", "스포일러가 있습니다!" 등의 일부 텍스트는 수동으로 직접 제거하도록 했어요.
-
-코드에 사용되는 `remove_h1_tag`, `remove_em_tag` 등의 함수는 `_plugins`{: .filepath }라는 폴더에 `remove-tags.rb`{: .filepath } 파일을 만들어 커스텀 루비 함수를 작성했습니다. 정규 표현식을 이용해 `<h1>`와 `<em>` 태그로 묶인 텍스트를 빈 문자열로 치환하도록 했습니다.
+그래서 결과적으로 GPT의 도움을 받아 `_plugins/remove-tags.rb`{: .filepath } 경로로 Ruby 파일을 만들어 이용하는 것으로 해결했습니다. Ruby 파일에는 태그 유형을 매개변수로 받아 내부 텍스트를 정규 표현식으로 제거하는 함수를 만들었습니다. `Nokogiri` 파싱 라이브러리를 이용했어요.
 
 ## **개선 확인**
 
