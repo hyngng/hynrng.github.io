@@ -76,7 +76,7 @@ refactor: true
                 {% include no-linenos.html content=post.content %}
 
                 {% comment %} region 수정됨 {% endcomment %}
-                {% assign cleaned_content = content | remove_tag: 'h2', 'em', 'blockquote' %}
+                {% assign cleaned_content = content | remove_tag: 'h2', 'em', 'blockquote', 'pre' %}
                 {% comment %} endregion 수정됨 {% endcomment %}
 
                 {{ cleaned_content | markdownify | strip_html | truncate: 200 | escape }}

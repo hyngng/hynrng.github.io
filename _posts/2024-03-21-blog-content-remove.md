@@ -13,13 +13,11 @@ date: 2024-03-21
 last_modified_at: 2024-04-24
 ---
 
-## **들어가며**
-
-Chirpy 테마는 깔끔하고 단정하지만 순정으로 사용하다보면 개선 여지가 간혹 보입니다. **[몇 가지 사항](https://hynrng.github.io/posts/first-blog-customization/)**은 전에 수정해주었지만 거슬리는 점이 여전히 남아있었죠.
-
 ![before-light](/2024-03-21-blog-content-remove/before-light.png){: .light .border }
 ![before-dark](/2024-03-21-blog-content-remove/before-dark.png){: .dark }
 _수정 전 블로그 홈에 표시되는 포스트 요약본_
+
+Chirpy 테마는 깔끔하고 단정하지만 순정으로 사용하다보면 개선 여지가 간혹 보입니다. **[몇 가지 사항](https://hynrng.github.io/posts/first-blog-customization/)**은 전에 수정해주었지만 거슬리는 점이 여전히 남아있었죠.
 
 그 중 하나는 블로그 홈의 글 요약본이 이미지 캡션이나 헤더 등을 포함한 날것의 상태 그대로 보인다는 겁니다. 위처럼 이미지 캡션이나 "들어가며" 같은 필요없는 글이 섞인 채로 표시되고 있죠. 이런건 당연히 처리가 되어있어야 하는게 아닌가 싶은데, 이번에 방법을 찾아서 수정해주었습니다.
 
@@ -45,17 +43,6 @@ _수정 전 블로그 홈에 표시되는 포스트 요약본_
 
 ## **코드 작성**
 
-{% raw %}
-```liquid
-{% include no-linenos.html content=post.content %}
-
-{% assign cleaned_content = content | remove_tag: 'h2', 'em', 'blockquote' %}
-
-{{ cleaned_content | markdownify | strip_html | truncate: 200 | escape }}
-```
-{: file="_layouts/home.html, _includes/related-posts.html" }
-{% endraw %}
-
 ```ruby
 require 'nokogiri'
 
@@ -77,6 +64,17 @@ end
 Liquid::Template.register_filter(Jekyll::RemoveTagFilter)
 ```
 {: file="_plugins/remove-tags.rb" }
+
+{% raw %}
+```liquid
+{% include no-linenos.html content=post.content %}
+
+{% assign cleaned_content = content | remove_tag: 'h2', 'em', 'blockquote' %}
+
+{{ cleaned_content | markdownify | strip_html | truncate: 200 | escape }}
+```
+{: file="_layouts/home.html, _includes/related-posts.html" }
+{% endraw %}
 
 Ruby나 Liquid에 대해서는 배경지식이 없어 방법을 알아내느라 조금 고생했습니다. 처음에는 Liquid만을 이용해 split과 join으로 문제를 해결하려고 했는데 제가 원하는 결과물이 도통 나오질 않더라구요. 좋은 방법이 아닌 것 같기도 하고요.
 

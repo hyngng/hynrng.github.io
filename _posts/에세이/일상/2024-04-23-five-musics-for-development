@@ -8,6 +8,8 @@ start_with_ads: true
 toc: false
 toc_sticky: true
 
+mermaid: true
+
 date: 2024-04-23
 last_modified_at: 2024-04-23
 ---
@@ -20,11 +22,11 @@ last_modified_at: 2024-04-23
 
 {% include embed/youtube.html id='rTlEuxoRA3k' %}
 
-코로나 팬데믹 때 우연히 Lofi 장르를 알게 되었는데 장르 자체가 자극적이지도 않고 너무 좋더라구요.
+코로나 팬데믹 때 우연히 Lofi 장르를 알게 되었는데 장르 자체가 자극적이지도 않고 너무 좋아서 지금까지 계속 듣고 있습니다.
+
+이쪽에도 다양한 아티스트가 있습니다. 유명한 로우파이 유튜브 채널 Lofi Girl에서는 주로 Kulpa, l'Outlander, Sleepy Fidh 등의 노래를 틀어 주더라구요. 특히 Lost son
 
 개인적으로 만족했던 비슷한 장르의 다른 노래
-
-찾아보니 이쪽에도 다양한 아티스트가 있었습니다. 이쪽으로 유명한 유튜브 채널인 Lofi Girl에서는 주로 Kulpa, l'Outlander, Sleepy Fidh 등이 있는 것 같습니다. 특히 Lost son
 
 유명 아티스트
 : - **[Valentine](https://www.youtube.com/watch?v=wjCM71c0-Ok)**
@@ -53,5 +55,3 @@ JPOP
 - 김경일: 사실 작업하면서 노래듣는거 집중 분산시킴
 
 - 유튜브 노동요에 있는 노래들 쓰기.
-
-## **이외에 비추천하는 노래 장르**

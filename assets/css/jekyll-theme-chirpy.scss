@@ -78,6 +78,13 @@ a:not(.site-title a, .post-tag, a.btn, a.nav-link, .url-button, .page-link), div
 }
 /* endregion 정적인 모드 전환 */
 
+/* region 색상 */
+@mixin dark-scheme {
+  --card-shadow: rgba(255, 255, 255, 1) 0 6px 18px 0,
+      rgba(255, 255, 255, 1) 0 0 0 1px;
+}
+/* endregion 색상 */
+
 /* =============== */
 /* 새로 만들어 쓰기 */
 /* =============== */

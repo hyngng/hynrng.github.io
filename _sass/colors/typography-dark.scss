@@ -70,8 +70,10 @@
   --card-bg: #1e1e1e;
   --card-hovor-bg: #464d51;
   /* region 수정됨 */
-  --card-shadow: rgb(21, 21, 21, 0.1) 0 6px 18px 0,
-    rgb(137, 135, 135, 0.15) 0 0 0 1px;
+  --card-shadow: rgb(21, 21, 21, 0.72) 0 6px 18px 0,
+    rgb(137, 135, 135, 0.24) 0 0 0 1px;
+  /*--card-shadow: rgb(21, 21, 21, 0.5) 0 6px 18px 0,
+    rgb(137, 135, 135, 0.15) 0 0 0 1px;*/
   /* endregion 수정됨 */
   --kbd-wrap-color: #6a6a6a;
   --kbd-text-color: #d3d3d3;
