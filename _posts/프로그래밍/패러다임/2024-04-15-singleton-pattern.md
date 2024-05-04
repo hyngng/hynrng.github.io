@@ -12,7 +12,7 @@ toc_sticky: true
 mermaid: true
 
 date: 2024-04-15
-last_modified_at: 2024-04-18
+last_modified_at: 2024-05-03
 ---
 
 ## **들어가며**
@@ -82,9 +82,35 @@ public class Singleton : MonoBehaviour
 
 그래서 유니티에서 싱글톤 패턴은 매우 단순하게 구현됩니다. 상단의 프로퍼티 부분와 하단의 `Awake()` 모두 인스턴스가 단 한 개만 존재하도록 보장하고 있을 뿐이죠. 스크립트의 인스턴스는 `static`으로 선언되어 있으므로 싱글톤 패턴이 사용된 스크립트의 필드나 메서드는 외부 클래스에서 `스크립트명.Instance` 형식으로 접근이 가능합니다.
 
+## **인스턴스 생성**
+
+단, 위 코드의 경우 싱글톤 인스턴스가 없을 때 인스턴스를 단순히 `null`로 처리하고 새 인스턴스를 생성하지 않으므로 외부 스크립트에서 인스턴스에 접근할 때 `Instance`가 유무를 체크해야 하는 번거로움이 있을 수 있습니다. 이것이 불편할 경우 프로퍼티 부분을 수정해 아래와 같이 인스턴스화 코드까지 연결할 수 있습니다.
+
+```cs
+public class Singleton : MonoBehaviour
+{
+    private static Singleton instance = null;
+    public static Singleton Instance
+    {
+        get
+        {
+            if (instance == null)
+            {
+                GameObject gameObj = new GameObject();
+                instance = gameObj.AddComponent<Singleton>();
+                DontDestroyOnLoad(gameObj);
+            }
+                
+            return instance;
+        }
+    }
+}
+```
+{: file="Singleton.cs" }
+
 ## **여러 개 만들기**
 
-싱글톤 스크립트의 인스턴스는 기본적으로 단 한 개로 유지되므로 개념적으로는 싱글톤 인스턴스를 여러 개 사용할 수 없습니다. 코드를 복사해 어찌저찌 사용할 수는 있지만 비효율적이죠. 대신, 여러 개의 서로 다른 싱글톤 인스턴스가 필요한 경우 제네릭을 사용하여 `Singleton<T>`의 형태로 서로 다른 싱글톤 스크립트를 여러 개 생성하여 사용할 수 있습니다.
+싱글톤 스크립트의 인스턴스는 기본적으로 단 한 개로 유지되므로 개념적으로는 싱글톤 인스턴스를 동시에 여러 개를 사용할 수 없습니다. 어찌저찌 코드를 복사해 사용할 수는 있지만 비효율적이죠. 대신, 여러 개의 서로 다른 싱글톤 인스턴스를 사용하고 싶은 경우 제네릭을 사용하여 `Singleton<T>`의 형태로 서로 다른 싱글톤 스크립트를 여러 개 생성하여 사용할 수 있습니다.
 
 ```cs
 public class Singleton<T> : MonoBehaviour where T : MonoBehaviour
@@ -123,39 +149,11 @@ public class GameManager : Singleton<GameManager>
 ```
 {: file="GameManager.cs" }
 
-이 경우 다른 클래스도 상속을 통해 통해 간단히 싱글톤으로 변경할 수 있게 해줍니다. 예를 들어 `GameManager.cs`{: .filepath }에 싱글톤을 적용하고 싶다면 위와 같이 `Singleton<T>`를 상속하는 형태로 사용할 수 있습니다.
-
-## **인스턴스 생성**
-
-단, 위 코드의 경우 싱글톤 인스턴스가 없을 때 인스턴스를 단순히 `null`로 처리하고 새 인스턴스를 생성하지 않으므로 외부 스크립트에서 인스턴스에 접근할 때 `Instance`가 유무를 체크해야 하는 번거로움이 있을 수 있습니다. 이 부분이 불편한 경우 프로퍼티 부분을 수정해 아래와 같이 인스턴스화 코드까지 연결할 수 있습니다.
-
-```cs
-public class Singleton : MonoBehaviour
-{
-    private static Singleton instance = null;
-    public static Singleton Instance
-    {
-        get
-        {
-            if (instance == null)
-            {
-                GameObject gameObj = new GameObject();
-                instance = gameObj.AddComponent<Singleton>();
-                DontDestroyOnLoad(gameObj);
-            }
-                
-            return instance;
-        }
-    }
-}
-```
-{: file="Singleton.cs" }
+이 경우 다른 클래스도 상속을 통해 통해 간단히 싱글톤으로 변경할 수 있게 해줍니다. 예를 들어, `GameManager.cs`{: .filepath }에 싱글톤을 적용하고 싶다면 위와 같이 `Singleton<T>`를 상속하는 형태로 사용할 수 있습니다.
 
 ## **사용 예시**
 
-모든 씬에서 범용적으로 존재하고 단 한 개로 유지된다는 특징은 `GameManager.cs`{: .filepath }에 활용하기에 적합하다는 이야기이기도 합니다. 게임의 데이터나 상황을 총괄하는 스크립트는 일반적으로 단 한 개로 처리하기 때문이죠. 저 또한 **[현재 개발중인 게임](https://hynrng.github.io/posts/armonia-planning/)**에서 게임 매니저 스크립트에 싱글톤 패턴을 사용하고 있습니다.
-
-이와 관련하여 게임 매니저에 싱글톤 패턴을 사용한 예시는 아래와 같습니다. 플레이어가 적과 싸우는 상황을 가장했으며, 플레이어가 적을 처치하면 점수가 오르고, 죽으면 점수가 초기화됩니다.
+모든 씬에서 범용적으로 존재하고 단 한 개로 유지된다는 특징은 `GameManager.cs`{: .filepath }에 활용하기에 적합하다는 이야기이기도 합니다. 게임의 데이터나 상황을 총괄하는 스크립트는 일반적으로 단 한 개로 처리하기 때문이죠. 이와 관련하여 게임 매니저에 싱글톤 패턴을 사용한 예시는 아래와 같습니다.
 
 ```cs
 public class GameManager : MonoBehaviour
@@ -195,9 +193,9 @@ public class Player : MonoBehaviour
 ```
 {: file="Player.cs" }
 
-이를 위해 게임 매니저에는 `Score`와 `ResetScore()`가 정의되어 있으며, `Player.cs`{: .filepath }는 외부 클래스로서 싱글톤 인스턴스를 통해 게임 매니저의 `Score`와 `ResetScore()`에 직접 접근하고 있습니다. 적이 죽으면 `Player.cs`{: .filepath }가 점수를 직접 올리고, 플레이어가 죽으면 점수를 직접 초기화하고 있죠. 직접 접근이 가능하기 때문에 번거로운 `GameManager`의 인스턴스 생성 과정 없이도 `Player.cs`{: .filepath } 코드 내부에서 이러한 코드 구성이 가능합니다.
+플레이어가 적과의 전투를 거치며 플레이어가 적을 처치하면 점수가 오르고, 죽으면 점수가 초기화되는 상황을 가장했습니다. 게임 매니저에는 `Score`와 `ResetScore()`가 정의되어 있으며, `Player.cs`{: .filepath }는 외부 클래스로서 싱글톤 인스턴스를 통해 게임 매니저의 `Score`와 `ResetScore()`에 직접 접근하고 있죠. 적이 죽으면 `Player.cs`{: .filepath }가 점수를 직접 올리고, 플레이어가 죽으면 점수를 직접 초기화합니다.
 
-이와 같이 `GameSystem.cs`{: .filepath } 등의 매니저 스크립트를 싱글톤으로 사용할 경우, 예를 들어 아래와 같은 필드나 메서드를 구성하여 전역적으로 제공할 수 있습니다.
+외부에서 클래스 멤버에 직접 접근이 가능하기 때문에 번거로운 `GameManager`의 인스턴스 생성 과정 없이도 이러한 구성이 가능합니다. 해당 특징을 살려 `GameSystem.cs`{: .filepath } 등의 매니저 스크립트를 싱글톤으로 사용할 경우, 예를 들어 아래와 같은 필드나 메서드를 구성하여 활용할 수 있습니다.
 
 필드
 : - `Score`, `CurrentLevel`, `EnemyCount`: 레벨이나 점수, 남은 적 수 등의 주요 게임 상태를 저장
