@@ -1,0 +1,101 @@
+---
+title: "이벤트 주도적 프로그래밍"
+description: "이벤트 주도적 프로그래밍에 대한 사항을 정리합니다."
+categories: []
+tags: [유니티]
+start_with_ads: true
+
+toc: true
+toc_sticky: true
+
+date: 2024-05-04
+last_modified_at: 2024-05-04
+---
+
+## **들어가며**
+
+## **기본 코드**
+
+```cs
+public class EventManager : MonoBehaviour
+{
+    public static EventManager Instance { get { return instance; } }    
+    private static EventManager instance = null;
+
+    public delegate void OnEvent(EVENT_TYPE eventType, Component Sender, object Param = null);
+    private Dictionary<EVENT_TYPE, List<OnEvent>> Listeners
+        = new Dictionary<EVENT_TYPE, List<OnEvent>>();
+
+    void Awake()
+    {
+        if(instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+            return;
+        }
+        DestroyImmediate(gameObject);
+    }
+
+    public void AddListener(EVENT_TYPE eventType, OnEvent Listener)
+    {
+        List<OnEvent> ListenList = null;
+
+        if(Listeners.TryGetValue(eventType, out ListenList))
+        {
+            ListenList.Add(Listener);
+            return;
+        }
+
+        ListenList = new List<OnEvent>();
+        ListenList.Add(Listener);
+        Listeners.Add(eventType, ListenList);
+    }
+
+    public void PostNotification(EVENT_TYPE eventType, Component Sender, object param = null)
+    {
+        List<OnEvent> ListenList = null;
+
+        if (!Listeners.TryGetValue(eventType, out ListenList))
+            return;
+
+        for(int i = 0; i < ListenList.Count; i++)
+             ListenList?[i](eventType, Sender, param);
+    }
+
+    public void RemoveEvent(EVENT_TYPE eventType) => Listeners.Remove(eventType);
+
+    public void RemoveRedundancies()
+    {
+        Dictionary<EVENT_TYPE, List<OnEvent>> newListeners
+            = new Dictionary<EVENT_TYPE, List<OnEvent>>();
+
+        foreach(KeyValuePair<EVENT_TYPE, List<OnEvent>> Item in Listeners)
+        {
+            for (int i = Item.Value.Count - 1; i >= 0; i--)
+                if(Item.Value[i].Equals(null))
+                    Item.Value.RemoveAt(i);
+
+            if (Item.Value.Count > 0)
+                newListeners.Add(Item.Key, Item.Value);
+        }
+
+        Listeners = newListeners;
+    }
+
+    public void RemoveListener(Event eventType, OnEvent listener)
+    {
+        List<OnEvent> listenList = null;
+
+        if (Listeners.TryGetValue(eventType, out listenList))
+            listenList.Remove(listener);
+    }
+
+    void OnLevelWasLoaded()
+    {
+        RemoveRedundancies();
+    }
+}
+```
+
+델리게이트를 이용한 방법입니다. 코드는 길지만 6개 메서드만 알면 끝나요.

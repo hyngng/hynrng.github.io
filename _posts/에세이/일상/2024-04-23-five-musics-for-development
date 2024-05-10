@@ -5,7 +5,7 @@ categories: [에세이, 일상]
 tags: [프로그래밍, 개발, 노래]
 start_with_ads: true
 
-toc: false
+toc: true
 toc_sticky: true
 
 mermaid: true
@@ -20,13 +20,13 @@ last_modified_at: 2024-04-23
 
 ## **로우파이**
 
-{% include embed/youtube.html id='rTlEuxoRA3k' %}
+코로나 팬데믹 때 처음 Lofi 장르를 알게 되었는데 장르 자체가 자극적이지도 않고 주의도 쉽게 빼앗아가는 것 같지 않아 지금까지 계속 듣고 있는 장르입니다.
 
-무가치적이고 주의도 쉽게 빼앗아가는 것 같지 않아 자주 듣는 장르입니다. 코로나 팬데믹 때 처음 Lofi 장르를 알게 되었는데 장르 자체가 자극적이지도 않고 너무 좋아서 지금까지 계속 듣고 있습니다.
-
-이쪽에도 다양한 아티스트가 있습니다. 유명한 로우파이 유튜브 채널 Lofi Girl에서는 주로 Kulpa, l'Outlander, Sleepy Fidh 등의 노래를 틀어 주더라구요. 특히 Lost son
+듣다보니 이쪽에도 다양한 아티스트가 있습니다. 유명한 로우파이 유튜브 채널 Lofi Girl에서는 주로 Kulpa, l'Outlander, Sleepy Fidh 등의 노래를 틀어 주더라구요. 특히 Lost son
 
 개인적으로 만족했던 비슷한 장르의 다른 노래
+
+{% include embed/youtube.html id='rTlEuxoRA3k' %}
 
 유명 아티스트
 : - **[Valentine](https://www.youtube.com/watch?v=wjCM71c0-Ok)**
