@@ -49,7 +49,7 @@ analytics:
   google:
     id: G-MG2GJGH0VL
   goatcounter:
-    id: # fill in your GoatCounter ID
+    id: hynrng # fill in your GoatCounter ID
   umami:
     id: # fill in your Umami ID
     domain: # fill in your Umami domain
