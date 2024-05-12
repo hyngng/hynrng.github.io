@@ -7,7 +7,7 @@ tags: [그림, 드로잉, 기지개, 어안렌즈, 폰카]
 start_with_ads: false
 
 image:
-    path: /drawing/230426-거꾸로매달림.png
+    path: /img/drawing/230426-거꾸로매달림.png
     lqip: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEISURBVDhPzZJLjkZAFEY/gkhICMkvsQR7sQb7sSYD6zBCDEy84hnPn+pKT5rqx6jPoD6pm5xcdS8OBk3TkBzHkeQ0TSRZ8GDA8x9lWZZJBkFAkgVTmGUZ/QKWZYFt24iiCPu+09uvMIWv1wvnb2LbNlRVBcdxIEnSZ+d3MIXDMGBdV/R9D13XMc8zDMOg1XuYQk3TSDd1XSNNUyL/DqbwEiRJcm0CTNNEnucQBIFW73kUXpKiKMhkRVEkbxjHMc4VYnb6KOQ4DpZlEanv+/A8D6qqous6dpdkGx84h3GEYXicosN13ePs8ijLklbv4a6Duh9p25YMR1EUevPMj4S/gTnlv/DfhcAb0AD3kKR8cjQAAAAASUVORK5CYII=
     alt: 사람 거꾸로 매달기
 
@@ -18,18 +18,18 @@ date: 2023-04-17
 last_modified_at: 2023-04-26
 ---
 
-![230329-스트레칭](/drawing/230329-스트레칭.png){: .light .border }
-![230329-스트레칭](/drawing/230329-스트레칭.png){: .dark }
+![230329-스트레칭](/img/drawing/230329-스트레칭.png){: .light .border }
+![230329-스트레칭](/img/drawing/230329-스트레칭.png){: .dark }
 _기지개 시원하겠다_
 
 <br>
 
-![230426-어안렌즈](/drawing/230426-어안렌즈.png)
+![230426-어안렌즈](/img/drawing/230426-어안렌즈.png)
 _어안렌즈 왜곡 효과_
 
 <br>
 
-![230330-핸드폰사진](/drawing/230330-핸드폰사진.png)
+![230330-핸드폰사진](/img/drawing/230330-핸드폰사진.png)
 _약간의 프레임 연출_
 
 <br>

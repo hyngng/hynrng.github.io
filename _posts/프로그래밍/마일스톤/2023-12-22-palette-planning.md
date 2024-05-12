@@ -7,7 +7,7 @@ tags: [프로그래밍, 유니티, C#, 기획, 개발일지, 조이스틱, URP]
 start_with_ads: true
 
 image:
-    path: /2023-12-13-palette-planning/playscene.gif
+    path: /img/2023-12-13-palette-planning/playscene.gif
     lqip: data:image/gif;base64,R0lGODlhFAAJAPcAABoaHTQOGCAcHjAeHB4gHiQoACAhCzA0ADo/AiAgHigpGzIgHjo7Fh4XJB4eIBwePiAeITgcKiIiIyolJCYoJygpJiYmKCgnKCoqKzIhIC4wLzg6Izg5LSYvNS4uMCAuOTAuMTYvOD4tPTIyMjg2NTY4Nzg4NjY2ODo1OTo6OUA+PT5APVheAVxiD0xPIUBAPk5OOmZmLm5yPBwdQRY1TAQ6Xz4/QAQ5YDQ1ZURDQUhGQ0ZIQ0pJRUxLSVBOSlRTQFJQTE5PUFpGVVRUVFhWU1pYVFhZWWxAWmRjTHR2UGJjZGxsbHBxcXp7e5QVM4I3UJo0UqwkQrxDX45de8BJZnyAS56lQoCDbY6ObpSWZICBf6SoabK3cby9csjPYszRacrOcs7VcdTYfVJUlkxnokJotWxttGptugBUzwBW3T5x3wpt5wht6ABu9j5x4E54zUJx1U550FB60kB360B560J68eRmgmS2/Wa5/Wi8/mrA/oCBgoyNgY6Pj5KTjZyei5CQkJqbl6KamLS3grq8gKSlpaiqo7Cwqa6vsLCwsL6+vsSel/62rv64rv63sP67tLzBgsTGj9TZhNbajdrcjsDDlcbJl8TIn8zSkM7SmtTYndrcmtzhmdDRpNrfoNLRqsbGsdbZuv7At9zgpODkq+TltOjpt+Tnvejqu/7+tv7+uYS13Ia53oKF8oCE/cLCwc7Pz97e3ujqxfDzxPz8wfL02vzN/fTf9fzT/f7a/eLj4+jp5Ozs7PDv6vT14fbk9vzi/Pjo+PLz8/r79P7+/gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEAADAALAAAAAAUAAkAhR4eJRoaHR4eICMnMBgiMRwcHiAgISIiIiYmJjc0MysrQRcjNCQkKC8vLzMzMzs5NjAwMCoqKTc3N0ZGQkdHRC4uLi40PkJCQ2NhXlhYVD8/OjIyMhsdIR0hLBwdISEhISUlJScnJzo6Py4uMi8vMB0dH0hFSBsbHioqKigoJzAwLYuLi3h5lB8dHysrKyMhIgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAY+wIBwKDwIB8TkIhk4HBzOpEK4HDodWKiRmbxeTNgtt3iwXDAZDXRMdB4ujlF0fCG7VfMVkyVsuZ9zbHaBSUEAOw==
     alt: 예시 게임플레이
 
@@ -53,7 +53,7 @@ Cubic Survival의 개발기간은 기간상 초기 개발 기간과 중기 개�
 
 ## **초기 개발**
 
-![beta-play](/2023-12-13-palette-planning/beta-play.gif){: w="960" .shadow }
+![beta-play](/img/2023-12-13-palette-planning/beta-play.gif){: w="960" .shadow }
 _처음엔 다섯 마리를 처치할 때마다 이벤트가 발생하면 좋겠다고 생각했었음_
 
 처음에는 자연스럽게 클론코딩 느낌으로, 우선 소단계에서 유명 게임의 기능들 중에 따라만들 수 있는 것을 따라만들어보자는 식으로 접근하게 되었습니다.
@@ -64,7 +64,7 @@ _처음엔 다섯 마리를 처치할 때마다 이벤트가 발생하면 좋겠
 
 일반적인 2D 모바일 게임에 등장할 만한 조이스틱을 구현하고자 했습니다. 왼쪽에 플레이어 이동을 위한 조이스틱 하나와 오른쪽에 조준용 조이스틱 하나를 만들기로 했죠.
 
-![joystick](/2023-12-13-palette-planning/joystick.gif){: w="960" .shadow }
+![joystick](/img/2023-12-13-palette-planning/joystick.gif){: w="960" .shadow }
 
 만들 때는 `Unity​Engine.​Input​System.​On​Screen` 패키지의 `OnScreenStick` 클래스를 활용해, 이 클래스에 기반한 새 스크립트를 두 개를 만들고 각각 위상차에 따라 플레이어와 조준용 투명 오브젝트를 `Translate()`하도록 만들었습니다. `​On​Screen` 패키지를 다루는 국내 자료가 별로 없어서 **[공식 문서](https://docs.unity3d.com/Packages/com.unity.inputsystem@1.7/api/UnityEngine.InputSystem.OnScreen.OnScreenStick.html?q=OnScreenStick)**를 많이 참고했어요.
 
@@ -72,7 +72,7 @@ _처음엔 다섯 마리를 처치할 때마다 이벤트가 발생하면 좋겠
 
 ### **적 스폰 및 동작**
 
-![enemycoming](/2023-12-13-palette-planning/enemycoming.gif){: w="960" .shadow }
+![enemycoming](/img/2023-12-13-palette-planning/enemycoming.gif){: w="960" .shadow }
 ```cs
 void spawnEnemy(GameObject Enemy, float east, float west, float south, float north)
 {
@@ -131,7 +131,7 @@ void OnCollisionEnter2D(Collision2D collider)
 
 저는 인벤토리가 여러 개 아이템을 담을 수 있으면서도 그 UI가 플레이 경험을 해치지 않았으면 했습니다. 그래서 오른쪽 조이스틱에 할당되어있던 수동 조준 기능은 오토에임으로 대체하고, 새로운 인벤토리 액세스 기능을 할당했어요. 오른쪽 조이스틱을 꾹 누르면 인벤토리가 열리고, 손가락을 떼면 인벤토리가 닫히는 식으로요.
 
-![inventory](/2023-12-13-palette-planning/inventory.gif){: w="960" .shadow }
+![inventory](/img/2023-12-13-palette-planning/inventory.gif){: w="960" .shadow }
 ```cs
 public struct InventoryData
 {
@@ -164,7 +164,7 @@ for (int i = 0; i < InventoryData.InventoryUI.Length; i++)
 
 ### **무기 발사**
 
-![shooting](/2023-12-13-palette-planning/shooting.gif){: w="960" .shadow }
+![shooting](/img/2023-12-13-palette-planning/shooting.gif){: w="960" .shadow }
 ```cs
 if (shotTimer > fireThreshold)
 {
@@ -214,7 +214,7 @@ void hasHitEnemy()
 
 ### **카메라**
 
-![camera](/2023-12-13-palette-planning/camera.gif){: w="960" .shadow }
+![camera](/img/2023-12-13-palette-planning/camera.gif){: w="960" .shadow }
 ```cs
 void Move()
 {
@@ -246,9 +246,9 @@ void Vignette()
 
 ### **URP**
 
-![urp](/2023-12-13-palette-planning/urp.gif){: w="960" .shadow }
+![urp](/img/2023-12-13-palette-planning/urp.gif){: w="960" .shadow }
 _무기가 발사될 때마다 적 뒤로 그림자가 비친다._
-<!--![unity_urp](/2023-12-13-palette-planning/unity_urp.png){: w="960" .shadow }-->
+<!--![unity_urp](/img/2023-12-13-palette-planning/unity_urp.png){: w="960" .shadow }-->
 
 처음에는 Unity2D 환경의 기본 빛 효과를 어찌저찌 사용하다가, 여러군데 아쉬움이 있어 대안으로 **[URP(Universal Render Pipeline)](https://unity.com/srp/universal-render-pipeline)**를 적용하고 나니까 비주얼이 아주 좋아졌습니다. 기본적으로도 부드럽게 떨어지는 예쁜 빛 효과를 제공하면서도, 예를 들어 Falloff Strength 옵션을 조절해 더 은은하거나 화려한 빛을 만든다던가, Shadows 옵션으로 위처럼 빛과 그림자 효과를 연출하거나 할 수 있어서 정말 유용하게 사용했어요.
 

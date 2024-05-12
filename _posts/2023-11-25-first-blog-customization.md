@@ -15,8 +15,8 @@ last_modified_at: 2024-04-16
 
 ## **들어가며**
 
-![new-files-dark](/2023-11-25-first-blog-customization/new-files-dark.png){: .dark .w-50 .right .shadow }
-![new-files-light](/2023-11-25-first-blog-customization/new-files-light.png){: .light .w-50 .right .border }
+![new-files-dark](/img/2023-11-25-first-blog-customization/new-files-dark.png){: .dark .w-50 .right .shadow }
+![new-files-light](/img/2023-11-25-first-blog-customization/new-files-light.png){: .light .w-50 .right .border }
 
 지금 사용중인 블로그 템플릿이 그동안 꾸준히 **[개선](https://github.com/cotes2020/jekyll-theme-chirpy)**되었나 봅니다. 버전이 어느새 **6.3.1**로 올라갔습니다. 새단장을 한 테마를 살펴보니 메인 페이지의 포스트에 미리보기 이미지를 띄우는 기능이 생겼고, 전체적으로 색감이 정갈하게 다듬어졌다는 점이 눈에 띕니다.
 
@@ -48,8 +48,8 @@ p:not(blockquote p) {
 
 ### **Footer 제거**
 
-![footer-remove-light](/2023-11-25-first-blog-customization/footer-remove-light.png){: .light .border }
-![footer-remove-dark](/2023-11-25-first-blog-customization/footer-remove-dark.png){: .dark }
+![footer-remove-light](/img/2023-11-25-first-blog-customization/footer-remove-light.png){: .light .border }
+![footer-remove-dark](/img/2023-11-25-first-blog-customization/footer-remove-dark.png){: .dark }
 _적용 전후 비교_
 
 순정 Chirpy 테마는 블로그 하단에 왼쪽의 "ⓒ {년도} {이름} 일부 권리 보유'와 오른쪽의 'Powered by Jekyll with Chirpy theme"라는 Footer를 생성합니다. 이중 오른쪽 Footer는 특히 중요한 정보가 아니므로 삭제해 주었습니다. Footer를 생성하는 코드를 찾아 주석처리했어요.
@@ -75,8 +75,8 @@ _적용 전후 비교_
 
 ### **포스트 네비게이션 제거**
 
-![post-nav-light](/2023-11-25-first-blog-customization/post-nav-light.png){: .light .border }
-![post-nav-dark](/2023-11-25-first-blog-customization/post-nav-dark.png){: .dark }
+![post-nav-light](/img/2023-11-25-first-blog-customization/post-nav-light.png){: .light .border }
+![post-nav-dark](/img/2023-11-25-first-blog-customization/post-nav-dark.png){: .dark }
 _포스트 네비게이션. "이전 글"과 "다음 글"로 유저를 안내하고 있다._
 
 포스트 네비게이션은 게시글의 가장 아래에서 현재 글이 작성되기 바로 이전의 글과 다음의 글로 연결하는 기능인데 개인적으로는 왜 있는지 의문입니다. 같은 카테고리의 글을 보여주는 것도 아니고, 단순히 시간선상에서 가장 연관성이 있다고 노출을 시키기에는 글 주제가 연관이 전혀 없기 때문이죠.
@@ -184,8 +184,8 @@ h4 {
 
 ## **마치며**
 
-![post-push-light](/2023-11-25-first-blog-customization/post-push-light.png){: .light .border }
-![post-push-dark](/2023-11-25-first-blog-customization/post-push-dark.png){: .dark }
+![post-push-light](/img/2023-11-25-first-blog-customization/post-push-light.png){: .light .border }
+![post-push-dark](/img/2023-11-25-first-blog-customization/post-push-dark.png){: .dark }
 _워크플로우에 걸리는 시간이 2m 내외로 줄어들었다!_
 
 이유는 모르겠지만 블로그 테마를 업데이트하니 푸시 이후 글이 블로그에 실제로 반영되기까지 걸리는 시간이 상당히 줄었습니다! 오래걸릴 때는 10분 가까이 걸렸는데, 이제 2분정도 기다리면 반영이 되네요.

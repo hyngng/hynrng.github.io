@@ -27,7 +27,6 @@
       } else if (storedMode === ModeToggle.LIGHT_MODE) {
         this.setLight();
       } else {
-      /* endregion 수정됨 */
         if (this.hasMode) {
           if (this.isDarkMode) {
             if (!this.isSysDarkPrefer) {
@@ -40,28 +39,28 @@
           }
         }
       }
-
+      /* endregion 수정됨 */
+      
       let self = this;
 
-      /* always follow the system prefers */
+      {%- comment -%} always follow the system prefers {%- endcomment -%}
       this.sysDarkPrefers.addEventListener('change', () => {
         if (self.hasMode) {
-          if (self.isDarkMode) {
-            if (!self.isSysDarkPrefer) {
-              self.setDark();
-            }
-          } else {
-            if (self.isSysDarkPrefer) {
-              self.setLight();
-            }
-          }
-
           self.clearMode();
         }
-
         self.notify();
       });
-    } /* constructor() */
+
+      if (!this.hasMode) {
+        return;
+      }
+
+      if (this.isDarkMode) {
+        this.setDark();
+      } else {
+        this.setLight();
+      }
+    }
 
     get sysDarkPrefers() {
       return window.matchMedia('(prefers-color-scheme: dark)');
@@ -75,10 +74,6 @@
       return this.mode === ModeToggle.DARK_MODE;
     }
 
-    get isLightMode() {
-      return this.mode === ModeToggle.LIGHT_MODE;
-    }
-
     get hasMode() {
       return this.mode != null;
     }
@@ -87,14 +82,12 @@
       return sessionStorage.getItem(ModeToggle.MODE_KEY);
     }
 
-    {%- comment -%}
-      get the current mode on screen
-    {%- endcomment -%}
+    {%- comment -%} get the current mode on screen {%- endcomment -%}
     get modeStatus() {
-      if (this.isDarkMode || (!this.hasMode && this.isSysDarkPrefer)) {
-        return ModeToggle.DARK_MODE;
+      if (this.hasMode) {
+        return this.mode;
       } else {
-        return ModeToggle.LIGHT_MODE;
+        return this.isPreferDark ? ModeToggle.DARK_MODE : ModeToggle.LIGHT_MODE;
       }
     }
 
