@@ -1,14 +1,9 @@
 # The Site Configuration
 
-# Import the theme
 theme: jekyll-theme-chirpy
 
-# The language of the webpage › http://www.lingoes.net/en/translator/langcode.htm
-# If it has the same name as one of the files in folder `_data/locales`, the layout language will also be changed,
-# otherwise, the layout language will use the default value of 'en'.
 lang: ko-KR
 
-# Change to your timezone › https://kevinnovak.github.io/Time-Zone-Picker
 timezone: Asia/Seoul
 
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
@@ -16,13 +11,10 @@ timezone: Asia/Seoul
 
 title: hynrng
 
-tagline: 반갑습니다 🔥 # it will display as the sub-title
+tagline: 반갑습니다 🔥
 
-description: >- # used by seo meta and the atom feed
-  개발일지를 포함한 다양한 일상을 다루는 블로그입니다!
+description: 개발일지를 포함한 다양한 일상을 다루는 블로그입니다!
 
-# Fill in the protocol & hostname for your site.
-# e.g. 'https://username.github.io', note that it does not end with a '/'.
 url: "https://hynrng.github.io"
 
 github:
@@ -32,21 +24,17 @@ instagram:
   username: hynrng # change to your twitter username
 
 social:
-  # Change to your full name.
-  # It will be displayed as the default author of the posts and the copyright owner in the Footer
   name: hynrng
-  email: hynrng@gmail.com # change to your email address
+  email: hynrng@gmail.com
   links:
-    # The first element serves as the copyright owner's link
-    - https://github.com/hynrng # change to your twitter homepage
-    - https://instagram.com/hynrng # change to your github homepage
+    - https://github.com/hynrng
+    - https://instagram.com/hynrng
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
     # - https://www.linkedin.com/in/username
 
-# Site Verification Settings
 webmaster_verifications:
-  google: Dv7fOLMpFvAJR4CSnpDK4UEOkJ6qjz5EFpMlNRwIFwo # fill in your Google verification code
+  google: Dv7fOLMpFvAJR4CSnpDK4UEOkJ6qjz5EFpMlNRwIFwo
   bing: # fill in your Bing verification code
   alexa: # fill in your Alexa verification code
   yandex: # fill in your Yandex verification code
@@ -59,7 +47,7 @@ webmaster_verifications:
 # Web Analytics Settings
 analytics:
   google:
-    id: G-MG2GJGH0VL # fill in your Google Analytics ID
+    id: G-MG2GJGH0VL
   goatcounter:
     id: # fill in your GoatCounter ID
   umami:
@@ -71,7 +59,6 @@ analytics:
   cloudflare:
     id: # fill in your Cloudflare Web Analytics token
 
-# Pageviews settings
 pageviews:
   provider: # now only supports 'goatcounter'
 
@@ -106,16 +93,12 @@ social_preview_image: # string, local or CORS resources
 toc: true
 
 comments:
-  # Global switch for the post comment system. Keeping it empty means disabled.
-  provider: # [disqus | utterances | giscus]
-  # The provider options are as follows:
+  provider: utterances # [disqus | utterances | giscus]
   disqus:
     shortname: # fill with the Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
-  # utterances settings › https://utteranc.es/
   utterances:
     repo: hynrng/hynrng.github.io
     issue_term: pathname
-  # Giscus options › https://giscus.app
   giscus:
     repo: hynrng/hynrng.github.io
     repo_id: R_kgDOH0Atrg

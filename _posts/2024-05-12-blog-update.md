@@ -32,5 +32,9 @@ git remote add upstream https://github.com/jekyll/jekyll.git
 ```
 
 ```bash
-git remote add upstream https://github.com/jekyll/jekyll.git
+git branch -a
+```
+
+```bash
+git merge remotes/upstream/hotfix/7.0.1
 ```
