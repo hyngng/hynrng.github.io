@@ -26,10 +26,10 @@ Chirpy 테마는 깔끔하고 단정하지만 순정으로 사용하다보면 �
 {% raw %}
 ```liquid
 <div class="card-text content mt-0 mb-3">
-    <p>
+  <p>
     {% include no-linenos.html content=post.content %}
     {{ content | markdownify | strip_html | truncate: 200 | escape }}
-    </p>
+  </p>
 </div>
 ```
 {: file="_layouts/home.html" }
@@ -67,11 +67,13 @@ Liquid::Template.register_filter(Jekyll::RemoveTagFilter)
 
 {% raw %}
 ```liquid
-{% include no-linenos.html content=post.content %}
-
-{% assign cleaned_content = content | remove_tag: 'h2', 'em', 'blockquote' %}
-
-{{ cleaned_content | markdownify | strip_html | truncate: 200 | escape }}
+<div class="card-text content mt-0 mb-3">
+  <p>
+    {% include no-linenos.html content=post.content %}
+    {% assign cleaned_content = content | remove_tag: 'h2', 'em', 'blockquote' %}
+    {{ cleaned_content | markdownify | strip_html | truncate: 200 | escape }}
+  </p>
+</div>
 ```
 {: file="_layouts/home.html, _includes/related-posts.html" }
 {% endraw %}
