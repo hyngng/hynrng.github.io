@@ -12,12 +12,17 @@ tail_includes:
 
 {% include lang.html %}
 
+<!-- region 수정됨 -->
 <link rel="stylesheet" href="https://unpkg.com/applause-button/dist/applause-button.css">
 <script src="https://unpkg.com/applause-button/dist/applause-button.js"></script>
+<!-- endregion 수정됨 -->
 
 <article class="px-1">
   <header>
-    <h1 data-toc-skip class="post-title">{{ page.title }}</h1>
+    <h1 data-toc-skip>{{ page.title }}</h1>
+    {% if page.description %}
+      <p class="post-desc fw-light mb-4">{{ page.description }}</p>
+    {% endif %}
 
     <div class="post-meta text-muted">
       <!-- published date -->
@@ -54,13 +59,22 @@ tail_includes:
       <div class="d-flex justify-content-between">
         <!-- author(s) -->
         <span>
+          {% if page.author %}
+            {% assign authors = page.author %}
+          {% elsif page.authors %}
+            {% assign authors = page.authors %}
+          {% endif %}
 
           {{ site.data.locales[lang].post.written_by }}
 
           <em>
             {% if authors %}
               {% for author in authors %}
-                <a href="{{ site.data.authors[author].url }}">{{ site.data.authors[author].name }}</a>
+                {% if site.data.authors[author].url -%}
+                  <a href="{{ site.data.authors[author].url }}">{{ site.data.authors[author].name }}</a>
+                {%- else -%}
+                  {{ site.data.authors[author].name }}
+                {%- endif %}
                 {% unless forloop.last %}{{ '</em>, <em>' }}{% endunless %}
               {% endfor %}
             {% else %}
@@ -69,12 +83,22 @@ tail_includes:
           </em>
         </span>
 
-        <!-- read time -->
-        {% include read-time.html content=content prompt=true lang=lang %}
+        <div>
+          <!-- pageviews -->
+          {% if site.pageviews.provider and site.analytics[site.pageviews.provider].id %}
+            <span>
+              <em id="pageviews">
+                <i class="fas fa-spinner fa-spin small"></i>
+              </em>
+              {{ site.data.locales[lang].post.pageview_measure }}
+            </span>
+          {% endif %}
+
+          <!-- read time -->
+          {% include read-time.html content=content prompt=true lang=lang %}
+        </div>
       </div>
-      <!-- .d-flex -->
     </div>
-    <!-- .post-meta -->
 
     <!-- region 수정됨 -->
     {% if page.start_with_ads %}
@@ -82,9 +106,8 @@ tail_includes:
       {% include adsense-display.html %}
     {% endif %}
     <!-- endregion 수정됨 -->
+    
   </header>
-
-  <br>
 
   <div class="content">
     {{ content }}
@@ -124,8 +147,14 @@ tail_includes:
       <div class="post-tags">
         <i class="fa fa-tags fa-fw me-1"></i>
         {% for tag in page.tags %}
-          <a href="{{ site.baseurl }}/tags/{{ tag | slugify | url_encode }}/" class="post-tag no-text-decoration">
-            {% include icons.html %} {{- tag -}}
+          <a
+            href="{{ site.baseurl }}/tags/{{ tag | slugify | url_encode }}/"
+            class="post-tag no-text-decoration"
+          >
+            <!-- region 수정됨 -->
+            {% include icons.html %}
+            <!-- endregion 수정됨 -->
+            {{- tag -}}
           </a>
         {% endfor %}
       </div>

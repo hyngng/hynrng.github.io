@@ -15,11 +15,14 @@ layout: compress
       "type": "image/png"
     },
     {
+<<<<<<< HEAD
       "src": "{{ favicon_path }}/android-chrome-256x256.png",
       "sizes": "256x256",
       "type": "image/png"
     },
     {
+=======
+>>>>>>> remotes/upstream/hotfix/7.0.1
       "src": "{{ favicon_path }}/android-chrome-512x512.png",
       "sizes": "512x512",
       "type": "image/png"

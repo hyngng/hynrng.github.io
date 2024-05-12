@@ -5,14 +5,12 @@ layout: page
 
 {% include lang.html %}
 
-<!-- 수정함 -->
-
 <div id="page-tag">
   <h1 class="ps-lg-2">
-    {% include icons.html tag=page.title size='xl' %} {{ page.title }}
-    <span class="lead text-muted ps-2">
-      {{ page.posts | size }}
-    </span>
+    <!-- {% include icons.html tag=page.title size='xl' %} -->
+    <i class="fa fa-tag fa-fw text-muted"></i>
+    {{ page.title }}
+    <span class="lead text-muted ps-2">{{ page.posts | size }}</span>
   </h1>
   <ul class="content ps-0">
     {% for post in page.posts %}

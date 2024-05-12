@@ -2,6 +2,12 @@
 ---
 
 @import 'main';
+{%- if jekyll.environment == 'production' -%}
+  .bundle
+{%- endif -%}
+';
+
+/* append your custom style below */
 
 /* =============== */
 /*     덮어쓰기     */
@@ -99,4 +105,9 @@ a:not(.site-title a, .post-tag, a.btn, a.nav-link, .url-button, .page-link), div
 
 /* 메모장
 - 사이드바 배경색은 sass/colors/typography-dark.scss에서 따로 수정함.
+*/
+
+/*
+$font-family-base: 'Pretendard', 'Source Sans Pro', 'Microsoft Yahei', sans-serif !default;
+$font-family-heading: 'Pretendard', Lato, 'Microsoft Yahei', sans-serif !default;
 */

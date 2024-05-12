@@ -21,6 +21,10 @@
   {% assign match_posts = match_posts | push: site.tags[tag] | uniq %}
 {% endfor %}
 
+<<<<<<< HEAD
+=======
+{% assign match_posts = match_posts | reverse %}
+>>>>>>> remotes/upstream/hotfix/7.0.1
 {% assign last_index = match_posts.size | minus: 1 %}
 {% assign score_list = '' | split: '' %}
 
@@ -101,5 +105,4 @@
     </nav>
   </aside>
   <!-- #related-posts -->
-
 {% endif %}
