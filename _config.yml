@@ -18,10 +18,10 @@ description: 개발일지를 포함한 다양한 일상을 다루는 블로그�
 url: "https://hynrng.github.io"
 
 github:
-  username: hynrng # change to your github username
+  username: hynrng
 
 instagram:
-  username: hynrng # change to your twitter username
+  username: hynrng
 
 social:
   name: hynrng
@@ -29,9 +29,6 @@ social:
   links:
     - https://github.com/hynrng
     - https://instagram.com/hynrng
-    # Uncomment below to add more social links
-    # - https://www.facebook.com/username
-    # - https://www.linkedin.com/in/username
 
 webmaster_verifications:
   google: Dv7fOLMpFvAJR4CSnpDK4UEOkJ6qjz5EFpMlNRwIFwo
@@ -49,7 +46,7 @@ analytics:
   google:
     id: G-MG2GJGH0VL
   goatcounter:
-    id: hynrng # fill in your GoatCounter ID
+    id: hynrng
   umami:
     id: # fill in your Umami ID
     domain: # fill in your Umami domain
@@ -60,36 +57,17 @@ analytics:
     id: # fill in your Cloudflare Web Analytics token
 
 pageviews:
-  provider: goatcounter # now only supports 'goatcounter'
+  provider: goatcounter
 
-# Prefer color scheme setting.
-#
-# Note: Keep empty will follow the system prefer color by default,
-# and there will be a toggle to switch the theme between dark and light
-# on the bottom left of the sidebar.
-#
-# Available options:
-#
-#     light  - Use the light color scheme
-#     dark   - Use the dark color scheme
-#
 theme_mode: # [light | dark]
 
-# The CDN endpoint for media resources.
-# Notice that once it is assigned, the CDN url
-# will be added to all media resources (site avatar, posts' images, audio and video files) paths starting with '/'
-#
-# e.g. 'https://cdn.com'
-cdn: "https://raw.githubusercontent.com/hynrng/hynrng.github.io.resources/master"
+cdn: "https://cdn.jsdelivr.net/gh/hynrang/hynrng.github.io-image@master"
+# https://raw.githubusercontent.com/hynrng/hynrng.github.io.resources/master
 
-# the avatar on sidebar, support local or CORS resources
 avatar: "/favicons/hynrng.png"
 
-# The URL of the site-wide social preview image used in SEO `og:image` meta tag.
-# It can be overridden by a customized `page.image` in front matter.
 social_preview_image: # string, local or CORS resources
 
-# boolean type, the global switch for TOC in posts.
 toc: true
 
 comments:
