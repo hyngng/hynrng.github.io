@@ -5,7 +5,7 @@ source "https://rubygems.org"
 gemspec
 
 group :test do
-  gem "html-proofer"
+  gem "html-proofer", "~> 5.0"
 end
 
 # region 수정됨
