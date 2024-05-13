@@ -13,8 +13,8 @@ date: 2024-03-21
 last_modified_at: 2024-04-24
 ---
 
-![before-light](/img/2024-03-21-blog-content-remove/before-light.png){: .light .border }
-![before-dark](/img/2024-03-21-blog-content-remove/before-dark.png){: .dark }
+![before-light](/2024-03-21-blog-content-remove/before-light.png){: .light .border }
+![before-dark](/2024-03-21-blog-content-remove/before-dark.png){: .dark }
 _수정 전 블로그 홈에 표시되는 포스트 요약본_
 
 Chirpy 테마는 깔끔하고 단정하지만 순정으로 사용하다보면 개선 여지가 간혹 보입니다. **[몇 가지 사항](https://hynrng.github.io/posts/first-blog-customization/)**은 전에 수정해주었지만 거슬리는 점이 여전히 남아있었죠.
@@ -84,8 +84,8 @@ Ruby나 Liquid에 대해서는 배경지식이 없어 방법을 알아내느라 
 
 ## **개선 확인**
 
-![after-light](/img/2024-03-21-blog-content-remove/after-light.png){: .light .border}
-![after-dark](/img/2024-03-21-blog-content-remove/after-dark.png){: .dark }
+![after-light](/2024-03-21-blog-content-remove/after-light.png){: .light .border}
+![after-dark](/2024-03-21-blog-content-remove/after-dark.png){: .dark }
 _코드 적용 후 개선된 포스트 요약본_
 
 코드를 작성하니 잘 동작합니다. 수정 전과 비교하면 불필요한 글이 제거되면서 글 요약본의 가독성이 대폭 개선되었어요. 수정 전의 난해한 느낌이 사라지고 훨씬 자연스러워졌습니다.

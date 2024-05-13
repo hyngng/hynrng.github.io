@@ -44,9 +44,9 @@ git merge remotes/upstream/master
 
 ### **수동 병합**
 
-![merge-light](/img/2024-05-12-blog-update/merge-light.png){: .light .border }
-![merge-dark](/img/2024-05-12-blog-update/merge-dark.png){: .dark }
-_정보 페이지 작성화면. 이 경우 아래의 기본 안내글 대신 위의 제가 작성한 글을 남겨 충돌을 해결합니다._
+![merge-light](/2024-05-12-blog-update/merge-light.png){: .light .border }
+![merge-dark](/2024-05-12-blog-update/merge-dark.png){: .dark }
+_정보 페이지 작성화면. 이 경우 아래의 기본 안내글 대신 위의 내 글을 남겨 충돌을 해결함._
 
 저의 경우 VsCode로 수동 병합을 진행했습니다. 혹시나 병합이 처음이신 분들을 위해, 내 코드를 보존하고 싶다면 `Accept Current Change`를, 새 코드로 대체하고 싶다면 `Accept Incoming Change`를 선택하면 됩니다. 한 번 선택하면 시간이 지나고 되돌리기 어렵기 때문에 천천히 살펴보는게 좋아요.
 
@@ -62,7 +62,7 @@ npm run build
 git add assets/js/dist _sass/dist -f
 ```
 
-그리고 생성된 파일을 깃 저장소로 추가해주면 끝입니다.
+그리고 생성된 파일을 깃 저장소로 추가해준 뒤 푸시하면 끝입니다.
 
 여기까지 완료되었다면 마지막으로 `bundle exec jekyll serve` 명령어로 로컬 서버를 열어서 서버가 제대로 열리는지, 페이지에 문제는 없는지 확인해줍니다. 빠트린 병합 사항이 있을 수도 있고 병합이 잘못 이루어져서 페이지의 어딘가가 망가졌을 수도 있기 때문입니다. 만약 그런 부분이 있다면 시간이 좀 걸리더라도 천천히 해결해줍시다.
 
@@ -70,13 +70,13 @@ git add assets/js/dist _sass/dist -f
 
 {%
   include embed/video.html
-  src='/video/240410-232136.mp4'
+  src='/2024-05-12-blog-update/video/240410-232136.mp4'
   title='비디오 샘플. 현재 개발중인 게임 플레이샷입니다.'
 %}
 
 {%
   include embed/audio.html
-  src='/audio/eating-chips.mp3'
+  src='/2024-05-12-blog-update/audio/eating-chips.mp3'
   title='오디오 샘플. 바삭바삭한 과자 먹는 소리입니다.'
 %}
 

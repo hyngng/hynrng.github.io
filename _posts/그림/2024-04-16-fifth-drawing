@@ -7,7 +7,7 @@ tags: [그림, 드로잉, 야자, 판타지, 조거팬츠, 헤드폰]
 start_with_ads: false
 
 image:
-    path: /img/drawing/240128-로봇야자.png
+    path: /drawing/240128-로봇야자.png
     lqip: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAAKCAYAAABWiWWfAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAGPSURBVDhPnVJNT8JAEH39QApCFE2QyMGEq4lnf4PxD3j1l/gzTLx48+zZg4kmaoJKNGgIoSpWxCZSSKXS7ae7ywIqBxNfO92dzbw3MzuVjHolXiisIJ3N4b9w7A7M5xqk08PdmB1kc3kUS2tYXC5BkiQe9Bc67Ue09BvYlsn9sdgIqcw8Vtc3oKWz3I/jmBtL8D1Js1aGUb8W3hCyWMcY9HuIqHwURWMRWZb5ynx2zkxWEoIxwZQYI7BAz/O4dbtd2LYNy7Lgui583wchBAltVjAmULa3NnfEnuO+8YLYd2DqV2gZTzANHRH5oNWEkNUkNC2FIAgQei46r7pgDTFVmTSTQdA3EfgEjtVC772FZr0CvXqB85MjOI4zbJ+2/hvy58AFM5d4ILStvf0Dug/4vfSdAb0vRbRNYDRuUS0fw2o/4K1ZQxhGwkJu42kyMvF8nF3eoVBYQjE/R0VUpLUEr0RVFBCftgo6BOonVJpEDGaEH78GjWFfHsAIrkugJWfgB1SETZM+7FUUeUoIAL4AFWTgNXi7A3cAAAAASUVORK5CYII=
     alt: 야자하는 로봇
 
@@ -18,14 +18,11 @@ date: 2024-05-05
 last_modified_at: 2024-05-05
 ---
 
-![240504-방어지름](/img/drawing/240504-방어지름.png){: .light .border }
-![240504-방어지름](/img/drawing/240504-방어지름.png){: .dark }
+![240504-방어지름](/drawing/240504-방어지름.png){: .border }
 _자취방 그림_
 
-![240416-가방짐](/img/drawing/240416-가방짐.png){: .light .border }
-![240416-가방짐](/img/drawing/240416-가방짐.png){: .dark }
+![240416-가방짐](/drawing/240416-가방짐.png){: .border }
 _여행용 캐리어 안_
 
-![240504-의자사람](/img/drawing/240504-의자사람.png){: .light .border }
-![240504-의자사람](/img/drawing/240504-의자사람.png){: .dark }
+![240504-의자사람](/drawing/240504-의자사람.png){: .border }
 _의자 위에 사람있어요_

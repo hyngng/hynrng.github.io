@@ -7,7 +7,7 @@ tags: [프로그래밍, 유니티, C#, 기획, 개발일지]
 start_with_ads: true
 
 image:
-    path: /img/2024-04-30-armonia-developing/prototype.gif
+    path: /2024-04-30-armonia-developing/prototype.gif
     lqip: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAPCAYAAACFgM0XAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAR6SURBVEhLxVTLbttGFD0cPiVaoiVbdmrHbezGyKboxkCBrrrtot0XaLfpb7ToV/UHuiyKbroImgSIHT9oixLFNznk9Mwo8S90qCvOcF7nnnNmrO8vXiqF/68Ix7XguoDjALawICwLjw/ruv0xdHv7bEvXN6b+sX9QEll7j7JfoerXqIaUbwbfWRcjaS5RdevH8Z2sIbywR+tewQ56CL+D5cptOJLoevO2HH7/0BZuT6QDt1XImyWUxTq/dyJFoxLALRCMHLi+DU9H4MD3HYRhiGgSQokK+XDJ9XoUcgnr5Q8/KikzqD6CbAJ0NdD3WhSiFDpP1pmmznsYFLReAzEoKVC1GcbBhFk0cLwBebmCJRzMxqd6lpnatA2Z6eB5PmxHIdm8JuMOrH6Csmxh//LbN7+G4wEXXx8hnEqsytcIZxVpe4fPv+AKfoynZwrRQYFSxjg8GeCMMtzeklqZw3VcHD1z8OREYjonyM6FUBO9PYuFh801QQ+MDnuzfZx9maLMS5ye7+P2pob180/fKQwWB3hYbWIM7RS+vcA0fML5g9FKM6B06iYtbkIGerlt//nqdxzvvYAfkJG6hmPbmO18RrYGjhQo6oxrRcjrFNF0iqv4b3huSKAjZAX9UKwirJcubm42WCUKnrVA4M7RdwMlUeh01NuQLbbBvoEyURHI3qIXVjQUx/QdkixBWizRaC0Jfl0kuIzfUooaaiCgqkVdS0ri0ZAFxF2c4u4uQ5ONkaYtF/ZgKZcZUGsTWnsdW+2N/mxrJozzpQtLhmgrgTzrED884N3dG6zzhJttsLuzhyicMesR1ukKPX1WlUCWlZAELRaTc0OHjwMaMcDb96+wTGPEqxtK8oCyLlFp1JVEXhVbFT4UpbQ2AjvugkBsBCLCiKY8XpwZBsLRhIaW6AdpJPS9EffwkBf0U9HyG4/w6/f/oGxKxgaOFaAlxz7Rtl1nNtdZSKlNxCMx0L3b5Dk+55gaO+EO3LFivUHBNSajuTHmIjo0SZQ1WZjso6xyTtOPQNnmxiuT0QwiHEVs8BbirxtqUs0zTRBVXTE7m5eTjdCfIiWl9+mlMZ6OvCywoYkCL2CmO+ZS0pm6ToB1tjQSdPRKXmW8B8Y80sJM1QlMRrv0WcgWTX60d2pMszf5hJ2O0UrKHoezZzjYPYFNcK2sMJ8eYLF7zEnbEoX7ZKfghqSVq2piNLLjved0/S7XsvB0cY66LXGfXNOsHXv1ybDICu8d1n2PwLQ2ju0ZWl3hG3eXRL1Mr3F1/y/+evUH+wR/zIBj67YycZe8I/A16qZBnNyg6Wv0PO83yRt4ZEFfUJpJV3iYTuYm9aGng1n0xhK8hLimNR3N1YujC8TplemchYfUKKPGGYG5OJ6f0smHpi8rEx6re1PXdGvU0XhuWOpkx2896o76CtcYLN5c4jD61CSn+R9Uj7E3pTH1WEkOyMhXz79VghnqybrwsjXjjVi6zZV0zeIYvaj+bAjnz1xOuu/xT5dt5bHJ2kBmNABB4yl9eWgBCMaChf8AsAeT08zXhWsAAAAASUVORK5CYII=
     alt: 개발중인 프로토타입
 
@@ -29,17 +29,17 @@ last_modified_at: 2024-04-30
 
 ## **아카이브** {#archive}
 
-<!--![street-and-utility-pole](/img/2024-04-30-armonia-developing/street-and-utility-pole.gif){: .w-75 }-->
-![people-activated](/img/2024-04-30-armonia-developing/people-activated.gif){: .w-75 }
-![pigeon-activated](/img/2024-04-30-armonia-developing/pigeon-activated.gif){: .w-75 }
+<!--![street-and-utility-pole](/2024-04-30-armonia-developing/street-and-utility-pole.gif){: .w-75 }-->
+![people-activated](/2024-04-30-armonia-developing/people-activated.gif){: .w-75 }
+![pigeon-activated](/2024-04-30-armonia-developing/pigeon-activated.gif){: .w-75 }
 _각각 사람과 비둘기를 구현했을 때. 플레이어는 아무 사람 또는 비둘기가 되어 주변환경과 상호작용할 수 있다._
 
 ## **에셋**
 
 ### **이미지 에셋**
 
-<!--![subway](/img/2024-04-30-armonia-developing/subway.png)-->
-![buildings](/img/2024-04-30-armonia-developing/buildings.png)
+<!--![subway](/2024-04-30-armonia-developing/subway.png)-->
+![buildings](/2024-04-30-armonia-developing/buildings.png)
 _그린 배경 이미지_
 
 교외지에 있을 법한 배경을 만들고자 도시 일러스트, 동네 건물 사진이나 로드뷰 등을 찾아 참조하며 배경 이미지 에셋을 만들었습니다. 사람이 직접 그린 느낌이 났으면 좋겠어서 거친 질감의 선을 쓰면서 직선 도구도 일부러 사용하지 않았는데 결과적으로 약간의 엉성함과 삐뚤빼뚤함이 잘 나타난 것 같아서 마음에 들어요.
@@ -51,7 +51,7 @@ _그린 배경 이미지_
 ### **스프라이트 셰이더**
 
 <!--
-![unity-shader-graph](/img/2024-04-30-armonia-developing/unity-shader-graph.png){: .w-75 }
+![unity-shader-graph](/2024-04-30-armonia-developing/unity-shader-graph.png){: .w-75 }
 _유니티 셰이더 그래프_
 -->
 
@@ -61,15 +61,15 @@ _유니티 셰이더 그래프_
 
 ### **애니메이션 에셋**
 
-![pigeon-flying](/img/2024-04-30-armonia-developing/pigeon-flying.gif){: .light .w-25 .border }
-![pigeon-flying](/img/2024-04-30-armonia-developing/pigeon-flying.gif){: .dark .w-25 }
+![pigeon-flying](/2024-04-30-armonia-developing/pigeon-flying.gif){: .light .w-25 .border }
+![pigeon-flying](/2024-04-30-armonia-developing/pigeon-flying.gif){: .dark .w-25 }
 _하늘 나는 비둘기_
 
 애니메이션은 직접 그려서 사용하기도 했습니다. 예를 들어 비둘기 움직임의 경우 유니티 애니메이션 컴포넌트로 해결하기가 힘들어 전통적인 애니메이션 만들듯이 한 프레임씩 그림을 그려서 이어붙였어요. 이전에 동물의 움직임을 애니메이션으로 그려본 적은 없어서 비둘기 걷는 영상, 나는 영상을 찾아 관찰하며 그렸습니다. 생소하기도 하고 신기하기도 했네요.
 
 만들면서는 단순한 단일 애니메이션을 만들어 사용하기보다 애니메이션의 흐름을 세분화해서 페이즈를 나누었습니다. 예를 들어 비둘기가 날아가는 모습의 경우 하늘로 날아오르는 EnterFly 애니메이션, 공중에 체공중인 BeingFly 애니메이션, 땅에 착지하는 EndFly 애니메이션 세 가지의 별개 묶음으로 나누어 출력했고, 이를 상태 패턴과 연동해서 사용했어요. 덕분에 결과물은 위 **[아카이브](#archive)**에서 볼 수 있듯이 꽤 그럴듯하게 보입니다.
 
-![people-walking](/img/2024-04-30-armonia-developing/people-walking.gif)
+![people-walking](/2024-04-30-armonia-developing/people-walking.gif)
 _걸어다니는 사람과 감성 반딧불이_
 
 다만 기본적으로는 이렇게 유니티의 애니메이션 컴포넌트를 이용했습니다. 위 예시는 사람의 위치변화에 따라 걷는 애니메이션의 좌우반전 여부나 재생속도가 자동으로 조절되도록 만든 장면인데요, 미리 자료를 남기지 못해 잘 나타나지는 않지만 컷 애니메이션 없이 머리와 몸통, 팔다리를 조각조각 조립해 위치가 각각 따로 조절되는 모습입니다.
@@ -122,7 +122,7 @@ classDiagram
 ### **맵 생성과 관리**
 
 <!--
-![background-manager](/img/2024-04-30-armonia-developing/background-manager.gif){: .w-75 }
+![background-manager](/2024-04-30-armonia-developing/background-manager.gif){: .w-75 }
 _배경 조정 예시_
 -->
 
@@ -160,7 +160,7 @@ flowchart LR
 ### **오브젝트 생성**
 
 <!--
-![object-manager](/img/2024-04-30-armonia-developing/object-manager.gif){: .w-75 }
+![object-manager](/2024-04-30-armonia-developing/object-manager.gif){: .w-75 }
 _배경 조정 예시_
 -->
 
