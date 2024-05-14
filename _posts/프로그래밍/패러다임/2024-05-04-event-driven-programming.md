@@ -1,7 +1,8 @@
 ---
 title: "이벤트 주도적 프로그래밍"
 description: "이벤트 주도적 프로그래밍에 대한 사항을 정리합니다."
-categories: []
+
+categories: [프로그래밍, 패러다임]
 tags: [유니티]
 start_with_ads: true
 
