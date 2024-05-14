@@ -3,7 +3,7 @@ title: "횡스크롤 감성 게임 개발하기: 프로토타입 개발 과정"
 description: "유니티를 이용한 감성 모바일 게임 프로토타입 개발기를 정리합니다."
 
 categories: [프로그래밍, 마일스톤]
-tags: [프로그래밍, 유니티, C#, 기획, 개발일지]
+tags: [프로그래밍, 유니티, C#, 개발일지]
 start_with_ads: true
 
 image:
