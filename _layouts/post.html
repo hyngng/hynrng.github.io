@@ -117,9 +117,10 @@ tail_includes:
   <br>
 
   <!-- 박수 버튼, 수정함 -->
-  <applause-button class="mb6"
-    color="rgb(79,177,186)"
-    url="{{ page.url | absolute_url }}">
+  <applause-button
+    class="mb6"
+    color={{ site.accent_color | default:'rgb(79,177,186)' }}
+    url= "{{ page.url | absolute_url }}">
   </applause-button>
 
   <br>
