@@ -14,8 +14,8 @@ image:
 toc: false
 toc_sticky: true
  
-date: 2022-08-25
-last_modified_at: 2022-08-25
+date: 2022-08-25 14:38:00 +0900
+last_modified_at: 2022-08-25 14:38:00 +0900
 ---
 
 ![221025-반도체칩](/drawing/221025-반도체칩.png){: .light .border }

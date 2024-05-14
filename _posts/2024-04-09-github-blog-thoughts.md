@@ -12,8 +12,8 @@ mermaid: true
 toc: true
 toc_sticky: true
 
-date: 2024-04-09
-last_modified_at: 2024-04-09
+date: 2024-04-09 15:24:00 +0900
+last_modified_at: 2024-04-09 15:24:00 +0900
 ---
 
 ## **들어가며**

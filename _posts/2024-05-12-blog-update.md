@@ -8,8 +8,8 @@ start_with_ads: true
 toc: true
 toc_sticky: true
 
-date: 2024-05-12
-last_modified_at: 2024-05-12
+date: 2024-05-12 11:32:00 +0900
+last_modified_at: 2024-05-12 13:53:00 +0900
 ---
 
 ## **들어가며**
@@ -46,7 +46,7 @@ git merge remotes/upstream/master
 
 ![merge-light](/2024-05-12-blog-update/merge-light.png){: .light .border }
 ![merge-dark](/2024-05-12-blog-update/merge-dark.png){: .dark }
-_정보 페이지 작성화면. 이 경우 아래의 기본 안내글 대신 위의 내 글을 남겨 충돌을 해결함._
+_정보 페이지 작성화면. 위아래 둘 중 하나를 남겨 충돌을 해결함._
 
 저의 경우 VsCode로 수동 병합을 진행했습니다. 혹시나 병합이 처음이신 분들을 위해, 내 코드를 보존하고 싶다면 `Accept Current Change`를, 새 코드로 대체하고 싶다면 `Accept Incoming Change`를 선택하면 됩니다. 한 번 선택하면 시간이 지나고 되돌리기 어렵기 때문에 천천히 살펴보는게 좋아요.
 

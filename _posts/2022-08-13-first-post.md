@@ -9,8 +9,8 @@ start_with_ads: true
 toc: false
 toc_sticky: true
  
-date: 2022-08-13
-last_modified_at: 2023-04-13
+date: 2022-08-13 17:24:00 +0900
+last_modified_at: 2023-04-13 12:35:00 +0900
 ---
 
 ## **이틀간의 생고생 끝에**

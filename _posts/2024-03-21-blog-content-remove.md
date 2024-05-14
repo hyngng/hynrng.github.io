@@ -9,8 +9,8 @@ start_with_ads: true
 toc: true
 toc_sticky: true
 
-date: 2024-03-21
-last_modified_at: 2024-04-24
+date: 2024-03-21 19:32:00 +0900
+last_modified_at: 2024-04-24 17:24:00 +0900
 ---
 
 ![before-light](/2024-03-21-blog-content-remove/before-light.png){: .light .border }
