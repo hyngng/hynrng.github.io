@@ -321,7 +321,7 @@ _구글 플레이 스토어에 게임이 올라간 화면_
 ![reddit-light](/2023-12-13-palette-developing/reddit-light.png){: .light .border w="960" }
 ![reddit-dark](/2023-12-13-palette-developing/reddit-dark.png){: .dark w="960" }
 
-그래도 용기를 내서 해외 **[Unity2D 서브레딧](https://www.reddit.com/r/Unity2D/)**에 짧은 글을 올렸습니다. 한 100명 봐주면 정말 감사하겠다 하는 마음으로 글을 올렸는데 일주일만에 조회수가 2만을 넘더니 한달 정도가 지나자 무려 10만에 가까운 분들이 관심을 가져주셨어요. 정말 놀랐습니다.
+그래도 용기를 내서 해외 **[Unity2D 서브레딧](https://www.reddit.com/r/Unity2D/comments/17p1toj/my_first_game_is_now_on_google_play_what_do_you/)**에 짧은 글을 올렸습니다. 한 100명 봐주면 정말 감사하겠다 하는 마음으로 글을 올렸는데 일주일만에 조회수가 2만을 넘더니 한달 정도가 지나자 무려 10만에 가까운 분들이 관심을 가져주셨어요. 정말 놀랐습니다.
 
 ![reddit-feedback-light](/2023-12-13-palette-developing/reddit-feedback-light.png){: .light .border w="960" }
 ![reddit-feedback-dark](/2023-12-13-palette-developing/reddit-feedback-dark.png){: .dark w="960" }
