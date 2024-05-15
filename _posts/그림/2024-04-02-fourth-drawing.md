@@ -9,7 +9,7 @@ start_with_ads: false
 image:
     path: /drawing/240128-로봇야자.png
     lqip: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAFCAYAAAB8ZH1oAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAClSURBVBhXTY3NCoJQEIXPqJc0aFELIch2tq436DF7jdYta1NhEUHmRjJCraC2Xvy52WDQtxiGcw585G8XynZcdO0hiAj/KFXhlUa4XwPQcj5T39B2RnDHUx78SC4nhMcV/xrfmiSOEQV7hOcDHukNUkrowmxawMiLgpWbnYcyeyOTJUgXGLgTdNqtWs9CaMIweOj0e8iLCpYpYAngGXqI/DV3RIQPvog6LtR6vkUAAAAASUVORK5CYII=
-    alt: 야자하는 로봇
+    alt: 야자중인 로봇
 
 toc: false
 toc_sticky: true
@@ -18,9 +18,9 @@ date: 2024-04-02 13:42:00 +0900
 last_modified_at: 2024-04-15 16:33:00 +0900
 ---
 
-![240128-몰카](/drawing/240128-카메라.png){: .light .border }
-![240128-몰카](/drawing/240128-카메라.png){: .dark }
-_인스타 비율 카메라 시점_
+![240228-설정화](/drawing/240228-설정화.png){: .light .border }
+![240228-설정화](/drawing/240228-설정화.png){: .dark }
+_게임 기획하면서 그림_
 
 <br>
 
@@ -30,14 +30,15 @@ _판타지아_
 
 <br>
 
-![240415-헤드폰목도리](/drawing/240415-헤드폰목도리.png){: .light .border }
-![240415-헤드폰목도리](/drawing/240415-헤드폰목도리.png){: .dark }
-_헤드폰 탐남_
+![240128-몰카](/drawing/240128-카메라.png){: .light .border }
+![240128-몰카](/drawing/240128-카메라.png){: .dark }
+_인스타 느낌 뷰파인더_
 
 <br>
 
-![200000-무서운여자옆모습](/drawing/200000-무서운여자옆모습.png)
-_인상이 강한 편_
+![240415-헤드폰목도리](/drawing/240415-헤드폰목도리.png){: .light .border }
+![240415-헤드폰목도리](/drawing/240415-헤드폰목도리.png){: .dark }
+_헤드폰 탐남_
 
 <br>
 
