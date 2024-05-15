@@ -13,13 +13,15 @@ date: 2024-03-21 19:32:00 +0900
 last_modified_at: 2024-04-24 17:24:00 +0900
 ---
 
-![before-light](/2024-03-21-blog-content-remove/before-light.png){: .light .border }
-![before-dark](/2024-03-21-blog-content-remove/before-dark.png){: .dark }
+# **들어가며**
+
+Chirpy 테마는 깔끔하고 단정하지만 순정 상태에서는 이건 개선이 필요하겠다 생각이 드는 부분이 간혹 보입니다. **[간간히 수정](https://hynrng.github.io/posts/first-blog-customization/)**해주고는 있지만 개인적으로 아쉬운 점이 여전히 몇 가지 남아있었죠.
+
+![before-light](/2024-03-21-blog-content-remove/before-light.png){: .light .w-75 .border }
+![before-dark](/2024-03-21-blog-content-remove/before-dark.png){: .dark .w-75 }
 _수정 전 블로그 홈에 표시되는 포스트 요약본_
 
-Chirpy 테마는 깔끔하고 단정하지만 순정으로 사용하다보면 개선 여지가 간혹 보입니다. **[몇 가지 사항](https://hynrng.github.io/posts/first-blog-customization/)**은 전에 수정해주었지만 거슬리는 점이 여전히 남아있었죠.
-
-그 중 하나는 블로그 홈의 글 요약본이 이미지 캡션이나 헤더 등을 포함한 날것의 상태 그대로 보인다는 겁니다. 위처럼 이미지 캡션이나 "들어가며" 같은 필요없는 글이 섞인 채로 표시되고 있죠. 이런건 당연히 처리가 되어있어야 하는게 아닌가 싶은데, 이번에 방법을 찾아서 수정해주었습니다.
+그 중 하나는 블로그 홈의 글 요약본이 이미지 캡션이나 헤더 등을 포함한 날것 그대로 보인다는 겁니다. 위처럼 이미지 캡션이나 "들어가며" 같은 불필요한 부분이 같이 표시되어 가독성이 나빠지고 있죠. 이런건 당연히 기본 처리가 되어있어야 하는게 아닌가 싶은데, 이번에 방법을 찾아서 수정해주었습니다.
 
 ## **원인 파악**
 
@@ -35,11 +37,9 @@ Chirpy 테마는 깔끔하고 단정하지만 순정으로 사용하다보면 �
 {: file="_layouts/home.html" }
 {% endraw %}
 
-깃허브 블로그 홈에 대한 내역은 `_layouts/home.html`{: .filepath }에 작성되어 있습니다. 순정 코드는 저의 경우 위와 같이 작성되어 있었으며, `<div class="card-text content mt-0 mb-3">` 단락에서 포스트 요약본을 생성하고 있었습니다.
+깃허브 블로그 홈에 대한 내역은 `_layouts/home.html`{: .filepath }에 작성되어 있습니다. 순정 코드는 저의 경우 위와 같이 작성되어 있었으며, `<div class="card-text content mt-0 mb-3">` 단락에서 포스트 요약본을 생성하고 있습니다.
 
-> **2024/04/24 수정!**  
-`_includes/related-posts.html`{: .filepath } 파일도 같이 수정해줄 수 있습니다. 이 파일은 포스트 최하단에서 나열하는 같은 카테고리의 다른 글에 대한 부분을 다루며, 블로그 홈에 나열된 포스트와 같은 원리로 포스트 요약본을 생성합니다.
-{: .prompt-info }
+코드를 살펴보니 콘텐츠는 단순히 `markdownify`와 `strip_html`만을 거쳐 텍스트로 표시되고 있습니다. 여기에 별도의 필터를 추가해 특정 태그를 제거하면 좋겠다는 생각이 들었고, 다음과 같은 과정을 거쳤습니다.
 
 ## **코드 작성**
 
@@ -78,16 +78,20 @@ Liquid::Template.register_filter(Jekyll::RemoveTagFilter)
 {: file="_layouts/home.html, _includes/related-posts.html" }
 {% endraw %}
 
-Ruby나 Liquid에 대해서는 배경지식이 없어 방법을 알아내느라 조금 고생했습니다. 처음에는 Liquid만을 이용해 split과 join으로 문제를 해결하려고 했는데 제가 원하는 결과물이 도통 나오질 않더라구요. 좋은 방법이 아닌 것 같기도 하고요.
+Ruby나 Liquid에 대해서는 배경지식이 없어 방법을 알아내느라 조금 고생했습니다. 처음에는 Liquid만으로 `split`과 `join`을 이용해 해결하려고 했는데 제가 원하는 결과물을 만들기 힘들었습니다. 좋은 방법이 아닌 것 같기도 하고요.
 
-그래서 결과적으로 GPT의 도움을 받아 `_plugins/remove-tags.rb`{: .filepath } 경로로 Ruby 파일을 만들어 이용하는 것으로 해결했습니다. Ruby 파일에는 태그 유형을 매개변수로 받아 내부 텍스트를 정규 표현식으로 제거하는 함수를 만들었습니다. `Nokogiri` 파싱 라이브러리를 이용했어요.
+그래서 결과적으로 GPT의 도움을 받아 `_plugins/remove-tags.rb`{: .filepath } 경로로 Ruby 파일을 만들어 이용하는 것으로 해결했습니다. Ruby 파일에는 태그 유형을 매개변수로 받아 내부 텍스트를 정규 표현식으로 제거하는 함수를 만들었습니다. `Nokogiri`라는 파싱 라이브러리를 이용했고, Liquid 파일에서 `remove_tag: 'h2', 'em', 'blockquote'`와 같이 사용됩니다.
+
+> **2024/04/24 수정!**  
+`_includes/related-posts.html`{: .filepath } 파일도 같이 수정하는 것을 권장합니다. 이 파일은 포스트 최하단에서 나열하는 같은 카테고리의 다른 글에 대한 부분을 다루며, 블로그 홈에 나열된 포스트와 같은 원리로 포스트 요약본을 생성합니다.
+{: .prompt-info }
 
 ## **개선 확인**
 
-![after-light](/2024-03-21-blog-content-remove/after-light.png){: .light .border}
-![after-dark](/2024-03-21-blog-content-remove/after-dark.png){: .dark }
+![after-light](/2024-03-21-blog-content-remove/after-light.png){: .light .w-75 .border}
+![after-dark](/2024-03-21-blog-content-remove/after-dark.png){: .dark .w-75 }
 _코드 적용 후 개선된 포스트 요약본_
 
-코드를 작성하니 잘 동작합니다. 수정 전과 비교하면 불필요한 글이 제거되면서 글 요약본의 가독성이 대폭 개선되었어요. 수정 전의 난해한 느낌이 사라지고 훨씬 자연스러워졌습니다.
+코드를 작성하니 잘 동작합니다. 수정 전과 비교하면 불필요한 글이 제거되면서 글 요약본의 가독성이 대폭 개선되었어요. 수정 전의 난해한 느낌이 사라지고 훨씬 자연스러워졌습니다. 추가적으로 제거를 원하는 태그가 있으면 단순히 `remove_tag:` 뒤에 추가해주면 되기 때문에 유지보수도 어렵지 않아서 불편한 느낌도 없습니다.
 
-그나저나 깃허브 블로그 테마 커스터마이징 하나만을 위해 거들떠도 안 보던 Ruby나 Liquid를 조금 배우게 되었는데, 보다보니 어렵지 않게 금방 배울 수 있는 언어라는 생각이 들었습니다. 조금 더 익숙해져서 여러가지 커스터마이징을 할 수 있으면 좋겠네요.
+그나저나 깃허브 블로그 테마 커스터마이징 하나만을 위해 거들떠도 안 보던 Ruby나 Liquid를 조금 배우게 되었는데, 보다보니 어렵지 않게 금방 배울 수 있는 언어라는 생각이 들었습니다. 조금 더 친해질 수 있으면 좋겠네요.

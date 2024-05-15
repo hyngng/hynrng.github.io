@@ -9,8 +9,8 @@ start_with_ads: true
 toc: true
 toc_sticky: true
 
-date: 2024-05-04
-last_modified_at: 2024-05-04
+date: 2024-05-15 10:24:00 +0900
+last_modified_at: 2024-05-15 10:24:00 +0900
 ---
 
 ## **들어가며**
@@ -29,7 +29,7 @@ public class EventManager : MonoBehaviour
 
     void Awake()
     {
-        if(instance == null)
+        if (instance == null)
         {
             instance = this;
             DontDestroyOnLoad(gameObject);
@@ -42,7 +42,7 @@ public class EventManager : MonoBehaviour
     {
         List<OnEvent> ListenList = null;
 
-        if(Listeners.TryGetValue(eventType, out ListenList))
+        if (Listeners.TryGetValue(eventType, out ListenList))
         {
             ListenList.Add(Listener);
             return;
@@ -99,4 +99,4 @@ public class EventManager : MonoBehaviour
 }
 ```
 
-델리게이트를 이용한 방법입니다. 코드는 길지만 6개 메서드만 알면 끝나요.
+델리게이트를 이용한 방법입니다. 코드는 80줄 가까이 되지만 6개 메서드만 알면 끝납니다.
