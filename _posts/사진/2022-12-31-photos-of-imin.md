@@ -8,7 +8,7 @@ start_with_ads: false
 
 image:
     path: /photo/20220605_121958.jpg
-    lqip: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAFCAIAAADzBuo/AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAJWAAACVgASRv4GkAAACRSURBVBhXDcvdCoIwFADgnZ0z5xTUFMWQbuz9X0miqCDKlvmfc/ndf1DECon7ytNaL2YF5GAZBxYF3jwNmIQqz7PyWI7TMJuFEwnppElYHvZFnvJslyBQrd9t30mlyBErs9sPoriqTuiDYUQo3fPlulWp/ObbM8Dn43W71xyAd+30aUYQLqCw1iI5K6MfI8P4HyupNgLhXF1MAAAAAElFTkSuQmCC
+    lqip: data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAADQAQCdASoQAAgAAgA0JZQCdAD0tNvXgAD++yUU4/HtnDOizij1uz6dfZTsypE5KvKr20uztM+CbrkMAgjCLe9cNkIAAA==
     alt: 쇼핑몰에서 기다릴 때 잠깐
 
 toc: false

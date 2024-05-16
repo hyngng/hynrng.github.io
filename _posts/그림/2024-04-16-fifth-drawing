@@ -8,7 +8,7 @@ start_with_ads: false
 
 image:
     path: /drawing/240504-의자위에사람.png
-    lqip: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAFCAYAAAB8ZH1oAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAACxIAAAsSAdLdfvwAAABaSURBVBhXY2wUF//PgAT+/v/P8BGIhZiYoCIQgMoDgv+8vAyyhoZQHgKgKPzPwsLApqjI8OLNG6gIAqAoZPz3j+Hz06cMTN++QUUQANVqoEIGoGl/MExkYAAAdkYar3DWpXIAAAAASUVORK5CYII=
+    lqip: data:image/webp;base64,UklGRkwAAABXRUJQVlA4IEAAAABQAgCdASoQAAgAAgA0JbACdLoAAw99mbC/OgAA/vnFT4pLmuNFoQjBo6mMbdQjhxXXeNsH3/zPWe22e+TocAAA
     alt: 저러고 앉으면 불편할텐데
 
 toc: false

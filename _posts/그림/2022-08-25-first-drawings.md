@@ -8,7 +8,7 @@ start_with_ads: false
 
 image:
     path: /drawing/200000-생존사람.png
-    lqip: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAFCAYAAAB8ZH1oAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAACxIAAAsSAdLdfvwAAABnSURBVBhXjYoxCgQhFMUyC4J4BfEU3r+28AAWNpZ2FoIgiDOzYuNWG/j8B8l1v/AHRzjnpNa6tlIKIcTaX46wlIJzjjEG1lq01tvAZ/9Fa40QAjlnvPf03rf5CaWU64wxpJSIMW4DDyFbLh/cEzTTAAAAAElFTkSuQmCC
+    lqip: data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAADwAQCdASoQAAgAAgA0JaQAD4WwKYuRsAAA/v58LC1cLESP9ztg6FTwgeVVOIMR19dwzrRkt/f6yWyrN/pF2btgTAAAAA==
     alt: 포스트 아포칼립스 느낌 그림
 
 toc: false

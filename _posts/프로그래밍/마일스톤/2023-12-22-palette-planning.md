@@ -7,8 +7,8 @@ tags: [프로그래밍, 유니티, C#, 기획, 개발일지, 조이스틱, URP]
 start_with_ads: true
 
 image:
-    path: /2023-12-22-palette-planning/playscene.gif
-    lqip: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAFCAYAAAB8ZH1oAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADvMAAA7zARxTmToAAACXSURBVBhXLY7hDYIwFIS/tthiBxD9IzuwAlvghqykIf7DCSCkLfVRveRyebl3l1NVVWUEooXen6lrw6W58Xq+ads70zShrLXZGIMWGq2LHvDes64r27bx86UFpf6H4dpceQwDy7Kw7zvOOUKI6BhCaej7nhgj82dmHEcxAykluq6TKY6yUWtDzjsna0voCMgkkmiU55wzX/UzOrJuhJSPAAAAAElFTkSuQmCC
+    path: /2023-12-22-palette-planning/gameplay.gif
+    lqip: data:image/webp;base64,UklGRrYAAABXRUJQVlA4TKoAAAAvD8ABAHW4jWxbbfp4JJmZmSml0LH7L0Mq4pgVtG3DuOOPdQge4zaSFHVVH9P78o+T+j8BbhLNGhMUUL7GTwDFP6j3DTiLqMug0k4+RlwpOQFUC2jKxL/yzX0tKUApmm8sxu7n4LvlOeUbSBnGjBjAWUR/xmX1IQt/X/KSXVS1BnsLKLMeGqGJGl7KM5cUhbtrZyZYxL+CgfcTwNUUcJMaRE0DKQrAqa8oAA==
     alt: 예시 게임플레이
 
 toc: true

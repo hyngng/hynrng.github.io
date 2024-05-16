@@ -8,7 +8,7 @@ start_with_ads: false
 
 image:
     path: /drawing/230319-남자옆면.png
-    lqip: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAFCAYAAAB8ZH1oAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAChSURBVBhXPY6xDsFQAEXP62tpoyFoh+pQk8XIYBCbTQwGn2zxAzozWCRIW6Hte6qS3u3mnORecb+eNXU02SUmiw8IpRBVN7o+vfkGIU2MvwTFK+V2OmJ6EXoYUZpt8uSBLvKaN+KnKPEWW4LVnmC5Q4RTSlWitap5I9odl/5oTMt2cNwu1iDkWchqVta8EQ1D8k4T1O+fEPjRBH+2BmlVFL5gvzBBfWB6ywAAAABJRU5ErkJggg==
+    lqip: data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAACwAQCdASoQAAgAAgA0JQBOgBh2EShgAP79L/Zddr8IocHoi5zSrcrofTZs+tnZKRzvYrsVlw6ZY7BgVwil9C9Gboi+zO+NlKxGpgAA
     alt: 비니비니
 
 toc: false

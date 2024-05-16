@@ -8,7 +8,7 @@ start_with_ads: false
 
 image:
     path: /photo/20231222_222403.jpg
-    lqip: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAFCAIAAADzBuo/AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADvMAAA7zARxTmToAAABeSURBVBhXJUxJDoQADILSOZiJMdHb/P+ZOkg1Jd1YWMtun8bFPwgbRcCYI6VaVmayikJaQJkmKjLVd3u/YKObFRGdazLi3o5YUw8EhgmFWUz1/nuCRX2gZrhJ0gjAG7mgESkbD0KeAAAAAElFTkSuQmCC
+    lqip: data:image/webp;base64,UklGRjQAAABXRUJQVlA4ICgAAABwAQCdASoKAAUAAgA0JYwCdAFAAAD++vfd7pSFrqXz6iij8hsZxGAA
     alt: 한겨울 밤 하늘
 
 toc: false

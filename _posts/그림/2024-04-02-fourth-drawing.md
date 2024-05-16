@@ -8,7 +8,7 @@ start_with_ads: false
 
 image:
     path: /drawing/240128-로봇야자.png
-    lqip: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAFCAYAAAB8ZH1oAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAClSURBVBhXTY3NCoJQEIXPqJc0aFELIch2tq436DF7jdYta1NhEUHmRjJCraC2Xvy52WDQtxiGcw585G8XynZcdO0hiAj/KFXhlUa4XwPQcj5T39B2RnDHUx78SC4nhMcV/xrfmiSOEQV7hOcDHukNUkrowmxawMiLgpWbnYcyeyOTJUgXGLgTdNqtWs9CaMIweOj0e8iLCpYpYAngGXqI/DV3RIQPvog6LtR6vkUAAAAASUVORK5CYII=
+    lqip: data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAACwAQCdASoQAAgAAgA0JQBOgB36ciQAAP73Zxg8nMfva2Os143DTtvMAxoT1TRUfxmUiXdGG2V8tdhdRzeD1G4Kyg7P6bSZH60qEDAgAAA=
     alt: 야자중인 로봇
 
 toc: false
@@ -44,4 +44,4 @@ _헤드폰 탐남_
 
 요즘 뱅앤올룹슨이라는 오디오 브랜드에 빠졌습니다. 뱅앤올룹슨 제품이 있는 것은 아니지만, 제품이 공유하는 컨셉이나 회사가 표방하는 철학을 보다보니 스티브잡스가 생전 뱅앤올룹슨 제품 사진을 지갑 속에 넣고 다닌 이유를 알 것 같더라구요. 저도 사진 하나 가지고 다닐까봐요.
 
-여담으로 그림을 주기적으로 그리다보니 시간이 지나고 처음 그릴 때 손이 느려졌다는게 꽤나 체감됩니다. 그래서 좀 어색하다가도 계속 그리다보면 금방 돌아오는듯 하네요. 좀 자주 그려야 하는데 쉽지 않습니다 🥲
+여담으로 그림을 주기적으로 그리다보니 시간이 지나고 처음 그릴 때 손이 느려졌다는게 꽤나 체감됩니다. 그래서 좀 어색하다가도 계속 그리다보면 금방 돌아오는듯 하네요. 좀 자주 그렸으면 좋겠는데 쉽지 않습니다 🥲

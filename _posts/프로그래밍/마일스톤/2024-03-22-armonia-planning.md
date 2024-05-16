@@ -8,7 +8,7 @@ start_with_ads: true
 
 image:
     path: /2024-03-22-armonia-planning/concept-art-simple.png
-    lqip: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAFCAYAAAB8ZH1oAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAACxIAAAsSAdLdfvwAAABzSURBVBhXY/Q1Sf/PgASYWZgZ/v39x/D/P4owAxOUhgNhMQEGFz8rKA8BMBT++fmf4fDeUwxMTEwopqIo/PvvL8PnT58Znr96wsDKysrw+ftHhl+/f4LlUBQyAiEfPx+DraUTAz+Q5mTnZGBlYQXKMDAAAOdjIMzdUbdOAAAAAElFTkSuQmCC
+    lqip: data:image/webp;base64,UklGRoAAAABXRUJQVlA4THMAAAAvD8ABAJUwiiRJkZtjZmbGF9s5Kyd1ScY8FbRt5MYA/F79RFEjSWpSxn2Zbw+m+z8BjqBzPlDmvL+4+00yVxL5ht9jZKHMSM22JRAbkUChuDviWIX4O+VnNh9jixzr0LjyndMjOUfNsQQDkKGXf/yfCzAGAA==
     alt: 심플 컨셉아트
 
 toc: true

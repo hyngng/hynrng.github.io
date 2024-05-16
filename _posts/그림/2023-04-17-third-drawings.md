@@ -8,7 +8,7 @@ start_with_ads: false
 
 image:
     path: /drawing/230426-거꾸로매달림.png
-    lqip: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAFCAYAAAB8ZH1oAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABoSURBVBhXVc47CsAgEATQ0St4W89ob2dhbaei+GFiyBKS1yzMLMuCH2MMllLYe2cIgXtvaUiND6011lqotcIYA6WUNKeT+Yox4lxESkmSx2/xvuC9h7UWrTVJhbzwyjnTOcc5pyQ38gKve2OCgamBrgAAAABJRU5ErkJggg==
+    lqip: data:image/webp;base64,UklGRkYAAABXRUJQVlA4IDoAAACwAQCdASoQAAgAAgA0JaQAAtz+deMAAP7+fCmBZZn3+/ZORq9T+vedgOywrM/PuK61PMAYYBLZKgAA
     alt: 사람 거꾸로 매달기
 
 toc: false

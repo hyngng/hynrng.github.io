@@ -8,7 +8,7 @@ start_with_ads: true
 
 image:
     path: /2024-05-12-kingdom-of-the-planet-of-the-apes-review/planet-of-the-apes-scene.png
-    lqip: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAFCAYAAABxeg0vAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAALiMAAC4jAXilP3YAAADMSURBVBhXJY45TkNBEERfz4xnPrZYbCwQIiYBiZSEE3ALbsApOItv4tgSFkuALBEQsBg5wdhmitYnqG6pupbm9mpXs9G1bi6yLo+TTvpJR72kfhO1U6KaFFQc2RGDKeRSuL97YL2pJBMG9DpGCf/YbwJOU6sPv4bH2YLx9IOXLxFDoso4H3ZwLRuJw8baXaKLnQvbtmIyeebtO3J2kMnOPs3XbEU3VPhcVg8yb7e23fayqZuMYTdxOghM339ZrMQgw+tSzH/c1Ur9LYk/lHFJVi0oDlMAAAAASUVORK5CYII=
+    lqip: data:image/webp;base64,UklGRk4BAABXRUJQVlA4TEIBAAAvD8ABAB/jKJJtV5k5PwFr/FvACELyMqdjw1EjSY5UUeuXP5OjcwT8vf05biRJkTKX4cDQs5yeDL01/yESAQZAA8EAAkgYFQQAEIgQEgAYAEAqChMtJIAEYESkKASgihDgX7QYOeAPNsZJNIz+UGVoL0WV0A8yYNDILKJE9KttBYYiX/ym4oDfv8GnDOvAbsZ25m6GTZ1a37zNjcwKpKCLFpupOP185r/tfjT89m6nxvP5sT+c/T/xf/Q+35/d8eRwu3iNN9fzHRwEAEC2imbbuG3btm1G9D92/8+mnUv4bU1nSZLGT7/vdlhJBpWQZhKsgB+vl/U4G2/6dL3oZCBocb8NuqXorCESHQ/KyedVL7NfRrwThakZpKo8CuX69BBwVVNhBON4jnpbsdYo7c47DFLCeBSGX/35E4NACARZEAQA
     alt: "영화의 한 장면"
 
 toc: false
@@ -23,25 +23,25 @@ last_modified_at: 2024-05-13 11:58:00 +0900
 
 ## **들어가며**
 
-혹성탈출을 봤습니다. 이 시리즈는 평소에 관심이 없어서 전작을 한 편도 본 적이 없기 때문에 영화가 이해가 안 되면 어쩌지 하고 조금 걱정도 됐는데, 결과적으로는 단독으로 보기에도 충분했습니다. 영화를 같이 보러간 지인은 전작보다 액션이 아쉬웠다는 평을 남기기도 했는데, 그런 점에서 저는 오히려 편견없이 볼 수 있었다고 생각합니다.
+혹성탈출을 봤습니다. 이 시리즈는 전작을 한 편도 본 적이 없기 때문에 도중에 이해가 안 되면 어쩌지 하고 걱정도 됐는데, 결과적으로는 단독으로 보기에도 충분했습니다. 오히려 편견없이 볼 수 있었다고 생각해요.
 
 가장 기억에 남는 것은 여러 매체에서 꼽아 언급하듯 영상미적 완성도가 매우 좋았다는 겁니다. 풀로 뒤덮인 도시환경이나 유인원의 감정 표현 등 영화를 구성하는 판타지적 요소가 노련한 CG 기술력으로 매우 디테일하게 구현되어 있었습니다. 색감, 연출, 씬 분할 등 뭐 하나 아쉬운게 없었어요. 영화를 보는 내내 감탄했습니다.
 
-외에도 영화를 보면서 인상적인 점들이 몇 가지 눈에 띄었습니다. 본편에 앞선 두 편의 전 작품 내용을 모르기 때문에 시리즈 줄거리 전체를 훑는 대신 이 영화 한 편만 단독으로 놓고 짧게 다루겠습니다.
+외에도 영화를 보면서 인상적인 점들이 몇 가지 눈에 띄었습니다. 본편에 앞선 두 편의 전 작품 내용을 모르기 때문에 시리즈 줄거리 전체를 훑는 대신 본작 한 편에 대한 소감만 짧게 다루겠습니다.
 
 <!--![planet-of-the-apes-scene-1](/2024-05-12-kingdom-of-the-planet-of-the-apes-review/planet-of-the-apes-scene-1.png)-->
 
 ## **정통적이고도 흥미로운**
 
-영화의 초반부는 주인공의 일상이 파괴되고 홀로 험난한 자연환경을 돌파한다는 점에서 다른 영화 〈아포칼립토〉나 〈알파: 위대한 여정〉을 연상케 합니다. 중반부로 가서는 영웅 일대기 구조로서 전통적인 반지의 제왕 시리즈를 떠올리게 하죠. 어쩌면, 사라진 현대문명의 흔적을 좇는 강력한 질서가 외압적으로 등장한다는 점에서 영화는 전체적으로 〈매드 맥스〉와 닮았다는 생각도 듭니다. 영화는 그만큼 많은 클리셰를 복합적으로 인용하고 있습니다.
+영화의 초반부는 주인공의 일상이 파괴되고 홀로 험난한 자연환경을 돌파한다는 점에서 다른 영화 〈아포칼립토〉나 〈알파: 위대한 여정〉을 연상케 합니다. 중반부로 가서는 영웅 일대기 구조로서 전통적인 반지의 제왕 시리즈를 떠올리게 하죠. 어쩌면, 사라진 현대문명의 흔적을 좇는 강력한 질서가 외압적으로 등장한다는 점에서 영화는 전체적으로 〈매드 맥스〉와 닮았다는 생각도 듭니다.
 
 <!--
 외부의 강한 부족이 평화롭던 주인공 부족 마을을 파괴하고 마을 구성원을 복속시키는 영화의 초반부는 전투 중 주인공의 아버지를 잃는다는 것까지 〈아포칼립토〉의 재규어 발과 닮았습니다. 홀로 남겨진 주인공이 험난한 환경을 뚫으며 멀리 떨어진 부족을 찾으러 간다는 이후의 줄거리는 〈알파: 위대한 여정〉의 케다를 연상케 하죠. 어쩌면, 멸망한 문명의 흔적 조각을 활용하는 후세대라는 소재는 〈매드맥스〉에서 이미 본 듯 합니다.
 -->
 
-종교화된 이념, 분열되고 군벌화된 권력이 등장하는 포스트 아포칼립스 또한 새롭다는 느낌은 아니지만, 그럼에도 인간과 유인원의 관계가 뒤바뀌었다는 소재 자체의 독특함 덕분인지 막상 영화 자체가 뻔하다는 느낌은 없었습니다. 영화의 서사구조도 모든 것을 믿을 수 없는 스릴러가 되더니, 라카라는 조력자를 만나고서부터는 노아 영웅 일대기로 변하죠.
+영화는 그만큼 많은 클리셰를 복합적으로 인용하고 있습니다. 종교화된 이념, 분열되고 군벌화된 권력이 등장하는 포스트 아포칼립스 또한 새롭다는 느낌은 아니지만, 그럼에도 인간과 유인원의 관계가 뒤바뀌었다는 소재 자체의 독특함 덕분인지 막상 영화 자체가 뻔하다는 느낌은 없었습니다. 영화의 서사구조도 모든 것을 믿을 수 없는 스릴러가 되더니, 라카라는 조력자를 만나고서부터는 노아 영웅 일대기로 변하죠.
 
-그러면서도 클리셰를 게으르게 사용하지 않고 성의를 담아 비튼 흔적이 보입니다. 예를 들어 정상적인 영웅 일대기였다면 프록시무스의 왕국을 조력자의 도움으로 들어가게 되었을 텐데, 오히려 라카를 떠나보내고 프록시무스에 제압당한 채 들어가게 되죠. 프록시무스의 왕국을 무너트리는 마무리 역시 강대강 대치도 밑으로부터 힘을 모은 혁명도 아닌 독특한 방식을 취합니다.
+그러면서도 클리셰를 게으르게 사용하지 않고 성의를 담아 비튼 흔적이 보입니다. 프록시무스의 왕국으로 향하는 장면도 일반적인 영웅 일대기 구조였다면 조력자의 도움이 결정적 계기가 되었을 텐데, 오히려 라카를 잃고 프록시무스에 제압당한 채 들어가게 되죠. 프록시무스의 왕국을 무너트리는 마무리 역시 강대강 대치도 밑으로부터 힘을 모은 혁명도 아닌 독특한 방식을 취합니다.
 
 <!-- ## **세대를 통해 전달되다** -->
 
