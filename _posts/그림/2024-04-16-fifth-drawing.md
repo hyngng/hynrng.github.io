@@ -9,7 +9,7 @@ start_with_ads: false
 image:
     path: /drawing/240504-의자위에사람.png
     lqip: data:image/webp;base64,UklGRkwAAABXRUJQVlA4IEAAAABQAgCdASoQAAgAAgA0JbACdLoAAw99mbC/OgAA/vnFT4pLmuNFoQjBo6mMbdQjhxXXeNsH3/zPWe22e+TocAAA
-    alt: 저러고 앉으면 불편할텐데
+    alt: 불편하게시리
 
 toc: false
 toc_sticky: true
@@ -26,10 +26,10 @@ _사람그리기 좋은 날_
 _부시시_
 
 ![240416-가방짐](/drawing/240416-가방짐.png)
-_여행용 짐_
+_여행용 가방 안쪽_
 
 ![240504-방어지름](/drawing/240504-방어지름.png)
-_자취방 그림_
+_정육면체 자취방_
 
 브러쉬를 바꿨더니 느낌이 확 달라졌습니다! 종이 위에 그리는 것 같아 이런 털털한 느낌을 굉장히 좋아하는데 괜히 지금까지 손해본 기분이에요. 훨씬 그릴 맛이 납니다 🥰
 
