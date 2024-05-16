@@ -20,7 +20,7 @@ last_modified_at: 2024-05-16 13:53:00 +0900
 
 ![240515-알감자](/drawing/240515-알감자.png){: .light .border}
 ![240515-알감자](/drawing/240515-알감자.png){: .dark }
-_사람그리기 좋은 날_
+_사람 그리기 좋은 날_
 
 ![240516-부시시](/drawing/240516-부시시.png){: .light .border}
 ![240516-부시시](/drawing/240516-부시시.png){: .dark }
