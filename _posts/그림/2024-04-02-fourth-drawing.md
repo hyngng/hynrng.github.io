@@ -9,7 +9,7 @@ start_with_ads: false
 image:
     path: /drawing/240128-로봇야자.png
     lqip: data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAACwAQCdASoQAAgAAgA0JQBOgB36ciQAAP73Zxg8nMfva2Os143DTtvMAxoT1TRUfxmUiXdGG2V8tdhdRzeD1G4Kyg7P6bSZH60qEDAgAAA=
-    alt: 야자중인 로봇
+    alt: 야자중
 
 toc: false
 toc_sticky: true
