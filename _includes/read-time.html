@@ -18,12 +18,14 @@
 {% endcapture %}
 
 <!-- return element -->
+<!-- region 수정됨 -->
 <span
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="{{ words }} {{ site.data.locales[include.lang].post.words }}"
+  title="{{ words }}{{ site.data.locales[include.lang].post.words }}"
 >
+<!-- region 수정됨 -->
   <em>
     {{- read_time -}}
     {{ ' ' }}
