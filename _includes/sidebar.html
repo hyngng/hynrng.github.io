@@ -11,9 +11,18 @@
       {%- endif -%}
     </a>
 
-    <h1 class="site-title">
-      <a href="{{ '/' | relative_url }}">{{ site.title }}</a>
-    </h1>
+    <!-- region 수정됨 -->
+    {% if page.url == "/" %}
+      <h1 class="site-title">
+        <a href="{{ '/' | relative_url }}">{{ site.title }}</a>
+      </h1>
+    {% else %}
+      <h2 class="site-title">
+        <a href="{{ '/' | relative_url }}">{{ site.title }}</a>
+      </h2>
+    {% endif %}
+    <!-- endregion 수정됨 -->
+
     <p class="site-subtitle fst-italic mb-0">{{ site.tagline }}</p>
   </header>
   <!-- .profile-wrapper -->

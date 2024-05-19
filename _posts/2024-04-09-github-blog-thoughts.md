@@ -6,14 +6,14 @@ categories: [블로그]
 tags: [깃허브, 블로그, 커스텀, 커스터마이징, Chirpy]
 start_with_ads: true
 
-math: true
-mermaid: true
-
 toc: true
 toc_sticky: true
 
 date: 2024-04-09 15:24:00 +0900
 last_modified_at: 2024-04-09 15:24:00 +0900
+
+mermaid: true
+math: true
 ---
 
 ## **들어가며**
