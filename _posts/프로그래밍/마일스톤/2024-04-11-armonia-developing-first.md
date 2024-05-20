@@ -37,8 +37,8 @@ last_modified_at: 2024-05-19 18:31:00 +0900
 ## **아카이브** {#archive}
 
 <!--![street-and-utility-pole](/2024-04-30-armonia-developing-first/street-and-utility-pole.webp){: .w-75 }-->
-![people-activated](/2024-04-30-armonia-developing-first/people-activated.webp){: .w-75 }
-![pigeon-activated](/2024-04-30-armonia-developing-first/pigeon-activated.webp){: .w-75 }
+![people-accessed](/2024-04-30-armonia-developing-first/people-accessed.webp){: .w-75 }
+![pigeon-accessed](/2024-04-30-armonia-developing-first/pigeon-accessed.webp){: .w-75 }
 _각각 사람과 비둘기를 구현했을 때. 플레이어는 아무 사람 또는 비둘기가 되어 주변환경과 상호작용할 수 있다._
 
 ## **에셋**
