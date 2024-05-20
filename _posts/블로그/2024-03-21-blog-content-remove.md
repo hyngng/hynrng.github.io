@@ -17,8 +17,8 @@ last_modified_at: 2024-04-24 17:24:00 +0900
 
 Chirpy 테마는 깔끔하고 단정하지만 순정 상태에서는 이건 개선이 필요하겠다 생각이 드는 부분이 간혹 보입니다. **[간간히 수정](https://hynrng.github.io/posts/first-blog-customization/)**해주고는 있지만 개인적으로 아쉬운 점이 여전히 몇 가지 남아있었죠.
 
-![before-light](/2024-03-21-blog-content-remove/before-light.png){: .light .w-75 .border }
-![before-dark](/2024-03-21-blog-content-remove/before-dark.png){: .dark .w-75 }
+![before-light](/2024-03-21-blog-content-remove/before-light.webp){: .light .w-75 .border }
+![before-dark](/2024-03-21-blog-content-remove/before-dark.webp){: .dark .w-75 }
 _수정 전 블로그 홈에 표시되는 포스트 요약본_
 
 그 중 하나는 블로그 홈의 글 요약본이 이미지 캡션이나 헤더 등을 포함한 날것 그대로 보인다는 겁니다. 위처럼 이미지 캡션이나 "들어가며" 같은 불필요한 부분이 같이 표시되어 가독성이 나빠지고 있죠. 이런건 당연히 기본 처리가 되어있어야 하는게 아닌가 싶은데, 이번에 방법을 찾아서 수정해주었습니다.
@@ -88,8 +88,8 @@ Ruby나 Liquid에 대해서는 배경지식이 없어 방법을 알아내느라 
 
 ## **개선 확인**
 
-![after-light](/2024-03-21-blog-content-remove/after-light.png){: .light .w-75 .border}
-![after-dark](/2024-03-21-blog-content-remove/after-dark.png){: .dark .w-75 }
+![after-light](/2024-03-21-blog-content-remove/after-light.webp){: .light .w-75 .border}
+![after-dark](/2024-03-21-blog-content-remove/after-dark.webp){: .dark .w-75 }
 _코드 적용 후 개선된 포스트 요약본_
 
 코드를 작성하니 잘 동작합니다. 수정 전과 비교하면 불필요한 글이 제거되면서 글 요약본의 가독성이 대폭 개선되었어요. 수정 전의 난해한 느낌이 사라지고 훨씬 자연스러워졌습니다. 추가적으로 제거를 원하는 태그가 있으면 단순히 `remove_tag:` 뒤에 추가해주면 되기 때문에 유지보수도 어렵지 않아서 불편한 느낌도 없습니다.
