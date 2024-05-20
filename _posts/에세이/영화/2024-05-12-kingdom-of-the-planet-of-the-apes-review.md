@@ -7,7 +7,7 @@ tags: [영화, 에세이, 혹성탈출]
 start_with_ads: true
 
 image:
-    path: /2024-05-12-kingdom-of-the-planet-of-the-apes-review/planet-of-the-apes-scene.png
+    path: /2024-05-12-kingdom-of-the-planet-of-the-apes-review/planet-of-the-apes-scene.webp
     lqip: data:image/webp;base64,UklGRk4BAABXRUJQVlA4TEIBAAAvD8ABAB/jKJJtV5k5PwFr/FvACELyMqdjw1EjSY5UUeuXP5OjcwT8vf05biRJkTKX4cDQs5yeDL01/yESAQZAA8EAAkgYFQQAEIgQEgAYAEAqChMtJIAEYESkKASgihDgX7QYOeAPNsZJNIz+UGVoL0WV0A8yYNDILKJE9KttBYYiX/ym4oDfv8GnDOvAbsZ25m6GTZ1a37zNjcwKpKCLFpupOP185r/tfjT89m6nxvP5sT+c/T/xf/Q+35/d8eRwu3iNN9fzHRwEAEC2imbbuG3btm1G9D92/8+mnUv4bU1nSZLGT7/vdlhJBpWQZhKsgB+vl/U4G2/6dL3oZCBocb8NuqXorCESHQ/KyedVL7NfRrwThakZpKo8CuX69BBwVVNhBON4jnpbsdYo7c47DFLCeBSGX/35E4NACARZEAQA
     alt: "영화의 한 장면"
 
@@ -27,7 +27,7 @@ last_modified_at: 2024-05-13 11:58:00 +0900
 
 외에도 영화를 보면서 인상적인 점들이 몇 가지 눈에 띄었습니다. 본편에 앞선 두 편의 전 작품 내용을 모르기 때문에 시리즈 줄거리 전체를 훑는 대신 본작 한 편에 대한 소감만 짧게 다루겠습니다.
 
-<!--![planet-of-the-apes-scene-1](/2024-05-12-kingdom-of-the-planet-of-the-apes-review/planet-of-the-apes-scene-1.png)-->
+<!--![planet-of-the-apes-scene-1](/2024-05-12-kingdom-of-the-planet-of-the-apes-review/planet-of-the-apes-scene-1.webp)-->
 
 ## **정통적이고도 흥미로운**
 
@@ -41,11 +41,9 @@ last_modified_at: 2024-05-13 11:58:00 +0900
 
 그러면서도 클리셰를 게으르게 사용하지 않고 성의를 담아 비튼 흔적이 보입니다. 프록시무스의 왕국으로 향하는 장면도 일반적인 영웅 일대기 구조였다면 조력자의 도움이 있었을 텐데, 오히려 라카를 잃고 프록시무스에 제압당한 채 들어가게 되죠. 프록시무스의 왕국을 무너트리는 마무리 역시 강대강 대치도 밑으로부터의 혁명도 아닌 독특한 방식을 취합니다.
 
-<!-- ## **세대를 통해 전달되다** -->
-
 ## **세대를 통해**
 
-<!--![planet-of-the-apes-scene-2](/2024-05-12-kingdom-of-the-planet-of-the-apes-review/planet-of-the-apes-scene-2.png)-->
+<!--![planet-of-the-apes-scene-2](/2024-05-12-kingdom-of-the-planet-of-the-apes-review/planet-of-the-apes-scene-2.webp)-->
 
 이 영화에 주제가 있다면 결국 "후대는 선대를 어떻게 받아들일 것인가"일 것이라 생각합니다. 이는 기능을 잃은 송전탑 위에 지어진 독수리 부족 마을, 형체만 남은 폐선박을 이용해 건설된 프록시무스 왕국 등 그 자체로 혹성탈출 세계관의 핵심 전제이기도 하지만, 영화 결말에서 "인간과 유인원은 같이 살 수 있을까"라는 노아의 물음으로 구체화되는 핵심 주제이기도 합니다.
 
