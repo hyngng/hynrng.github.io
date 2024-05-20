@@ -20,21 +20,6 @@ last_modified_at: 2023-04-12 20:38:00 +0900
 ## **예시 코드**
 
 ```cpp
-void setup()
-{
-    ...
-}
-
-void loop()
-{
-    Money = MainFunctions.AddFiveHundreadWon(Money);
-    Money = MainFunctions.AddOneHundreadWon(Money);
-    Money = MainFunctions.AddFiftyWon(Money);
-}
-```
-{: file="Arduino_OOP.ino" }
-
-```cpp
 #include "Arduino.h"
 
 class MainFunctions
@@ -71,3 +56,20 @@ int MainFunctions::AddFiveHundreadWon(int Money)
 }
 ```
 {: file="MainFunctions.h" }
+
+```cpp
+void setup()
+{
+    ...
+}
+
+void loop()
+{
+    Money = MainFunctions.AddFiveHundreadWon(Money);
+    Money = MainFunctions.AddOneHundreadWon(Money);
+    Money = MainFunctions.AddFiftyWon(Money);
+}
+```
+{: file="Arduino_OOP.ino" }
+
+간단한 금액을 추가하는 기능의 코드를 낱개로 분할한 구현한 예시입니다. 클래스의 선언부인 `MainFunctions.h`에서 500원, 100원, 50원을 더하는 역할의 메서드를 선언하고, `MainFunctions.h`에서는 선언된 메서드를 정의하는 역할을, `Arduino_OOP.ino`에서는 정의된 메서드를 호출하는 역할을 맡도록 작성했습니다.
