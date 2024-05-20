@@ -64,7 +64,7 @@ theme_mode: # [light | dark]
 cdn: "https://cdn.jsdelivr.net/gh/hynrang/hynrng.github.io-image@master"
 # https://raw.githubusercontent.com/hynrng/hynrng.github.io.resources/master
 
-avatar: "/favicons/hynrng.png"
+avatar: "/favicons/hynrng.webp"
 
 social_preview_image: # string, local or CORS resources
 
