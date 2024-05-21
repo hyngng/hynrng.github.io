@@ -61,7 +61,8 @@ pageviews:
 
 theme_mode: # [light | dark]
 
-cdn: "https://cdn.jsdelivr.net/gh/hynrang/hynrng.github.io-image@master"
+cdn: "https://cdn.statically.io/gh/hynrang/hynrng.github.io-image@master"
+# https://cdn.jsdelivr.net/gh/hynrang/hynrng.github.io-image@master
 # https://raw.githubusercontent.com/hynrng/hynrng.github.io.resources/master
 
 avatar: "/favicons/hynrng.webp"
