@@ -9,7 +9,7 @@
   {{- post.description -}}
 {%- else -%}
   {%- include no-linenos.html content=post.content -%}
-  {{- content | markdownify | strip_html -}}
+  {{- content | remove_tag: 'h2', 'em', 'blockquote', 'pre' | markdownify | strip_html -}}
 {%- endif -%}
 {%- endcapture -%}
 

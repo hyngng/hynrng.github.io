@@ -134,7 +134,9 @@ tail_includes:
     <!-- categories -->
     {% if page.categories.size > 0 %}
       <div class="post-meta mb-3">
+        {% comment %} region 수정됨 {% endcomment %}
         <i class="far fa-solid fa-folder fa-fw me-1"></i>
+        {% comment %} endregion 수정됨 {% endcomment %}
         {% for category in page.categories %}
           <a href="{{ site.baseurl }}/categories/{{ category | slugify | url_encode }}/">{{ category }}</a>
           {%- unless forloop.last -%},{%- endunless -%}

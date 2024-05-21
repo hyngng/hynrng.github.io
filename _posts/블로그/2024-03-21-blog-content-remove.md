@@ -1,6 +1,5 @@
 ---
 title: "깃허브 블로그에서 특정 태그 내용 제거하기"
-description: "Chirpy 테마의 깃허브 블로그에서 특정 태그의 내용을 코드로 제거하는 방법을 정리합니다."
 
 categories: [블로그]
 tags: [깃허브, 블로그, HTML, 커스텀, 커스터마이징, Chirpy]
@@ -70,8 +69,7 @@ Liquid::Template.register_filter(Jekyll::RemoveTagFilter)
 <div class="card-text content mt-0 mb-3">
   <p>
     {% include no-linenos.html content=post.content %}
-    {% assign cleaned_content = content | remove_tag: 'h2', 'em', 'blockquote' %}
-    {{ cleaned_content | markdownify | strip_html | truncate: 200 | escape }}
+    {{ cleaned_content | remove_tag: 'h2', 'em', 'blockquote' | markdownify | strip_html | truncate: 200 | escape }}
   </p>
 </div>
 ```

@@ -89,10 +89,8 @@
                   {% include no-linenos.html content=post.content %}
 
                   {% comment %} region 수정됨 {% endcomment %}
-                  {% assign cleaned_content = content | markdownify | remove_tag: 'h2', 'em', 'blockquote', 'pre' %}
+                  {{ content | markdownify | remove_tag: 'h2', 'em', 'blockquote', 'pre' | strip_html | truncate: 200 | escape }}
                   {% comment %} endregion 수정됨 {% endcomment %}
-
-                  {{ cleaned_content | markdownify | strip_html | truncate: 200 | escape }}
                 </p>
               </div>
             </div>
