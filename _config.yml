@@ -112,6 +112,11 @@ paginate: 6
 # The base URL of your site
 baseurl: ""
 
+# region 수정됨
+plugins:
+  - jekyll-redirect-from
+# endregion 수정됨
+
 # ------------ The following options are not recommended to be modified ------------------
 
 kramdown:

@@ -16,6 +16,9 @@ toc_sticky: true
  
 date: 2022-12-31 14:53:00 +0900
 last_modified_at: 2023-04-09 16:42:00 +0900
+
+redirect_from:
+  - /posts/%EC%9E%84%EC%9D%B8%EB%85%84%EC%9D%98-%EC%82%AC%EC%A7%84/
 ---
 
 <!--
