@@ -3,7 +3,7 @@ title: "깃허브 블로그 템플릿 커스터마이징하기"
 description: "Chirpy 테마의 깃허브 블로그 구성요소를 수정하는 과정을 정리합니다."
 
 categories: [블로그]
-tags: [깃허브, 블로그, HTML, CSS, 커스텀, 커스터마이징, Chirpy]
+tags: [블로그, 커스텀, 커스터마이징, Chirpy, Liquid, SCSS]
 start_with_ads: true
 
 toc: true
@@ -34,9 +34,7 @@ redirect_from:
 
 그동안 신경쓰였던 것 중 하나가 폰트 크기가 살짝 크다는 것이었습니다. 글씨 크기를 어떻게 수정하는지 잘 모르기도 했고 기능적으로 불편한 것도 아니었기 때문에 지금까지는 그려러니 하고 넘겼지만 이번에 블로그 새단장을 한 김에 수정하기로 했습니다.
 
-포스트의 글 속성은 `_scss/addon/commons.scss`{: .filepath }의 `.content` 선택자가 담당하는 식으로 되어 있었고, `_scss`{: .filepath }폴더의 CSS 파일은 모두 `assets/css/jekyll-theme-chirpy.scss`{: .filepath }로 `@import`되고 있어 `font-size` 값을 0.98정도로 설정해주었습니다.
-
-설정해주는김에 단락 간격도 조절해주었습니다. 티스토리나 네이버 등 타 블로그 플랫폼과 비교했을 때 글이 너무 빽빽하고 읽기 힘들다는 느낌이 들어 1.25rem에서 1.5rem 정도로 늘려주었습니다.
+SCSS는 `assets/css/jekyll-theme-chirpy.scss`{: .filepath }에서 수정하거나 새로 작성할 수 있으므로 이 파일에 코드를 작성할 수 있습니다. 포스트 글 속성은 `_scss/addon/commons.scss`{: .filepath }의 `.content` 선택자가 담당하고 있어 모든 `.content`에 대해 `font-size` 값을 0.98정도로 설정해주었고, 간락 간격도 티스토리나 네이버 블로그 양식을 참고하여 1.25rem에서 1.5rem 정도로 조절해주었습니다.
 
 ```css
 .content {
@@ -55,7 +53,7 @@ p:not(blockquote p) {
 ![footer-remove-dark](/2023-11-25-first-blog-customization/footer-remove-dark.webp){: .dark }
 _적용 전후 비교_
 
-순정 Chirpy 테마는 블로그 하단에 왼쪽의 "ⓒ {년도} {이름} 일부 권리 보유'와 오른쪽의 'Powered by Jekyll with Chirpy theme"라는 Footer를 생성합니다. 이중 오른쪽 Footer는 특히 중요한 정보가 아니므로 삭제해 주었습니다. Footer를 생성하는 코드를 찾아 주석처리했어요.
+순정 Chirpy 테마는 블로그 하단에 왼쪽의 "ⓒ {년도} {이름} 일부 권리 보유'와 오른쪽의 'Powered by Jekyll with Chirpy theme"라는 Footer를 생성하는데, 후자는 크게 중요한 정보가 아니므로 삭제해 주었습니다. Footer를 생성하는 코드를 찾아 주석처리했어요.
 
 {% raw %}
 ```liquid
@@ -164,7 +162,7 @@ export function toc() {
 > **2024/04/16 수정!**
 {: .prompt-info }
 
-블로그를 웹에 등록하던 도중 네이버 서치어드바이저와 빙 웹마스터에서 "h1 태그가 여러 개 발견됨"이라는 경고를 받고 왜 이런 유형의 경고가 있는지 찾다가 **[웹 콘텐츠 접근성 지침(WCAG)](https://www.w3.org/TR/WCAG21/)**이라는 것을 알게 되었습니다. h2 이하 태그부터 TOC를 생성하도록 변경된 이유는 아마 이 지침이 h1 태그를 한 개만 사용하도록 권장하고 있기 때문인 것 같더라구요. 실제로 **[위키백과](https://ko.wikipedia.org/wiki/%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD)**와 같은 문서를 개발자 도구로 확인해보면 글 제목을 h1 태그로, 글 목차부터는 h2로 구분하여 처리하고 있었습니다.
+블로그를 웹에 등록하던 도중 네이버 서치어드바이저와 빙 웹마스터에서 "h1 태그가 여러 개 발견됨"이라는 경고를 받고 왜 이런 유형의 경고가 있는지 찾다가 **[웹 콘텐츠 접근성 지침(WCAG)](https://www.w3.org/TR/WCAG21/)**이라는 것을 알게 되었습니다. h2 이하 태그부터 TOC를 생성하도록 변경된 이유는 이 지침에 따라 h1 태그를 한 개만 사용하도록 유도하기 위해서인 것 같더라구요. 실제로 **[위키백과](https://ko.wikipedia.org/wiki/%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD)**와 같은 문서를 개발자 도구로 확인해보면 글 제목을 h1 태그로, 글 목차부터는 h2로 구분하여 처리하고 있었습니다.
 
 정말 WCAG 때문인 것인지는 조금 긴가민가하지만, 권장사항은 준수해주어야겠다는 생각이 들어 블로그 포스팅에 사용한 모든 헤더의 단위를 한 단계 낮춰주는 쪽으로 바꾸어 주었습니다. 다만 목차의 글씨 크기는 그대로 유지되었으면 해서 `jekyll-theme-chirpy.scss`{: .filepath }에서 아래와 같이 `font-size` 속성만 별도로 설정해주었어요.
 

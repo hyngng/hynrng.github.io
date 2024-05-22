@@ -3,7 +3,7 @@ title: "깃허브 블로그를 사용하는 이유"
 description: "깃허브 블로그 플랫폼의 장점과 활용방안을 정리합니다."
 
 categories: [블로그]
-tags: [깃허브, 블로그, 커스텀, 커스터마이징, Chirpy]
+tags: [블로그, 커스터마이징, Chirpy]
 start_with_ads: true
 
 toc: true

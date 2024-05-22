@@ -12,14 +12,14 @@
     </a>
 
     <!-- region 수정됨 -->
-    {% if page.layout == 'home' %}
-      <h1 class="site-title">
-        <a href="{{ '/' | relative_url }}">{{ site.title }}</a>
-      </h1>
-    {% else %}
+    {% if page.layout == 'post' %}
       <h2 class="site-title">
         <a href="{{ '/' | relative_url }}">{{ site.title }}</a>
       </h2>
+    {% else %}
+      <h1 class="site-title">
+        <a href="{{ '/' | relative_url }}">{{ site.title }}</a>
+      </h1>
     {% endif %}
     <!-- endregion 수정됨 -->
 

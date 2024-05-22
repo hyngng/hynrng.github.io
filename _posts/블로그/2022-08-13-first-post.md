@@ -3,7 +3,7 @@ title: "블로그 개설했습니다!"
 description: "깃허브 블로그를 첫 개설한 후기입니다. 앞으로의 포부가 함께 담겨있습니다."
 
 categories: [블로그]
-tags: [깃허브, 블로그, Chirpy]
+tags: [블로그, Chirpy]
 start_with_ads: true
 
 toc: false

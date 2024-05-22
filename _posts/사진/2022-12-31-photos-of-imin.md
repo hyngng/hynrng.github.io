@@ -111,7 +111,7 @@ _230mm ISO50 F4.9 1/470s_
 
 <br>
 
-> 사진 원본은 **[깃허브](https://github.com/hynrng/hynrng.github.io.resources/tree/master/photo/jpg)**에서 확인할 수 있습니다!
+> 사진 원본은 **[제 깃허브](https://github.com/hynrng/hynrng.github.io.resources/tree/master/photo/jpg)**에서 확인할 수 있습니다!
 {: .prompt-tip }
 
 시간이 지나고 사진의 느낌이 달라지는 것을 좋아해 평소 사진을 많이 찍으려 하는 편입니다. 그러다 올해 폰을 카메라 새 것으로 바꾸게 되면서 "같은 사진도 남보다 예쁘게 담을 수 있지 않을까?" 하는 호기심이 생겼습니다. 요즘 나오는 기종은 카메라 하드웨어가 워낙에 좋아서 잘 활용해보고 싶기도 했고요.
