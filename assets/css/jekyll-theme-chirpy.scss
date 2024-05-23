@@ -16,7 +16,8 @@
 .content {
   font-family: 'Pretendard', 'Source Sans Pro', 'Microsoft Yahei', sans-serif;
   font-size: 1rem;
-  margin-top: 1.5rem;
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
   /*word-break: keep-all;*/ /* 단어기준 줄넘김인데, 안 예뻐서 보류. */
 }
 
@@ -40,11 +41,11 @@ h2 {
 }
 
 h3 {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
 }
 
 h4 {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 /* endregion 텍스트 */
 

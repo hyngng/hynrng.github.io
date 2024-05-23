@@ -30,20 +30,34 @@ _대표적인 웹마스터도구, 구글 서치 콘솔_
 결과적으로 현재 모든 플랫폼에서 `site:hynrng.github.io` 검색어 입력 시 블로그 노출이 확인되는 상태입니다. 만약 저처럼 웹마스터도구에 개인 사이트를 등록하고싶으신 분이 계시다면 다음을 참고하시면 도움이 될 것 같습니다.
 
 ### **구글 서치 콘솔**
-- 깃허브 블로그의 [Chirpy 테마](https://github.com/cotes2020/jekyll-theme-chirpy)를 이용하는 경우 HTML 태그를 통한 사이트 소유권 인증은 `_includes/head.html`{: .filepath }에 작성해도 정상적으로 인증되기는 하지만, 그보다는 템플릿 차원에서 관련 기능을 지원하고 있으니 `_config.yml`{: .filepath }의 `webmaster_verifications.google`란을 이용하는 것이 좋습니다.
+
+- 깃허브 블로그에서 HTML 태그를 통한 사이트 소유권 인증은 `_includes/head.html`{: .filepath }에 작성해도 정상적으로 진행되기는 하지만, 그보다는 `jekyll-seo-tags` 플러그인에서 관련 기능을 지원하고 있으니 `_config.yml`{: .filepath }의 `webmaster_verifications`란을 이용하는 것이 좋습니다.
 
 ### **네이버 서치어드바이저**
+
 - 네이버 서치어드바이저의 경우 아톰(Atom) 유형의 피드를 받지 않아 `rss.xml`을 따로 만들어 등록해주어야 합니다. 예시 RSS 파일은 [제 깃허브](https://github.com/hynrng/hynrng.github.io/blob/main/assets/rss.xml)에서, 예시 동작은 [이곳](https://hynrng.github.io/rss.xml)에서 확인해볼 수 있습니다.
 
 ### **다음 웹마스터도구**
+<!--
 - [검색등록 신청 사이트](https://register.search.daum.net/index.daum)와 [웹마스터도구](https://webmaster.daum.net/)가 나뉘어져 있습니다. 처음 사이트 등록은 검색등록 신청 사이트에서, 사이트 등록 이후 사이트맵과 피드는 웹마스터도구에서 따로 제출해야 합니다.
-- 신생 웹사이트의 경우 파비콘이 노출되지 않습니다. 이유가 궁금해 [고객센터](https://cs.daum.net/)에 문의해봤으나 _"파비콘은 내부 기준 우선순위에 따라서 수집이 진행되고 있으며 자세한 기준은 정책상 자세히 공개할 수 없다."_ 라는 답변을 받았습니다. 매우 찜찜하지만 개인 차원에서 할 수 있는 일은 없는 듯 합니다.
+-->
+- 검색결과에 사이트 등록이 완료되더라도 신생 웹사이트의 경우 파비콘이 노출되지 않습니다. [고객센터](https://cs.daum.net/)에 문의해봐도 _"파비콘 수집 기준은 정책상 자세히 공개할 수 없다"_ 라는 답변을 줍니다. 찜찜하지만 개인 차원에서 할 수 있는 일은 없는 듯 합니다.
 
+<!--
 ### **빙 웹마스터도구**
+
 - 구글 서치 콘솔에 사이트가 정상적으로 등록되어있다면 구글과 연결해서 그대로 사용할 수 있습니다. 제출한 사이트맵, 피드 등이 연동되며 사이트 소유권 인증도 건너뛸 수 있습니다.
 - 빙 웹마스터도구도 파비콘이 노출되지 않는 문제가 있으나 [지원 팀에 문의](https://www.bing.com/webmasters/support)하면 친절히 해결해줍니다. 제 경우 문의를 보낸 후 이틀만에 파비콘이 정상적으로 함께 노출이 되기 시작했습니다.
+-->
 
 ## **SEO 최적화**
+
+<!--
+블로그 검색등록을 신청하면서 처음 알게 된 개념입니다. SEO(Search Engine Optimization)란 사용자가 검색엔진에서 사이트를 쉽게 찾고 탐색할 수 있도록 최적화 하는 방법으로, [공식 가이드](https://developers.google.com/search/docs/fundamentals/seo-starter-guide?hl=ko)까지 있을 정도로 중요한 개념입니다.
+-->
+<!--
+### **robots.txt**
+-->
 
 ### **이미지 용량 절약**
 
