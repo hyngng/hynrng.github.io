@@ -19,7 +19,7 @@ order: 4
 
 > 모든 글은 다크모드와 화이트모드 양쪽에 최적화되어 있지만, 화이트모드를 추천드립니다! ✨
 {: .prompt-tip }
-> **[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.ko)**를 따릅니다. 컨텐츠 재사용은 가능하지만, 출저를 꼭 남겨주세요! ⚡
+> **[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.ko)**를 따릅니다. 블로그 컨텐츠를 사용하고 싶다면, 출저를 꼭 남겨주세요! ⚡
 {: .prompt-warning }
 > 재미있게 즐겨주셨으면 좋겠습니다! 🍸
 {: .prompt-info }
