@@ -192,3 +192,6 @@ jekyll-archives:
   permalinks:
     tag: /tags/:name/
     category: /categories/:name/
+
+# 새로 작성함
+incremental: true # 변경된 파일만 재빌드
