@@ -1,6 +1,6 @@
 ---
 title: "횡스크롤 감성 게임 개발하기: 프로토타입 개발 과정"
-description: "유니티를 이용한 감성 모바일 게임 프로토타입 개발기를 정리합니다."
+description: "유니티를 이용한 첫 번째 감성 모바일 게임 프로토타입 개발기를 정리합니다."
 
 categories: [프로그래밍, 마일스톤]
 tags: [프로그래밍, 유니티, C#, 개발일지]
@@ -156,9 +156,25 @@ flowchart LR
     F --> C
 ```
 
+```cs
+void GenerateObjects(List<GameObject> instantiated, List<GameObject> instantiable)
+{
+    GameObject tempInstantiated = instantiated[instantiated.Count - 1];
+
+    for (int i=instantiated.Count - 1; i>0; i--)
+        instantiated[i] = instantiated[i - 1];
+    instantiated[0] = tempInstantiated;
+    
+    instantiated[0].transform.position = new Vector3(
+        instantiated[1].transform.position.x - objectSize, 0, 0
+    );
+}
+```
+{: file="MapGenerator.cs" }
+
 맵 생성의 경우 직접 만들어본 것은 처음입니다. 사전에 BSP와 같은 절차적 맵 생성 알고리즘도 찾아보았지만 제가 만들고 싶은 것과는 거리가 있는 것 같고, 또 그렇게 복잡한 시스템이 필요한 것 같지는 않아서 직접 만들게 되었습니다.
 
-크게 다음의 조건을 만족하면 될 것 같다고 생각했습니다.
+다음의 조건을 만족합니다.
 : - 한 번 생성된 맵은 게임 종료 시점까지 보존됨
 - 맵 관련 오브젝트는 화면 안에서만 보임
 - 매 판 리스트 순서를 섞어 맵을 다르게 구성함
@@ -188,6 +204,38 @@ flowchart LR
     C --> D
     D --> A
 ```
+
+```cs
+void GenerateObject(GameObject targetObject)
+{
+    bool spawnAtLeft = Random.value > .5f;
+    float spawnPosX = spawnAtLeft
+                    ? MainCamera.GetRenderWidth(gameObject).Left - 1.8f
+                    : MainCamera.GetRenderWidth(gameObject).Right + 1.8f;
+
+    GameObject generatedObject = Instantiate(
+        targetObject,
+        new Vector3(
+            spawnPosX,
+            targetObject.GetComponent<BoxCollider>().size.y / 2,
+            Random.Range(-3.5f, 3.5f)
+        ),
+        Quaternion.identity
+    );
+    generatedObject.transform.parent = standardObject.transform;
+    GeneratedObjects.Add(generatedObject);
+}
+
+IEnumerator ManagePopulation()
+{
+    while (true)
+    {
+        GenerateLiving(LivingToGenerate);
+        yield return new WaitForSeconds(GenerationDelay);
+    }
+}
+```
+{: file="ObjectGenerator.cs" }
 
 오브젝트 생성은 위와 같이 이루어집니다. 이 경우에는 전에 비슷한 코드를 작성해본 적이 있기 때문에 크게 어렵지 않았어요. `ViewportToWorldPoint()`를 이용해 화각 밖에서 오브젝트 인스턴스화가 이루어지고, 오브젝트는 인스턴스화된 뒤 화각 밖에서 n초가 지나면 사라지도록 만들었습니다.
 
