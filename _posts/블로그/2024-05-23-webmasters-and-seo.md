@@ -26,7 +26,12 @@ mermaid: true
 ![search-console](/2024-05-23-webmasters-and-seo/search-console.webp){: .w-75 }
 _대표적인 웹마스터도구, 구글 서치 콘솔_
 
-한국 포털사이트 점유율 순으로 [구글 서치 콘솔](https://search.google.com/search-console/), [네이버 서치어드바이저](https://searchadvisor.naver.com/), [다음 웹마스터도구](https://webmaster.daum.net/), [빙 웹마스터도구](https://www.bing.com/webmasters?lang=ko) 총 4가지 플랫폼에 등록해주었습니다. 특이한 점이 있다면 사이트별로 도메인 등록 후 실제 검색결과에 노출되기까지의 시간이 천차만별이었다는 건데, 3월 20일 즈음에 도메인을 신청하고나서부터 다음은 약 하루, 구글은 약 2주, 네이버와 빙은 약 3주 정도의 시간이 지나고 나서야 노출이 되기 시작했습니다.  
+한국 포털사이트 점유율 순으로 [구글 서치 콘솔](https://search.google.com/search-console/), [네이버 서치어드바이저](https://searchadvisor.naver.com/), [다음 웹마스터도구](https://webmaster.daum.net/), [빙 웹마스터도구](https://www.bing.com/webmasters?lang=ko) 총 4가지 플랫폼에 등록해주었습니다. 특이한 점이 있다면 사이트별로 도메인 등록 후 실제 검색결과에 노출되기까지의 시간이 천차만별이었다는 건데, 3월 20일 즈음에 도메인을 신청하고나서부터 다음은 약 하루, 구글은 약 2주, 네이버와 빙은 약 3주 정도의 시간이 지나고 나서야 노출이 되기 시작했습니다.
+
+> 2024/05/25 수정!  
+추가적으로 [핀터레스트 비즈니스 허브](https://www.pinterest.co.kr/business/hub/)에도 등록해주었습니다. 사이트 소유권이 확인되면 RSS 기반으로 이미지를 수집하여 핀을 생성해줍니다.
+{: .prompt-info }
+
 결과적으로 현재 모든 플랫폼에서 `site:hynrng.github.io` 검색어 입력 시 블로그 노출이 확인되는 상태입니다. 만약 저처럼 웹마스터도구에 개인 사이트를 등록하고싶으신 분이 계시다면 다음을 참고하시면 도움이 될 것 같습니다.
 
 ### **구글 서치 콘솔**
@@ -38,10 +43,12 @@ _대표적인 웹마스터도구, 구글 서치 콘솔_
 - 네이버 서치어드바이저의 경우 아톰(Atom) 유형의 피드를 받지 않아 `rss.xml`을 따로 만들어 등록해주어야 합니다. 예시 RSS 파일은 [제 깃허브](https://github.com/hynrng/hynrng.github.io/blob/main/assets/rss.xml)에서, 예시 동작은 [이곳](https://hynrng.github.io/rss.xml)에서 확인해볼 수 있습니다.
 
 ### **다음 웹마스터도구**
+
 <!--
 - [검색등록 신청 사이트](https://register.search.daum.net/index.daum)와 [웹마스터도구](https://webmaster.daum.net/)가 나뉘어져 있습니다. 처음 사이트 등록은 검색등록 신청 사이트에서, 사이트 등록 이후 사이트맵과 피드는 웹마스터도구에서 따로 제출해야 합니다.
 -->
-- 검색결과에 사이트 등록이 완료되더라도 신생 웹사이트의 경우 파비콘이 노출되지 않습니다. [고객센터](https://cs.daum.net/)에 문의해봐도 _"파비콘 수집 기준은 정책상 자세히 공개할 수 없다"_ 라는 답변을 줍니다. 찜찜하지만 개인 차원에서 할 수 있는 일은 없는 듯 합니다.
+
+- 검색결과에 사이트 등록이 완료되더라도 신생 웹사이트의 경우 파비콘이 노출되지 않습니다. [고객센터](https://cs.daum.net/)에 문의해봤으나 _"파비콘 수집 기준은 정책상 자세히 공개할 수 없다"_ 라는 답변을 받았습니다. 찜찜하지만 개인 차원에서 할 수 있는 일은 없는 듯 합니다.
 
 <!--
 ### **빙 웹마스터도구**
@@ -55,6 +62,7 @@ _대표적인 웹마스터도구, 구글 서치 콘솔_
 <!--
 블로그 검색등록을 신청하면서 처음 알게 된 개념입니다. SEO(Search Engine Optimization)란 사용자가 검색엔진에서 사이트를 쉽게 찾고 탐색할 수 있도록 최적화 하는 방법으로, [공식 가이드](https://developers.google.com/search/docs/fundamentals/seo-starter-guide?hl=ko)까지 있을 정도로 중요한 개념입니다.
 -->
+
 <!--
 ### **robots.txt**
 -->
