@@ -34,9 +34,9 @@ mermaid: true
 
 ```mermaid
 sequenceDiagram
-    participant EvtMgr as 매니저
-    participant Poster as 포스터
-    participant Listener as 리스너
+    participant EvtMgr as 매니저 오브젝트
+    participant Poster as 포스터 오브젝트
+    participant Listener as 리스너 오브젝트
 
     loop 게임 실행
         Poster->>EvtMgr: 이벤트 발생
@@ -53,7 +53,7 @@ sequenceDiagram
 {: .prompt-info }
 
 ```cs
-public enum Event
+public enum EventType
 {
     FirstExampleEvent,
     SecondExampleEvent,
@@ -68,9 +68,9 @@ public class EventManager : MonoBehaviour
     public static EventManager Instance { get { return instance; } }    
     private static EventManager instance = null;
 
-    public delegate void OnEvent(EVENT_TYPE eventType, Component Sender, object Param = null);
-    private Dictionary<EVENT_TYPE, List<OnEvent>> Listeners
-        = new Dictionary<EVENT_TYPE, List<OnEvent>>();
+    public delegate void OnEvent(EventType eventType, Component Sender, object Param = null);
+    private Dictionary<EventType, List<OnEvent>> Listeners
+        = new Dictionary<EventType, List<OnEvent>>();
 
     void Awake()
     {
@@ -83,7 +83,7 @@ public class EventManager : MonoBehaviour
         DestroyImmediate(gameObject);
     }
 
-    public void AddListener(EVENT_TYPE eventType, OnEvent Listener)
+    public void AddListener(EventType eventType, OnEvent Listener)
     {
         List<OnEvent> ListenList = null;
 
@@ -98,7 +98,7 @@ public class EventManager : MonoBehaviour
         Listeners.Add(eventType, ListenList);
     }
 
-    public void PostNotification(EVENT_TYPE eventType, Component Sender, object param = null)
+    public void PostNotification(EventType eventType, Component Sender, object param = null)
     {
         List<OnEvent> ListenList = null;
 
@@ -109,14 +109,14 @@ public class EventManager : MonoBehaviour
              ListenList?[i](eventType, Sender, param);
     }
 
-    public void RemoveEvent(EVENT_TYPE eventType) => Listeners.Remove(eventType);
+    public void RemoveEvent(EventType eventType) => Listeners.Remove(eventType);
 
     public void RemoveRedundancies()
     {
-        Dictionary<EVENT_TYPE, List<OnEvent>> newListeners
-            = new Dictionary<EVENT_TYPE, List<OnEvent>>();
+        Dictionary<EventType, List<OnEvent>> newListeners
+            = new Dictionary<EventType, List<OnEvent>>();
 
-        foreach(KeyValuePair<EVENT_TYPE, List<OnEvent>> Item in Listeners)
+        foreach(KeyValuePair<EventType, List<OnEvent>> Item in Listeners)
         {
             for (int i = Item.Value.Count - 1; i >= 0; i--)
                 if(Item.Value[i].Equals(null))
@@ -145,17 +145,27 @@ public class EventManager : MonoBehaviour
 ```
 {: file="EventManager.cs" }
 
-델리게이트를 이용한 방법입니다. 코드는 80줄 가까이 되지만 5개 메서드만 알면 끝납니다.
+델리게이트를 이용한 방법입니다. [싱글톤 패턴](https://hynrng.github.io/posts/singleton-pattern/)을 사용하고 있으며, 이벤트는 `enum`을 이용해 정의합니다. 코드는 80줄 가까이 되지만 5개의 개별 메서드로 구성되어 있기 때문에 어렵지 않습니다.
 
-- 싱글톤 패턴을 사용합니다. 싱글톤 패턴에 대한 내용이 궁금하다면 [이곳](https://hynrng.github.io/posts/singleton-pattern/)을 참조할 수 있습니다.
+델리게이트
+: - `OnEvent()`: 어떤 오브젝트가 이벤트에 어떻게 반응할지에 대한 메서드를 등록합니다.
 
-- `AddListener()`
+필드
+: - `Listeners`: 키는 이벤트, 값은 `List<OnEvent>`로 구성되는 딕셔너리입니다. 특정 이벤트와 이벤트에 대한 반응을 연결합니다.
+
+메서드
+: - `AddListener()`
+    - 어떤 이벤트에 특정 오브젝트를 연결하는 메서드입니다.
+    - `AddListener(Event.FirstExampleEvent, OnEvent)`와 같은 형태로 사용합니다.
 - `PostNotification()`
-    - 포스터는 이 메서드의 `PostNotification()`을 이용하여 이벤트를 발생시키게 됨. `PostNotification(Event.FirstExampleEvent, this)`와 같은 꼴로 사용할 수 있음.
+    - 포스터 오브젝트가 이벤트를 발생시킬 때 사용하는 메서드입니다.
+    - `PostNotification(Event.FirstExampleEvent, this)`와 같은 형태로 사용합니다.
 - `RemoveEvent()`
+    - `Listeners` 딕셔너리에서 특정 이벤트를 제거하는 메서드입니다.
 - `RemoveRedundancies()`
-    - `OnLevelWasLoaded()`에서 사용됨
+    - 일종의 무결성 검사입니다. 특정 이벤트에 대해 실행하는 것이 아무것도 없는 경우 해당 이벤트를 `Listeners` 딕셔너리에서 제거합니다.
 - `RemoveListener()`
+    - 리스너 오브젝트를 `Destroy()`하게 될 때, `NullReferenceException` 오류를 방지하기 위해 `Listeners` 딕셔너리에서 해당 오브젝트를 제거합니다.
 
 ### **이벤트 리스너**
 
@@ -168,11 +178,11 @@ using UnityEngine.UI;
 
 public class UI_Health : MonoBehaviour
 {
-    public void OnEvent(EVENT_TYPE EventType, Component Sender, object Param = null)
+    public void OnEvent(EventType EventType, Component Sender, object Param = null)
     {
         switch (EventType)
         {
-            case EVENT_TYPE.eHealthChange:
+            case EventType.FirstExampleEvent:
                 healthText.text = Param.ToString();
                 break;
         }

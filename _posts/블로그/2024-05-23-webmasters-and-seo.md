@@ -10,7 +10,7 @@ toc: true
 toc_sticky: true
 
 date: 2024-05-23 11:53:00 +0900
-last_modified_at: 2024-05-25 16:07:00 +0900
+last_modified_at: 2024-05-25 23:49:00 +0900
 
 mermaid: true
 ---
@@ -44,10 +44,7 @@ _대표적인 웹마스터도구, 구글 서치 콘솔_
 
 ### **다음 웹마스터도구**
 
-<!--
 - [검색등록 신청 사이트](https://register.search.daum.net/index.daum)와 [웹마스터도구](https://webmaster.daum.net/)가 나뉘어져 있습니다. 처음 사이트 등록은 검색등록 신청 사이트에서, 사이트 등록 이후 사이트맵과 피드는 웹마스터도구에서 따로 제출해야 합니다.
--->
-
 - 검색결과에 사이트 등록이 완료되더라도 신생 웹사이트의 경우 파비콘이 노출되지 않습니다. [고객센터](https://cs.daum.net/)에 문의해봤으나 _"파비콘 수집 기준은 정책상 자세히 공개할 수 없다"_ 라는 답변을 받았습니다. 찜찜하지만 개인 차원에서 할 수 있는 일은 없는 듯 합니다.
 
 <!--
@@ -59,9 +56,8 @@ _대표적인 웹마스터도구, 구글 서치 콘솔_
 
 ## **SEO 최적화**
 
-<!--
-블로그 검색등록을 신청하면서 처음 알게 된 개념입니다. SEO(Search Engine Optimization)란 사용자가 검색엔진에서 사이트를 쉽게 찾고 탐색할 수 있도록 최적화 하는 방법으로, [공식 가이드](https://developers.google.com/search/docs/fundamentals/seo-starter-guide?hl=ko)까지 있을 정도로 중요한 개념입니다.
--->
+블로그 검색등록을 신청하면서 처음 알게 된 개념입니다. SEO(검색 엔진 최적화)란 웹사이트나 웹페이지의 품질을 향상시켜 검색 엔진에서 더 잘 노출되고 상위에 노출되도록 하는 과정으로, [공식 가이드](https://developers.google.com/search/docs/fundamentals/seo-starter-guide?hl=ko)까지 있을 정도로 중요한 개념입니다.  
+다만 저는 실제로 상위노출을 위한 작업보다는 블로그 검색노출을 신청하고 난 후 몇 개 웹마스터도구에서 SEO 경고를 받으면서 이를 해결하기 위한 과정이 주가 되었습니다. 어떤 경고를 받았고, 어떻게 해결했는지를 간단히 정리합니다.
 
 <!--
 ### **robots.txt**
@@ -115,7 +111,6 @@ _용량 축소 이전과 이후_
 
 크롬 개발자 도구로 확인해보면 블로그 홈에서는 h1로, 현재 페이지에서는 h2로 표시됩니다. 적용 후 수정이 이루어진 URL을 다시 제출했고, 이틀 후 네이버와 빙 웹마스터도구의 사이트 진단 페이지를 통해 오류가 수정되었음을 확인할 수 있었습니다.
 
-<!--
 ### **메타 태그 생성 문제**
 
 > 아직 해결중에 있는 문제입니다!
@@ -123,9 +118,9 @@ _용량 축소 이전과 이후_
 
 빙 웹마스터도구에서 지적한 사항입니다. [블로그 테마를 업데이트](https://hynrng.github.io/posts/blog-update/)하면서 `description` 작성을 정식 지원하기 때문에 이제 큰 문제가 되는 사안은 아니지만, 자잘한 개선이 필요한 상태입니다.
 
-제 블로그의 많은 글은 도입부로 "들어가며"로 시작되는 첫 문단을 거치는데 이 부분이 문제가 되어 _"`<meta name="description">` 태그에 동일 설명문 발견"_ 이라는 오류 안내문으로 이어졌습니다. 결과적으로 프론트메터에 `description`을 작성해주는 것으로 해결되었지만, 문제는 이제 _"너무 길거나 짧은 Meta Description"_ 라는 오류 안내문이 발생하고 있습니다.
+제 블로그의 여러 글에서 사용하는 도입부 "들어가며"가 페이지의 `description`으로 등록되다보니 여러 페이지에서 중복되는 것으로 인식된 것이 원인이었습니다.  프론트메터에 `description`을 작성해주는 것으로 해결되었지만, 문제는 이제 _"너무 길거나 짧은 Meta Description"_ 라는 오류 안내문이 발생하고 있습니다.
 
-`description`의 적절한 길이는 150~160자로 안내되고 있습니다. 매 페이지마다 손수 150자에 달하는 분량을 작성하기에는 여간 번거로운 일이 아니기 때문에 `_includes/post-description.html`{: .filepath }를 수정하려 했으나 어째서인지 적용되지 않았습니다. 대신 메타데이터를 생성하는 `_includes/head.html`{: .filepath }를 확인해보니 다음의 코드에서 `<meta>` 태그가 생성되고 있습니다.
+`description`의 적절한 길이는 150~160자로 안내되고 있습니다. 매 페이지마다 150자에 달하는 분량을 작성하는 것은 너무 번거롭기 떄문에 `description`을 자동으로 생성하는 것으로 해결하려 합니다. 마침 블로그 템플릿 버전이 `7.0.0`로 [업그레이드](https://hynrng.github.io/posts/blog-update/)되면서 비슷한 기능을 지원하기 때문에 새로 추가된`_includes/post-description.html`{: .filepath }를 수정하면 해결되겠구나 싶었는데, 코드를 뜯어보니 생각보다 조금 더 복잡합니다. 우선, `description`을 포함한 `<meta>` 태그는 실제로는 `_includes/head.html`{: .filepath }의 다음 코드에서 생성되고 있습니다.
 
 {% raw %}
 ```liquid
@@ -140,25 +135,9 @@ _용량 축소 이전과 이후_
 {: file="_includes/head.html" }
 {% endraw %}
 
-포스트의 `_includes/post-description.html`{: .filepath }는 `description`을 생성하는 역할로 보이나 실제로 사용되지는 않는 것 같습니다. 오히려 메타 태그는 일괄적으로 `jekyll-seo-tag`을 통해 생성되고 있었고, 결정적으로 `_config.yml`에 다음과 같은 부분이 있습니다.
+코드가 너무 단순합니다. 포스트의 `_includes/post-description.html`{: .filepath }는 `description`을 생성하는 역할로 보이나 실제로 사용되지는 않고, 오히려 메타 태그는 일괄적으로 `jekyll-seo-tag` 플러그인을 통해 생성되고 있는 것으로 보입니다.
 
-```md
-# jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
-
-...
-
-# The end of `jekyll-seo-tag` settings
-```
-{: .file="_config.yml" }
-
-주어진 URL을 타고 들어가면 문서 하단에서 다음을 확인할 수 있습니다:
-
-> The SEO tag will respect the following YAML front matter if included in a post, page, or document:  
-...  
-description - A short description of the page's content  
-...  
-Note: Front matter defaults can be used for any of the above values as described in advanced usage with an image example.
--->
+템플릿이 참조하는 플러그인 내용을 제가 임의로 변경할 수 없기 때문에 여기서 뭘 더 어떻게 해결해야 할지 난감합니다. 최근에 버전을 업그레이드하면서 도중에 뭔가 꼬이지 않았나 싶네요. 천천히 원인을 파악해보고, 문제가 해결되면 글을 업데이트하겠습니다.
 
 <!--
 ### **이미지 CDN 변경**
