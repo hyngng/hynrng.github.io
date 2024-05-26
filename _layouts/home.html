@@ -119,3 +119,10 @@ refactor: true
 {% if paginator.total_pages > 1 %}
   {% include post-paginator.html %}
 {% endif %}
+
+<!-- region 구조화된 데이터 -->
+<span itemscope="" itemtype="http://schema.org/Organization">
+  <link itemprop="url" href="https://hynrng.github.io/">
+  <a itemprop="sameAs" href="https://www.instagram.com/hynrng/"></a>
+</span>
+<!-- endregion 수정됨 -->

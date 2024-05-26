@@ -170,20 +170,14 @@ public class EventManager : MonoBehaviour
 ### **이벤트 리스너**
 
 ```cs
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.UI;
-
-
-public class UI_Health : MonoBehaviour
+public class ListenerObject : MonoBehaviour
 {
     public void OnEvent(EventType EventType, Component Sender, object Param = null)
     {
         switch (EventType)
         {
             case EventType.FirstExampleEvent:
-                healthText.text = Param.ToString();
+                /* 이벤트 수신시 실행할 내용 */
                 break;
         }
     }
