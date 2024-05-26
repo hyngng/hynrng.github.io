@@ -17,7 +17,7 @@ permalink: /rss.xml
     {% for post in site.posts limit:10 %}
       <item>
         <title>{{ post.title | xml_escape }}</title>
-        {% assign content_with_cdn = post.content | replace: 'src="/', 'src="{{ site.cdn }}/' %}
+        {% assign content_with_cdn = post.content | replace: 'src="/', 'src="https://cdn.jsdelivr.net/gh/hynrang/hynrng.github.io-image@master/' %}
         <description>{{ content_with_cdn | xml_escape }}</description>
         <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
         <link>{{ post.url | prepend: site.baseurl | prepend: site.url }}</link>
