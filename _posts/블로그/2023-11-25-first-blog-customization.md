@@ -10,7 +10,7 @@ toc: true
 toc_sticky: true
 
 date: 2023-11-25 23:24:00 +0900
-last_modified_at: 2024-04-16 15:24:00 +0900
+last_modified_at: 2024-05-26 18:04:00 +0900
 
 redirect_from:
   - /posts/%EB%B8%94%EB%A1%9C%EA%B7%B8-%EC%83%88%EB%8B%A8%EC%9E%A5/
@@ -74,6 +74,21 @@ _적용 전후 비교_
 {: file="_includes/Footer.html" }
 {% endraw %}
 
+> **2024/05/26 수정!**  
+블로그를 관리하던 도중 Chirpy 템플릿이 [MIT 라이센스](https://github.com/cotes2020/jekyll-theme-chirpy/blob/master/LICENSE)를 고지하고 있어 Footer 제거가 원칙적으로 허용되지 않는다는 것을 알게 되었습니다. 저는 라이센스를 준수하기 위해 주석처리를 원상복구해주었습니다.
+{: .prompt-info }
+
+### **글 제목 볼드체 처리**
+
+다른 글쓰기 플랫폼인 [Medium](https://medium.com/)에서 글 제목이 볼드체로 처리되어 사용자의 눈길을 끄는 것을 보고, 제 블로그에서도 글 제목이 볼드체로 강조되어 표시될 수 있도록 `assets/css/jekyll-theme-chirpy.scss`{: .filepath }에 아래의 코드를 작성해주었습니다.
+
+```css
+.btn-outline-primary {
+  font-weight: bold;
+}
+```
+{: file="assets/css/jekyll-theme-chirpy.scss" }
+
 ### **포스트 네비게이션 제거**
 
 ![post-nav-light](/2023-11-25-first-blog-customization/post-nav-light.webp){: .light .border }
@@ -99,19 +114,9 @@ tail_includes:
 {: file="_layouts/post.html" }
 {% endraw %}
 
-> **2024/04/16 수정!**
-{: .prompt-info }
-
+> **2024/04/16 수정!**  
 블로그를 계속 운영하다보니 제가 생각보다 다양한 주제로 글을 작성하고 있더라구요. 포스트 네비게이션을 유지하면 오히려 사용자의 흥미를 유발하고 체류시간도 늘릴 수 있을 것 같아 `- post-nav` 부분은 원상 복구했습니다.
-
-대신 복구하는 김에 글 제목이 볼드체로 강조되어 표시될 수 있도록 `assets/css/jekyll-theme-chirpy.scss`{: .filepath }에 아래의 코드를 작성해주었습니다.
-
-```css
-.btn-outline-primary {
-  font-weight: bold;
-}
-```
-{: file="assets/css/jekyll-theme-chirpy.scss" }
+{: .prompt-info }
 
 ### **사이드바 배경색 수정**
 
