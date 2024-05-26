@@ -22,7 +22,7 @@ permalink: /rss.xml
           {% assign content_with_cdn = post.content | replace: 'src="/', cdn_src %}
           <description>{{ content_with_cdn | xml_escape }}</description>
         {% else %}
-          <description>{{ post.content | markdownify | xml_escape }}</description>
+          <description>{{ post.content | xml_escape }}</description>
         {% endif %}
         <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
         <link>{{ post.url | prepend: site.baseurl | prepend: site.url }}</link>
