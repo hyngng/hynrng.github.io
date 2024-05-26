@@ -168,6 +168,8 @@ void GenerateObjects(List<GameObject> instantiated, List<GameObject> instantiabl
     instantiated[0].transform.position = new Vector3(
         instantiated[1].transform.position.x - objectSize, 0, 0
     );
+
+    /* ... */
 }
 ```
 {: file="MapGenerator.cs" }
