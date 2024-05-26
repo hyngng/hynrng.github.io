@@ -1,18 +1,13 @@
-require 'nokogiri'
+# _plugins/cdn_deliver.rb
 
 module Jekyll
-  module RemoveTagFilter
-    def remove_tag(input, *tags)
-      doc = Nokogiri::HTML(input)
-      doc.remove_namespaces!
-      tags.each do |tag|
-        doc.search(tag).each do |node|
-          node.content = ''
-        end
-      end
-      doc.to_html.gsub(/\A<!DOCTYPE .*?>\n?/, '').gsub(/\n\z/, '')
+  module CdnDeliver
+    def cdn_deliver(input)
+      site = @context.registers[:site]
+      cdn_url = site.config['cdn'] || ''
+      input.gsub(%r!src="/(.*?)"!, "src=\"#{cdn_url}/\\1\"")
     end
   end
 end
 
-Liquid::Template.register_filter(Jekyll::RemoveTagFilter)
+Liquid::Template.register_filter('cdn_deliver', Jekyll::CdnDeliver)
