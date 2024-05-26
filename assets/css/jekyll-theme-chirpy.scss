@@ -16,18 +16,20 @@
 .content {
   font-family: 'Pretendard', 'Source Sans Pro', 'Microsoft Yahei', sans-serif;
   font-size: 1rem;
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
   /*word-break: keep-all;*/ /* 단어기준 줄넘김인데, 안 예뻐서 보류. */
 }
 
 /* region 줄간격 */
 p:not(blockquote p), .language-cs, dl {
-  margin-top: 1.75rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 ul:not(.list-unstyled, .toc-list, dd ul, .list-group) {
-  margin-top: 1.75rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 /* endregion 줄간격 */
 
