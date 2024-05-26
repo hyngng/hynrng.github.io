@@ -10,7 +10,7 @@ toc: true
 toc_sticky: true
 
 date: 2024-05-23 11:53:00 +0900
-last_modified_at: 2024-05-25 23:49:00 +0900
+last_modified_at: 2024-05-26 14:00:00 +0900
 
 mermaid: true
 ---
@@ -29,7 +29,7 @@ _대표적인 웹마스터도구, 구글 서치 콘솔_
 한국 포털사이트 점유율 순으로 [구글 서치 콘솔](https://search.google.com/search-console/), [네이버 서치어드바이저](https://searchadvisor.naver.com/), [다음 웹마스터도구](https://webmaster.daum.net/), [빙 웹마스터도구](https://www.bing.com/webmasters?lang=ko) 총 4가지 플랫폼에 등록해주었습니다. 특이한 점이 있다면 사이트별로 도메인 등록 후 실제 검색결과에 노출되기까지의 시간이 천차만별이었다는 건데, 3월 20일 즈음에 도메인을 신청하고나서부터 다음은 약 하루, 구글은 약 2주, 네이버와 빙은 약 3주 정도의 시간이 지나고 나서야 노출이 되기 시작했습니다.
 
 > **2024/05/25 수정!**  
-추가적으로 [핀터레스트 비즈니스 허브](https://www.pinterest.co.kr/business/hub/)에도 등록해주었습니다. 사이트 소유권이 확인되면 RSS 기반으로 이미지를 수집하여 핀을 생성해줍니다.
+추가적으로 [핀터레스트 비즈니스 허브](https://www.pinterest.co.kr/business/hub/)에도 등록해주었습니다. 사이트 소유권이 확인되면 RSS 기반으로 이미지를 수집하여 [핀(예시)](https://www.pinterest.co.kr/hynrng/hynrnggithubio/)을 생성합니다.
 {: .prompt-info }
 
 결과적으로 현재 모든 플랫폼에서 `site:hynrng.github.io` 검색어 입력 시 블로그 노출이 확인되는 상태입니다. 만약 저처럼 웹마스터도구에 개인 사이트를 등록하고싶으신 분이 계시다면 다음을 참고하시면 도움이 될 것 같습니다.
