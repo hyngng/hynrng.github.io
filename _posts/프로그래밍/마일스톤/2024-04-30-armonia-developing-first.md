@@ -18,6 +18,9 @@ mermaid: true
 
 date: 2024-04-30 18:14:00 +0900
 last_modified_at: 2024-05-23 23:11:00 +0900
+
+redirect_from:
+  - posts/armonia-developing/
 ---
 
 ## **들어가며**
