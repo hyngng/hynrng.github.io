@@ -77,7 +77,11 @@
     {% assign seo_tags = seo_tags | replace: old_meta_clip, new_meta_clip %}
   {% endif %}
 
-  {{ seo_tags }}
+  {%- if page.layout == 'post' -%}
+    {{ seo_tags | description_filter }}
+  {% else %}
+    {{ seo_tags }}
+  {% endif %}
 
   <title>
     {%- unless page.layout == 'home' -%}
