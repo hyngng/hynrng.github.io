@@ -22,7 +22,7 @@
 }
 
 /* region 줄간격 */
-p:not(blockquote p), .language-cs, dl {
+p:not(blockquote p):not(.footer), .language-cs, dl {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
 }

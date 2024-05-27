@@ -56,7 +56,7 @@ _대표적인 웹마스터도구, 구글 서치 콘솔_
 
 ## **SEO 최적화**
 
-블로그 검색등록을 신청하면서 처음 알게 된 개념입니다. SEO(검색 엔진 최적화)란 웹사이트나 웹페이지의 품질을 향상시켜 검색 엔진에서 더 잘 노출되고 상위에 노출되도록 하는 과정으로, [네이버](https://searchadvisor.naver.com/guide/seo-basic-intro)와 [구글](https://developers.google.com/search/docs/fundamentals/seo-starter-guide?hl=ko)에서 공식 가이드를 만들 정도로 관심도가 높은 개념입니다.  
+블로그 검색등록을 신청하면서 처음 알게 된 개념입니다. SEO(검색 엔진 최적화)란 웹사이트나 웹페이지의 품질을 향상시켜 검색 엔진에서 더 잘 노출되고 상위에 노출되도록 하는 과정으로, [네이버](https://searchadvisor.naver.com/guide/seo-basic-intro)나 [구글](https://developers.google.com/search/docs/fundamentals/seo-starter-guide?hl=ko)에서 발간한 공식 가이드가 있을 정도로 관심도가 높은 개념입니다.
 다만 저는 실제로 상위노출을 위한 작업보다는 블로그 검색노출을 신청하고 난 후 몇 개 웹마스터도구에서 SEO 경고를 받으면서 이를 해결하기 위한 과정이 주가 되었습니다. 어떤 경고를 받았고, 어떻게 해결했는지를 간단히 정리합니다.
 
 <!--
