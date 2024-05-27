@@ -1,6 +1,6 @@
 ---
 title: "유니티에서 이벤트 주도적 프로그래밍 활용하기"
-description: "이벤트 주도적 프로그래밍에 대한 사항을 정리합니다."
+description: "이벤트 주도적 프로그래밍에 대한 사항을 유니티 중심으로 정리합니다."
 
 categories: [프로그래밍, 패러다임]
 tags: [유니티]
@@ -49,7 +49,7 @@ sequenceDiagram
 
 ### **이벤트 매니저**
 
-> 코드의 길이가 조금 긴 편입니다!
+> 코드 길이가 조금 긴 편입니다!
 {: .prompt-info }
 
 ```cs
@@ -145,7 +145,7 @@ public class EventManager : MonoBehaviour
 ```
 {: file="EventManager.cs" }
 
-델리게이트를 이용한 방법입니다. [싱글톤 패턴](https://hynrng.github.io/posts/singleton-pattern/)을 사용하고 있으며, 이벤트는 `enum`을 이용해 정의합니다. 코드는 80줄 가까이 되지만 5개의 개별 메서드로 구성되어 있기 때문에 어렵지 않습니다.
+델리게이트를 이용한 방법입니다. 리스너 오브젝트에서도 일부 메서드를 사용할 수 있도록 [싱글톤 패턴](https://hynrng.github.io/posts/singleton-pattern/)을 이용하며, 이벤트는 `enum`을 이용해 정의합니다. 코드는 80줄 가까이 되지만 5개의 개별 메서드로 구성되어 있기 때문에 어렵지 않습니다.
 
 델리게이트와 필드
 : - `OnEvent()`: 이벤트 리스터의 이벤트 반응 메서드가 등록되는 곳입니다.
@@ -191,7 +191,7 @@ public class ListenerObject : MonoBehaviour
 ```
 {: file="Listener.cs" }
 
-게임이 시작되거나 오브젝트가 생성되면 원하는 이벤트를 감지할 수 있도록 `EventManager.AddListener()` 메서드로 리스너를 추가하고, 오브젝트가 파괴될 때 `NullReferenceException` 에러 또는 불필요한 이벤트 호출을 방지하기 위해 `EventManager.RemoveListener()`로 등록된 메서드를 제거합니다.
+게임이 시작되거나 오브젝트가 생성되면 원하는 이벤트를 감지할 수 있도록 `EventManager.AddListener()` 메서드로 리스너를 추가하고, 오브젝트가 파괴될 때 자잘한 에러 또는 불필요한 이벤트 호출을 방지하기 위해 `EventManager.RemoveListener()`로 등록된 메서드를 제거합니다.
 
 `OnEvent()` 메서드는 이벤트가 발생했을 때 호출됩니다. 이벤트 타입, 이벤트를 발생시킨 객체, 그리고 추가적인 매개변수를 인수로 받아 `switch` 문으로 이벤트 유형에 따라 다른 로직을 처리할 수 있습니다. 이 예시에서는 `FirstExampleEvent` 이벤트에 대해 특정 로직을 작성할 수 있도록 구성되어 있습니다.
 
