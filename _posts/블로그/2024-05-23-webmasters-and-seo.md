@@ -10,7 +10,7 @@ toc: true
 toc_sticky: true
 
 date: 2024-05-23 11:53:00 +0900
-last_modified_at: 2024-05-26 14:00:00 +0900
+last_modified_at: 2024-05-28 13:56:00 +0900
 
 mermaid: true
 ---
@@ -56,7 +56,7 @@ _대표적인 웹마스터도구, 구글 서치 콘솔_
 
 ## **SEO 최적화**
 
-블로그 검색등록을 신청하면서 처음 알게 된 개념입니다. SEO(검색 엔진 최적화)란 웹사이트나 웹페이지의 품질을 향상시켜 검색 엔진에서 더 잘 노출되고 상위에 노출되도록 하는 과정으로, [네이버](https://searchadvisor.naver.com/guide/seo-basic-intro)나 [구글](https://developers.google.com/search/docs/fundamentals/seo-starter-guide?hl=ko)에서 발간한 공식 가이드가 있을 정도로 관심도가 높은 개념입니다.
+블로그 검색등록을 신청하면서 처음 알게 된 개념입니다. SEO(검색 엔진 최적화)란 웹사이트나 웹페이지의 품질을 향상시켜 검색 엔진에서 더 잘 노출되고 상위에 노출되도록 하는 과정으로, [네이버](https://searchadvisor.naver.com/guide/seo-basic-intro)나 [구글](https://developers.google.com/search/docs/fundamentals/seo-starter-guide?hl=ko)에서 발간한 공식 가이드가 있을 정도로 관심도가 높은 개념입니다.  
 다만 저는 실제로 상위노출을 위한 작업보다는 블로그 검색노출을 신청하고 난 후 몇 개 웹마스터도구에서 SEO 경고를 받으면서 이를 해결하기 위한 과정이 주가 되었습니다. 어떤 경고를 받았고, 어떻게 해결했는지를 간단히 정리합니다.
 
 <!--
@@ -169,7 +169,7 @@ Liquid::Template.register_filter(Jekyll::ContentFilter)
 ```
 {: file="_plugins/content_filter.rb" }
 
-`content`는 `content_filer`라는 커스텀 루비 플러그인을 거치는데, 제목, 게시일, 글쓴이 및 "들어가며" 도입부 등 `description`으로서 필요 없는 정보를 어느정도 제거하기 위함입니다. 글 본문은 모두 `<div class="content"></div>` 태그에 하달되는 점을 이용해 이 태그를 제외한 모든 태그 내역을 제거하는 식으로 필터링합니다. [예전에 비슷한 코드를](https://hynrng.github.io/posts/blog-content-remove/) 구현해본 적이 있었지만 아직 익숙하지 않아서 이 부분은 GPT의 조언을 참고했습니다.
+`content`는 `content_filer`라는 커스텀 루비 플러그인을 거치는데, 제목, 게시일, 글쓴이 및 "들어가며" 도입부 등 `description`으로서 필요 없는 정보를 어느정도 제거하기 위함입니다. 글 본문은 모두 `<div class="content"></div>` 태그에 하달되는 점을 이용해 이 태그를 제외한 모든 태그 내역을 제거하는 식으로 필터링합니다. [예전에 비슷한 코드를](https://hynrng.github.io/posts/blog-content-remove/) 구현해본 적이 있었지만 아직 익숙하지 않아서 이 부분은 GPT의 조언을 구했습니다.
 
 <!--
 ### **이미지 CDN 변경**
