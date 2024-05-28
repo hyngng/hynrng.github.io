@@ -1,6 +1,5 @@
 ---
 title: "깃허브 블로그 템플릿 커스터마이징하기"
-description: "Chirpy 테마의 깃허브 블로그 구성요소를 수정하는 과정을 정리합니다."
 
 categories: [블로그]
 tags: [블로그, 커스텀, 커스터마이징, Chirpy, Liquid, SCSS]

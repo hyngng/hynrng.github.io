@@ -1,6 +1,5 @@
 ---
 title: "깃허브 블로그 테마 업데이트하기"
-description: "깃허브 블로그를 업데이트하는 방법을 정리합니다."
 
 categories: [블로그]
 tags: [깃허브, 업데이트, Chirpy]
