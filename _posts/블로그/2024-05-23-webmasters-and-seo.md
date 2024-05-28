@@ -113,35 +113,63 @@ _용량 축소 이전과 이후_
 
 ### **메타 태그 생성 문제**
 
-> 아직 해결중에 있는 문제입니다!
-{: .prompt-warning }
+> **24/05/28 추가됨!**
+{: .prompt-info }
 
-빙 웹마스터도구에서 지적한 사항입니다. 최근에 [블로그 테마를 업데이트](https://hynrng.github.io/posts/blog-update/)하면서 `description` 작성을 정식 지원하게 되었기 때문에 큰 문제가 되는 사안은 아니지만, 자잘한 개선이 필요한 상태입니다.
+<!--
+post-description은 layouts/post.html에서 사용하는 용도로, 어차피 상관 없는 파일임.
+-->
 
-제 블로그의 여러 글에서 사용하는 도입부 "들어가며"가 여러 페이지의 `description`으로 중복 등록된 것이 원인이었습니다. 프론트매터에 `description`을 작성해주는 것으로 해결되었지만, 문제는 이제 _"너무 길거나 짧은 Meta Description"_ 라는 오류 안내문이 발생하고 있습니다.
+빙 웹마스터도구에서 지적한 사항입니다. 제 블로그의 많은 글에서 사용하는 "들어가며" 도입부가 여러 페이지의 `description`으로 중복 등록된 것이 문제가 되어 프론트매터에 개별 `description`을 작성해주었지만, 20자 정도 분량으로 작성하니 _"너무 길거나 짧은 Meta Description"_ 라는 오류 안내문이 발생하고 있었습니다.
 
-`description`의 적절한 길이는 150~160자로 안내되고 있습니다. 매 페이지마다 150자에 달하는 분량을 작성하는 것은 너무 번거롭기 떄문에 `description`을 자동으로 생성하는 것으로 해결하려 하는데, 코드를 뜯어보니 생각보다 조금 더 복잡합니다. 우선, `description`을 포함한 메타 태그는 실제로는 `_includes/head.html`{: .filepath }의 다음 코드에서 생성되고 있습니다.
+`description`의 적절한 길이는 150~160자로 안내되고 있습니다. 매 페이지마다 150자에 달하는 분량을 작성하는 것은 너무 번거롭기 떄문에 `description`을 자동으로 생성하는 것으로 해결했습니다.
+
+{% raw %}
+```cs
+<html lang="{{ page.lang | default: site.alt_lang | default: site.lang }}" {{ prefer_mode }}>
+  {% include head.html post_content = content %}
+  ...
+```
+{: file="_layouts/default.html" }
+{% endraw %}
 
 {% raw %}
 ```liquid
-{%- capture seo_tags -%}
-  {% seo title=false %}
-{%- endcapture -%}
-
-...
+{% if page.layout == "post" %}
+  {% assign description = include.post_content | content_filter |
+                          strip_html | truncatewords: 150 %}
+  
+  <meta name="description" content="{{ description }}">
+  <meta property="og:description" content="{{ description }}">
+  <meta name="twitter:description" content="{{ description }}">
+{% endif %}
 
 {{ seo_tags }}
 ```
 {: file="_includes/head.html" }
 {% endraw %}
 
-메타 태그는 일괄적으로 `jekyll-seo-tag` 플러그인을 통해 생성되고 있는 것으로 보입니다. 템플릿이 참조하는 플러그인 내용을 제가 임의로 변경할 수 없기 때문에 여기서 뭘 더 어떻게 해결해야 할지 난감합니다. 천천히 원인을 파악해보고, 문제가 해결되면 글을 업데이트하겠습니다.
+구현 과정이 조금 골치아팠습니다. `description`을 포함한 메타 태그는 `jekyll-seo-tag` 플러그인을 통해 먼저 일괄 생성되므로, 생성된 `seo_tag` 중 `description`을 오버라이딩 하는 식으로 구현했습니다. 구현 도중 `head.html`{: .filepath }을 포함한 `_includes`{: .filepath } 폴더의 파일은 페이지 콘텐츠에 접근할 수 없는 문제가 있었으나 `_layouts/default.html`{: .filepath }에서 `content`를 조달해 사용하는 식으로 보완했어요.
 
-<!--
-글 이어서 쓸거: post-description은 layouts/post.html에서 사용하는 거. 어차피 상관 없었음.
+```ruby
+require 'nokogiri'
 
-https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/advanced-usage.md 여기 문서 읽어보면서 했음.
--->
+module Jekyll
+  module ContentFilter
+    def content_filter(input)
+      doc = Nokogiri::HTML(input)
+      content_div = doc.css('div.content').first
+      output = content_div&.text&.strip || ''
+      output.gsub(/\s+/, ' ').strip.gsub(/(들어가며|starting with)\s+/i, '')
+    end
+  end
+end
+
+Liquid::Template.register_filter(Jekyll::ContentFilter)
+```
+{: file="_plugins/content_filter.rb" }
+
+`content`는 `content_filer`라는 커스텀 루비 플러그인을 거치는데, 제목, 게시일, 글쓴이 및 "들어가며" 도입부 등 `description`으로서 필요 없는 정보를 어느정도 제거하기 위함입니다. 글 본문은 모두 `<div class="content"></div>` 태그에 하달되는 점을 이용해 이 태그를 제외한 모든 태그 내역을 제거하는 식으로 필터링합니다. [예전에 비슷한 코드를](https://hynrng.github.io/posts/blog-content-remove/) 구현해본 적이 있었지만 아직 익숙하지 않아서 이 부분은 GPT의 조언을 참고했습니다.
 
 <!--
 ### **이미지 CDN 변경**

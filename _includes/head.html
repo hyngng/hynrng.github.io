@@ -77,11 +77,17 @@
     {% assign seo_tags = seo_tags | replace: old_meta_clip, new_meta_clip %}
   {% endif %}
 
-  {%- if page.layout == 'post' -%}
-    {{ seo_tags | description_filter }}
-  {% else %}
-    {{ seo_tags }}
+  <!-- region 수정됨 -->
+  {% if page.layout == "post" %}
+    {% assign description = include.post_content | content_filter | strip_html | truncatewords: 150 %}
+    
+    <meta name="description" content="{{ description }}">
+    <meta property="og:description" content="{{ description }}">
+    <meta name="twitter:description" content="{{ description }}">
   {% endif %}
+  <!-- endregion 수정됨 -->
+
+  {{ seo_tags }}
 
   <title>
     {%- unless page.layout == 'home' -%}
