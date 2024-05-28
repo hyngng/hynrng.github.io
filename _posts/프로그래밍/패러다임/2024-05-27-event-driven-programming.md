@@ -147,7 +147,7 @@ public class EventManager : MonoBehaviour
 델리게이트를 이용한 방법입니다. 리스너 오브젝트에서도 일부 메서드를 사용할 수 있도록 [싱글톤 패턴](https://hynrng.github.io/posts/singleton-pattern/)을 이용하며, 이벤트는 `enum`을 이용해 정의합니다. 코드는 80줄 가까이 되지만 5개의 개별 메서드로 구성되어 있기 때문에 어렵지 않습니다.
 
 델리게이트와 필드
-: - `OnEvent()`: 이벤트 리스터의 이벤트 반응 메서드가 등록되는 곳입니다.
+: - `OnEvent()`: 이벤트 리스터의 이벤트 반응 메서드를 등록하는 델리게이트입니다.
 - `Listeners`: 키는 이벤트, 값은 `List<OnEvent>`로 구성되는 딕셔너리입니다. 특정 이벤트와 이벤트에 대한 반응을 연결합니다.
 
 메서드
@@ -177,7 +177,7 @@ public class ListenerObject : MonoBehaviour
         switch (EventType)
         {
             case EventType.FirstExampleEvent:
-                /* ... */
+                /* 이벤트 동작 코드 작성란 */
                 break;
         }
     }

@@ -1,5 +1,5 @@
 ---
-title: "횡스크롤 감성 게임 개발하기: 프로토타입 개발 과정"
+title: "횡스크롤 감성 게임 개발하기: 프로토타입 개발 과정 첫 번째"
 
 categories: [프로그래밍, 마일스톤]
 tags: [프로그래밍, 유니티, C#, 개발일지]
@@ -24,7 +24,7 @@ redirect_from:
 
 ## **들어가며**
 
-> [전 글](https://hynrng.github.io/posts/armonia-planning/)로부터 이어집니다.
+> [전 글(기획 및 구성 과정)](https://hynrng.github.io/posts/armonia-planning/)에서 이어집니다.
 {: .prompt-info }
 
 너무 재밌어서 다시 도전하는 제 [네 번째 마일스톤](https://hynrng.github.io/categories/%EB%A7%88%EC%9D%BC%EC%8A%A4%ED%86%A4/) 개발기입니다. 만들면서 메모를 정리할 겸 중간 점검이 필요하기도 해서 약 한 달 동안 만든 결과물을 간단히 정리했습니다. 이 개발 단계에서 만든 것은 다음과 같습니다.
