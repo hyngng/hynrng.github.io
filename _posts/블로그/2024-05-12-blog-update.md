@@ -38,8 +38,8 @@ git remote add upstream https://github.com/cotes2020/jekyll-theme-chirpy.git
 저는 만약의 경우를 위해 깃 저장소를 한 번 더 등록하는 것으로 시작했습니다. 필수사항은 아닙니다.
 
 ```bash
-git merge remotes/upstream/master
 git fetch upstream
+git merge remotes/upstream/master
 ```
 {: .nolineno }
 
