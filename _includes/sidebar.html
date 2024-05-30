@@ -12,7 +12,7 @@
     </a>
 
     <!-- region 수정됨 -->
-    {% if page.layout == 'post' %}
+    {% if page.layout != 'home' %}
       <h2 class="site-title">
         <a href="{{ '/' | relative_url }}">{{ site.title }}</a>
       </h2>
