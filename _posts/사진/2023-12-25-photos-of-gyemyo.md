@@ -12,6 +12,8 @@ image:
 
 toc: false
 toc_sticky: true
+
+lang: ko
  
 date: 2023-12-25 21:35:00 +0900
 last_modified_at: 2023-12-25 21:35:00 +0900

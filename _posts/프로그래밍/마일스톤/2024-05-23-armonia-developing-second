@@ -13,10 +13,12 @@ image:
 toc: true
 toc_sticky: true
 
-mermaid: true
+lang: ko
 
 date: 2024-05-28 18:14:00 +0900
 last_modified_at: 2024-05-28 18:14:00 +0900
+
+mermaid: true
 ---
 
 ## **들어가며**

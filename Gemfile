@@ -9,10 +9,16 @@ group :test do
 end
 
 # region 수정됨
+gem "csv"
+gem "base64"
+
 gem "tzinfo"
 gem "tzinfo-data", "~> 1.2024"
 
 gem 'jekyll-redirect-from'
+group :jekyll_plugins do
+  gem "jekyll-polyglot"
+end
 
 # 아래 코드를 주석처리 해제하고, 원하는 버전을 4.3.3 자리에 작성한 뒤
 # `bundle update jekyll` 명령어를 통해 jekyll 버전을 명시적으로 업데이트할 수 있음.

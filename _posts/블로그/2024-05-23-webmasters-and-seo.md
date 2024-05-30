@@ -1,16 +1,18 @@
 ---
 title: 블로그 웹마스터도구 등록부터 SEO 최적화까지
-categories:
-  - 블로그
-tags:
-  - 블로그
-  - 웹마스터도구
-  - SEO 최적화
+
+categories: [블로그]
+tags: [블로그, 웹마스터도구, SEO 최적화]
 start_with_ads: true
+
 toc: true
 toc_sticky: true
+
+lang: ko
+
 date: '2024-05-23 11:53:00 +0900'
 last_modified_at: '2024-05-28 11:56:00 +0900'
+
 mermaid: true
 ---
 

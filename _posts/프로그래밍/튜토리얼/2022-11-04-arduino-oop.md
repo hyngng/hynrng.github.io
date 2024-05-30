@@ -7,6 +7,8 @@ start_with_ads: true
 
 toc: true
 toc_sticky: true
+
+lang: ko
  
 date: 2022-11-04 13:48:00 +0900
 last_modified_at: 2023-04-12 20:38:00 +0900

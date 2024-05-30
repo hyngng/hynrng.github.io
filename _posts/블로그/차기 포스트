@@ -1,2 +1,14 @@
-- prose.io를 이용한 원격 글 편집
-- jekyll-polygot을 이용한 다국어 지원
+## prose.io를 이용한 원격 글 편집
+
+
+## jekyll-polygot을 이용한 다국어 지원
+
+1. Gemfile에 `gem 'jekyll-polyglot'` 작성 => `bundle install`
+2. `_config에 plugins에 jekyll-polyglot 작성, 
+languages: ["en", "kr"]
+default_lang: "kr"
+exclude_from_localization: ["javascript", "images", "css", "public"]
+parallel_localization: false
+3. 프론트메터에 `lang:kr` 추가
+
+이거 작성. 단, `parallel_localization: false`는 윈도우에서는 버그 난다고 해서 false로 바꿔줌.
