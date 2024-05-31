@@ -41,7 +41,7 @@ mermaid: true
 
 ![settings-test](/2024-05-31-armonia-developing-second/settings-test.webp){: .w-75 }
 ![unexpected](/2024-05-31-armonia-developing-second/unexpected.webp){: .w-75 }
-_각각 설정창 진입을 테스트중일 때와 우연히 이색적인 분위기를 냈을 때_
+_각각 설정창 진입을 테스트중일 때와 우연히 이색적인 분위기를 얻었을 때_
 
 ## **애셋**
 
