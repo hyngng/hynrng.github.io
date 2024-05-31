@@ -72,7 +72,7 @@ social_preview_image: # string, local or CORS resources
 toc: true
 
 comments:
-  provider: utterances # [disqus | utterances | giscus]
+  provider: giscus # [disqus | utterances | giscus]
   disqus:
     shortname: # fill with the Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
   utterances:
