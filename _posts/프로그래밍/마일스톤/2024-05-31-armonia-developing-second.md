@@ -6,7 +6,7 @@ tags: [프로그래밍, 유니티, C#, ARMONIA, 개발, 개발일지]
 start_with_ads: true
 
 image:
-    path: /2024-05-31-armonia-developing-second/prototype-gameplay.webp
+    path: /2024-05-31-armonia-developing-second/gameplay.webp
     lqip: data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAADwAQCdASoQAAgAAUAmJQBOgB8xi/GXoBAA/vuITP1jzd5vh9i82itNyxKJOlCBXvOebik8444+JnSUJik6FdPY8GR+D5jZO/WAAA==
     alt: 개발중인 프로토타입
 
