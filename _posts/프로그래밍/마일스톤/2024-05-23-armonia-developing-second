@@ -6,8 +6,8 @@ tags: [프로그래밍, 유니티, C#, 개발일지]
 start_with_ads: true
 
 image:
-    path: /2024-04-30-armonia-developing-first/prototype-gameplay.webp
-    lqip: data:image/webp;base64,UklGRiQBAABXRUJQVlA4TBgBAAAvD8ABAM1kRP9jE+UpQv/D4CCSJEXqOXpmBhts/1W8BGZa6B0bG44kyW2bnQUUHM7+//t8zQmA2wiMHEXSexc+ENN/QdRAxJC9WSlicZYaCiHEiBEEBULCMMoQhMMi0bv93TqZbAMSDEWRd+s75TKrKm4VicC+vLm9fnxs++PKnIq5yl2/HI/H7Znt/PFTbA+vP6RcraP+/u4u769YybUSgygQFMaTzCmCmruS9R8Wur+T874jmH1RRSUTIWlnwwMxK3/FTqFkkIRu7it/NDlMKxKqKhJtqW+MXnKWekjlKoNGylt4ripQbry6Ou5Me5Ctq6J0E8qGQe2+v3Tlrj/5bLz7VimPuFYRKZDFKkBIEQUROUhNEJEA
+    path: /2024-05-31-armonia-developing-second/prototype-gameplay.webp
+    lqip: data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAADwAQCdASoQAAgAAUAmJQBOgB8xi/GXoBAA/vuITP1jzd5vh9i82itNyxKJOlCBXvOebik8444+JnSUJik6FdPY8GR+D5jZO/WAAA==
     alt: 개발중인 프로토타입
 
 toc: true
@@ -39,24 +39,43 @@ mermaid: true
 
 ## **애셋**
 
-![pigeon-digging](/2024-05-31-armonia-developing-second/pigeon-digging.webp)
+### **이미지 에셋**
 
-- 비둘기 땅 쪼는거 그림
+![pigeon-digging](/2024-05-31-armonia-developing-second/pigeon-digging.webp){: .light .border }
+![pigeon-digging](/2024-05-31-armonia-developing-second/pigeon-digging.webp){: .dark }
+_땅 쪼는 비둘기_
+
+[전 경우](https://hynrng.github.io/posts/armonia-developing-first/#%EC%95%A0%EB%8B%88%EB%A9%94%EC%9D%B4%EC%85%98-%EC%97%90%EC%85%8B)와 같이 키프레임 형식의 애니메이션을 조금 더 만들었습니다. 대부분의 경우 애니메이션 분량이 짧고, 전에 그려둔 이미지를 덧씌우는 식으로 재활용했더니 어렵지 않았습니다.
+
+### **셰이더 파일**
+
 - 2D 셰이더 새로 찾아 적용함 (후술할거임)
-    - 그림자 포기해야 하나
+
+문제는, 그림자 생성(Cast shadow)이 이루어지지 않고 포스트 프로세싱의 심도(DOF) 효과가 적용되지 않습니다. 가능하면 개선할 수 있으면 좋겠지만 포기해야 하나 고민되네요.
 
 ## **개발**
 
 ### **설정창 구상 및 구현**
 
-- 평범한 버튼으로는 만들기 싫었다. (홍대병 + 그건 전 PALETTE에서 이미 해봄)
-- 평소 즐겨보는 street photography 컨텐츠, 그리고 영화를 찍는 듯한 제작 감각을 옮겼음.
-- 만족스러움.
+![settings-activated](/2024-05-31-armonia-developing-second/settings-activated.webp){: .w-75 }
+_핀치 줌으로 설정창 진입할 수 있음_
+
+설정창은 재밌게 만들어보고 싶었습니다. 흔히 버튼을 모서리에 배치하는 식으로 해결하지만 그것은 [전에 이미 만들어본 적](https://hynrng.github.io/posts/palette-developing/)있었고, 그보다는 좀 더 특별한 경험을 만들면서도 깔끔한 화면을 최대한 보존하고 싶었습니다.
+
+그래서 핀치 줌으로 접근할 수 있도록 만들었습니다. 핀치 줌은 단계적으로 작동하며, 일정 범위 이내에서는 평범한 카메라 줌인아웃으로 연결되지만 일정 범위를 넘어서면 설정창으로 진입하게 됩니다. 한 번 접근한 설정창은 핀치 줌인으로 나갈 수 있습니다.
+
+이 기능을 만들면서 UI는 마치 카메라처럼 보이도록 만들었습니다. 평소 즐겨보는 Street Photography 컨텐츠에서 기기를 통해 정렬된 세상을 보는 느낌이 좋아 그 영화를 찍는 듯한 제작 감각을 옮겼습니다. 배터리나 시간은 (코드)나 (코드)를 가져왔기 때문에 진짜로 작동함
+
+아직 완성되지 않았기 때문에 실제로 사용해보더라도 경험이 유기적으로 이어진다는 느낌이 들어 만족스럽네요.
+
+<!--하단 스와이프창 만들거임.-->
 
 ### **절차적 애니메이션 적용**
 
-- 드디어 적용했다!
-- 기술적인 챌린지가 될 줄 알았는데 생각보다 쉬웠고, 생각보다 더러워서 어려웠음.
+![people-staring-pigeons](/2024-05-31-armonia-developing-second/people-staring-pigeons.webp){: .w-75 }
+_근처에 비둘기 있으면 한 번씩 쳐다봄_
+
+절차적 애니메이션으로 만든 결과물을 보고 멋지다고 생각한 적이 있어서 기억해두고 있다가 이번에 시도해봤습니다. 기술적으로 복잡하게 구현하는 것인 줄 알았는데 생각보다 쉬웠고, 코드로 제어하는 것이 생각보다 더러워서 어려웠음.
 
 ```cs
 public void ChangeSourceObject(GameObject discoveredObject)
@@ -80,27 +99,34 @@ public void ChangeSourceObject(GameObject discoveredObject)
 ```
 {: file="People.cs" }
 
-우와, 힘들었습니다.
+우와, 힘들었습니다. 비둘기와 달리 사람은 머리, 몸, 다리 등이 개별 오브젝트로 독립적으로 나뉘어져 있어 적용해봤습니다.
 
-- SourceObject를 교체해야 하는데
-- 읽기 전용(read-only)인거 몰랐고
-- Animator를 껐다가 켜야 적용되는 것도 몰랐음.
-- 나중에 3D 토이프로젝트 만들게 되면 꼭꼭 더 잘 활용해보고 싶다.
+절차적 애니메이션의 `sourceObject`를 코드로 제어할 때 고려해야 하는 점
+: - `sourceObjects`의 속성은 읽기 전용(read-only)입니다. 다른 지역 변수에 데이터 정의 후 `data.sourceObjects`에 새 값을 지정해야 합니다.
+- 해당 오브젝트의 애니메이터를 비활성화한 상태로 `rigBuilder`를 빌드 후 애니메이션을 재활성화해야 적용됩니다.
 
-- 비둘기는 얼굴 몸 다리 통짜라서 적용이 안 되는데, 사람은 얼굴 몸 다리 다 독립된 오브젝트라 적용해봤음.
+나중에 3D 토이프로젝트 라도 만들게 되면 꼭꼭 더 잘 활용해보고 싶다는 생각이 들었습니다.
 
 ### **프로파일러를 이용한 최적화**
 
-- 발열 개심했음. 40FPS 유지가 안 될 정도
-- 신경쓰여서 해결해줬음. 그림자를 생성하는 Sprite용 셰이더가 리소스를 너무 많이 먹어서 필요한 부분 빼고 Default로 바꿔줬음.
+이상하게도 빌드 후 40FPS 유지가 안 될 정도로 발열이 심했습니다. 제 코드가 완벽하지는 않더라도 `GetComponent()`, `Find()` 등 무거운 함수나 `for`, `foreach`, 코루틴 등의 반복 동작이 있는 코드 등이 무리하게 실행되지 않도록 기본적인 부분은 지켜주며 코드를 작성했는데, 이해가 가지 않았습니다.
+
+금방 뜨끈뜨끈해지는 폰이 신경쓰여서 해결해줬음. 프로파일러
+
+[전에 발견한](https://hynrng.github.io/posts/armonia-developing-first/#%EC%8A%A4%ED%94%84%EB%9D%BC%EC%9D%B4%ED%8A%B8-%EC%85%B0%EC%9D%B4%EB%8D%94) 그림자 생성 Sprite용 셰이더가 리소스를 너무 많이 먹어서 필요한 부분 빼고 Default로 바꿔줬음.
 - 근데 앞뒤 구분 안 된 채 렌더링되는 오류 나서 셰이더 또 찾아서 적용해줬음.
 - 완벽하진 않지만 60FPS 방어 잘됨.
 
 ## **출시 기준**
 
 - 그래서 준비했다. 출시 기준!
-- 그럼에도 이 프로젝트는 끝까지 가보고 싶다.
-- 구글 피처링 신청 가능한 정도로만 만들거임.
+이 프로젝트는 끝까지 가보고 싶은데 어디까지 만들어야 하는지에 대한 기준이 없었습니다. 구글 피처링 신청 가능한 정도로만 만들어보고 싶습니다.
+
+피처링 선별 조건은 다음을 제시하고 있습니다.
+: - [구글플레이 정책](https://play.google/developer-content-policy/#!?modal_active=none) 준수 여부
+- 안드로이드와 구글플레이 [핵심 앱 품질 가이드라인 준수](https://developer.android.com/quality?hl=ko) 여부
+- [높은 사용자 평점](https://support.google.com/googleplay/android-developer/answer/138230?hl=en)
+- [높은 안드로이드 바이탈(Android Vitals)](https://support.google.com/googleplay/android-developer/answer/9844486?hl=en&visit_id=638527380779176477-2227653483&rd=1) 점수 
 
 ## **향후 계획**
 
@@ -112,4 +138,4 @@ public void ChangeSourceObject(GameObject discoveredObject)
 ## **마치며**
 
 - 6월에 사회복무요원 근무가 시작됨. 훈련소 가야 함.
-- 향후 간간히 개발해야겠다. 스토어 등록까지는 해보고 싶음.
+- 향후 간간히 개발하고 싶습니다. 스토어 등록까지는 해보고 마쳐보고 싶네요.
