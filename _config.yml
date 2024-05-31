@@ -115,13 +115,13 @@ baseurl: ""
 # region 수정됨
 plugins:
   - jekyll-redirect-from
-  - jekyll-polyglot
+#  - jekyll-polyglot
 
 # jekyll-polyglot
-languages: ["en", "ko"]
-default_lang: "ko"
-exclude_from_localization: ["_data", "_includes", "_plugins", "_sass", "_tabs", ".github", "assets"]
-parallel_localization: false
+# languages: ["en", "ko"]
+# default_lang: "ko"
+# exclude_from_localization: ["_data", "_includes", "_plugins", "_sass", "_tabs", ".github", "assets"]
+# parallel_localization: false
 # endregion 수정됨
 
 # ------------ The following options are not recommended to be modified ------------------
@@ -191,6 +191,7 @@ exclude:
   - LICENSE
   - "*.config.js"
   - package*.json
+  - .github # jekyll-polyglot
 
 jekyll-archives:
   enabled: [categories, tags]
