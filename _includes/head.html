@@ -80,7 +80,7 @@
 
   <!-- region 수정됨 -->
   {% if page.layout == "post" %}
-    {% assign description = include.post_content | content_filter | strip_html | truncatewords: 100 %}
+    {% assign description = include.post_content | content_filter | strip_html | truncate: 100 %}
     
     <meta name="description" content="{{ description }}">
     <meta property="og:description" content="{{ description }}">

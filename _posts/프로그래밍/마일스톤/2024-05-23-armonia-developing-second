@@ -101,7 +101,7 @@ public void ChangeSourceObject(GameObject discoveredObject)
 
 우와, 힘들었습니다. 비둘기와 달리 사람은 머리, 몸, 다리 등이 개별 오브젝트로 독립적으로 나뉘어져 있어 적용해봤습니다.
 
-절차적 애니메이션의 `sourceObject`를 코드로 제어할 때 고려해야 하는 점
+혹시라도 절차적 애니메이션의 `sourceObject`를 코드로 변경하고 싶은 분이 계신다면 다음을 참고하시면 도움이 될 것 같습니다.
 : - `sourceObjects`의 속성은 읽기 전용(read-only)입니다. 다른 지역 변수에 데이터 정의 후 `data.sourceObjects`에 새 값을 지정해야 합니다.
 - 해당 오브젝트의 애니메이터를 비활성화한 상태로 `rigBuilder`를 빌드 후 애니메이션을 재활성화해야 적용됩니다.
 
@@ -119,7 +119,13 @@ public void ChangeSourceObject(GameObject discoveredObject)
 
 ## **출시 기준**
 
-- 그래서 준비했다. 출시 기준!
+- 예전에 유니티가 발간한 게임 업계 보고서에서 "씹을 수 있을 만큼만 물어라(Don't bite off more than you can chew)"라는 충고를 본 적이 있음. 지금 내 상황이 딱 이런듯.
+- 오브젝트를 다양화하고, 애니메이션과 상호작용을 만들고, 이게 혼자서는 너무 시간과 노력이 생각보다 많이 들어서, 어느 순간 끝이 안 보이는 터널을 지나는 느낌이 들더라구요.
+
+그래서 출시 기준을 생각해봤습니다. 
+
+- 구글에 피처링이라는게 있는데 이 기준을 적용하려 함.
+
 이 프로젝트는 끝까지 가보고 싶은데 어디까지 만들어야 하는지에 대한 기준이 없었습니다. 구글 피처링 신청 가능한 정도로만 만들어보고 싶습니다.
 
 피처링 선별 조건은 다음을 제시하고 있습니다.
@@ -128,14 +134,8 @@ public void ChangeSourceObject(GameObject discoveredObject)
 - [높은 사용자 평점](https://support.google.com/googleplay/android-developer/answer/138230?hl=en)
 - [높은 안드로이드 바이탈(Android Vitals)](https://support.google.com/googleplay/android-developer/answer/9844486?hl=en&visit_id=638527380779176477-2227653483&rd=1) 점수 
 
-## **향후 계획**
-
-- 예전에 유니티가 발간한 게임 업계 보고서에서 "씹을 수 있을 만큼만 물어라(Don't bite off more than you can chew)"라는 충고를 본 적이 있음.
-- 지금 내 상황이 딱 이런듯.
-- 오브젝트를 다양화하고, 애니메이션과 상호작용을 만들고, 이게 혼자서는 너무 시간과 노력이 생각보다 많이 든다.
-- 오브젝트 재활용에 대한 고민이 필요할 것 같음. 컬러 팔레트? 스와프? 조차 고려 안했음.
-
 ## **마치며**
 
-- 6월에 사회복무요원 근무가 시작됨. 훈련소 가야 함.
-- 향후 간간히 개발하고 싶습니다. 스토어 등록까지는 해보고 마쳐보고 싶네요.
+6월에 사회복무요원 복무가 시작됩니다. 훈련소를 가야 하죠.
+
+향후 간간히 개발하고 싶습니다. 스토어 등록까지는 해보고 마치고 싶네요.

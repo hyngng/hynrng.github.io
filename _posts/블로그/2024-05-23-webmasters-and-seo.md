@@ -138,7 +138,7 @@ post-description은 layouts/post.html에서 사용하는 용도로, 어차피 �
 ```liquid
 {% if page.layout == "post" %}
   {% assign description = include.post_content | content_filter |
-                          strip_html | truncatewords: 150 %}
+                          strip_html | truncate: 100 %}
   
   <meta name="description" content="{{ description }}">
   <meta property="og:description" content="{{ description }}">
