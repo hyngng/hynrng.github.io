@@ -2,7 +2,7 @@
 title: "횡스크롤 감성 게임 개발하기: 기획 및 구성 과정"
 
 categories: [프로그래밍, 마일스톤]
-tags: [프로그래밍, 유니티, C#, 기획, 개발일지]
+tags: [프로그래밍, 유니티, C#, ARMONIA, 기획, 개발일지]
 start_with_ads: true
 
 image:
@@ -123,6 +123,8 @@ graph TD;
 
 ```mermaid
 gantt
+    title 1차 로드맵
+
     Section 기획
     기획 :a1, 2024-02-28, 1d
 

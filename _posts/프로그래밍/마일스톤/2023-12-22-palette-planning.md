@@ -2,7 +2,7 @@
 title: "성장형 슈팅 게임 개발하기: 기획과 초기 개발 과정"
 
 categories: [프로그래밍, 마일스톤]
-tags: [프로그래밍, 유니티, C#, 기획, 개발일지, 조이스틱, URP]
+tags: [프로그래밍, 유니티, C#, URP, PALETTE, 기획, 개발일지]
 start_with_ads: true
 
 image:

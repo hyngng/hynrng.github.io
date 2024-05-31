@@ -2,7 +2,7 @@
 title: "성장형 슈팅 게임 개발하기: 후기 개발과 스토어 등록 과정"
 
 categories: [프로그래밍, 마일스톤]
-tags: [프로그래밍, 유니티, C#, 개발일지, URP]
+tags: [프로그래밍, 유니티, C#, URP, PALETTE, 개발, 개발일지]
 start_with_ads: true
 
 image:

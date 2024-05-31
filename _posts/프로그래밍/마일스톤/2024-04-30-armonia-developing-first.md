@@ -2,7 +2,7 @@
 title: "횡스크롤 감성 게임 개발하기: 프로토타입 개발 과정 첫 번째"
 
 categories: [프로그래밍, 마일스톤]
-tags: [프로그래밍, 유니티, C#, 개발일지]
+tags: [프로그래밍, 유니티, C#, ARMONIA, 개발, 개발일지]
 start_with_ads: true
 
 image:
@@ -282,6 +282,8 @@ sequenceDiagram
 
 ```mermaid
 gantt
+    title 1차 로드맵
+
     Section 기획
     기획 :a1, 2024-02-28, 1d
 
