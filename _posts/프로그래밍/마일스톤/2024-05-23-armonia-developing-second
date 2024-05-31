@@ -23,7 +23,7 @@ mermaid: true
 
 ## **들어가며**
 
-> [전 글(프로토타입 개발 과정 첫 번째)](https://hynrng.github.io/posts/armonia-developing-first/)에서 이어집니다.
+> [전 글](https://hynrng.github.io/posts/armonia-developing-first/)에서 이어집니다.
 {: .prompt-info }
 
 제 [네 번째 마일스톤](https://hynrng.github.io/categories/%EB%A7%88%EC%9D%BC%EC%8A%A4%ED%86%A4/) 개발기입니다. 다시 한 번 한 달 동안 만든 결과물을 정리했습니다. 이번 한 달은 조금 지친건지 개발이 분명 즐겁긴 한데 한 편으로는 힘들고 손이 가지 않는 부분이 있었습니다. 이번 단계에서 만든 것은 다음과 같습니다.
