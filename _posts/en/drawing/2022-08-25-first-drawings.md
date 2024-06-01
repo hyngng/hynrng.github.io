@@ -25,7 +25,7 @@ redirect_from:
 
 ![221025-반도체칩](/drawing/221025-반도체칩.webp){: .light .border }
 ![221025-반도체칩](/drawing/221025-반도체칩.webp){: .dark }
-_this was for presentation slide_
+_this was for my presentation_
 
 <br>
 
