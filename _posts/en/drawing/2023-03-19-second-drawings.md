@@ -1,8 +1,8 @@
 ---
 title: "Drawing Compilation #2"
 
-categories: [그림]
-tags: [그림, 드로잉, 비니, 광각, 총, 양뿔, 망토, 트래픽콘]
+categories: [Drawing]
+tags: [Drawing, 비니, 광각, 총, 양뿔, 망토, 트래픽콘]
 start_with_ads: false
 
 image:
@@ -49,6 +49,6 @@ _얘도 할 게 없을 때 그리는 구닌 그림_
 
 <br>
 
-생각보다 시간을 내서 그림을 그리는게 쉽지 않네요. 생각날 때 자주 그리려고 하는데 먼저 할 일을 이것저것 하다보면 손이 잘 안가게 됩니다. 막상 그리다보면 또 봐줄만한 그림은 반절 정도인 것 같고요 🥲
+I’ve been trying to draw whenever I have some free time, but it’s harder than I thought because I always end up doing other things first. And honestly, only about half of the drawings I actually make are worth looking at. 🥲
 
-그래도 자주 그릴 때보다 느껴지는 적당한 거리감에 오히려 색다르게 접근하게 된다는 좋은 점이 있습니다. 예를 들어 화상 왜곡이나 심도 효과는 평소에 생각지도 못했던 이론적인 부분인데 "어 이건 왜 안 해봤지" 하는 생각에 바로 도전해봤습니다. 슥슥 금방 그리고 말기는 하지만 결과물을 보니 또 새롭네요.
+But that distance, that space between wanting to draw and actually doing it, seems to help me look at my drawings in a fresh way every time. For example, I never considered things like image distortion or depth of field before, but I suddenly thought, “Why haven't I tried this?” and jumped right in. I usually just sketch quickly, but it's always refreshing to see the finished product.

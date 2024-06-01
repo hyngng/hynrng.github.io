@@ -138,10 +138,10 @@ _유니티 프로파일러로 측정된 데이터 예시_
 
 그래서 목표지점으로서의 출시 기준이 필요하겠다고 생각했고, 당분간은 [구글 피처링](https://play.google.com/console/about/guides/featuring/)을 신청할 수 있을 정도를 목표로 두기로 했습니다. 구글 피처링은 고품질의 앱과 게임에 대한 기준을 명확히 제시하고 있는데, 그중에는 대표적으로 다음과 같은 것들이 있습니다.
 
-- [구글플레이 정책](https://play.google/developer-content-policy/#!?modal_active=none) 준수 여부
-- 안드로이드와 구글플레이 [핵심 앱 품질 가이드라인 준수](https://developer.android.com/quality?hl=ko) 여부
 - [높은 사용자 평점](https://support.google.com/googleplay/android-developer/answer/138230?hl=en)
-- [높은 안드로이드 바이탈(Android Vitals)](https://support.google.com/googleplay/android-developer/answer/9844486?hl=en&visit_id=638527380779176477-2227653483&rd=1) 점수 
+- [구글플레이 정책](https://play.google/developer-content-policy/#!?modal_active=none) 준수 여부
+- [높은 안드로이드 바이탈(Android Vitals)](https://support.google.com/googleplay/android-developer/answer/9844486?hl=en&visit_id=638527380779176477-2227653483&rd=1) 점수
+- 안드로이드와 구글플레이 [핵심 앱 품질 가이드라인 준수](https://developer.android.com/quality?hl=ko) 여부
 
 특히 [Android Developers](https://developer.android.com/quality?hl=ko)에서는 좋은 사용자 경험에 대해 사용성(백업 및 복원 등), 접근성, 현지화, 딥 링크(번역 등), 시각적 매력과 장인 정신(애니메이션, 오디오, 컨트롤 등)... 이외에도 많은 기준과 예시를 제시하고 있습니다. 조금 더 세부화할 필요가 있지만, 큰 기준으로서는 참고하기 좋을 것 같습니다.
 

@@ -32,6 +32,12 @@ layout: page
     {% assign sub_categories = sub_categories | sort %}
     {% assign sub_categories_size = sub_categories | size %}
 
+    <!-- region 수정됨: jekyll-polyglot -->
+    {% if site.active_lang != first_post.lang %}
+      {% continue %}
+    {% endif %}
+    <!-- endregion 수정됨 -->
+
     <div class="card categories">
       <!-- top-category -->
       <div

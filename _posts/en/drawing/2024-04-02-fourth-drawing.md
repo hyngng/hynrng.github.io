@@ -1,8 +1,8 @@
 ---
 title: "Drawing Compilation #4"
 
-categories: [그림]
-tags: [그림, 드로잉, 야자, 판타지, 조거팬츠, 헤드폰]
+categories: [Drawing]
+tags: [Drawing, 야자, 판타지, 조거팬츠, 헤드폰]
 start_with_ads: false
 
 image:
@@ -43,6 +43,6 @@ _헤드폰 탐남_
 
 <br>
 
-요즘 뱅앤올룹슨이라는 오디오 브랜드에 빠졌습니다. 뱅앤올룹슨 제품이 있는 것은 아니지만, 제품이 공유하는 컨셉이나 회사가 표방하는 철학을 보다보니 스티브잡스가 생전 뱅앤올룹슨 제품 사진을 지갑 속에 넣고 다닌 이유를 알 것 같더라구요. 저도 사진 하나 가지고 다닐까봐요.
+These days, I've become obsessed with the audio brand Bang & Olufsen. Although I don't actually own any Bang & Olufsen products, the more I see the concept their products share and the philosophy the company espouses, the more I understand why Steve Jobs used to carry a photo of Bang & Olufsen products in his wallet when he was alive. Maybe I should carry a photo too.
 
-여담으로 그림을 주기적으로 그리다보니 시간이 지나고 처음 그릴 때 손이 느려졌다는게 꽤나 체감됩니다. 그래서 좀 어색하다가도 계속 그리다보면 금방 돌아오는듯 하네요. 좀 자주 그렸으면 좋겠는데 쉽지 않습니다 🥲
+Incidentally, as I've been drawing pictures periodically, I've felt that over time, my hands have become slower than when I first started drawing. But it seems like once I keep drawing, it quickly comes back to me. I wish I could draw more often, but it's not easy. 🥲

@@ -18,7 +18,7 @@ gem "tzinfo-data"
 gem "wdm", "~> 0.1.1", :platforms => [:mingw, :x64_mingw, :mswin]
 
 gem 'jekyll-redirect-from'
-gem 'jekyll-polyglot', git: 'https://github.com/hionpu/polyglot', branch: 'master'
+gem 'jekyll-polyglot', git: 'https://github.com/hynrng/polyglot', branch: 'master'
 
 # group :jekyll_plugins do
 #   gem "jekyll-polyglot"

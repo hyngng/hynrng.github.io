@@ -35,9 +35,9 @@ order: 4
 
 ## **Feature**
 
-> All posts are written to suit both dark and light mode, but personally I recommend light mode! ✨
+> All posts are written to suit both dark and light mode, but I personally recommend light mode! ✨
 {: .prompt-tip }
-> **[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.ko)**  is followed. Using the contents from my blog is allowed, but you must leave the source! ⚡
+> **[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.ko)**  is followed. Using the contents of my blog is allowed, but you MUST leave the source! ⚡
 {: .prompt-warning }
 > Hope you have an enjoyable reading experience! 🍸
 {: .prompt-info }

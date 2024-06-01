@@ -1,17 +1,26 @@
 <!-- The trending tags list -->
 
-{% assign MAX = 10 %}
+<!-- region 수정됨 -->
+{% assign MAX = site.tag_limit %}
+<!-- endregion 수정됨 -->
 
 {% assign size_list = '' | split: '' %}
 {% assign tag_list = '' | split: '' %}
 
+<!-- region 수정됨: jekyll-polyglot -->
 {% for tag in site.tags %}
-  {% assign size = tag | last | size %}
+  {% assign size = 0 %}
+  {% for post in site.posts %}
+    {% if post.tags contains tag[0] and post.lang == site.active_lang %}
+      {% assign size = size | plus: 1 %}
+    {% endif %}
+  {% endfor %}
   {% assign size_list = size_list | push: size %}
 
-  {% assign tag_str = tag | first | append: '::' | append: size %}
+  {% assign tag_str = tag[0] | append: '::' | append: size %}
   {% assign tag_list = tag_list | push: tag_str %}
 {% endfor %}
+<!-- endregion 수정됨 -->
 
 {% assign size_list = size_list | sort | reverse %}
 
@@ -35,7 +44,9 @@
 
 {% if trending_tags.size > 0 %}
   <section>
-    <h2 class="panel-heading">{{- site.data.locales[include.lang].panel.trending_tags -}}</h2>
+    <!-- region 수정됨: jekyll-polyglot -->
+    <h2 class="panel-heading">{{- site.data.locales[site.active_lang].panel.trending_tags -}}</h2>
+    <!-- endregion 수정됨 -->
     <div class="d-flex flex-wrap mt-3 mb-1 me-3">
       {% for tag_name in trending_tags %}
         {% assign url = tag_name | slugify | url_encode | prepend: '/tags/' | append: '/' %}

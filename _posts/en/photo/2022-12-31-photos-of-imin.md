@@ -112,9 +112,9 @@ _강연이 너무 지루해서 몰래 | 230mm ISO50 F4.9 1/470s_
 
 <br>
 
-> You can check the original photos on **[My GitHub](https://github.com/hynrng/hynrng.github.io.resources/tree/master/photo/jpg)**!
+> You can check the original photos on **[my gitHub](https://github.com/hynrng/hynrng.github.io.resources/tree/master/photo/jpg)**!
 {: .prompt-tip }
 
 I enjoy how the feel of a photo changes over time, so I tend to take a lot of pictures in my daily life. This year, I got a new phone with a better camera, which made me curious, "Can I capture the same photos more beautifully than others?" The hardware of the latest models is so good that I wanted to make the most of it.
 
-To take better photos, I looked up theories and browsed many other people's photos, which was truly fun and refreshing. As I kept exploring, I became more ambitious and ended up creating some photos that I wanted to keep. Although I have some regrets, like when editing JPGs causes the photos to degrade, I’m more pleased that I’ve found a new way to document and express myself. I hope to post many great photos in the future.
+To take better photos, I looked up theories and browsed the photos that taken from other people, and it was truly fun and refreshing. As I kept exploring, I became more ambitious and ended up creating some photos that I wanted to keep. Although I have made some regrets, like editing JPGs causing the photos to degrade, I’m more pleased that I’ve found a new way to document and express myself. I hope to post many great photos in the future.

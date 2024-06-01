@@ -1,5 +1,5 @@
 ---
-title: "[2023] 계묘년을 보내며"
+title: "[2023] Farewell to the Year of the Rabbit"
 
 categories: [Photo]
 tags: [Photo, 불멍, 지하철, 개수대, 구름, 감자튀김, 바닷가, 낙엽]
@@ -14,7 +14,6 @@ toc: false
 toc_sticky: true
 
 lang: en
-permalink: /blog/pinpoint
  
 date: 2023-12-25 21:35:00 +0900
 last_modified_at: 2023-12-25 21:35:00 +0900
@@ -132,9 +131,9 @@ _어떤 날은 조금 파랗게 | 230mm ISO50 F4.9 1/60s_
 
 <br>
 
-> 사진 원본은 **[깃허브](https://github.com/hynrng/hynrng.github.io.resources/tree/master/photo/jpg)**에서 확인할 수 있습니다!
+> You can check the original photos on **[my gitHub](https://github.com/hynrng/hynrng.github.io.resources/tree/master/photo/jpg)**!
 {: .prompt-tip }
 
-이번 한 해에는 사진을 찍는 일이 재밌어서 다양한 시도를 했습니다. 제가 원하는 사진을 찍어도 보고, 남의 사진을 찍어도 보고, 사진마다 컨셉을 다르게 잡아 어떤 사진은 멀리서, 어떤 사진은 가까이서, 어떤 사진은 보색대비를 강조하여, 어떤 사진은 아예 흑백으로 남겨보기도 했죠. 사진이 제 손끝을 따라 변해가는 과정은 볼 때마다 신기했고, 특히 컬러 그레이딩이나 톤곡선을 건드리면서부터는 과정 자체를 즐겼던 것 같네요.
+This past year, I’ve had a lot of fun experimenting with photography. I tried capturing the photos I wanted, as well as taking photos of other people. I even played around with different concepts for each photo, sometimes shooting from afar, sometimes close-up, sometimes emphasizing complementary colors, and sometimes even leaving the photos in black and white. It was always fascinating to see how the photos transformed under my fingertips, especially when I started playing with color grading and tone curves. I really enjoyed the process itself.
 
-덕분에 작년보다 독특한 사진을 많이 만들 수 있었던 것 같지만, 모든 사진을 무겁고 진지하게 대하려는 태도가 이제는 조금 부담스럽게 느껴져서 앞으로는 사진에 대한 기술적인 집착을 덜어내고 싶습니다. 그만큼 앞으로 사진도 더 가볍게 자주 올리면서 사진 관련된 경험이나 생각도 간간히 기록할 수 있으면 좋겠어요.
+Thanks to that, I feel like I was able to create more unique photos than last year. However, I’ve started to feel a bit burdened by my tendency to approach all of my photos seriously and with a heavy heart. I’d like to detach myself from that technical obsession with photography from now on. That way, I can upload photos more casually, and I can also occasionally write down my experiences and thoughts related to photography.

@@ -1,4 +1,15 @@
-<!-- The paginator for post list on HomgPage. -->
+<!-- The paginator for post list on HomePage. -->
+
+<!--
+
+메모: jekyll-polyglot에 의한 수정이 잦음.
+
+글로 정리할 때나 병합할 때 다시 원리 파악이 필요함.
+특히 병합할 때 조심해야 함.
+
+-->
+
+{% include lang.html %}
 
 <nav aria-label="Page Navigation">
   <ul class="pagination align-items-center mt-4 mb-0">
@@ -19,7 +30,15 @@
     {% assign left_ellipsis = false %}
     {% assign right_ellipsis = false %}
 
-    {% for i in (1..paginator.total_pages) %}
+    {% assign total_pages = 0 %}
+    {% for post in site.posts %}
+      {% if post.lang == site.active_lang %}
+        {% assign total_pages = total_pages | plus: 1 %}
+      {% endif %}
+    {% endfor %}
+    {% assign total_pages = total_pages | divided_by: site.paginate | ceil | plus: 1 %}
+
+    {% for i in (1..total_pages) %}
       {% assign pre = paginator.page | minus: 1 %}
       {% assign next = paginator.page | plus: 1 %}
       {% assign pre_less = pre | minus: 1 %}
@@ -27,15 +46,15 @@
       {% assign show = false %}
 
       {% if paginator.page == 1 %}
-        {% if i <= 3 or i == paginator.total_pages %}
+        {% if i <= 3 or i == total_pages %}
           {% assign show = true %}
         {% endif %}
-      {% elsif paginator.page == paginator.total_pages %}
+      {% elsif paginator.page == total_pages %}
         {% if i == 1 or i >= pre_less %}
           {% assign show = true %}
         {% endif %}
       {% else %}
-        {% if i == 1 or i == paginator.total_pages %}
+        {% if i == 1 or i == total_pages %}
           {% assign show = true %}
         {% elsif i >= pre and i <= next %}
           {% assign show = true %}
@@ -71,7 +90,7 @@
     <!-- mobile pagination -->
     <li class="page-index align-middle">
       <span>{{ paginator.page }}</span>
-      <span class="text-muted">/ {{ paginator.total_pages }}</span>
+      <span class="text-muted">/ {{ total_pages }}</span>
     </li>
 
     <!-- right arrow -->
@@ -81,7 +100,17 @@
       {% assign next_url = '#' %}
     {% endif %}
 
-    <li class="page-item {% unless paginator.next_page_path %}disabled{% endunless %}">
+    <!-- region 수정됨: jekyll-polyglot -->
+    {% assign active_lang_total_pages = 0 %}
+      {% for post in site.posts %}
+        {% if post.lang == site.active_lang %}
+          {% assign active_lang_total_pages = active_lang_total_pages | plus: 1 %}
+        {% endif %}
+      {% endfor %}
+    {% assign active_lang_total_pages = active_lang_total_pages | divided_by: site.paginate | ceil | plus: 1 %}
+
+    <li class="page-item {% if paginator.page >= active_lang_total_pages %}disabled{% endif %}">
+    <!-- endregion 수정됨 -->
       <a class="page-link" href="{{ next_url }}" aria-label="next-page">
         <i class="fas fa-angle-right"></i>
       </a>

@@ -1,5 +1,9 @@
 <!-- Navigation buttons at the bottom of the post. -->
 
+<!-- region 수정됨: jekyll-polyglot -->
+{% include lang.html %}
+<!-- endregion 수정됨 -->
+
 <nav class="post-navigation d-flex justify-content-between" aria-label="Post Navigation">
   {% assign previous = site.data.locales[include.lang].post.button.previous %}
   {% assign next = site.data.locales[include.lang].post.button.next %}

@@ -3,19 +3,39 @@ layout: page
 # All the Tags of posts.
 ---
 
+<!-- region 수정됨: jekyll-polyglot -->
+{% include lang.html %}
+<!-- endregion 수정됨 -->
+
 <div id="tags" class="d-flex flex-wrap mx-xl-2">
   {% assign tags = '' | split: '' %}
-  {% for t in site.tags %}
-    {% assign tags = tags | push: t[0] %}
+  <!-- region 수정됨: jekyll-polyglot -->
+  {% for post in site.posts %}
+  <!-- endregion 수정됨 -->
+    {% if post.lang == site.active_lang %}
+      {% for t in post.tags %}
+        {% unless tags contains t %}
+          {% assign tags = tags | push: t %}
+        {% endunless %}
+      {% endfor %}
+    {% endif %}
   {% endfor %}
 
   {% assign sorted_tags = tags | sort_natural %}
 
   {% for t in sorted_tags %}
     <div>
+      {% assign tag_count = 0 %}
+      <!-- region 수정됨: jekyll-polyglot -->
+      {% for post in site.posts %}
+      <!-- endregion 수정됨 -->
+        {% if post.lang == site.active_lang and post.tags contains t %}
+          {% assign tag_count = tag_count | plus: 1 %}
+        {% endif %}
+      {% endfor %}
       <a class="tag" href="{{ t | slugify | url_encode | prepend: '/tags/' | append: '/' | relative_url }}">
         {{ t -}}
-        <span class="text-muted">{{ site.tags[t].size }}</span>
+        <span class="text-muted">{{ tag_count }}</span>
       </a>
     </div>
   {% endfor %}

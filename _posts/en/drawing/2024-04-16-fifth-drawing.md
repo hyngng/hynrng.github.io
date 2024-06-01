@@ -1,8 +1,8 @@
 ---
 title: "Drawing Compilation #5"
 
-categories: [그림]
-tags: [그림, 드로잉, 의자, 패션, 요리, 여행, 자취방]
+categories: [Drawing]
+tags: [Drawing, 의자, 패션, 요리, 여행, 자취방]
 start_with_ads: false
 
 image:
@@ -33,6 +33,6 @@ _여행용 짐_
 ![240504-방어지름](/drawing/240504-방어지름.webp)
 _정육면방_
 
-브러쉬를 바꿨더니 느낌이 많이 달라졌습니다! 종이 위에 그리는 것 같아 이런 털털한 느낌을 굉장히 좋아하는데 괜히 지금까지 손해본 기분이에요. 훨씬 그릴 맛이 납니다 🥰
+Changing the brush made such a big difference in how it feels! I really love this rugged feeling of it being like drawing on paper, so I feel like I've been missing out unnecessarily until now. It's so much more enjoyable to draw now. 🥰
 
-너무 많지도 적지도 않은 5장 정도를 기준으로 업로드하려 하고 있는데, 양이 정해져있다면 질에 신경써보자는 생각이 들어서 전보다는 좀 더 덜 낙서스럽게 보이도록 신경썼습니다. 손이 느린 편인지 어떤 그림은 며칠에 걸쳐 그리기도 했는데, 모아서 보니 역시 뿌듯합니다.
+I'm planning to upload around 5 pieces, not too many or too few. Since there's a set number, I thought I should focus more on quality, so I tried to make them look less scribble-like than before. Since I work slowly, I spent several days on some of the drawings, but seeing them all together makes me really proud.

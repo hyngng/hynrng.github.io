@@ -122,9 +122,12 @@ refactor: true
 <!-- endregion 수정됨: jekyll-polyglot -->
 <!-- #post-list -->
 
+<!-- region 수정됨 -->
 {% if paginator.total_pages > 1 %}
+  {% assign total_pages = default.size | divided_by: site.paginate | plus: 1 %}
   {% include post-paginator.html %}
 {% endif %}
+<!-- endregion 수정됨 -->
 
 <!-- region 구조화된 데이터 -->
 <span itemscope="" itemtype="http://schema.org/Organization">
