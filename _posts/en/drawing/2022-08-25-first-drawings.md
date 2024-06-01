@@ -46,7 +46,7 @@ _Internet Inspired art_
 
 ![220825-동물구닌](/drawing/220825-동물구닌.webp){: .light .border }
 ![220825-동물구닌](/drawing/220825-동물구닌.webp){: .dark }
-_Another internet Inspired art_
+_Drawing made while imitating_
 
 <br>
 
