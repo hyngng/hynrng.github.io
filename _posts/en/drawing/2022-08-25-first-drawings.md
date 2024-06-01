@@ -13,7 +13,7 @@ image:
   path: /drawing/200000-생존사람.webp
   lqip: >-
     data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAADwAQCdASoQAAgAAgA0JaQAD4WwKYuRsAAA/v58LC1cLESP9ztg6FTwgeVVOIMR19dwzrRkt/f6yWyrN/pF2btgTAAAAA==
-  alt: post apocalyptic vibe artwork
+  alt: post apocalypse
 toc: false
 toc_sticky: true
 lang: en
