@@ -35,7 +35,7 @@ _morning sunset | 230mm ISO40 F4.9 1/2700s_
 <br>
 
 ![20230117-205758](/photo/webp/20230117_205758.webp){: .shadow }
-_an early-morning campfire | 230mm ISO40 F4.9 1s_
+_an early morning campfire | 230mm ISO40 F4.9 1s_
 
 <br>
 
