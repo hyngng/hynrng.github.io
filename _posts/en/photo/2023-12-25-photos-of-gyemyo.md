@@ -16,7 +16,7 @@ image:
   path: /photo/webp/20231222_222403.webp
   lqip: >-
     data:image/webp;base64,UklGRjQAAABXRUJQVlA4ICgAAABwAQCdASoKAAUAAgA0JYwCdAFAAAD++vfd7pSFrqXz6iij8hsZxGAA
-  alt: 한겨울 밤 하늘 | 23mm ISO400 F1.8 8s
+  alt: a midwinter night sky | 23mm ISO400 F1.8 8s
 toc: false
 toc_sticky: true
 lang: en
