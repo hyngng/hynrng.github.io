@@ -70,7 +70,7 @@ _my friend took me to the gym | 69mm ISO400 F2.4 1/30s_
 <br>
 
 ![20231226-001415](/photo/webp/20231226_001415.webp){: .shadow }
-_at the elementary school where I was 10 years ago. | 69mm ISO40 F2.4 1/200s_
+_at a elementary school where I was 10 years ago. | 69mm ISO40 F2.4 1/200s_
 
 <br>
 
