@@ -45,7 +45,7 @@ _when my friend grills, I take pictures | 69mm ISO125 F2.4 1/60s_
 <br>
 
 ![20230520-160651](/photo/webp/20230520_160651.webp){: .shadow }
-_a sheep ranch next to the school I graduated | 230mm ISO64 F4.9 1/120s_
+_a sheep living next to the school | 230mm ISO64 F4.9 1/120s_
 
 <br>
 
