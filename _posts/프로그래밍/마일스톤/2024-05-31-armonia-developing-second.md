@@ -47,8 +47,8 @@ _각각 설정창 진입을 테스트중일 때와 우연히 이색적인 분위
 
 ### **이미지 에셋**
 
-![pigeon-digging](/2024-05-31-armonia-developing-second/pigeon-digging.webp){: .light .border }
-![pigeon-digging](/2024-05-31-armonia-developing-second/pigeon-digging.webp){: .dark }
+![pigeon-digging](/2024-05-31-armonia-developing-second/pigeon-digging.webp){: .light .w-25 .border }
+![pigeon-digging](/2024-05-31-armonia-developing-second/pigeon-digging.webp){: .dark .w-25 }
 _땅 쪼는 비둘기_
 
 키프레임 형식의 애니메이션은 계속 추가해나갈 예정입니다. 이번의 경우, 비둘기에 대해 땅 쪼는 동작 구현을 위해 애니메이션을 만들어주었습니다. 애니메이션 분량도 짧고 무엇보다 [이전에 만들어둔 애셋](https://hynrng.github.io/posts/armonia-developing-first/#%EC%95%A0%EB%8B%88%EB%A9%94%EC%9D%B4%EC%85%98-%EC%97%90%EC%85%8B)이 있어서 전처럼 다른 비둘기 영상을 찾아보며 특징을 찾아 흉내낸다거나 하는 부담은 없었습니다.
