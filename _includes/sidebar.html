@@ -21,19 +21,20 @@
         <a href="{{ '/' | relative_url }}">{{ site.title }}</a>
       </h1>
     {% endif %}
-    <!-- endregion 수정됨 -->
 
-    <p class="site-subtitle fst-italic mb-0">{{ site.tagline }}</p>
+    <p class="site-subtitle fst-italic mb-0">{{ site.tagline[site.active_lang] }}</p>
+    <!-- endregion 수정됨 -->
   </header>
   <!-- .profile-wrapper -->
 
+  <!-- region 수정됨: jekyll-polyglot -->
   <nav class="flex-column flex-grow-1 w-100 ps-0">
     <ul class="nav">
       <!-- home -->
       <li class="nav-item{% if page.layout == 'home' %}{{ " active" }}{% endif %}">
         <a href="{{ '/' | relative_url }}" class="nav-link">
           <i class="fa-fw fas fa-home"></i>
-          <span>{{ site.data.locales[include.lang].tabs.home | upcase }}</span>
+          <span>{{ site.data.locales[site.active_lang].tabs.home | upcase }}</span>
         </a>
       </li>
       <!-- the real tabs -->
@@ -43,13 +44,14 @@
             <i class="fa-fw {{ tab.icon }}"></i>
             {% capture tab_name %}{{ tab.url | split: '/' }}{% endcapture %}
 
-            <span>{{ site.data.locales[include.lang].tabs.[tab_name] | default: tab.title | upcase }}</span>
+            <span>{{ site.data.locales[site.active_lang].tabs.[tab_name] | default: tab.title | upcase }}</span>
           </a>
         </li>
         <!-- .nav-item -->
       {% endfor %}
     </ul>
   </nav>
+  <!-- endregion 수정됨 -->
 
   <div class="sidebar-bottom d-flex flex-wrap align-items-center w-100">
     {% unless site.theme_mode %}
