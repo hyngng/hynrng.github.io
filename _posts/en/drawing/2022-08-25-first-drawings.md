@@ -1,5 +1,5 @@
 ---
-title: 'Drawing Compilation #1'
+title: 'Drawing compilation #1'
 categories:
   - Drawing
 tags:
