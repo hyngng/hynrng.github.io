@@ -35,7 +35,7 @@ _fantasia_
 
 ![240128-몰카](/drawing/240128-카메라.webp){: .light .border }
 ![240128-몰카](/drawing/240128-카메라.webp){: .dark }
-_insta feeling viewfinder_
+_insta feel viewfinder_
 
 <br>
 
