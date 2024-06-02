@@ -1,23 +1,27 @@
 ---
-title: "[2022] A Diligently Captured Daily Life"
-
-categories: [Photo]
-tags: [Photo, french fry, hallway, friend, snow, sakura, cloud, crane]
+title: '[2022] A diligently captured daily life'
+categories:
+  - Photo
+tags:
+  - Photo
+  - french fry
+  - hallway
+  - friend
+  - snow
+  - sakura
+  - cloud
+  - crane
 start_with_ads: false
-
 image:
-    path: /photo/webp/20220605_121958.webp
-    lqip: data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAADQAQCdASoQAAgAAgA0JZQCdAD0tNvXgAD++yUU4/HtnDOizij1uz6dfZTsypE5KvKr20uztM+CbrkMAgjCLe9cNkIAAA==
-    alt: Waiting for someone at the mall | 230mm ISO250 F4.9 1/40s
-
+  path: /photo/webp/20220605_121958.webp
+  lqip: >-
+    data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAADQAQCdASoQAAgAAgA0JZQCdAD0tNvXgAD++yUU4/HtnDOizij1uz6dfZTsypE5KvKr20uztM+CbrkMAgjCLe9cNkIAAA==
+  alt: Waiting for someone at the mall | 230mm ISO250 F4.9 1/40s
 toc: false
 toc_sticky: true
-
 lang: en
- 
-date: 2022-12-31 14:53:00 +0900
-last_modified_at: 2023-04-09 16:42:00 +0900
-
+date: '2022-12-31 14:53:00 +0900'
+last_modified_at: '2023-04-09 16:42:00 +0900'
 redirect_from:
   - /posts/%EC%9E%84%EC%9D%B8%EB%85%84%EC%9D%98-%EC%82%AC%EC%A7%84/
 ---
