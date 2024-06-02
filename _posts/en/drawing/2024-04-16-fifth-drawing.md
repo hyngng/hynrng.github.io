@@ -14,7 +14,7 @@ image:
   path: /drawing/240504-의자위에사람.webp
   lqip: >-
     data:image/webp;base64,UklGRkwAAABXRUJQVlA4IEAAAABQAgCdASoQAAgAAgA0JbACdLoAAw99mbC/OgAA/vnFT4pLmuNFoQjBo6mMbdQjhxXXeNsH3/zPWe22e+TocAAA
-  alt: it's uncomfortable
+  alt: feeling uncomfortable
 toc: false
 toc_sticky: true
 lang: en
