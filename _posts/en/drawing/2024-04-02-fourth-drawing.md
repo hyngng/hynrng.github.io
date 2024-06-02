@@ -1,45 +1,47 @@
 ---
-title: "Drawing Compilation #4"
-
-categories: [Drawing]
-tags: [Drawing, 야자, 판타지, 조거팬츠, 헤드폰]
+title: 'Drawing Compilation #4'
+categories:
+  - Drawing
+tags:
+  - Drawing
+  - study
+  - fantasy
+  - jogger pants
+  - headphone
 start_with_ads: false
-
 image:
-    path: /drawing/240128-로봇야자.webp
-    lqip: data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAACwAQCdASoQAAgAAgA0JQBOgB36ciQAAP73Zxg8nMfva2Os143DTtvMAxoT1TRUfxmUiXdGG2V8tdhdRzeD1G4Kyg7P6bSZH60qEDAgAAA=
-    alt: 야자중
-
+  path: /drawing/240128-로봇야자.webp
+  lqip: >-
+    data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAACwAQCdASoQAAgAAgA0JQBOgB36ciQAAP73Zxg8nMfva2Os143DTtvMAxoT1TRUfxmUiXdGG2V8tdhdRzeD1G4Kyg7P6bSZH60qEDAgAAA=
+  alt: doing a self study
 toc: false
 toc_sticky: true
-
 lang: en
- 
-date: 2024-04-02 13:42:00 +0900
-last_modified_at: 2024-04-15 16:33:00 +0900
+date: '2024-04-02 13:42:00 +0900'
+last_modified_at: '2024-04-15 16:33:00 +0900'
 ---
 
 ![240228-설정화](/drawing/240228-설정화.webp){: .light .border }
 ![240228-설정화](/drawing/240228-설정화.webp){: .dark }
-_게임 기획하면서 그림_
+_a little planning of the game_
 
 <br>
 
 ![240129-검정마법약사](/drawing/240129-검정마법약사.webp){: .light .border }
 ![240129-검정마법약사](/drawing/240129-검정마법약사.webp){: .dark }
-_판타지아_
+_fantasia_
 
 <br>
 
 ![240128-몰카](/drawing/240128-카메라.webp){: .light .border }
 ![240128-몰카](/drawing/240128-카메라.webp){: .dark }
-_인스타 느낌 뷰파인더_
+_insta-feel viewfinder_
 
 <br>
 
 ![240415-헤드폰목도리](/drawing/240415-헤드폰목도리.webp){: .light .border }
 ![240415-헤드폰목도리](/drawing/240415-헤드폰목도리.webp){: .dark }
-_헤드폰 탐남_
+_I want to get that headphone_
 
 <br>
 
