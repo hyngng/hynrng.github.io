@@ -30,12 +30,12 @@ _this was for my presentation_
 <br>
 
 ![210000-여자랑남자](/drawing/210000-여자랑남자.webp)
-_drawing from My high school days 1_
+_drawing from my high school days 1_
 
 <br>
 
 ![231214-사자남자](/drawing/231214-사자남자.webp){: .shadow }
-_drawing from My high school days 2_
+_drawing from my high school days 2_
 
 <br>
 
@@ -53,13 +53,13 @@ _drawing made while imitating_
 
 ![231214-셔츠여자](/drawing/231214-셔츠여자.webp){: .light .border }
 ![231214-셔츠여자](/drawing/231214-셔츠여자.webp){: .dark }
-_drawing from My high school days 3_
+_drawing from my high school days 3_
 
 <br>
 
 ![200000-우비쓴남자](/drawing/200000-우비쓴남자.webp){: .light .border }
 ![200000-우비쓴남자](/drawing/200000-우비쓴남자.webp){: .dark }
-_drawing from My high school days 4_
+_drawing from my high school days 4_
 
 <br>
 
