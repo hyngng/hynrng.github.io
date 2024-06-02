@@ -3,11 +3,11 @@ title: 'Drawing Compilation #1'
 categories:
   - Drawing
 tags:
-  - Drawing
-  - 사람
-  - 총
-  - 우비
-  - 상자
+  - drawing
+  - people
+  - gun
+  - raincoat
+  - box
 start_with_ads: false
 image:
   path: /drawing/200000-생존사람.webp
