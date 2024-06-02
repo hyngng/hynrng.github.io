@@ -36,6 +36,6 @@ _travel luggage_
 ![240504-방어지름](/drawing/240504-방어지름.webp)
 _cubical room_
 
-I've changed the main brush, which made such a big difference in how it feels! I really love this rugged feeling of it being like drawing on paper, so I feel like I've been missing out unnecessarily until now. It's so much more enjoyable to draw. 🥰
+Recently I've changed the main brush, and it made such a big difference in how it feels! I really love this rugged feeling of it being like drawing on paper, so I feel like I've been missing out unnecessarily until now. It's so much more enjoyable to draw. 🥰
 
 I'm planning to upload around 5 pieces, not too many or too few. Since there's a set number, I thought I should focus more on quality, so I tried to make them look less scribble-like than before. Since I work slowly, I spent several days on some of the drawings, but seeing them all together makes me really proud.
