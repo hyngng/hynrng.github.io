@@ -3,13 +3,13 @@ title: 'Drawing compilation #2'
 categories:
   - Drawing
 tags:
-  - Drawing
-  - 비니
-  - 광각
-  - 총
-  - 양뿔
-  - 망토
-  - 트래픽콘
+  - drawing
+  - binnie
+  - wide angle
+  - gun
+  - sheep horn
+  - cloak
+  - traffic cone
 start_with_ads: false
 image:
   path: /drawing/230319-남자옆면.webp
