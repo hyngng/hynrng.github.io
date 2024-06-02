@@ -39,7 +39,7 @@ order: 4
 {: .prompt-tip }
 > **[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.ko)**  is followed. Using the contents of my blog is allowed, but you MUST leave the source! ⚡
 {: .prompt-warning }
-> Hope you have an enjoyable reading experience! 🍸
+> Enjoy! 🍸
 {: .prompt-info }
 
 {% endif %}
