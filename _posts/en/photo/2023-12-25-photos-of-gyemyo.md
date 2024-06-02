@@ -1,5 +1,5 @@
 ---
-title: '[2023] Farewell to the Year of the Rabbit'
+title: '[2023] Farewell to the year of the rabbit'
 categories:
   - Photo
 tags:
