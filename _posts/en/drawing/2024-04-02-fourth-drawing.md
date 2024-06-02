@@ -1,5 +1,5 @@
 ---
-title: 'Drawing Compilation #4'
+title: 'Drawing compilation #4'
 categories:
   - Drawing
 tags:
@@ -23,7 +23,7 @@ last_modified_at: '2024-04-15 16:33:00 +0900'
 
 ![240228-설정화](/drawing/240228-설정화.webp){: .light .border }
 ![240228-설정화](/drawing/240228-설정화.webp){: .dark }
-_a little planning of the game_
+_part of planning of the game_
 
 <br>
 
