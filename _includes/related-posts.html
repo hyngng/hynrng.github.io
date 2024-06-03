@@ -73,7 +73,9 @@
   <aside id="related-posts" aria-labelledby="related-label">
     <h3 class="mb-4" id="related-label">
       {% comment %} region 수정됨 {% endcomment %}
-      '{{ page.categories[0] }}'
+      {% if site.active_lang == 'ko-KR' %}
+        '{{ page.categories[0] }}'
+      {% endif %}
       {% comment %} endregion 수정됨 {% endcomment %}
       {{- site.data.locales[include.lang].post.relate_posts -}}
     </h3>

@@ -1,22 +1,21 @@
 ---
 title: 'Drawing compilation #4'
-categories:
-  - Drawing
-tags:
-  - Drawing
-  - study
-  - fantasy
-  - jogger pants
-  - headphone
+categories: [Drawing]
+tags: [drawing, study, fantasy, jogger pants, headphone]
+
 start_with_ads: false
+
 image:
   path: /drawing/240128-로봇야자.webp
   lqip: >-
     data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAACwAQCdASoQAAgAAgA0JQBOgB36ciQAAP73Zxg8nMfva2Os143DTtvMAxoT1TRUfxmUiXdGG2V8tdhdRzeD1G4Kyg7P6bSZH60qEDAgAAA=
   alt: doing a self study
+
 toc: false
 toc_sticky: true
+
 lang: en
+
 date: '2024-04-02 13:42:00 +0900'
 last_modified_at: '2024-04-15 16:33:00 +0900'
 ---

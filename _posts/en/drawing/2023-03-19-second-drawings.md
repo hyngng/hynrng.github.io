@@ -1,24 +1,21 @@
 ---
 title: 'Drawing compilation #2'
-categories:
-  - Drawing
-tags:
-  - drawing
-  - binnie
-  - wide angle
-  - gun
-  - sheep horn
-  - cloak
-  - traffic cone
+categories: [Drawing]
+tags: [drawing, binnie, wide angle view, gun, sheep horn, cloak, traffic cone]
+
 start_with_ads: false
+
 image:
   path: /drawing/230319-남자옆면.webp
   lqip: >-
     data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAACwAQCdASoQAAgAAgA0JQBOgBh2EShgAP79L/Zddr8IocHoi5zSrcrofTZs+tnZKRzvYrsVlw6ZY7BgVwil9C9Gboi+zO+NlKxGpgAA
   alt: binnie binnie
+
 toc: false
 toc_sticky: true
+
 lang: en
+
 date: '2023-03-19 15:24:00 +0900'
 last_modified_at: '2023-03-26 15:24:00 +0900'
 ---

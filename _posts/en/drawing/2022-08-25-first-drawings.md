@@ -1,24 +1,24 @@
 ---
 title: 'Drawing compilation #1'
-categories:
-  - Drawing
-tags:
-  - drawing
-  - people
-  - gun
-  - raincoat
-  - box
+categories: [Drawing]
+tags: [drawing, people, gun, raincoat, box]
+
 start_with_ads: false
+
 image:
   path: /drawing/200000-생존사람.webp
   lqip: >-
     data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAADwAQCdASoQAAgAAgA0JaQAD4WwKYuRsAAA/v58LC1cLESP9ztg6FTwgeVVOIMR19dwzrRkt/f6yWyrN/pF2btgTAAAAA==
   alt: post apocalypse
+
 toc: false
 toc_sticky: true
+
 lang: en
+
 date: '2022-08-25 14:38:00 +0900'
 last_modified_at: '2022-08-25 14:38:00 +0900'
+
 redirect_from:
   - /posts/%EB%93%9C%EB%A1%9C%EC%9E%891/
 ---

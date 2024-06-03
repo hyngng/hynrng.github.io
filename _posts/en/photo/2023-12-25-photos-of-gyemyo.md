@@ -2,27 +2,32 @@
 title: '[2023] Farewell to the year of the rabbit'
 categories:
   - Photo
-tags:
-  - Photo
-  - 불멍
-  - 지하철
-  - 개수대
-  - 구름
-  - 감자튀김
-  - 바닷가
-  - 낙엽
+tags: [photo, campfire, subway, 개수대, cloud, french fry, 바닷가, 낙엽]
+
 start_with_ads: false
+
 image:
   path: /photo/webp/20231222_222403.webp
   lqip: >-
     data:image/webp;base64,UklGRjQAAABXRUJQVlA4ICgAAABwAQCdASoKAAUAAgA0JYwCdAFAAAD++vfd7pSFrqXz6iij8hsZxGAA
   alt: a midwinter night sky | 23mm ISO400 F1.8 8s
+
 toc: false
 toc_sticky: true
+
 lang: en
+
 date: '2023-12-25 21:35:00 +0900'
 last_modified_at: '2023-12-25 21:35:00 +0900'
 ---
+
+{{ site.active_lang }}: en으로 나와야 함
+
+<ul id="post-list">
+  {% for post in site.posts %}
+    <li>{{ post.url }}: {{ post.lang }}</li>
+  {% endfor %}
+</ul>
 
 ![20230307-181256](/photo/webp/20230307_181256.webp){: .shadow }
 _morning street | 230mm ISO40 F4.9 1/120s_
@@ -136,7 +141,7 @@ _some days it's blue | 230mm ISO50 F4.9 1/60s_
 
 <br>
 
-> You can check the original photos on **[my gitHub](https://github.com/hynrng/hynrng.github.io.resources/tree/master/photo/jpg)**!
+> You can check the original photos on **[my github](https://github.com/hynrng/hynrng.github.io.resources/tree/master/photo/jpg)**!
 {: .prompt-tip }
 
 This past year, I’ve had a lot of fun experimenting with photography. I tried capturing the photos I wanted, as well as taking photos of other people. I even played around with different concepts for each photo, sometimes shooting from afar, sometimes close-up, sometimes emphasizing complementary colors, and sometimes even leaving the photos in black and white. It was always fascinating to see how the photos transformed under my fingertips, especially when I started playing with color grading and tone curves. I really enjoyed the process itself.

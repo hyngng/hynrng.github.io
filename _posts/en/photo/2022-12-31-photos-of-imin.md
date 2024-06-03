@@ -1,27 +1,24 @@
 ---
 title: '[2022] A diligently captured daily life'
-categories:
-  - Photo
-tags:
-  - Photo
-  - french fry
-  - hallway
-  - friend
-  - snow
-  - sakura
-  - cloud
-  - crane
+categories: [Photo]
+tags: [photo, french fry, hallway, friend, snow, sakura, cloud, crane]
+
 start_with_ads: false
+
 image:
   path: /photo/webp/20220605_121958.webp
   lqip: >-
     data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAADQAQCdASoQAAgAAgA0JZQCdAD0tNvXgAD++yUU4/HtnDOizij1uz6dfZTsypE5KvKr20uztM+CbrkMAgjCLe9cNkIAAA==
   alt: Waiting for someone at the mall | 230mm ISO250 F4.9 1/40s
+
 toc: false
 toc_sticky: true
+
 lang: en
+
 date: '2022-12-31 14:53:00 +0900'
 last_modified_at: '2023-04-09 16:42:00 +0900'
+
 redirect_from:
   - /posts/%EC%9E%84%EC%9D%B8%EB%85%84%EC%9D%98-%EC%82%AC%EC%A7%84/
 ---
@@ -116,7 +113,7 @@ _강연이 너무 지루해서 몰래 | 230mm ISO50 F4.9 1/470s_
 
 <br>
 
-> You can check the original photos on **[my gitHub](https://github.com/hynrng/hynrng.github.io.resources/tree/master/photo/jpg)**!
+> You can check the original photos on **[my github](https://github.com/hynrng/hynrng.github.io.resources/tree/master/photo/jpg)**!
 {: .prompt-tip }
 
 I enjoy how the feel of a photo changes over time, so I tend to take a lot of pictures in my daily life. This year, I got a new phone with a better camera, which made me curious, "Can I capture the same photos more beautifully than others?" The hardware of the latest models is so good that I wanted to make the most of it.

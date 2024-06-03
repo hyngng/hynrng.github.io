@@ -130,6 +130,23 @@ a:not(.site-title a, .post-tag, a.btn, a.nav-link, .url-button, .page-link), div
   border: 0;
 }
 
+.lang-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
+.lang-border {
+  @extend %no-cursor;
+  @include pl-pr(0);
+  @include ml-mr(calc(($sb-btn-gap - $btn-border-width) / 2));
+  
+  padding-left: 0.05rem;
+  padding-right: 0.05rem;
+  content: '';
+}
+
 /* 메모장
 - 사이드바 배경색은 sass/colors/typography-dark.scss에서 따로 수정함.
 */

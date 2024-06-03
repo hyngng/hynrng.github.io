@@ -1,21 +1,21 @@
 ---
 title: 'Drawing compilation #3'
-categories:
-  - Drawing
-tags:
-  - drawing
-  - stretching
-  - fisheye lens
-  - phone cam
+categories: [Drawing]
+tags: [drawing, stretching, fisheye lens, phone cam]
+
 start_with_ads: false
+
 image:
   path: /drawing/230426-거꾸로매달림.webp
   lqip: >-
     data:image/webp;base64,UklGRkYAAABXRUJQVlA4IDoAAACwAQCdASoQAAgAAgA0JaQAAtz+deMAAP7+fCmBZZn3+/ZORq9T+vedgOywrM/PuK61PMAYYBLZKgAA
   alt: hanging upside down
+
 toc: false
 toc_sticky: true
+
 lang: en
+
 date: '2023-04-17 15:24:00 +0900'
 last_modified_at: '2023-04-26 20:55:00 +0900'
 ---

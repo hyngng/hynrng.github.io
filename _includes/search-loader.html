@@ -46,6 +46,19 @@
           return `<div><i class="fa fa-tag fa-fw"></i>${value}</div>`;
         }
       }
+
+      if (prop === 'url' && '{{ site.active_lang }}' !== 'default' ) { 
+        return `{{ '/' | relative_url }}{{ site.active_lang }}${value}`;
+      }
+
+      if (prop === 'lang') {
+        console.log("filter 조건 만족", value);
+      } else {
+        console.log("filter 조건 불만족");
+      }
+    },
+    filter: function(post, index, array) {
+      return post.lang === '{{ site.active_lang }}';
     }
   });
 </script>

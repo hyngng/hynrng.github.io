@@ -1,20 +1,35 @@
 <!-- Navigation buttons at the bottom of the post. -->
 
-<!-- region 수정됨: jekyll-polyglot -->
-{% include lang.html %}
-<!-- endregion 수정됨 -->
-
 <nav class="post-navigation d-flex justify-content-between" aria-label="Post Navigation">
   {% assign previous = site.data.locales[include.lang].post.button.previous %}
   {% assign next = site.data.locales[include.lang].post.button.next %}
 
-  {% if page.previous.url %}
+  <!-- region 수정됨 -->
+  {% assign previous_page = nil %}
+  {% assign next_page = nil %}
+  {% assign found_current = false %}
+
+  {% for post in site.posts %}
+    {% if post.lang == site.active_lang %}
+      {% if post.url == page.url %}
+        {% assign found_current = true %}
+      {% elsif found_current %}
+        {% assign previous_page = post %}
+        {% break %}
+      {% else %}
+        {% assign next_page = post %}
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+  <!-- endregion 수정됨 -->
+
+  {% if previous_page %}
     <a
-      href="{{ site.baseurl }}{{ page.previous.url }}"
+      href="{{ site.baseurl }}{{ previous_page.url }}"
       class="btn btn-outline-primary"
       aria-label="{{ previous }}"
     >
-      <p>{{ page.previous.title }}</p>
+      <p>{{ previous_page.title }}</p>
     </a>
   {% else %}
     <div class="btn btn-outline-primary disabled" aria-label="{{ previous }}">
@@ -22,13 +37,13 @@
     </div>
   {% endif %}
 
-  {% if page.next.url %}
+  {% if next_page %}
     <a
-      href="{{ site.baseurl }}{{page.next.url}}"
+      href="{{ site.baseurl }}{{ next_page.url }}"
       class="btn btn-outline-primary"
       aria-label="{{ next }}"
     >
-      <p>{{ page.next.title }}</p>
+      <p>{{ next_page.title }}</p>
     </a>
   {% else %}
     <div class="btn btn-outline-primary disabled" aria-label="{{ next }}">
