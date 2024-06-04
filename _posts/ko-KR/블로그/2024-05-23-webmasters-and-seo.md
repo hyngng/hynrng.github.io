@@ -11,7 +11,7 @@ toc_sticky: true
 lang: ko-KR
 
 date: '2024-05-23 11:53:00 +0900'
-last_modified_at: '2024-05-28 11:56:00 +0900'
+last_modified_at: '2024-06-04 16:14:00 +0900'
 
 mermaid: true
 ---
@@ -137,13 +137,14 @@ post-description은 layouts/post.html에서 사용하는 용도로, 어차피 �
 {% raw %}
 ```liquid
 {% if page.layout == "post" %}
-  {% assign description = include.post_content | content_filter |
-                          strip_html | truncate: 100 %}
-  
-  <meta name="description" content="{{ description }}">
-  <meta property="og:description" content="{{ description }}">
-  <meta name="twitter:description" content="{{ description }}">
+  {% assign description = include.post_content | content_filter | strip_html | truncate: 100 %}
+{% else %}
+  {% assign description = site.description %}
 {% endif %}
+
+<meta name="description" content="{{ description }}" />
+<meta property="og:description" content="{{ description }}" />
+<meta property="twitter:description" content="{{ description }}" />
 
 {{ seo_tags }}
 ```
@@ -172,10 +173,30 @@ Liquid::Template.register_filter(Jekyll::ContentFilter)
 
 `content`는 `content_filer`라는 커스텀 루비 플러그인을 거치는데, 제목, 게시일, 글쓴이 및 "들어가며" 도입부 등 `description`으로서 필요 없는 정보를 어느정도 제거하기 위함입니다. 글 본문이 모두 `<div class="content"></div>` 태그에 하달되는 점을 이용했으며, [예전에 비슷한 코드를](https://hynrng.github.io/posts/blog-content-remove/) 구현해본 적이 있었지만 아직 익숙하지 않아서 이 부분은 GPT의 조언을 구했습니다.
 
-> 24/06/04 수정!
+> **24/06/04 수정!**
 {: .prompt-info }
 
+여기까지 진행하는 것만으로는 새로 생성된 `description`이 {% raw %}`{{ seo_tags }}`{% endraw %}의 `description`과 중복되는 문제가 있습니다. {% raw %}`{{ seo_tags }}`{% endraw %}는 [jekyll-seo-tag](https://github.com/jekyll/jekyll-seo-tag/tree/master) 플러그인에 기반해 생성되고 있으므로, 문제 해결을 위해 이 깃허브 프로젝트를 [개인 레포지토리](https://github.com/hynrng/jekyll-seo-tag)로 fork한 뒤 별도로 수정해서 사용했습니다.
 
+{% raw %}
+```liquid
+<!--
+{% if seo_tag.description %}
+  <meta name="description" content="{{ seo_tag.description }}" />
+  <meta property="og:description" content="{{ seo_tag.description }}" />
+  <meta property="twitter:description" content="{{ seo_tag.description }}" />
+{% endif %}
+-->
+```
+{: file="C:\Ruby33-x64\lib\ruby\gems\3.3.0\bundler\gems\jekyll-seo-tag-f449b1af64cb\lib\template.html" }
+{% endraw %}
+
+```ruby
+gem 'jekyll-seo-tag', git: 'https://github.com/hynrng/jekyll-seo-tag.git', branch: 'master'
+```
+{: file="Gemfile" }
+
+유연한 방법은 아니긴 하지만 가장 간단한 방법입니다. 프로젝트의 `lib/template.html`{: .filepath}로부터 `description`을 생성하는 코드를 주석처리했고, `description` 생성 코드는 `_includes/head.html`{: .filepath } 블로그 내 파일로 완전히 이전했습니다.
 
 <!--
 ### **이미지 CDN 변경**
