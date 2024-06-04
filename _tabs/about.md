@@ -19,6 +19,8 @@ order: 4
 
 ## **특징**
 
+> [영어 페이지](https://hynrng.github.io/en/about/)가 지원됩니다!
+{: .prompt-danger }
 > 모든 글은 다크모드와 화이트모드 양쪽에 맞추어 작성되었지만, 화이트모드를 추천드립니다! ✨
 {: .prompt-tip }
 > **[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.ko)**를 따릅니다. 블로그 컨텐츠를 사용하고 싶다면, 출저를 꼭 남겨주세요! ⚡
@@ -35,6 +37,8 @@ order: 4
 
 ## **Feature**
 
+> [Korean](https://hynrng.github.io/about/) is supported as default!
+{: .prompt-danger }
 > All posts are written to suit both dark and light mode, but I personally recommend light mode! ✨
 {: .prompt-tip }
 > **[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.ko)**  is followed. Using the contents of my blog is allowed, but you MUST leave the source! ⚡
