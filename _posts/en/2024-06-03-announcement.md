@@ -15,7 +15,7 @@ date: 2024-06-03 16:37:00 +0900
 last_modified_at: 2024-06-03 16:37:00 +0900
 ---
 
-> This page will be removed later.
+> This page will be removed later!
 {: .prompt-warning }
 
 ## **English pages aren't all set up**
