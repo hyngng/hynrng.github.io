@@ -43,6 +43,18 @@
     {% seo title=false %}
   {%- endcapture -%}
   
+  <!-- region 수정됨: jekyll-seo-tag -->
+  {% if page.layout == "post" %}
+    {% assign description = include.post_content | content_filter | strip_html | truncate: 100 %}
+  {% else %}
+    {% assign description = site.description %}
+  {% endif %}
+
+  <meta name="description" content="{{ description }}" />
+  <meta property="og:description" content="{{ description }}" />
+  <meta property="twitter:description" content="{{ description }}" />
+  <!-- endregioin 수정됨 -->
+
   <!-- Setup Open Graph image -->
 
   {% if page.image %}

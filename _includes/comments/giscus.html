@@ -30,7 +30,9 @@
       'data-theme': initTheme,
       'data-input-position': '{{ site.comments.giscus.input_position | default: 'bottom' }}',
       'data-lang': '{{ site.comments.giscus.lang | default: lang }}',
-      'data-loading': 'lazy',
+      /* region 수정됨 */
+      /* 'data-loading': 'lazy', */
+      /* endregion 수정됨 */
       crossorigin: 'anonymous',
       async: ''
     };

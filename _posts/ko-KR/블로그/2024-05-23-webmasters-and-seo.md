@@ -188,7 +188,7 @@ Liquid::Template.register_filter(Jekyll::ContentFilter)
 {% endif %}
 -->
 ```
-{: file="\jekyll-seo-tag\lib\template.html" }
+{: file="jekyll-seo-tag/lib/template.html" }
 {% endraw %}
 
 ```ruby
