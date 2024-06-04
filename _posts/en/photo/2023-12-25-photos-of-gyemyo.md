@@ -10,7 +10,7 @@ image:
   path: /photo/webp/20231222_222403.webp
   lqip: >-
     data:image/webp;base64,UklGRjQAAABXRUJQVlA4ICgAAABwAQCdASoKAAUAAgA0JYwCdAFAAAD++vfd7pSFrqXz6iij8hsZxGAA
-  alt: a midwinter night sky | 23mm ISO400 F1.8 8s
+  alt: midwinter night | 23mm ISO400 F1.8 8s
 
 toc: false
 toc_sticky: true
@@ -32,7 +32,7 @@ _morning sunset | 230mm ISO40 F4.9 1/2700s_
 <br>
 
 ![20230117-205758](/photo/webp/20230117_205758.webp){: .shadow }
-_an early morning campfire | 230mm ISO40 F4.9 1s_
+_early morning campfire | 230mm ISO40 F4.9 1s_
 
 <br>
 
@@ -42,7 +42,7 @@ _when my friend grills, I take pictures | 69mm ISO125 F2.4 1/60s_
 <br>
 
 ![20230520-160651](/photo/webp/20230520_160651.webp){: .shadow }
-_a sheep living next to the school | 230mm ISO64 F4.9 1/120s_
+_sheep living next to the school | 230mm ISO64 F4.9 1/120s_
 
 <br>
 
@@ -97,12 +97,12 @@ _ate waffles with my friends | 69mm ISO50 F2.4 1/60s_
 <br>
 
 ![20230428-120628](/photo/webp/20230428_120628.webp){: .shadow }
-_a coast of Jeju island | 230mm ISO40 F4.9 1/220s_
+_coast of Jeju island | 230mm ISO40 F4.9 1/220s_
 
 <br>
 
 ![20231222-161823](/photo/webp/20231222_161823.webp){: .shadow }
-_a coast of Eulwang-ri | 23mm ISO12 F1.8 1/250s_
+_coast of Eulwang-ri | 23mm ISO12 F1.8 1/250s_
 
 <br>
 
@@ -112,24 +112,24 @@ _It's very autumnal | 23mm ISO50 F1.8 1/8s_
 <br>
 
 ![20231116-215852](/photo/webp/20231116_215852.webp){: .shadow }
-_a way to a friend's house | 69mm ISO50 F2.4 1/2s_
+_way to a friend's house | 69mm ISO50 F2.4 1/2s_
 
 <br>
 
 <!--여기부터는 세로 사진-->
 
 ![20231222-171340](/photo/webp/20231222_171340.webp){: .shadow }
-_some days it's red | 230mm ISO50 F2.9 1/1000s_
+_some days it's going to be red | 230mm ISO50 F2.9 1/1000s_
 
 <br>
 
 ![20230825-183959](/photo/webp/20230825_183959.webp){: .shadow }
-_some days it's yellow | 230mm ISO40 F4.9 1/120s_
+_some days it's going to be yellow | 230mm ISO40 F4.9 1/120s_
 
 <br>
 
 ![20230805-191940](/photo/webp/20230805_191940.webp){: .shadow }
-_some days it's blue | 230mm ISO50 F4.9 1/60s_
+_some days it's going to be blue | 230mm ISO50 F4.9 1/60s_
 
 <br>
 

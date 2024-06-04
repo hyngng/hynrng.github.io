@@ -27,7 +27,7 @@ _feeling good_
 <br>
 
 ![200000-기쎈여자옆모습](/drawing/200000-기쎈여자옆모습.webp)
-_her strong impression_
+_her impression is so strong_
 
 <br>
 

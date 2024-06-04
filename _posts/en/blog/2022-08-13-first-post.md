@@ -5,7 +5,7 @@ categories: [Blog]
 tags: [Blog, Chirpy]
 start_with_ads: true
 
-toc: false
+toc: true
 toc_sticky: true
 
 lang: en
