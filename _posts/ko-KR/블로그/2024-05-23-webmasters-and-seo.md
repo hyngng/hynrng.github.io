@@ -188,7 +188,7 @@ Liquid::Template.register_filter(Jekyll::ContentFilter)
 {% endif %}
 -->
 ```
-{: file="C:\Ruby33-x64\lib\ruby\gems\3.3.0\bundler\gems\jekyll-seo-tag-f449b1af64cb\lib\template.html" }
+{: file="\jekyll-seo-tag\lib\template.html" }
 {% endraw %}
 
 ```ruby
