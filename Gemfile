@@ -19,6 +19,7 @@ gem "wdm", "~> 0.1.1", :platforms => [:mingw, :x64_mingw, :mswin]
 
 gem 'jekyll-redirect-from'
 gem 'jekyll-polyglot', git: 'https://github.com/hynrng/jekyll-polyglot', branch: 'master'
+gem 'jekyll-seo-tag', git: 'https://github.com/hynrng/jekyll-seo-tag.git', branch: 'master'
 
 # group :jekyll_plugins do
 #   gem "jekyll-polyglot"

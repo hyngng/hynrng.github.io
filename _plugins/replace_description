@@ -1,0 +1,11 @@
+module Jekyll
+    module Filters
+      def replace_description(input, replace_hash)
+        replace_hash.each do |key, value|
+          input = input.gsub(/<meta name="#{key}" content=".*?">/, "<meta name=\"#{key}\" content=\"#{value}\">")
+          input = input.gsub(/<meta property="#{key}" content=".*?">/, "<meta property=\"#{key}\" content=\"#{value}\">")
+        end
+        input
+      end
+    end
+  end
