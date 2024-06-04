@@ -2,7 +2,7 @@
 title: "I'm working on the English page!"
 pin: true
 
-categories: [announcement]
+categories: [Announcement]
 tags: [announcement]
 start_with_ads: false
 

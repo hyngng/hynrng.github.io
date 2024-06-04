@@ -105,7 +105,7 @@ _the lecture was so borint that I secretly | 230mm ISO50 F4.9 1/470s_
 
 <br>
 
-> You can check the original photos on **[my github](https://github.com/hynrng/hynrng.github.io.resources/tree/master/photo/jpg)**!
+> You can check the original photos from **[Github](https://github.com/hynrng/hynrng.github.io.resources/tree/master/photo/jpg)**!
 {: .prompt-tip }
 
 I enjoy how the feel of a photo changes over time, so I tend to take a lot of pictures in my daily life. This year, I got a new phone with a better camera, which made me curious, "Can I capture the same photos more beautifully than others?". The hardware of the latest models is so good that I wanted to make the most of it.

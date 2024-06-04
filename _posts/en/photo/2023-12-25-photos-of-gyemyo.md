@@ -133,7 +133,7 @@ _some days it's going to be blue | 230mm ISO50 F4.9 1/60s_
 
 <br>
 
-> You can check the original photos on **[my github](https://github.com/hynrng/hynrng.github.io.resources/tree/master/photo/jpg)**!
+> You can check the original photos from **[Github](https://github.com/hynrng/hynrng.github.io.resources/tree/master/photo/jpg)**!
 {: .prompt-tip }
 
 This past year, I’ve had a lot of fun experimenting with photography. I tried capturing the photos I wanted, as well as taking photos of other people. I even played around with different concepts for each photo, sometimes shooting from afar, sometimes close-up, sometimes emphasizing complementary colors, and sometimes even leaving the photos in black and white. It was always fascinating to see how the photos transformed under my fingertips, especially when I started playing with color grading and tone curves. I really enjoyed the process itself.
