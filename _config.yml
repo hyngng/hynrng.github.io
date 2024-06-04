@@ -124,6 +124,9 @@ parallel_localization: false
 
 # 태그 수 제한: _layouts/trending-tags.html
 tag_limit: 10
+
+# 최적화
+incremental: true
 # endregion 수정됨
 
 # ------------ The following options are not recommended to be modified ------------------
