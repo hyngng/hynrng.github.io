@@ -56,6 +56,11 @@ jobs:
           bundle exec htmlproofer _site \
             \-\-disable-external \
             \-\-ignore-urls "/^http:\/\/127.0.0.1/,/^http:\/\/0.0.0.0/,/^http:\/\/localhost/"
+        
+      # 커스텀 액션
+      - name: IndexNow Setup
+        run: |
+            echo ${{ secrets.INDEXNOW_KEY }} > _site/${{ secrets.INDEXNOW_KEY }}.txt
       # endregion 수정됨
 
       - name: Upload site artifact
