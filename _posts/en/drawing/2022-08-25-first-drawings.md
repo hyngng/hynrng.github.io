@@ -66,7 +66,7 @@ _something I can draw when there's nothing else to do_
 
 <br>
 
-These drawings were done occasionally before starting my blog, and it seems a waste to keep them tucked away in a corner of the gallery. I feel the need for a separate archive, so I'm planning to upload them to my blog. Going forward, I also intend to occasionally share simple drawings on the blog along with related backstories. I hope you'll appreciate them.
+These drawings were done occasionally before starting my blog, and it seems a waste to keep them tucked away in a corner of the gallery. I feel the need for a separate archive, so I'm planning to upload them to my blog. Going forward, I also intend to occasionally share simple drawings on the blog along with related backstories. I hope you like them.
 
 <!--
 ![210430-신라시대](/drawing/210430-신라시대.webp)
