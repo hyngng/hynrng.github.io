@@ -2,7 +2,8 @@ name: 'IndexNow'
 on:
   schedule:
     - cron: '0 2 * * *'
-  workflow_dispatch: true
+    
+workflow_dispatch: true
 
 jobs:
   check-and-submit:
