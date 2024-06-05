@@ -31,6 +31,13 @@ html {
 
 /* -- code snippets -- */
 
+/* region 수정됨 */
+pre,
+code {
+  font-family: 'JetBrains Mono NL', monospace;
+}
+/* endregion 수정됨 */
+
 %code-snippet-bg {
   background-color: var(--highlight-bg-color);
 }

@@ -13,8 +13,13 @@
 /*     덮어쓰기     */
 /* =============== */
 
+/* 폰트 */
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+.site-title {
+  font-family: 'Pretendard', 'Source Sans Pro', 'Microsoft Yahei', sans-serif !important;
+}
+
 .content {
-  font-family: 'Pretendard', 'Source Sans Pro', 'Microsoft Yahei', sans-serif;
   font-size: 1rem;
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
@@ -149,9 +154,4 @@ a:not(.site-title a, .post-tag, a.btn, a.nav-link, .url-button, .page-link, .tag
 
 /* 메모장
 - 사이드바 배경색은 sass/colors/typography-dark.scss에서 따로 수정함.
-*/
-
-/*
-$font-family-base: 'Pretendard', 'Source Sans Pro', 'Microsoft Yahei', sans-serif !default;
-$font-family-heading: 'Pretendard', Lato, 'Microsoft Yahei', sans-serif !default;
 */
