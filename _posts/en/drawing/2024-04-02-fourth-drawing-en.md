@@ -1,5 +1,5 @@
 ---
-title: 'Drawings #4'
+title: "Drawings #4"
 categories: [Drawing]
 tags: [drawing, study, fantasy, jogger pants, headphone]
 
@@ -16,8 +16,8 @@ toc_sticky: true
 
 lang: en
 
-date: '2024-04-02 13:42:00 +0900'
-last_modified_at: '2024-04-15 16:33:00 +0900'
+date: 2024-04-02 13:42:00 +0900
+last_modified_at: 2024-04-15 16:33:00 +0900
 ---
 
 ![240228-설정화](/drawing/240228-설정화.webp){: .light .border }

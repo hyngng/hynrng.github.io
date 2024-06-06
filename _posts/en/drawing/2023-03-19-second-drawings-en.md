@@ -1,5 +1,5 @@
 ---
-title: 'Drawings #2'
+title: "Drawings #2"
 categories: [Drawing]
 tags: [drawing, binnie, wide angle view, gun, sheep horn, cloak, traffic cone]
 
@@ -16,8 +16,8 @@ toc_sticky: true
 
 lang: en
 
-date: '2023-03-19 15:24:00 +0900'
-last_modified_at: '2023-03-26 15:24:00 +0900'
+date: 2023-03-19 15:24:00 +0900
+last_modified_at: 2023-03-26 15:24:00 +0900
 ---
 
 ![230319-왜곡쩜](/drawing/230319-왜곡쩜.webp){: .light .border }

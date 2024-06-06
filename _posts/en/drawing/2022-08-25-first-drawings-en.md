@@ -1,5 +1,5 @@
 ---
-title: 'Drawings #1'
+title: "Drawings #1"
 categories: [Drawing]
 tags: [drawing, people, gun, raincoat, box]
 
@@ -16,8 +16,8 @@ toc_sticky: true
 
 lang: en
 
-date: '2022-08-25 14:38:00 +0900'
-last_modified_at: '2022-08-25 14:38:00 +0900'
+date: 2022-08-25 14:38:00 +0900
+last_modified_at: 2022-08-25 14:38:00 +0900
 ---
 
 ![221025-반도체칩](/drawing/221025-반도체칩.webp){: .light .border }

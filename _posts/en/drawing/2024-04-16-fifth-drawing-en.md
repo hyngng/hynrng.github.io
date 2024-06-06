@@ -1,5 +1,5 @@
 ---
-title: 'Drawings #5'
+title: "Drawings #5"
 categories: [Drawing]
 tags: [drawing, chair, fashioned, cooking, travel, rented room]
 
@@ -16,8 +16,8 @@ toc_sticky: true
 
 lang: en
 
-date: '2024-05-16 13:53:00 +0900'
-last_modified_at: '2024-05-16 13:53:00 +0900'
+date: 2024-05-16 13:53:00 +0900
+last_modified_at: 2024-05-16 13:53:00 +0900
 ---
 
 ![240515-알감자](/drawing/240515-알감자.webp){: .light .border}

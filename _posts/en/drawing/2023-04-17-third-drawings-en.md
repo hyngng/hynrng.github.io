@@ -1,5 +1,5 @@
 ---
-title: 'Drawings #3'
+title: "Drawings #3"
 categories: [Drawing]
 tags: [drawing, stretching, fisheye lens, phone cam]
 
@@ -16,8 +16,8 @@ toc_sticky: true
 
 lang: en
 
-date: '2023-04-17 15:24:00 +0900'
-last_modified_at: '2023-04-26 20:55:00 +0900'
+date: 2023-04-17 15:24:00 +0900
+last_modified_at: 2023-04-26 20:55:00 +0900
 ---
 
 ![230329-스트레칭](/drawing/230329-스트레칭.webp){: .light .border }
