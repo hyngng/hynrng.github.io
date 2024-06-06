@@ -216,10 +216,10 @@ sidebar.html, lang.html 수정해주면 됨.
 {% raw %}
 ```liquid
 {% if site.active_lang == 'ko-KR' %}
-## **환영합니다!**
+## 한국어 자기소개
 ...
 {% elsif site.active_lang == 'en' %}
-## **Welcome!**
+## English Self-Introduction
 ...
 {% endif %}
 ```
@@ -288,7 +288,14 @@ sidebar.html, lang.html 수정해주면 됨.
   {% for post in site.posts %}
     {% if lang == post.lang %}
       <url>
-        <loc>{{ site.url }}{% if lang == site.default_lang %}{{ post.url }}{% else %}{{ post.url | prepend: lang | prepend: '/' }}{% endif %}</loc>
+        <loc>
+          {{ site.url }}
+          {% if lang == site.default_lang %}
+            {{ post.url }}
+          {% else %}
+            {{ post.url | prepend: lang | prepend: '/' }}
+          {% endif %}
+        </loc>
         ...
       </url>
     {% endif %}

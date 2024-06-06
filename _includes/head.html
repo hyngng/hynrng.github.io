@@ -116,8 +116,11 @@
   {% comment %} Theme style {% endcomment %}
   <link rel="stylesheet" href="{{ '/assets/css/:THEME.css' | replace: ':THEME', site.theme | relative_url }}">
 
-  {% comment %} Web Font {% endcomment %}
-  <link rel="stylesheet" href="{{ site.data.origin[type].webfonts | relative_url }}">
+  {% comment %} region 수정됨: Web Font {% endcomment %}
+  {% for font in site.data.origin[type].webfonts %}
+  <link rel="stylesheet" href="{{ font | relative_url }}">
+  {% endfor %}
+  {% comment %} endregion 수정됨 {% endcomment %}
 
   {% comment %} Font Awesome Icons {% endcomment %}
   <link rel="stylesheet" href="{{ site.data.origin[type].fontawesome.css | relative_url }}">
