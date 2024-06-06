@@ -7,8 +7,9 @@ tail_includes:
   - related-posts
   - post-nav
   - comments
-  - adsense-display
 ---
+
+{% comment %} - adsense-display --> {% endcomment %}
 
 {% include lang.html %}
 
@@ -99,12 +100,14 @@ tail_includes:
       </div>
     </div>
 
-    <!-- region 수정됨 -->
+    {% comment %} region 수정됨 {% endcomment %}
+    {% comment %}
     {% if page.start_with_ads %}
       <br><br>
       {% include adsense-display.html %}
     {% endif %}
-    <!-- endregion 수정됨 -->
+    {% endcomment %}
+    {% comment %} endregion 수정됨 {% endcomment %}
     
   </header>
 
