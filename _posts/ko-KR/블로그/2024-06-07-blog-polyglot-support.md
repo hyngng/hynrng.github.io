@@ -11,7 +11,7 @@ toc_sticky: true
 lang: ko-KR
 
 date: 2024-06-07 22:00:00 +0900
-last_modified_at: 2024-06-07 22:00:00 +0900
+last_modified_at: 2024-06-10 16:51:00 +0900
 ---
 
 ## **들어가며**
@@ -369,7 +369,7 @@ jobs:
 {: file="feed.xml" }
 {% endraw %}
 
-피드도 언어별로 구별해주었습니다. `site.active_lang`와 일치하는 포스트만을 `filtered_posts`에 필터링하여 나타도록 변경해주었습니다. [한국어 피드](https://hynrng.github.io/feed.xml)와 [영어 피드](https://hynrng.github.io/en/feed.xml)를 비교해보면 잘 동작하는 것을 확인할 수 있습니다.
+피드도 언어별로 구별해주었습니다. `site.active_lang`와 일치하는 포스트만을 `filtered_posts`에 필터링하여 나타도록 변경해주었습니다. [한국어 피드](https://hynrng.github.io/feed.xml)와 [영어 피드](https://hynrng.github.io/en/feed.xml)를 비교해보면 서로 다르게 나타나는 것을 확인할 수 있습니다.
 
 ## **적용 화면**
 
