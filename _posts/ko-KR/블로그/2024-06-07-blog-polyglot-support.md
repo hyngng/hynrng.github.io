@@ -364,7 +364,8 @@ jobs:
 {% assign filtered_posts = site.posts | where: "lang", site.active_lang %}
 
 {% for post in filtered_posts limit: 5 %}
-  ...
+  <entry> ... </entry>
+{% endfor %}
 ```
 {: file="feed.xml" }
 {% endraw %}
