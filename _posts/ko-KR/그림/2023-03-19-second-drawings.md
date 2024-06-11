@@ -2,7 +2,7 @@
 title: "디지털 드로잉 모음 #2"
 
 categories: [그림]
-tags: [그림, 드로잉, 비니, 광각, 총, 양뿔, 망토, 트래픽콘]
+tags: [그림, 드로잉, 비니, 광각, 총, 양뿔, 망토, 트래픽 콘]
 start_with_ads: false
 
 image:
