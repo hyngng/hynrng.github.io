@@ -3,5 +3,19 @@
 */
 
 /* 폰트 */
+@font-face {
+  font-family: 'IBM Plex Sans KR';
+  src: url('/assets/fonts/IBMPlexSansKR-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Reddit Mono';
+  src: url('/assets/fonts/RedditMono-Regular.ttf') format('truetype');
+  font-weight: 200 900;
+  font-style: normal;
+}
+
 $font-family-base: 'IBM Plex Sans KR', 'Source Sans Pro', 'Microsoft Yahei', sans-serif;
 $font-family-heading: 'IBM Plex Sans KR', Lato, 'Microsoft Yahei', sans-serif;

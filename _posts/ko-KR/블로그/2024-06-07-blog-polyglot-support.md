@@ -363,7 +363,7 @@ jobs:
 ```
 {% assign filtered_posts = site.posts | where: "lang", site.active_lang %}
 
-{% for post in filtered_posts | limit: 5 %}
+{% for post in filtered_posts limit: 5 %}
   ...
 ```
 {: file="feed.xml" }

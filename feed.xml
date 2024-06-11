@@ -25,7 +25,7 @@ permalink: /feed.xml
 {% comment %} region 수정됨: jekyll-polyglot {% endcomment %}
 {% assign filtered_posts = site.posts | where: "lang", site.active_lang %}
 
-{% for post in filtered_posts | limit: 5 %}
+{% for post in filtered_posts limit: 5 %}
 {% comment %} endregion 수정됨 {% endcomment %}
   {% assign post_absolute_url = post.url | absolute_url %}
   <entry>
