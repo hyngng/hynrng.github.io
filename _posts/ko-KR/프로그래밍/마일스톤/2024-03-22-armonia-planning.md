@@ -1,5 +1,5 @@
 ---
-title: "횡스크롤 감성 게임 개발하기: 기획 및 구성 과정"
+title: "횡스크롤 감성 게임: 기획하기"
 
 categories: [프로그래밍, 마일스톤]
 tags: [프로그래밍, 유니티, C#, ARMONIA, 기획, 개발일지]
@@ -8,7 +8,7 @@ start_with_ads: true
 image:
     path: /2024-03-22-armonia-planning/concept-art-simple.webp
     lqip: data:image/webp;base64,UklGRoAAAABXRUJQVlA4THMAAAAvD8ABAJUwiiRJkZtjZmbGF9s5Kyd1ScY8FbRt5MYA/F79RFEjSWpSxn2Zbw+m+z8BjqBzPlDmvL+4+00yVxL5ht9jZKHMSM22JRAbkUChuDviWIX4O+VnNh9jixzr0LjyndMjOUfNsQQDkKGXf/yfCzAGAA==
-    alt: 심플 컨셉아트
+    alt: 요런 느낌으로
 
 toc: true
 toc_sticky: true
@@ -23,7 +23,7 @@ mermaid: true
 
 ## **들어가며**
 
-[직전의 경험](https://hynrng.github.io/posts/palette-developing/)을 마무리하고 새 유니티 프로젝트를 시작하려던 참에 10년 전에 보았던 영화를 다시 보고 경험이 가지는 영향력에 대해 생각을 하게 되었습니다. 생각이 어느정도 정리된 후, 좋은 영화가 좋은 경험으로 남는 것처럼 저도 그런 것을 만들어보고 싶다는 생각을 하게 되었죠. 평소 이것저것 만들고 표현하고 싶은 마음이 있기도 했구요.
+[직전의 경험](https://hynrng.github.io/posts/palette-developing/)을 마무리하고 새 유니티 프로젝트를 시작하려던 참에 10년 전에 보았던 잔잔한 영화를 다시 보고 경험이 가지는 영향력에 대해 생각을 하게 되었습니다. 생각이 어느정도 정리된 후, 좋은 영화가 좋은 경험으로 남는 것처럼 저도 그런 것을 만들어보고 싶다는 생각을 하게 되었죠. 평소 이것저것 만들고 표현하고 싶은 마음이 있기도 했구요.
 
 ![concept-art](/2024-03-22-armonia-planning/concept-art.webp){: .w-50 }
 _친구와 떠들면서 그린 간이 컨셉아트 겸 기획_
