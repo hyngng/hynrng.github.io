@@ -265,7 +265,7 @@ void PlayerDied()
 
 [구글 애드몹 공식 문서](https://developers.google.com/admob/unity/banner?hl=ko)를 참고하면서 만들었는데 공식 가이드를 천천히 따라가니 제 예상보다 너무 쉽게 만들 수 있었습니다. 결과물도 깔끔하게 작동해서 신기했어요.
 
-### **IAP (인앱 결제)
+### **IAP (인앱 결제)**
 
 ![iap](/2023-12-24-palette-developing/iap.webp){: .light .border }
 ![iap](/2023-12-24-palette-developing/iap.webp){: .dark w="960" }
