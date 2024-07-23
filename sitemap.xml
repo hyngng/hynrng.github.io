@@ -14,6 +14,7 @@ layout: null
             <lastmod>{{ post.last_modified_at | date_to_xmlschema }}</lastmod>
           {% endif %}
           
+          {% comment %}
           {% if post.sitemap.changefreq == null %}
             <changefreq>weekly</changefreq>
           {% else %}
@@ -25,6 +26,7 @@ layout: null
           {% else %}
             <priority>{{ post.sitemap.priority }}</priority>
           {% endif %}
+          {% endcomment %}
         </url>
       {% endif %}
     {% endfor %}
