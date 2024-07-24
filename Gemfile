@@ -15,11 +15,12 @@ gem "base64"
 gem "tzinfo"
 gem "tzinfo-data"
 
-gem "wdm", "~> 0.1.1", :platforms => [:mingw, :x64_mingw, :mswin]
+# gem 'wdm', '>= 0.1.0' if Gem.win_platform?
 
 gem 'jekyll-redirect-from'
 gem 'jekyll-polyglot', git: 'https://github.com/hynrng/jekyll-polyglot', branch: 'master'
 gem 'jekyll-seo-tag', git: 'https://github.com/hynrng/jekyll-seo-tag.git', branch: 'master'
+# endregion 수정됨
 
 # group :jekyll_plugins do
 #   gem "jekyll-polyglot"
@@ -28,5 +29,3 @@ gem 'jekyll-seo-tag', git: 'https://github.com/hynrng/jekyll-seo-tag.git', branc
 # 아래 코드를 주석처리 해제하고, 원하는 버전을 4.3.3 자리에 작성한 뒤
 # `bundle update jekyll` 명령어를 통해 jekyll 버전을 명시적으로 업데이트할 수 있음.
 # gem "jekyll", "4.3.3"
-
-# endregion 수정됨

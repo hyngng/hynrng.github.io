@@ -36,7 +36,7 @@ gantt
     title Cubic Survival 투입한 시간
     초기 개발: crit, 2023-02-07, 60d
     후기 개발: a1, 2023-06-19, 150d
-    스토어 첫 등록: crit, milestone, 2023-03-28, 0d
+    스토어 시범 등록: crit, milestone, 2023-03-28, 0d
     스토어 재등록: a3, 2023-10-29, 18d
 ```
 
