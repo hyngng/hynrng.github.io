@@ -16,19 +16,13 @@ last_modified_at: 2024-06-10 16:51:00 +0900
 
 ## **들어가며**
 
-최근 [제 인스타그램](https://www.instagram.com/hynrng/)에 이 블로그 URL을 등록해놨는데 생각보다 미국, 캐나다, 아일랜드 등지에서 블로그를 방문하는 외국인 분들이 간간히 보였습니다. 그런데 제 블로그는 기본적으로 한국어로만 작성된 웹페이지고, 외국인 분들은 한국어를 모르시니 대부분은 아마 "이게 뭔 소리야.." 하고 당황하며 나가셨을 겁니다.
+[제 인스타그램](https://www.instagram.com/hynrng/)에 블로그를 추가한 이후, 외국에서 이곳을 방문해주시는 분들이 꽤 늘었는데 방문시간이 모두 짧게 기록이 되어있었습니다. 제가 생각하기로 아마 페이지가 한국어로 작성되어 있었기 때문인 것 같다는 생각이 들었죠.
 
-때문에 제 블로그를 방문해주시는 우연을 좀 더 의미있는 것으로 만들고 싶다는 고민이 있었는데, 최근에 `jekyll-polyglot`이라는 다국어 지원 플러그인을 알게 되었습니다. 분명 [전 포스트](https://hynrng.github.io/posts/webmasters-and-seo/)에서 블로그 관련 포스트를 그만 쓰고 싶다고 말한 적이 있지만 다국어 지원이라는 기능이 워낙 흥미가 돋아서 말이죠, 한 번 더 블로그를 수정해주게 되었습니다.
-
-<!--
-다국어 지원 기능을 추가해보니 플러그인을 추가한다고 끝나는 것이 아니라 사이트 호환성과 관련해서 이것저것 최적화해줄 필요가 있었습니다. 지킬 사이트에 다국어를 추가하려는 분들이 원체 적어서 대부분의 시간을 리버스 엔지니어링으로 보내느라 약 5일 정도 걸린 것 같네요. 구체적으로 플러그인을 적용하는 과정과 방법을 정리하겠습니다.
--->
+앞으로 제 블로그를 방문해주시는 다양한 분들이 계실 텐데, 저는 좀 더 의미있는 만남으로 만들고 싶어서 `jekyll-polyglot`이라는 다국어 지원 플러그인을 찾아 적용해주었습니다. 다국어 지원 기능을 추가해보니 플러그인을 추가한다고 끝나는 것이 아니라 사이트 호환성과 관련해 이것저것 최적화해줄 필요가 있어 약 5일 정도, 생각보다 오랜 시간이 걸렸네요.
 
 ## **플러그인 소개**
 
-깃허브 블로그 환경에서 다국어 기능을 구현할 수 있는 지킬 플러그인은 크게 `jekyll-polyglot`과 `jekyll-multiple-languages-plugin` 두 가지가 있습니다. 이중에 제가 사용한 것은 전자의 플러그인 `jekyll-polyglot`으로, 포스트 프론트매터의 `lang` 값을 이용해 루트 URL 뒤에 I18N 언어 코드를 추가하는 식으로 다국어 번역본 페이지를 생성합니다.
-
-이 플러그인은 후자의 플러그인 `jekyll-multiple-languages-plugin`을 모델로 만들어졌다고 하며, 공식 가이드는 설치 방법부터 사용시 주의사항까지 [Polyglot 깃허브](https://github.com/untra/polyglot?tab=readme-ov-file#how-to-use-it)에서 자세히 안내되고 있습니다.
+깃허브 블로그 환경에서 다국어 기능을 구현할 수 있는 지킬 플러그인은 크게 `jekyll-polyglot`과 `jekyll-multiple-languages-plugin` 두 가지가 있습니다. 이중에 제가 사용한 것은 전자의 플러그인 `jekyll-polyglot`으로, 이 플러그인은 각 포스트의 프론트매터에서 정의하는 `lang` 값에 따라 I18N 언어 코드를 루트 URL 뒤에 삽입하는 식으로 다국어 번역본 페이지를 생성합니다. 이 플러그인은 후자의 플러그인 `jekyll-multiple-languages-plugin`을 모델로 만들어졌다고 하며, 공식 가이드는 설치 방법부터 사용시 주의사항까지 [Polyglot 깃허브](https://github.com/untra/polyglot?tab=readme-ov-file#how-to-use-it)에서 자세히 안내되고 있습니다.
 
 ## **사전작업**
 
@@ -54,20 +48,20 @@ parallel_localizaion: true
 ```
 {: file="_config.yml" }
 
-플러그인이 설치되면 `_config.yml`{: .filepath }에 위 항목을 추가해야 합니다. `languages`에는 페이지가 지원할 언어, `default_lang`에는 페이지의 기본 언어를 입력해주시면 됩니다. 입력할 때 주의할 점은 윈도우 환경에서는 `parallel_localization`을 `false`로 설정해주셔야 합니다.
+플러그인이 설치되면 `_config.yml`{: .filepath }에 위 항목을 추가해야 합니다. `languages`에는 페이지가 지원할 언어, `default_lang`에는 페이지의 기본 언어를 입력해주시면 됩니다. 입력할 때 주의할 점은 윈도우 환경에서는 `parallel_localization` 옵션이 제대로 동작하지 않기 때문에, 해당 값을 `false`로 꼭 설정해주셔야 합니다.
 
 ### **정규 표현식 버그 수정하기**
 
-플러그인을 설치하고 빌드를 해보면 _"'relative_url_regex': target of repeat operator is not specified:"_ 에러를 만나게 됩니다. 이 에러는 플러그인의 `site.rb`{: .filepath } 파일에서 일부 정규 표현식이 Chirpy 테마의 `_config.yml`{: .filepath }에서 `exlude: *.gem *.gemspec *.config.js` 등의 와일드카드(*)를 처리하지 못하기 때문에 발생하는데, 문제 해결을 위해선 플러그인 코드 자체를 수정할 필요가 있습니다.[^1]
+플러그인을 설치하고 빌드를 해보면 _"'relative_url_regex': target of repeat operator is not specified:"_라는 에러를 만나게 됩니다. 이 에러는 플러그인의 `site.rb`{: .filepath } 파일에서 일부 정규 표현식이 Chirpy 테마의 `_config.yml`{: .filepath }에서 `exlude: *.gem *.gemspec *.config.js` 등의 와일드카드(*)를 처리하지 못하기 때문에 발생하는데, 이 문제를 플러그인 제작자에게 [문의해봤으나](https://github.com/untra/polyglot/issues/204) [이 문서를 근거로](https://jekyllrb.com/docs/configuration/options/#global-configuration) Chirpy 테마가 `_config.yml`{: .filepath }에서 글로벌 패턴을 잘못 사용한 것이라는 답을 받았습니다.
 
-플러그인을 자체 수정해서 사용해야 하므로 제 경우 프로젝트를 [개인 리포지토리로 fork한 뒤](https://github.com/kurtsson/jekyll-multiple-languages-plugin/fork) `Gemfile`에 다음과 같이 불러와 사용했습니다. 필수사항은 아닙니다.
+다만 Minimal-Mistakes 등의 다른 지킬 테마도 [글로벌 패턴을 사용중인 것](https://github.com/mmistakes/minimal-mistakes/blob/master/_config.yml#L168-L169)을 보면 플러그인 코드 자체를 수정할 필요가 있어 보입니다. 이 경우 저는 플러그인을 자체 수정해서 사용해야 하므로 제 경우 프로젝트를 [개인 리포지토리로 fork한 뒤](https://github.com/kurtsson/jekyll-multiple-languages-plugin/fork) `Gemfile`에 다음과 같이 불러와 사용했습니다.
 
 ```ruby
 gem 'jekyll-polyglot', git: 'https://github.com/hynrng/jekyll-polyglot', branch: 'master'
 ```
 {: file="Gemfile" }
 
-이후 플러그인의 `jekyll-polyglot-1.8.0/lib/jekyll/polyglot/patches/jekyll`{: .filepath } 경로의 `site.rb`{: .filepath }에서 `relative_url_regex()`와 `absolute_url_regex()` 두 함수를 아래와 같이 수정해주었습니다.
+이후 플러그인의 `jekyll-polyglot-1.8.0/lib/jekyll/polyglot/patches/jekyll`{: .filepath } 경로의 `site.rb`{: .filepath }에 작성되어있는 `relative_url_regex()`와 `absolute_url_regex()` 두 함수를 아래와 같이 수정해주었습니다.
 
 ```ruby
 def relative_url_regex(disabled = false)
@@ -106,7 +100,7 @@ end
 ```
 {: file="site.rb" }
 
-함수를 수정한 뒤 `bundle exec jekyll s` 명령어를 입력해보면 문제없이 빌드가 이루어집니다.
+함수를 수정한 뒤 `bundle exec jekyll s` 명령어를 입력해보면 문제없이 빌드가 이루어지는 것을 확인할 수 있었습니다.
 
 ### **포스트 파일 속성 수정하기**
 
@@ -127,7 +121,7 @@ _posts/2010-03-01-salad-recipes-fr.md
 ```
 {: file="_posts" .nolineno }
 
-`permalink`를 작성하는 것이 마음에 들지 않는다면 대신 파일명을 위와 같이 변경하는 식으로도 구분해줄 수 있습니다.
+프론트매터의 `permalink`로 포스트 언어를 구분하는 것이 마음에 들지 않는다면 대신 파일명을 위와 같이 변경하는 식으로도 구분할 수 있으나, 이 경우 포스트 URL이 `example.github.io/en/2010-03-01-salad-recipes-en`와 같이 언어 구분이 불필요하게 중복될 수 있습니다.
 
 ## **템플릿 수정**
 
@@ -380,9 +374,3 @@ jobs:
 ## **마치며**
 
 페이지 목차 길이에 나타나듯 `jekyll-polyglot`은 기본적으로 유연하고 편리하다는 느낌보단 거추장스러운 느낌이 강합니다. 도중에 이럴거면 그냥 _hynrng-en.github.io_ 와 같은 식으로 영어 전용 페이지를 하나 더 만드는게 낫지 않을까 싶기도 했네요. 다만 페이지 구성 파일들을 공유 가능하고, 동일 웹 주소로 웹마스터도구, 애드센스, 애널리틱스 등을 처리 가능한 장점이 있으므로 자체 다국어 지원 기능을 추가하는 것도 가치가 있는 것 같습니다.
-
-<br>
-
----
-
-[^1]: 이 문제를 플러그인 제작자에게 [문의해봤으나](https://github.com/untra/polyglot/issues/204), 결과적으로는 [이 문서를 근거로](https://jekyllrb.com/docs/configuration/options/#global-configuration) Chirpy 테마가 `_config.yml`{: .filepath }에서 글로벌 패턴을 잘못 사용한 것이라는 답을 받았습니다. 다만 Minimal-Mistakes 등의 다른 지킬 테마도 [글로벌 패턴을 사용중인 것](https://github.com/mmistakes/minimal-mistakes/blob/master/_config.yml#L168-L169)을 보면 플러그인을 수정하는 쪽이 적절한 것 같습니다.
