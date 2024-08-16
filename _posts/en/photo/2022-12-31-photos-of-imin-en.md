@@ -15,6 +15,7 @@ toc: false
 toc_sticky: true
 
 lang: en
+lang-exclusive: 'en'
 
 date: '2022-12-31 14:53:00 +0900'
 last_modified_at: '2023-04-09 16:42:00 +0900'

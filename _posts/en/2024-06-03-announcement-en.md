@@ -10,6 +10,7 @@ toc: false
 toc_sticky: true
 
 lang: en
+lang-exclusive: 'en'
 
 date: 2024-06-03 16:37:00 +0900
 last_modified_at: 2024-06-03 16:37:00 +0900

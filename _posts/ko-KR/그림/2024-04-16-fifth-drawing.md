@@ -14,6 +14,7 @@ toc: false
 toc_sticky: true
 
 lang: ko-KR
+lang-exclusive: 'ko-KR'
  
 date: 2024-05-16 13:53:00 +0900
 last_modified_at: 2024-05-16 13:53:00 +0900

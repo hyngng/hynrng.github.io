@@ -15,6 +15,7 @@ toc: false
 toc_sticky: true
 
 lang: en
+lang-exclusive: 'en'
 
 date: 2023-03-19 15:24:00 +0900
 last_modified_at: 2023-03-26 15:24:00 +0900
