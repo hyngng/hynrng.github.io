@@ -1,14 +1,14 @@
 ---
+image:
+    path: /photo/webp/20220605_121958.webp
+    lqip: data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAADQAQCdASoQAAgAAgA0JZQCdAD0tNvXgAD++yUU4/HtnDOizij1uz6dfZTsypE5KvKr20uztM+CbrkMAgjCLe9cNkIAAA==
+    alt: 쇼핑몰에서 기다릴 때 잠깐 | 230mm ISO250 F4.9 1/40s
+    
 title: "[2022] 열심히 담은 일상"
 
 categories: [사진]
 tags: [사진, 감자튀김, 복도, 친구, 눈, 벚꽃, 구름, 크레인]
 start_with_ads: false
-
-image:
-    path: /photo/webp/20220605_121958.webp
-    lqip: data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAADQAQCdASoQAAgAAgA0JZQCdAD0tNvXgAD++yUU4/HtnDOizij1uz6dfZTsypE5KvKr20uztM+CbrkMAgjCLe9cNkIAAA==
-    alt: 쇼핑몰에서 기다릴 때 잠깐 | 230mm ISO250 F4.9 1/40s
 
 toc: false
 toc_sticky: true

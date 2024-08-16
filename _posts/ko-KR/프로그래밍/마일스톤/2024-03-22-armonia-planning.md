@@ -1,19 +1,20 @@
 ---
+image:
+    path: /2024-03-22-armonia-planning/concept-art-simple.webp
+    lqip: data:image/webp;base64,UklGRoAAAABXRUJQVlA4THMAAAAvD8ABAJUwiiRJkZtjZmbGF9s5Kyd1ScY8FbRt5MYA/F79RFEjSWpSxn2Zbw+m+z8BjqBzPlDmvL+4+00yVxL5ht9jZKHMSM22JRAbkUChuDviWIX4O+VnNh9jixzr0LjyndMjOUfNsQQDkKGXf/yfCzAGAA==
+    alt: 요런 느낌으로
+    
 title: "횡스크롤 감성 게임: 기획하기"
 
 categories: [프로그래밍, 마일스톤]
 tags: [프로그래밍, 유니티, C#, ARMONIA, 기획, 개발일지]
 start_with_ads: true
 
-image:
-    path: /2024-03-22-armonia-planning/concept-art-simple.webp
-    lqip: data:image/webp;base64,UklGRoAAAABXRUJQVlA4THMAAAAvD8ABAJUwiiRJkZtjZmbGF9s5Kyd1ScY8FbRt5MYA/F79RFEjSWpSxn2Zbw+m+z8BjqBzPlDmvL+4+00yVxL5ht9jZKHMSM22JRAbkUChuDviWIX4O+VnNh9jixzr0LjyndMjOUfNsQQDkKGXf/yfCzAGAA==
-    alt: 요런 느낌으로
-
 toc: true
 toc_sticky: true
 
 lang: ko-KR
+lang-exclusive: 'ko-KR'
 
 date: 2024-03-22 19:24:00 +0900
 last_modified_at: 2024-04-30 18:58:00 +0900
