@@ -8,10 +8,13 @@ start_with_ads: true
 toc: true
 toc_sticky: true
 
-mermaid: true
+lang: ko-KR
+lang-exclusive: 'ko-KR'
 
 date: 2024-04-23
 last_modified_at: 2024-04-23
+
+mermaid: true
 ---
 
 ## **게임 음악 메들리**

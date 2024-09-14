@@ -1,19 +1,20 @@
 ---
+image:
+    path: /photo/webp/20220605_121958.webp
+    lqip: data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAADQAQCdASoQAAgAAgA0JZQCdAD0tNvXgAD++yUU4/HtnDOizij1uz6dfZTsypE5KvKr20uztM+CbrkMAgjCLe9cNkIAAA==
+    alt: 쇼핑몰에서 기다릴 때 잠깐 | 230mm ISO250 F4.9 1/40s
+    
 title: "[2022] 열심히 담은 일상"
 
 categories: [사진]
 tags: [사진, 감자튀김, 복도, 친구, 눈, 벚꽃, 구름, 크레인]
 start_with_ads: false
 
-image:
-    path: /photo/webp/20220605_121958.webp
-    lqip: data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAADQAQCdASoQAAgAAgA0JZQCdAD0tNvXgAD++yUU4/HtnDOizij1uz6dfZTsypE5KvKr20uztM+CbrkMAgjCLe9cNkIAAA==
-    alt: 쇼핑몰에서 기다릴 때 잠깐 | 230mm ISO250 F4.9 1/40s
-
 toc: false
 toc_sticky: true
 
 lang: ko-KR
+lang-exclusive: 'ko-KR'
  
 date: 2022-12-31 14:53:00 +0900
 last_modified_at: 2023-04-09 16:42:00 +0900
@@ -115,7 +116,7 @@ _강연이 너무 지루해서 몰래 | 230mm ISO50 F4.9 1/470s_
 > 사진 원본은 **[깃허브](https://github.com/hynrng/hynrng.github.io.resources/tree/master/photo/jpg)**에서 확인할 수 있습니다!
 {: .prompt-tip }
 
-시간이 지나고 사진의 느낌이 달라지는 것을 좋아해 평소 사진을 많이 찍으려 하는 편입니다. 그러다 올해 폰을 카메라 새 것으로 바꾸게 되면서 "같은 사진도 남보다 예쁘게 담을 수 있지 않을까?" 하는 호기심이 생겼습니다. 요즘 나오는 기종은 카메라 하드웨어가 워낙에 좋아서 잘 활용해보고 싶기도 했고요.
+사진이 숙성되는 느낌을 좋아해 평소 사진을 많이 남기려 하는 편입니다. 그러다 올해 폰을 카메라 새 것으로 바꾸게 되면서 "같은 사진도 남보다 예쁘게 담을 수 있지 않을까?" 하는 호기심이 생겼습니다. 요즘 나오는 기종은 카메라 하드웨어가 워낙에 좋아서 잘 활용해보고 싶기도 했고요.
 
 그러면서 더 좋은 사진을 찍기 위해 이론도 찾고 다른 분들의 사진도 많이 구경하고 다녔는데 정말 재밌고 새로웠습니다. 보다보니 점점 욕심이 나서 저도 남기고 싶은 사진을 몇 장 만들게 되었네요.
 JPG를 보정하다가 사진이 깨졌다거나 하는 아쉬움은 있지만 우선은 저를 기록하고 표현할 수 있는 새 방법이 생겼다는 것이 더 좋습니다. 앞으로 멋진 사진을 많이 올릴 수 있으면 좋겠습니다.

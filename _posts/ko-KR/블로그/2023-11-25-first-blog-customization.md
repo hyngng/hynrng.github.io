@@ -9,6 +9,7 @@ toc: true
 toc_sticky: true
 
 lang: ko-KR
+lang-exclusive: 'ko-KR'
 
 date: 2023-11-25 23:24:00 +0900
 last_modified_at: 2024-05-26 18:04:00 +0900

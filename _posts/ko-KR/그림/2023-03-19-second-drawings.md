@@ -1,19 +1,20 @@
 ---
+image:
+    path: /drawing/230319-남자옆면.webp
+    lqip: data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAACwAQCdASoQAAgAAgA0JQBOgBh2EShgAP79L/Zddr8IocHoi5zSrcrofTZs+tnZKRzvYrsVlw6ZY7BgVwil9C9Gboi+zO+NlKxGpgAA
+    alt: 비니비니
+
 title: "디지털 드로잉 모음 #2"
 
 categories: [그림]
 tags: [그림, 드로잉, 비니, 광각, 총, 양뿔, 망토, 트래픽 콘]
 start_with_ads: false
 
-image:
-    path: /drawing/230319-남자옆면.webp
-    lqip: data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAACwAQCdASoQAAgAAgA0JQBOgBh2EShgAP79L/Zddr8IocHoi5zSrcrofTZs+tnZKRzvYrsVlw6ZY7BgVwil9C9Gboi+zO+NlKxGpgAA
-    alt: 비니비니
-
 toc: false
 toc_sticky: true
 
 lang: ko-KR
+lang-exclusive: 'ko-KR'
  
 date: 2023-03-19 15:24:00 +0900
 last_modified_at: 2023-03-26 15:24:00 +0900

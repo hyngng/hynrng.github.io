@@ -1,19 +1,20 @@
 ---
+image:
+    path: /2023-12-22-palette-planning/gameplay.webp
+    lqip: data:image/webp;base64,UklGRrYAAABXRUJQVlA4TKoAAAAvD8ABAHW4jWxbbfp4JJmZmSml0LH7L0Mq4pgVtG3DuOOPdQge4zaSFHVVH9P78o+T+j8BbhLNGhMUUL7GTwDFP6j3DTiLqMug0k4+RlwpOQFUC2jKxL/yzX0tKUApmm8sxu7n4LvlOeUbSBnGjBjAWUR/xmX1IQt/X/KSXVS1BnsLKLMeGqGJGl7KM5cUhbtrZyZYxL+CgfcTwNUUcJMaRE0DKQrAqa8oAA==
+    alt: 예시 게임플레이
+    
 title: "성장형 슈팅 게임: 기획 및 개발과정"
 
 categories: [프로그래밍, 마일스톤]
 tags: [프로그래밍, 유니티, C#, URP, PALETTE, 기획, 개발일지]
 start_with_ads: true
 
-image:
-    path: /2023-12-22-palette-planning/gameplay.webp
-    lqip: data:image/webp;base64,UklGRrYAAABXRUJQVlA4TKoAAAAvD8ABAHW4jWxbbfp4JJmZmSml0LH7L0Mq4pgVtG3DuOOPdQge4zaSFHVVH9P78o+T+j8BbhLNGhMUUL7GTwDFP6j3DTiLqMug0k4+RlwpOQFUC2jKxL/yzX0tKUApmm8sxu7n4LvlOeUbSBnGjBjAWUR/xmX1IQt/X/KSXVS1BnsLKLMeGqGJGl7KM5cUhbtrZyZYxL+CgfcTwNUUcJMaRE0DKQrAqa8oAA==
-    alt: 예시 게임플레이
-
 toc: true
 toc_sticky: true
 
 lang: ko-KR
+lang-exclusive: 'ko-KR'
 
 date: 2023-12-20 19:18:00 +0900
 last_modified_at: 2023-12-22 20:42:00 +0900

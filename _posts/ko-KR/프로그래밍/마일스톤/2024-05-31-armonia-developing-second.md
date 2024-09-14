@@ -1,19 +1,20 @@
 ---
+image:
+    path: /2024-05-31-armonia-developing-second/gameplay.webp
+    lqip: data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAADwAQCdASoQAAgAAUAmJQBOgB8xi/GXoBAA/vuITP1jzd5vh9i82itNyxKJOlCBXvOebik8444+JnSUJik6FdPY8GR+D5jZO/WAAA==
+    alt: 개발중인 프로토타입
+    
 title: "횡스크롤 감성 게임: 두 번째 중간 개발기"
 
 categories: [프로그래밍, 마일스톤]
 tags: [프로그래밍, 유니티, C#, ARMONIA, 개발, 개발일지]
 start_with_ads: true
 
-image:
-    path: /2024-05-31-armonia-developing-second/gameplay.webp
-    lqip: data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAADwAQCdASoQAAgAAUAmJQBOgB8xi/GXoBAA/vuITP1jzd5vh9i82itNyxKJOlCBXvOebik8444+JnSUJik6FdPY8GR+D5jZO/WAAA==
-    alt: 개발중인 프로토타입
-
 toc: true
 toc_sticky: true
 
 lang: ko-KR
+lang-exclusive: 'ko-KR'
 
 date: 2024-05-31 22:53:00 +0900
 last_modified_at: 2024-05-31 22:53:00 +0900

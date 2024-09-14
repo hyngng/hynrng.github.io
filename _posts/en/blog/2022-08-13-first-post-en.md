@@ -9,6 +9,7 @@ toc: true
 toc_sticky: true
 
 lang: en
+lang-exclusive: 'en'
  
 date: 2022-08-13 17:24:00 +0900
 last_modified_at: 2023-04-13 12:35:00 +0900
