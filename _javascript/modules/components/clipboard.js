@@ -24,6 +24,7 @@ function isLocked(node) {
       return true;
     }
   }
+
   return false;
 }
 

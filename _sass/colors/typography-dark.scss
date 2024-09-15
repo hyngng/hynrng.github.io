@@ -11,7 +11,7 @@
   /* Common color */
   --text-color: rgb(175, 176, 177);
   --text-muted-color: #868686;
-  --text-muted-hightlight-color: #aeaeae;
+  --text-muted-highlight-color: #aeaeae;
   --heading-color: #cccccc;
   --label-color: #a7a7a7;
   --blockquote-border-color: rgb(66, 66, 66);
@@ -37,7 +37,7 @@
   /* Sidebar */
   --site-title-color: #717070;
   --site-subtitle-color: #868686;
-  --sidebar-bg: #1e1e1e; /*232325;*/ 
+  --sidebar-bg: #1e1e1e;
   --sidebar-border-color: #292929;
   --sidebar-muted-color: #868686;
   --sidebar-active-color: rgb(255, 255, 255, 0.95);
@@ -69,12 +69,8 @@
   --btn-share-hover-color: #bfc1ca;
   --card-bg: #1e1e1e;
   --card-hovor-bg: #464d51;
-  /* region 수정됨 */
   --card-shadow: rgb(21, 21, 21, 0.72) 0 6px 18px 0,
     rgb(137, 135, 135, 0.24) 0 0 0 1px;
-  /*--card-shadow: rgb(21, 21, 21, 0.5) 0 6px 18px 0,
-    rgb(137, 135, 135, 0.15) 0 0 0 1px;*/
-  /* endregion 수정됨 */
   --kbd-wrap-color: #6a6a6a;
   --kbd-text-color: #d3d3d3;
   --kbd-bg-color: #242424;
@@ -88,28 +84,29 @@
   --prompt-danger-bg: rgb(86, 28, 8, 0.8);
   --prompt-danger-icon-color: #cd0202;
 
-  /* tags */
+  /* Tags */
   --tag-border: rgb(59, 79, 88);
   --tag-shadow: rgb(32, 33, 33);
   --dash-color: rgb(63, 65, 68);
   --search-tag-bg: #292828;
 
-  /* categories */
+  /* Categories */
   --categories-border: rgb(64, 66, 69, 0.5);
   --categories-hover-bg: rgb(73, 75, 76);
   --categories-icon-hover-color: white;
 
-  /* archives */
+  /* Archive */
   --timeline-node-bg: rgb(150, 152, 156);
   --timeline-color: rgb(63, 65, 68);
   --timeline-year-dot-color: var(--timeline-color);
 
-  /* 수정됨 */
+  color-scheme: dark;
+
   .light {
     display: none;
   }
 
-  /* categories */
+  /* Categories */
   .categories.card,
   .list-group-item {
     background-color: var(--card-bg);
@@ -142,8 +139,6 @@
       rgb(26, 26, 30)
     );
   }
-
-  color-scheme: dark;
 
   /* stylelint-disable-next-line selector-id-pattern */
   #disqus_thread {

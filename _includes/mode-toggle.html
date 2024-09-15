@@ -19,28 +19,6 @@
     }
 
     constructor() {
-      /* region 수정됨 */
-      const storedMode = localStorage.getItem(ModeToggle.MODE_KEY);
-
-      if (storedMode === ModeToggle.DARK_MODE) {
-        this.setDark();
-      } else if (storedMode === ModeToggle.LIGHT_MODE) {
-        this.setLight();
-      } else {
-        if (this.hasMode) {
-          if (this.isDarkMode) {
-            if (!this.isSysDarkPrefer) {
-              this.setDark();
-            }
-          } else {
-            if (this.isSysDarkPrefer) {
-              this.setLight();
-            }
-          }
-        }
-      }
-      /* endregion 수정됨 */
-      
       let self = this;
 
       {%- comment -%} always follow the system prefers {%- endcomment -%}
@@ -91,25 +69,20 @@
       }
     }
 
-    /* region 수정됨 */
     setDark() {
       document.documentElement.setAttribute(ModeToggle.MODE_ATTR, ModeToggle.DARK_MODE);
       sessionStorage.setItem(ModeToggle.MODE_KEY, ModeToggle.DARK_MODE);
-      localStorage.setItem(ModeToggle.MODE_KEY, ModeToggle.DARK_MODE);
     }
 
     setLight() {
       document.documentElement.setAttribute(ModeToggle.MODE_ATTR, ModeToggle.LIGHT_MODE);
       sessionStorage.setItem(ModeToggle.MODE_KEY, ModeToggle.LIGHT_MODE);
-      localStorage.setItem(ModeToggle.MODE_KEY, ModeToggle.LIGHT_MODE);
     }
 
     clearMode() {
       document.documentElement.removeAttribute(ModeToggle.MODE_ATTR);
       sessionStorage.removeItem(ModeToggle.MODE_KEY);
-      localStorage.removeItem(ModeToggle.MODE_KEY);
     }
-    /* endregion 수정됨 */
 
     {%- comment -%}
       Notify another plugins that the theme mode has changed

@@ -11,9 +11,7 @@ timezone: Asia/Seoul
 
 title: hynrng
 
-tagline:
-  ko-KR: 반갑습니다 🔥
-  en: Greetings 🔥
+tagline: 반갑습니다 🔥
 
 description: 개발일지를 포함한 다양한 일상을 다루는 블로그입니다!
 
@@ -21,10 +19,10 @@ url: "https://hynrng.github.io"
 
 github:
   username: hynrng
-
+  
 instagram:
   username: hynrng
-
+  
 social:
   name: hynrng
   email: hynrng@gmail.com
@@ -48,7 +46,7 @@ analytics:
   google:
     id: G-MG2GJGH0VL
   goatcounter:
-    id: # hynrng
+    id: hynrng
   umami:
     id: # fill in your Umami ID
     domain: # fill in your Umami domain
@@ -57,9 +55,11 @@ analytics:
     domain: # fill in your Matomo domain
   cloudflare:
     id: # fill in your Cloudflare Web Analytics token
+  fathom:
+    id: # fill in your Fathom Site ID
 
 pageviews:
-  provider: goatcounter
+  provider: # goatcounter
 
 theme_mode: # [light | dark]
 
@@ -74,7 +74,8 @@ social_preview_image: # string, local or CORS resources
 toc: true
 
 comments:
-  provider: giscus # [disqus | utterances | giscus]
+  provider: giscus
+  # The provider options are as follows:
   disqus:
     shortname: # fill with the Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
   utterances:
@@ -91,7 +92,6 @@ comments:
     lang: en
     reactions_enabled: 0
 
-# Self-hosted static assets, optional › https://github.com/cotes2020/chirpy-static-assets
 assets:
   self_host:
     enabled: # boolean, keep empty means false
@@ -100,9 +100,12 @@ assets:
     env: # [development | production]
 
 pwa:
-  enabled: true
+  enabled: true # The option for PWA feature (installable)
   cache:
-    enabled: true
+    enabled: true # The option for PWA offline cache
+    # Paths defined here will be excluded from the PWA cache.
+    # Usually its value is the `baseurl` of another website that
+    # shares the same domain name as the current website.
     deny_paths:
       # - "/example"  # URLs match `<SITE_URL>/example/*` will not be cached by the PWA
 
@@ -114,16 +117,6 @@ baseurl: ""
 # region 수정됨
 plugins:
   - jekyll-redirect-from
-  - jekyll-polyglot
-
-# jekyll-polyglot
-languages: ["ko-KR", "en"]
-default_lang: "ko-KR"
-exclude_from_localization: ["javascript", "images", "css", "public"]
-parallel_localization: false
-
-# 태그 수 제한: _layouts/trending-tags.html
-tag_limit: 10
 # endregion 수정됨
 
 # ------------ The following options are not recommended to be modified ------------------
@@ -166,14 +159,9 @@ defaults:
     values:
       layout: page
       permalink: /:title/
-  - scope:
-      path: assets/js/dist
-    values:
-      swcache: true
 
 sass:
   style: compressed
-  sourcemap: never # jekyll-polyglot
 
 compress_html:
   clippings: all

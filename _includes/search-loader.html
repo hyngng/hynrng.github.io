@@ -6,9 +6,7 @@
 {% capture result_elem %}
   <article class="px-1 px-sm-2 px-lg-4 px-xl-0">
     <header>
-      <!-- region 수정됨-->
-      <h2><a href="{url}"><div class="post-title">{title}</div></a></h2>
-      <!-- endregion 수정됨-->
+      <h2><a href="{url}">{title}</a></h2>
       <div class="post-meta d-flex flex-column flex-sm-row text-muted mt-1 mb-1">
         {categories}
         {tags}
@@ -33,9 +31,7 @@
         if (value === '') {
           return `${value}`;
         } else {
-          /* region 수정됨 */
-          return `<div class="me-sm-4"><i class="far fa-solid fa-folder fa-fw me-1"></i>${value}</div>`;
-          /* endregion 수정됨 */
+          return `<div class="me-sm-4"><i class="far fa-folder fa-fw"></i>${value}</div>`;
         }
       }
 
@@ -46,19 +42,6 @@
           return `<div><i class="fa fa-tag fa-fw"></i>${value}</div>`;
         }
       }
-
-      if (prop === 'url' && '{{ site.active_lang }}' !== 'default' ) { 
-        return `{{ '/' | relative_url }}{{ site.active_lang }}${value}`;
-      }
-
-      if (prop === 'lang') {
-        console.log("filter 조건 만족", value);
-      } else {
-        console.log("filter 조건 불만족");
-      }
-    },
-    filter: function(post, index, array) {
-      return post.lang === '{{ site.active_lang }}';
     }
   });
 </script>

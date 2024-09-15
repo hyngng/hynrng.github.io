@@ -1,16 +1,13 @@
 ---
+# the default layout is 'page'
 icon: fas fa-info-circle
 order: 4
 ---
-
-<!-- fas fa-info-circle -->
 
 ![hynrng](/info/hynrng_black.webp){: .light lqip="/info/LQIP_BLACK.webp" }
 ![hynrng](/info/hynrng_white.webp){: .dark lqip="/info/LQIP_WHITE.webp" }
 
 <br>
-
-{% if site.active_lang == 'ko-KR' %}
 
 ## **환영합니다!**
 
@@ -27,23 +24,3 @@ order: 4
 {: .prompt-danger }
 > 재미있게 즐겨주셨으면 좋겠습니다! 🍸
 {: .prompt-tip }
-
-{% elsif site.active_lang == 'en' %}
-
-## **Welcome!**
-
-- **I am a student aspiring to become a developer.** My interests range from software learning and game development to creative activities like photography and drawing, as well as international politics and linguistics. Based on my areas of interest, I aim to **create valuable and enjoyable content** grounded in my experiences. I regularly document my activities in writing on my blog.
-- Overall, I frequently review the flow of my writing to ensure high-quality content, with the ultimate goal of making this space a **virtual representation that accurately describes me.**
-
-## **Feature**
-
-> All posts are written to suit both dark and light mode, but I personally recommend light mode! ✨
-{: .prompt-info }
-> [Korean](https://hynrng.github.io/) is supported as default!
-{: .prompt-warning }
-> **[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.ko)**  is followed. Using the contents of my blog is allowed, but you MUST leave the source! ⚡
-{: .prompt-danger }
-> I had fun making this. Enjoy! 🍸
-{: .prompt-tip }
-
-{% endif %}

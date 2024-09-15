@@ -18,18 +18,12 @@
 {% endcapture %}
 
 <!-- return element -->
-
-<!-- region 수정됨 -->
 <span
+  class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="{% if site.active_lang == 'ko-KR' %}
-           {{ words }}{{ site.data.locales[include.lang].post.words }}
-         {% else %}
-           {{ words }} {{ site.data.locales[include.lang].post.words }}
-         {% endif %}"
+  title="{{ words }} {{ site.data.locales[include.lang].post.words }}"
 >
-<!-- endegion 수정됨 -->
   <em>
     {{- read_time -}}
     {{ ' ' }}

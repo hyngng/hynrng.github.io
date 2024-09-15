@@ -13,12 +13,6 @@
 /*     덮어쓰기     */
 /* =============== */
 
-/* 폰트 */
-@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
-.site-title {
-  font-family: 'Pretendard', 'Source Sans Pro', 'Microsoft Yahei', sans-serif !important;
-}
-
 .content {
   font-size: 1rem;
   margin-top: 1.5rem;
@@ -39,6 +33,11 @@ ul:not(.list-unstyled, .toc-list, dd ul, .list-group) {
 /* endregion 줄간격 */
 
 /* region 텍스트 속성 */
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+.site-title {
+  font-family: 'Pretendard', 'Source Sans Pro', 'Microsoft Yahei', sans-serif !important;
+}
+
 #topbar-title, .btn-outline-primary, .card-title, .card-header, .tag {
   font-weight: bold;
 }
@@ -100,58 +99,10 @@ a:not(.site-title a, .post-tag, a.btn, a.nav-link, .url-button, .page-link, .tag
 }
 /* endregion 정적인 모드 전환 */
 
-/* region 색상 */
-@mixin dark-scheme {
-  --card-shadow: rgba(255, 255, 255, 1) 0 6px 18px 0,
-      rgba(255, 255, 255, 1) 0 0 0 1px;
-}
-/* endregion 색상 */
-
 /* =============== */
 /* 새로 만들어 쓰기 */
 /* =============== */
 
-.post-title {
+.post-title, .sidebar-title, .related-post-title {
   font-weight: bold;
 }
-
-.comment-notice {
-  font-weight: bold;
-}
-
-.related-post-title {
-  font-weight: bold;
-}
-
-.site-hidden-title {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0,0,0,0);
-  white-space: nowrap;
-  border: 0;
-}
-
-.lang-container {
-  font-size: 1.1rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.lang-border {
-  @extend %no-cursor;
-  @include pl-pr(0);
-  @include ml-mr(calc(($sb-btn-gap - $btn-border-width) / 2));
-  
-  padding-left: 0.05rem;
-  padding-right: 0.05rem;
-  content: '';
-}
-
-/* 메모장
-- 사이드바 배경색은 sass/colors/typography-dark.scss에서 따로 수정함.
-*/

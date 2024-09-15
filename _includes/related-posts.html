@@ -72,11 +72,6 @@
 {% if relate_posts.size > 0 %}
   <aside id="related-posts" aria-labelledby="related-label">
     <h3 class="mb-4" id="related-label">
-      {% comment %} region 수정됨 {% endcomment %}
-      {% if site.active_lang == 'ko-KR' %}
-        '{{ page.categories[0] }}'
-      {% endif %}
-      {% comment %} endregion 수정됨 {% endcomment %}
       {{- site.data.locales[include.lang].post.relate_posts -}}
     </h3>
     <nav class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 mb-4">
@@ -85,15 +80,11 @@
           <a href="{{ post.url | relative_url }}" class="post-preview card h-100">
             <div class="card-body">
               {% include datetime.html date=post.date lang=include.lang %}
+              {% comment %} region 수정됨 {% endcomment %}
               <h4 class="related-post-title pt-0 my-2">{{ post.title }}</h4>
+              {% comment %} endregion 수정됨 {% endcomment %}
               <div class="text-muted">
-                <p>
-                  {% include no-linenos.html content=post.content %}
-
-                  {% comment %} region 수정됨 {% endcomment %}
-                  {{ content | markdownify | remove_tag: 'h2', 'em', 'blockquote', 'pre' | strip_html | truncate: 200 | escape }}
-                  {% comment %} endregion 수정됨 {% endcomment %}
-                </p>
+                <p>{% include post-description.html %}</p>
               </div>
             </div>
           </a>

@@ -37,9 +37,7 @@
       top: 24px;
     }
 
-    /* 수정함 */
     /* Year dot */
-    /*
     &::after {
       content: '';
       display: inline-block;
@@ -53,7 +51,7 @@
       border-color: var(--timeline-node-bg);
       box-shadow: 0 0 2px 0 #c2c6cc;
       z-index: 1;
-    }*/
+    }
   }
 
   ul {
