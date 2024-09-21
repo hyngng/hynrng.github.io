@@ -18,9 +18,7 @@ order: 4
 
 > 모든 글은 다크모드와 화이트모드 양쪽에 맞추어 작성되었지만, 화이트모드를 추천드립니다! ✨
 {: .prompt-info }
-> [영어로 번역된 페이지](https://hynrng.github.io/en/)도 일부 지원하고 있습니다!
-{: .prompt-warning }
 > **[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.ko)**를 따릅니다. 블로그 컨텐츠를 사용하고 싶다면 출저를 꼭 남겨주세요! ⚡
-{: .prompt-danger }
+{: .prompt-warning }
 > 재미있게 즐겨주셨으면 좋겠습니다! 🍸
 {: .prompt-tip }
