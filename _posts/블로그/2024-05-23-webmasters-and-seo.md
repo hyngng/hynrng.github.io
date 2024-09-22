@@ -56,9 +56,9 @@ _대표적인 웹마스터도구, 구글 서치 콘솔_
 블로그 검색등록을 신청하면서 처음 알게 된 개념입니다. SEO(검색 엔진 최적화)란 웹사이트나 웹페이지의 품질을 향상시켜 검색 엔진에서 더 잘 노출되고 상위에 노출되도록 하는 과정으로, [네이버](https://searchadvisor.naver.com/guide/seo-basic-intro)나 [구글](https://developers.google.com/search/docs/fundamentals/seo-starter-guide?hl=ko)에서 발간한 공식 가이드가 있을 정도로 관심도가 높은 개념입니다.  
 다만 저는 실제로 상위노출을 위한 작업보다는 블로그 검색노출을 신청하고 난 후 몇 개 웹마스터도구에서 SEO 경고를 받으면서 이를 해결하기 위한 과정이 주가 되었습니다. 구체적으로 어떤 경고를 어떻게 해결했는지 간단히 정리하겠습니다.
 
-<!--
+{% comment %}
 ### **robots.txt**
--->
+{% endcomment %}
 
 ### **webp을 이용한 이미지 최적화**
 
@@ -95,9 +95,7 @@ _용량 축소 과정을 거치기 이전과 이후의 이미지._
 {: file="_includes/sidebar.html" }
 {% endraw %}
 
-문제가 되는 코드입니다. 글 제목보다는 사이트 제목의 헤더 태그를 낮추는 것이 좋을 것 같아 `site.title` 제목이 표시되는 코드를 수정하기로 했습니다. 루트 URL에서는 h1로, 이외의 URL에서는 h2로 표시되는 식으로 변경했고, 코드는 아래와 같이 작성했습니다.
-
-
+수정된 코드입니다. 글 제목보다는 사이트 제목의 헤더 태그를 낮추는 것이 좋을 것 같아 `site.title` 제목이 표시되는 코드를 수정했습니다. 루트 URL에서는 h1로, 이외의 URL에서는 h2로 표시되는 식으로 변경했습니다.
 
 크롬 개발자 도구로 확인해보면 블로그 홈에서는 h1로, 현재 페이지에서는 h2로 표시됩니다. 적용 후 수정이 이루어진 URL을 다시 제출했고, 이틀 후 네이버와 빙 웹마스터도구의 사이트 진단 페이지를 통해 오류가 수정되었음을 확인할 수 있었습니다.
 
@@ -106,9 +104,9 @@ _용량 축소 과정을 거치기 이전과 이후의 이미지._
 > **24/05/28 추가됨!**
 {: .prompt-info }
 
-<!--
+{% comment %}
 post-description은 layouts/post.html에서 사용하는 용도로, 어차피 상관 없는 파일임.
--->
+{% endcomment %}
 
 빙 웹마스터도구에서 지적한 사항입니다. 제 블로그의 많은 글에서 사용하는 "들어가며" 도입부가 여러 페이지의 `description`으로 중복 등록된 것이 문제가 되어 프론트매터에 개별 `description`을 작성해주었지만, 20자 정도 분량으로 작성하니 _"너무 길거나 짧은 Meta Description"_ 라는 오류 안내문이 발생하고 있었습니다.
 
@@ -187,14 +185,14 @@ gem 'jekyll-seo-tag', git: 'https://github.com/hynrng/jekyll-seo-tag.git', branc
 
 유연한 방법은 아니긴 하지만 가장 간단한 방법입니다. 프로젝트의 `lib/template.html`{: .filepath}로부터 `description`을 생성하는 코드를 주석처리했고, `description` 생성 코드는 `_includes/head.html`{: .filepath } 블로그 내 파일로 완전히 이전했습니다.
 
-<!--
+{% comment %}
 ### **이미지 CDN 변경**
 
 - CDN는 Statically 이용. jsdelivr는 이미지 CDN용이 아니기도 하고, 속도가 조금 느렸음.
     - GitHub 레포지토리 연결이 되고, 공식적으로 이미지 CDN으로 사용할 수 있고, 무료임.
     - SEO를 위해
     - 이거 안 쓰기로 함. mp3 및 mp4 지원 안됨.
--->
+{% endcomment %}
 
 ## **마치며**
 

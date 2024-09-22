@@ -6,7 +6,7 @@ tags: [그림]
 start_with_ads: false
 
 image:
-    path: /drawing/Legacy/20240611_105601.webp
+    path: /drawing/legacy/20240611_105601.webp
     lqip: data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAADwAQCdASoQAAgAAUAmJaQAAxeeWOcXmAAA/v40sMcuA/xORxchHG8Nwik+NPbpaQX0k4AA
     alt: fighter jet를 쓰고 싶었던 듯
 
@@ -17,28 +17,28 @@ date: 2024-06-11 17:52:00 +0900
 last_modified_at: 2024-06-11 17:52:00 +0900
 ---
 
-![20240611-105437](/drawing/Legacy/20240611_105437.webp)
+![20240611-105437](/drawing/legacy/20240611_105437.webp)
 _생각보다 재밌는 그림도 있네_
 
-![20240611-105321](/drawing/Legacy/20240611_105321.webp)
+![20240611-105321](/drawing/legacy/20240611_105321.webp)
 _당시에 이런거 좀 좋아했던 것 같음_
 
-![20240611-110003](/drawing/Legacy/20240611_110003.webp)
+![20240611-110003](/drawing/legacy/20240611_110003.webp)
 _지금은 더잘 그릴 수 있을 것 같은데_
 
-![20240611-110304](/drawing/Legacy/20240611_110304.webp)
+![20240611-110304](/drawing/legacy/20240611_110304.webp)
 _배틀필드 좋아해서 이런거 그림_
 
-![20240611-110522](/drawing/Legacy/20240611_110522.webp)
+![20240611-110522](/drawing/legacy/20240611_110522.webp)
 _이런거 그리면 주변에 친구들이 많이 보고 갔었음_
 
-![20240611-110628](/drawing/Legacy/20240611_110628.webp)
+![20240611-110628](/drawing/legacy/20240611_110628.webp)
 _이자식들 자기들끼리 맛있는거 먹네_
 
-![20240611-110158](/drawing/Legacy/20240611_110158.webp)
+![20240611-110158](/drawing/legacy/20240611_110158.webp)
 _ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ_
 
-![20240611-105639](/drawing/Legacy/20240611_105639.webp)
+![20240611-105639](/drawing/legacy/20240611_105639.webp)
 _나중에 중딩때 와서 리메이크 하고 간 것도 있음_
 
 초등학교 6학년 때 그렸던 그림들, 낙서들입니다. 스캔본을 만들기에는 공책이 너무 작아서 사진으로 아카이브를 대신 만들었습니다. 정확히 2014년 5월 24일의 인생 첫 그림 공책에 그린 그림으로, 이때부터 매번 알파문구에서 연습장을 사서 그림을 그리는 일이 고등학교를 졸업하기까지 이어졌으니 제게는 큰 의미가 있는 일입니다.
