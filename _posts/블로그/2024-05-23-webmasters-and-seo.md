@@ -105,9 +105,9 @@ _용량 축소 과정을 거치기 이전과 이후의 이미지._
 간략히 요약된 해결법만 보고 싶다면 9월 25일자로 수정된 하단의 내용으로 이동해주세요!
 {: .prompt-info }
 
-빙 웹마스터도구에서 지적한 사항입니다. 제 블로그의 많은 글에서 사용하는 "들어가며" 도입부가 여러 페이지의 `description`으로 중복 등록된 것이 문제가 되어 프론트매터에 개별 `description`을 작성해주었지만, 20자 정도 분량으로 작성하니 _"너무 길거나 짧은 Meta Description"_ 라는 오류 안내문이 발생하고 있었습니다.
+빙 웹마스터도구에서 지적한 사항입니다. 제 블로그의 많은 글에서 사용하는 "들어가며" 도입부가 여러 페이지의 description으로 중복 등록된 것이 문제가 되어 프론트매터에 개별 description을 작성해주었지만, 20자 정도 분량으로 작성하니 _"너무 길거나 짧은 Meta Description"_ 라는 오류 안내문이 발생하고 있었습니다.
 
-`description`의 적절한 길이는 25~160자로 안내되고 있습니다. 매 페이지마다 글자수를 맞춰가며 25자 이상의 분량을 작성하는 것은 너무 번거롭기 때문에 `description`을 자동으로 생성하는 코드를 작성했습니다.
+description의 적절한 길이는 25~160자로 안내되고 있습니다. 매 페이지마다 글자수를 맞춰가며 25자 이상의 분량을 작성하는 것은 너무 번거롭기 때문에 description을 자동으로 생성하는 코드를 작성했습니다.
 
 {% raw %}
 ```cs
@@ -135,7 +135,7 @@ _용량 축소 과정을 거치기 이전과 이후의 이미지._
 {: file="_includes/head.html" }
 {% endraw %}
 
-구현 과정이 조금 골치아팠습니다. `description`을 포함한 메타 태그는 `jekyll-seo-tag` 플러그인을 통해 먼저 일괄 생성되므로, 생성된 `seo_tag` 중 `description`을 오버라이딩 하는 식으로 구현했습니다. 구현 도중 `head.html`{: .filepath }을 포함한 `_includes`{: .filepath } 폴더의 파일은 페이지 콘텐츠에 접근할 수 없는 문제가 있었으나 `_layouts/default.html`{: .filepath }에서 `content`를 조달해 사용하는 식으로 보완했어요.
+구현 과정이 조금 골치아팠습니다. description을 포함한 메타 태그는 `jekyll-seo-tag` 플러그인을 통해 먼저 일괄 생성되므로, 생성된 `seo_tag` 중 description을 오버라이딩 하는 식으로 구현했습니다. 구현 도중 `head.html`{: .filepath }을 포함한 `_includes`{: .filepath } 폴더의 파일은 페이지 콘텐츠에 접근할 수 없는 문제가 있었으나 `_layouts/default.html`{: .filepath }에서 `content`를 조달해 사용하는 식으로 보완했어요.
 
 ```ruby
 require 'nokogiri'
@@ -155,12 +155,12 @@ Liquid::Template.register_filter(Jekyll::ContentFilter)
 ```
 {: file="_plugins/content_filter.rb" }
 
-`content`는 `content_filer`라는 커스텀 루비 플러그인을 거치는데, 제목, 게시일, 글쓴이 및 "들어가며" 도입부 등 `description`으로서 필요 없는 정보를 어느정도 제거하기 위함입니다. 글 본문이 모두 `<div class="content"></div>` 태그에 하달되는 점을 이용했으며, [예전에 비슷한 코드를](https://hynrng.github.io/posts/blog-content-remove/) 구현해본 적이 있었지만 아직 익숙하지 않아서 이 부분은 GPT의 조언을 구했습니다.
+`content`는 `content_filer`라는 커스텀 루비 플러그인을 거치는데, 제목, 게시일, 글쓴이 및 "들어가며" 도입부 등 description으로서 필요 없는 정보를 어느정도 제거하기 위함입니다. 글 본문이 모두 `<div class="content"></div>` 태그에 하달되는 점을 이용했으며, [예전에 비슷한 코드를](https://hynrng.github.io/posts/blog-content-remove/) 구현해본 적이 있었지만 아직 익숙하지 않아서 이 부분은 GPT의 조언을 구했습니다.
 
 > **24/09/25 수정!**
 {: .prompt-info }
 
-사실 위의 내용은 겉핥기식 해결책으로 새로 생성된 `description`이 {% raw %}`{{ seo_tags }}`{% endraw %}의 `description`과 중복되는 문제가 있습니다. 저는 보다 근본적인 해결책을 원했고, [jekyll-seo-tag](https://github.com/jekyll/jekyll-seo-tag/tree/master) 플러그인에서 meta description을 생성하는 부분 자체를 찾아 아래와 같이 수정했습니다.
+사실 위의 내용은 겉핥기식 해결책으로 새로 생성된 description이 {% raw %}`{{ seo_tags }}`{% endraw %}의 description과 중복되는 문제가 있습니다. 저는 보다 근본적인 해결책을 원했고, [jekyll-seo-tag](https://github.com/jekyll/jekyll-seo-tag/tree/master) 플러그인에서 meta description을 생성하는 부분 자체를 찾아 아래와 같이 수정했습니다.
 
 {% raw %}
 ```liquid
@@ -187,7 +187,7 @@ gem 'jekyll-seo-tag', git: 'https://github.com/hynrng/jekyll-seo-tag.git', branc
 ```
 {: file="Gemfile" }
 
-페이지 레이아웃에 따라 `_config.yml`에 작성된 description을 불러오거나 또는 포스트 콘텐츠로부터 description을 생성합니다. 저는 이 깃허브 프로젝트를 [개인 레포지토리](https://github.com/hynrng/jekyll-seo-tag)로 fork한 뒤 별도로 수정해서 `Gemfile`에 아래와 같이 불러와 사용하고 있습니다. 제가 찾을 수 있는 가장 깔끔한 방법입니다.
+변경된 코드는 페이지 레이아웃에 따라 `_config.yml`에 작성된 description을 불러오거나 또는 포스트 콘텐츠로부터 meta description을 생성합니다. 저는 이 깃허브 프로젝트를 [개인 레포지토리](https://github.com/hynrng/jekyll-seo-tag)로 fork한 뒤 별도로 수정해서 `Gemfile`에 아래와 같이 불러와 사용하고 있으며, 이 방법이 제가 찾을 수 있는 가장 깔끔한 해결책입니다.
 
 {% comment %}
 ### **이미지 CDN 변경**
@@ -200,4 +200,4 @@ gem 'jekyll-seo-tag', git: 'https://github.com/hynrng/jekyll-seo-tag.git', branc
 
 ## **마치며**
 
-검색노출 신청부터 SEO 최적화까지 부랴부랴 작업해주었지만 얼마나 효과가 있을지는 잘 모르겠습니다. 다만 제 블로그는 홍보나 남에게 필요한 정보를 생산하는 공간보다는 개인기록용 성격이 더 강하기도 해서, 검색노출 관리는 해주되 크게 신경쓰지는 않으려고 합니다. 다만 웹마스터도구도 그렇고, 블로그가 좀 안정되면 호기심 차원에서 다음에는 구조화된 데이터 마크업을 적용해보고 싶네요.
+검색노출 신청부터 SEO 최적화까지 부랴부랴 작업해주었지만 얼마나 효과가 있을지는 잘 모르겠습니다. 다만 제 블로그는 홍보나 남에게 필요한 정보를 생산하는 공간보다는 개인기록용 성격이 더 강하기도 해서, 검색노출 관리는 해주되 크게 신경쓰지는 않으려고 합니다. 다만 웹마스터도구도 그렇고, 블로그가 좀 안정되면 호기심 차원에서 다음에는 구조화된 데이터 마크업을 적용해보고 싶습니다.

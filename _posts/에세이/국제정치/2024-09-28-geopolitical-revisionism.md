@@ -8,8 +8,6 @@ start_with_ads: true
 toc: true
 toc_sticky: true
 
-lang: ko-KR
-
 date: 2024-09-25 00:00:00 +0900
 last_modified_at: 2024-09-25 00:00:00 +0900
 ---
