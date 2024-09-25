@@ -99,14 +99,11 @@ _용량 축소 과정을 거치기 이전과 이후의 이미지._
 
 크롬 개발자 도구로 확인해보면 블로그 홈에서는 h1로, 현재 페이지에서는 h2로 표시됩니다. 적용 후 수정이 이루어진 URL을 다시 제출했고, 이틀 후 네이버와 빙 웹마스터도구의 사이트 진단 페이지를 통해 오류가 수정되었음을 확인할 수 있었습니다.
 
-### **메타 description 자동 생성**
+### **meta description 자동 생성**
 
-> **24/05/28 추가됨!**
+> **24/05/28 추가됨!**  
+간략히 요약된 해결법만 보고 싶다면 9월 25일자로 수정된 하단의 내용으로 이동해주세요!
 {: .prompt-info }
-
-{% comment %}
-post-description은 layouts/post.html에서 사용하는 용도로, 어차피 상관 없는 파일임.
-{% endcomment %}
 
 빙 웹마스터도구에서 지적한 사항입니다. 제 블로그의 많은 글에서 사용하는 "들어가며" 도입부가 여러 페이지의 `description`으로 중복 등록된 것이 문제가 되어 프론트매터에 개별 `description`을 작성해주었지만, 20자 정도 분량으로 작성하니 _"너무 길거나 짧은 Meta Description"_ 라는 오류 안내문이 발생하고 있었습니다.
 
@@ -160,20 +157,27 @@ Liquid::Template.register_filter(Jekyll::ContentFilter)
 
 `content`는 `content_filer`라는 커스텀 루비 플러그인을 거치는데, 제목, 게시일, 글쓴이 및 "들어가며" 도입부 등 `description`으로서 필요 없는 정보를 어느정도 제거하기 위함입니다. 글 본문이 모두 `<div class="content"></div>` 태그에 하달되는 점을 이용했으며, [예전에 비슷한 코드를](https://hynrng.github.io/posts/blog-content-remove/) 구현해본 적이 있었지만 아직 익숙하지 않아서 이 부분은 GPT의 조언을 구했습니다.
 
-> **24/06/04 수정!**
+> **24/09/25 수정!**
 {: .prompt-info }
 
-여기까지 진행하는 것만으로는 새로 생성된 `description`이 {% raw %}`{{ seo_tags }}`{% endraw %}의 `description`과 중복되는 문제가 있습니다. {% raw %}`{{ seo_tags }}`{% endraw %}는 [jekyll-seo-tag](https://github.com/jekyll/jekyll-seo-tag/tree/master) 플러그인에 기반해 생성되고 있으므로, 문제 해결을 위해 이 깃허브 프로젝트를 [개인 레포지토리](https://github.com/hynrng/jekyll-seo-tag)로 fork한 뒤 별도로 수정해서 사용했습니다.
+사실 위의 내용은 겉핥기식 해결책으로 새로 생성된 `description`이 {% raw %}`{{ seo_tags }}`{% endraw %}의 `description`과 중복되는 문제가 있습니다. 저는 보다 근본적인 해결책을 원했고, [jekyll-seo-tag](https://github.com/jekyll/jekyll-seo-tag/tree/master) 플러그인에서 meta description을 생성하는 부분 자체를 찾아 아래와 같이 수정했습니다.
 
 {% raw %}
 ```liquid
-<!--
-{% if seo_tag.description %}
-  <meta name="description" content="{{ seo_tag.description }}" />
-  <meta property="og:description" content="{{ seo_tag.description }}" />
-  <meta property="twitter:description" content="{{ seo_tag.description }}" />
+{% if page.layout == 'post' %}
+  {% if page.content %}
+    {% assign description = page.content | strip_html | strip_newlines | truncate: 150 %}
+    <meta name="description" content="{{ description }}" />
+    <meta property="og:description" content="{{ description }}" />
+    <meta property="twitter:description" content="{{ description }}" />
+  {% endif %}
+{% else %}
+  {% if seo_tag.description %}
+    <meta name="description" content="{{ seo_tag.description }}" />
+    <meta property="og:description" content="{{ seo_tag.description }}" />
+    <meta property="twitter:description" content="{{ seo_tag.description }}" />
+  {% endif %}
 {% endif %}
--->
 ```
 {: file="jekyll-seo-tag/lib/template.html" }
 {% endraw %}
@@ -183,7 +187,7 @@ gem 'jekyll-seo-tag', git: 'https://github.com/hynrng/jekyll-seo-tag.git', branc
 ```
 {: file="Gemfile" }
 
-유연한 방법은 아니긴 하지만 가장 간단한 방법입니다. 프로젝트의 `lib/template.html`{: .filepath}로부터 `description`을 생성하는 코드를 주석처리했고, `description` 생성 코드는 `_includes/head.html`{: .filepath } 블로그 내 파일로 완전히 이전했습니다.
+페이지 레이아웃에 따라 `_config.yml`에 작성된 description을 불러오거나 또는 포스트 콘텐츠로부터 description을 생성합니다. 저는 이 깃허브 프로젝트를 [개인 레포지토리](https://github.com/hynrng/jekyll-seo-tag)로 fork한 뒤 별도로 수정해서 `Gemfile`에 아래와 같이 불러와 사용하고 있습니다. 제가 찾을 수 있는 가장 깔끔한 방법입니다.
 
 {% comment %}
 ### **이미지 CDN 변경**
