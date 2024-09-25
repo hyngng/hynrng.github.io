@@ -17,7 +17,7 @@ last_modified_at: 2024-09-15 22:57:00 +0900
 
 ## **들어가며**
 
-[제 인스타그램](https://www.instagram.com/hynrng/)에 블로그를 추가한 이후 외국에서 이곳을 방문해주시는 분들이 조금 있었는데 방문시간이 모두 짧게 기록이 되어 있었습니다. 제가 생각하기로 아마 페이지가 한국어로 작성되어 있었기 때문인 것 같다는 생각이 들었죠.
+[제 인스타그램](https://www.instagram.com/hyngng/)에 블로그를 추가한 이후 외국에서 이곳을 방문해주시는 분들이 조금 있었는데 방문시간이 모두 짧게 기록이 되어 있었습니다. 제가 생각하기로 아마 페이지가 한국어로 작성되어 있었기 때문인 것 같다는 생각이 들었죠.
 
 앞으로 제 블로그를 방문해주시는 다양한 분들이 계실 텐데, 저는 좀 더 의미있는 만남으로 만들고 싶어서 `jekyll-polyglot`이라는 다국어 지원 플러그인을 찾아 적용해주었습니다. 다국어 지원 기능을 추가해보니 플러그인을 추가한다고 끝나는 것이 아니라 사이트 호환성과 관련해 이것저것 최적화해줄 필요가 있어 약 5일 정도, 생각보다 오랜 시간이 걸렸네요.
 
@@ -62,7 +62,7 @@ parallel_localizaion: true
 다만 Minimal-Mistakes 등의 다른 지킬 테마도 [글로벌 패턴을 사용중인 것](https://github.com/mmistakes/minimal-mistakes/blob/master/_config.yml#L168-L169)을 보면 플러그인 코드 자체를 수정할 필요가 있어 보입니다. 이 경우 저는 플러그인을 자체 수정해서 사용해야 하므로 제 경우 프로젝트를 [개인 리포지토리로 fork한 뒤](https://github.com/kurtsson/jekyll-multiple-languages-plugin/fork) `Gemfile`에 다음과 같이 불러와 사용했습니다.
 
 ```ruby
-gem 'jekyll-polyglot', git: 'https://github.com/hynrng/jekyll-polyglot', branch: 'master'
+gem 'jekyll-polyglot', git: 'https://github.com/hyngng/jekyll-polyglot', branch: 'master'
 ```
 {: file="Gemfile" }
 
@@ -250,8 +250,8 @@ Chirpy 템플릿은 `_includes/lang.html`{: .filepath }라는 별도의 파일�
 
 ```liquid
 <meta http-equiv="Content-Language" content="ko-KR">
-<link rel="alternate" hreflang="ko-KR" href="ttps://hynrng.github.io/posts/:title/"/>
-<link rel="alternate" hreflang="en" href="https://hynrng.github.io/en/posts/:title/"/>
+<link rel="alternate" hreflang="ko-KR" href="ttps://hyngng.github.io/posts/:title/"/>
+<link rel="alternate" hreflang="en" href="https://hyngng.github.io/en/posts/:title/"/>
 ```
 {: file="header" .nolineno }
 
@@ -364,7 +364,7 @@ jobs:
 {: file="feed.xml" }
 {% endraw %}
 
-피드도 언어별로 구별해주었습니다. `site.active_lang`와 일치하는 포스트만을 `filtered_posts`에 필터링하여 나타도록 변경해주었습니다. [한국어 피드](https://hynrng.github.io/feed.xml)와 [영어 피드](https://hynrng.github.io/en/feed.xml)를 비교해보면 서로 다르게 나타나는 것을 확인할 수 있습니다.
+피드도 언어별로 구별해주었습니다. `site.active_lang`와 일치하는 포스트만을 `filtered_posts`에 필터링하여 나타도록 변경해주었습니다. [한국어 피드](https://hyngng.github.io/feed.xml)와 [영어 피드](https://hyngng.github.io/en/feed.xml)를 비교해보면 서로 다르게 나타나는 것을 확인할 수 있습니다.
 
 ## **적용 화면**
 
@@ -373,4 +373,4 @@ jobs:
 
 ## **마치며**
 
-페이지 목차 길이에 나타나듯 `jekyll-polyglot`은 기본적으로 유연하고 편리하다는 느낌보단 거추장스러운 느낌이 강합니다. 도중에 이럴거면 그냥 _hynrng-en.github.io_ 와 같은 식으로 영어 전용 페이지를 하나 더 만드는게 낫지 않을까 싶기도 했네요. 다만 페이지 구성 파일들을 공유 가능하고, 동일 웹 주소로 웹마스터도구, 애드센스, 애널리틱스 등을 처리 가능한 장점이 있으므로 자체 다국어 지원 기능을 추가하는 것도 가치가 있는 것 같습니다.
+페이지 목차 길이에 나타나듯 `jekyll-polyglot`은 기본적으로 유연하고 편리하다는 느낌보단 거추장스러운 느낌이 강합니다. 도중에 이럴거면 그냥 _hyngng-en.github.io_ 와 같은 식으로 영어 전용 페이지를 하나 더 만드는게 낫지 않을까 싶기도 했네요. 다만 페이지 구성 파일들을 공유 가능하고, 동일 웹 주소로 웹마스터도구, 애드센스, 애널리틱스 등을 처리 가능한 장점이 있으므로 자체 다국어 지원 기능을 추가하는 것도 가치가 있는 것 같습니다.

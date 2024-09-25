@@ -9,26 +9,26 @@ timezone: Asia/Seoul
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: hynrng
+title: hyngng
 
 tagline: 반갑습니다 🔥
 
-description: 개발일지를 포함한 다양한 일상을 다루는 블로그입니다!
+description: 개발일지를 포함한 다양한 일상을 다루는 블로그입니다! 그림, 사진 등의 기록물은 물론 언어학이나 국제정치 등등 제가 좋아하는 분야에 대한 개인적인 생각도 다루고 있습니다!
 
-url: "https://hynrng.github.io"
+url: "https://hyngng.github.io"
 
 github:
-  username: hynrng
+  username: hyngng
   
 instagram:
-  username: hynrng
+  username: hyngng
   
 social:
-  name: hynrng
-  email: hynrng@gmail.com
+  name: hyngng
+  email: hyngng@gmail.com
   links:
-    - https://github.com/hynrng
-    - https://instagram.com/hynrng
+    - https://github.com/hyngng
+    - https://instagram.com/hyngng
 
 webmaster_verifications:
   google: Dv7fOLMpFvAJR4CSnpDK4UEOkJ6qjz5EFpMlNRwIFwo
@@ -46,7 +46,7 @@ analytics:
   google:
     id: G-MG2GJGH0VL
   goatcounter:
-    id: hynrng
+    id: hyngng
   umami:
     id: # fill in your Umami ID
     domain: # fill in your Umami domain
@@ -63,11 +63,11 @@ pageviews:
 
 theme_mode: # [light | dark]
 
-cdn: "https://cdn.jsdelivr.net/gh/hynrang/hynrng.github.io-image@master"
-# https://cdn.statically.io/gh/hynrang/hynrng.github.io-image@master
-# https://raw.githubusercontent.com/hynrng/hynrng.github.io.resources/master
+cdn: "https://cdn.jsdelivr.net/gh/hynrang/hyngng.github.io-image@master"
+# https://cdn.statically.io/gh/hynrang/hyngng.github.io-image@master
+# https://raw.githubusercontent.com/hyngng/hyngng.github.io.resources/master
 
-avatar: "/favicons/hynrng.webp"
+avatar: "/favicons/hyngng.webp"
 
 social_preview_image: # string, local or CORS resources
 
@@ -79,10 +79,10 @@ comments:
   disqus:
     shortname: # fill with the Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
   utterances:
-    repo: hynrng/hynrng.github.io
+    repo: hyngng/hyngng.github.io
     issue_term: pathname
   giscus:
-    repo: hynrng/hynrng.github.io
+    repo: hyngng/hyngng.github.io
     repo_id: R_kgDOH0Atrg
     category: Ideas
     category_id: DIC_kwDOH0Atrs4CeViu

@@ -31,7 +31,7 @@ _대표적인 웹마스터도구, 구글 서치 콘솔_
 추가적으로 [핀터레스트 비즈니스 허브](https://www.pinterest.co.kr/business/hub/)에도 등록해주었습니다. 사이트 소유권이 확인되면 RSS 기반으로 이미지를 수집하여 핀을 생성해줍니다.
 {: .prompt-info }
 
-결과적으로 현재 모든 플랫폼에서 `site:hynrng.github.io` 검색어 입력 시 블로그 노출이 확인되는 상태입니다. 만약 저처럼 웹마스터도구에 개인 사이트를 등록하고싶으신 분이 계시다면 다음을 참고하시면 도움이 될 것 같습니다.
+결과적으로 현재 모든 플랫폼에서 `site:hyngng.github.io` 검색어 입력 시 블로그 노출이 확인되는 상태입니다. 만약 저처럼 웹마스터도구에 개인 사이트를 등록하고싶으신 분이 계시다면 다음을 참고하시면 도움이 될 것 같습니다.
 
 ### **구글 서치 콘솔**
 
@@ -39,7 +39,7 @@ _대표적인 웹마스터도구, 구글 서치 콘솔_
 
 ### **네이버 서치어드바이저**
 
-- 네이버 서치어드바이저의 경우 아톰(Atom) 유형의 피드를 제출할 수 없기 때문에 RSS 피드를 따로 만들어 등록해주어야 합니다. 작성된 파일 예시는 [제 깃허브](https://github.com/hynrng/hynrng.github.io/blob/main/assets/rss.xml)에서, 제 블로그에서의 예시 동작은 [이곳](https://hynrng.github.io/rss.xml)에서 확인해볼 수 있습니다.
+- 네이버 서치어드바이저의 경우 아톰(Atom) 유형의 피드를 제출할 수 없기 때문에 RSS 피드를 따로 만들어 등록해주어야 합니다. 작성된 파일 예시는 [제 깃허브](https://github.com/hyngng/hyngng.github.io/blob/main/assets/rss.xml)에서, 제 블로그에서의 예시 동작은 [이곳](https://hyngng.github.io/rss.xml)에서 확인해볼 수 있습니다.
 
 ### **다음 웹마스터도구**
 
@@ -64,7 +64,7 @@ _대표적인 웹마스터도구, 구글 서치 콘솔_
 
 사이트 성능을 가늠해보기 위해 구글에서 제공하는 [PageSpeed Insights](https://pagespeed.web.dev/?utm_source=psi&utm_medium=redirect)로 페이지 성능을 측정해봤는데 휴대전화 카테고리에서 성능이 꽤 느린 편으로 결과가 나왔습니다. 함께 제공되는 결과 보고서를 읽어보니 수많은 권고사항 중 이미지 용량을 절감하라는 내용이 있어 이 부분을 개선해주었습니다.
 
-저는 평소 [간간히 그린 그림](https://hynrng.github.io/posts/fifth-drawing/)이나 [사진 찍은 것들](https://hynrng.github.io/posts/photos-of-gyemyo/)을 블로그 포스트로 작성해 두는데, 이 이미지들은 평균 규격이 4000x3000에 확장자도 `.png` 또는 `.jpg`이기 때문에 용량이 그림의 경우 200KB~1MB, 사진의 경우 1~3MB 정도 가까이 되었습니다. 다른 글에서 사용하는 이미지도 이 규격을 기준을 따랐기 때문에 용량이 작지 않았는데, 다른 웹사이트를 참고해보니 100KB 이하의 저용량으로 처리한 경우가 많아 제 블로그도 비슷한 최적화 수준에 도달하기 위해 다음의 처리를 거쳤습니다.
+저는 평소 [간간히 그린 그림](https://hyngng.github.io/posts/fifth-drawing/)이나 [사진 찍은 것들](https://hyngng.github.io/posts/photos-of-gyemyo/)을 블로그 포스트로 작성해 두는데, 이 이미지들은 평균 규격이 4000x3000에 확장자도 `.png` 또는 `.jpg`이기 때문에 용량이 그림의 경우 200KB~1MB, 사진의 경우 1~3MB 정도 가까이 되었습니다. 다른 글에서 사용하는 이미지도 이 규격을 기준을 따랐기 때문에 용량이 작지 않았는데, 다른 웹사이트를 참고해보니 100KB 이하의 저용량으로 처리한 경우가 많아 제 블로그도 비슷한 최적화 수준에 도달하기 위해 다음의 처리를 거쳤습니다.
 
 1. 이미지 크기를 1/4로 줄였습니다. 4000x3000 규격의 경우 2000x1500 규격으로 조정했습니다.
 2. `.gif` 및 `.jpg`, `.png` 확장자 파일을 손실압축을 거쳐 `.webp` 확장자로 인코딩했습니다.
@@ -155,7 +155,7 @@ Liquid::Template.register_filter(Jekyll::ContentFilter)
 ```
 {: file="_plugins/content_filter.rb" }
 
-`content`는 `content_filer`라는 커스텀 루비 플러그인을 거치는데, 제목, 게시일, 글쓴이 및 "들어가며" 도입부 등 description으로서 필요 없는 정보를 어느정도 제거하기 위함입니다. 글 본문이 모두 `<div class="content"></div>` 태그에 하달되는 점을 이용했으며, [예전에 비슷한 코드를](https://hynrng.github.io/posts/blog-content-remove/) 구현해본 적이 있었지만 아직 익숙하지 않아서 이 부분은 GPT의 조언을 구했습니다.
+`content`는 `content_filer`라는 커스텀 루비 플러그인을 거치는데, 제목, 게시일, 글쓴이 및 "들어가며" 도입부 등 description으로서 필요 없는 정보를 어느정도 제거하기 위함입니다. 글 본문이 모두 `<div class="content"></div>` 태그에 하달되는 점을 이용했으며, [예전에 비슷한 코드를](https://hyngng.github.io/posts/blog-content-remove/) 구현해본 적이 있었지만 아직 익숙하지 않아서 이 부분은 GPT의 조언을 구했습니다.
 
 > **24/09/25 수정!**
 {: .prompt-info }
@@ -183,11 +183,11 @@ Liquid::Template.register_filter(Jekyll::ContentFilter)
 {% endraw %}
 
 ```ruby
-gem 'jekyll-seo-tag', git: 'https://github.com/hynrng/jekyll-seo-tag.git', branch: 'master'
+gem 'jekyll-seo-tag', git: 'https://github.com/hyngng/jekyll-seo-tag.git', branch: 'master'
 ```
 {: file="Gemfile" }
 
-변경된 코드는 페이지 레이아웃에 따라 `_config.yml`에 작성된 description을 불러오거나 또는 포스트 콘텐츠로부터 meta description을 생성합니다. 저는 이 깃허브 프로젝트를 [개인 레포지토리](https://github.com/hynrng/jekyll-seo-tag)로 fork한 뒤 별도로 수정해서 `Gemfile`에 아래와 같이 불러와 사용하고 있으며, 이 방법이 제가 찾을 수 있는 가장 깔끔한 해결책입니다.
+변경된 코드는 페이지 레이아웃에 따라 `_config.yml`에 작성된 description을 불러오거나 또는 포스트 콘텐츠로부터 meta description을 생성합니다. 저는 이 깃허브 프로젝트를 [개인 레포지토리](https://github.com/hyngng/jekyll-seo-tag)로 fork한 뒤 별도로 수정해서 `Gemfile`에 아래와 같이 불러와 사용하고 있으며, 이 방법이 제가 찾을 수 있는 가장 깔끔한 해결책입니다.
 
 {% comment %}
 ### **이미지 CDN 변경**

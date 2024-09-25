@@ -16,7 +16,7 @@ mermaid: true
 
 ## **들어가며**
 
-이벤트 주도적 프로그래밍(Event Driven Programming)은 프로그램의 흐름이 이벤트에 의해 결정되는 프로그래밍 패러다임으로, 이벤트의 발생, 관리, 실행을 주관하며 코드의 확장성을 높이고 가독성과 유지보수성을 관리하기 위해 사용합니다. [현재 개발중인 게임](https://hynrng.github.io/posts/armonia-developing-first/)에서 많은 도움이 되어 앞으로도 유용하게 사용할 수 있을 것 같아 글로 정리합니다.
+이벤트 주도적 프로그래밍(Event Driven Programming)은 프로그램의 흐름이 이벤트에 의해 결정되는 프로그래밍 패러다임으로, 이벤트의 발생, 관리, 실행을 주관하며 코드의 확장성을 높이고 가독성과 유지보수성을 관리하기 위해 사용합니다. [현재 개발중인 게임](https://hyngng.github.io/posts/armonia-developing-first/)에서 많은 도움이 되어 앞으로도 유용하게 사용할 수 있을 것 같아 글로 정리합니다.
 
 ## **기본 개념**
 
@@ -144,7 +144,7 @@ public class EventManager : MonoBehaviour
 ```
 {: file="EventManager.cs" }
 
-델리게이트를 이용한 방법입니다. 리스너 오브젝트에서도 일부 메서드를 사용할 수 있도록 [싱글톤 패턴](https://hynrng.github.io/posts/singleton-pattern/)을 이용하며, 이벤트는 `enum`을 이용해 정의합니다. 코드는 80줄 가까이 되지만 5개의 개별 메서드로 구성되어 있기 때문에 어렵지 않습니다.
+델리게이트를 이용한 방법입니다. 리스너 오브젝트에서도 일부 메서드를 사용할 수 있도록 [싱글톤 패턴](https://hyngng.github.io/posts/singleton-pattern/)을 이용하며, 이벤트는 `enum`을 이용해 정의합니다. 코드는 80줄 가까이 되지만 5개의 개별 메서드로 구성되어 있기 때문에 어렵지 않습니다.
 
 델리게이트와 필드
 : - `OnEvent()`: 이벤트 리스터의 이벤트 반응 메서드를 등록하는 델리게이트입니다.
@@ -198,4 +198,4 @@ public class ListenerObject : MonoBehaviour
 
 ![example](/2024-05-27-event-driven-programming/example.webp)
 
-[개발중인 게임](https://hynrng.github.io/posts/armonia-developing-first/)에 사용한 예시입니다. 특정 오브젝트를 선택하면 일부 상호작용 가능한 오브젝트가 노란색 계열로 표시되고, 해당 오브젝트를 선택 취소하면 다시 원래대로 돌아옵니다. 이벤트 주도적 프로그래밍을 통해 구현했습니다.
+[개발중인 게임](https://hyngng.github.io/posts/armonia-developing-first/)에 사용한 예시입니다. 특정 오브젝트를 선택하면 일부 상호작용 가능한 오브젝트가 노란색 계열로 표시되고, 해당 오브젝트를 선택 취소하면 다시 원래대로 돌아옵니다. 이벤트 주도적 프로그래밍을 통해 구현했습니다.
