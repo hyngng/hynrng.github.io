@@ -9,4 +9,4 @@ Disallow: /tags/
 
 Sitemap: {{ '/sitemap.xml' | absolute_url }}
 
-#DaumWebMasterTool:5978a03ab70a88762e3b0ba92f8c1395395eb4d11cbe8659e87506197969b279:QVjNyMAOWV23ESdBdnnhVQ==
+#DaumWebMasterTool:888dbe1bcc4e27a7b1331a7b12e15bd6a837d90cdbab04a73d9c9d8bba43bcb6:jWQps+2xlW6wLlilyDDKdg==

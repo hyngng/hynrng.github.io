@@ -63,7 +63,7 @@ pageviews:
 
 theme_mode: # [light | dark]
 
-cdn: "https://cdn.jsdelivr.net/gh/hynrang/hyngng.github.io-image@master"
+cdn: "https://cdn.jsdelivr.net/gh/hyngng/hyngng.github.io-image@master"
 # https://cdn.statically.io/gh/hynrang/hyngng.github.io-image@master
 # https://raw.githubusercontent.com/hyngng/hyngng.github.io.resources/master
 
