@@ -4,8 +4,8 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-![hynrng](/info/hynrng_black.webp){: .light lqip="/info/LQIP_BLACK.webp" }
-![hynrng](/info/hynrng_white.webp){: .dark lqip="/info/LQIP_WHITE.webp" }
+![hyngng](/info/hyngng_black.webp){: .light lqip="/info/LQIP_BLACK.webp" }
+![hyngng](/info/hyngng_white.webp){: .dark lqip="/info/LQIP_WHITE.webp" }
 
 <br>
 
