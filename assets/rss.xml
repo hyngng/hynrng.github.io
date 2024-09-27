@@ -14,7 +14,7 @@ permalink: /rss.xml
     <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
     <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
     <generator>Jekyll v{{ jekyll.version }}</generator>
-    {% for post in site.posts limit:6 %}
+    {% for post in site.posts %} {% comment %} limit:6 {% endcomment %}
       <item>
         <title>{{ post.title | xml_escape }}</title>
         {% if site.cdn %}
