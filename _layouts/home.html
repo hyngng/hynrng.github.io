@@ -69,7 +69,9 @@ refactor: true
 
         <div class="col-md-{{ card_body_col }}">
           <div class="card-body d-flex flex-column">
-            <h1 class="card-title my-2 mt-md-0">{{ post.title }}</h1>
+            {% comment %} region 수정됨 {% endcomment %}
+            <h2 class="card-title my-2 mt-md-0">{{ post.title }}</h2>
+            {% comment %} endregion 수정됨 {% endcomment %}
 
             <div class="card-text content mt-0 mb-3">
               <p>{% include post-description.html %}</p>
