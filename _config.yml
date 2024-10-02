@@ -67,7 +67,7 @@ cdn: "https://cdn.jsdelivr.net/gh/hyngng/hyngng.github.io.resources@master"
 # https://cdn.statically.io/gh/hynrang/hyngng.github.ioresources@master
 # https://raw.githubusercontent.com/hyngng/hyngng.github.io.resources/master
 
-avatar: "/favicons/hyngng.webp"
+avatar: "/avatar/hyngng-white.webp"
 
 social_preview_image: # string, local or CORS resources
 
