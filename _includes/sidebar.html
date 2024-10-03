@@ -86,6 +86,10 @@
         <a
           href="{{ url }}"
           aria-label="{{ entry.type }}"
+          {% comment %} region 수정됨 {% endcomment %}
+          class="url-button"
+          {% comment %} endregion 수정됨 {% endcomment %}
+
           {% assign link_types = '' %}
 
           {% unless entry.noblank %}
