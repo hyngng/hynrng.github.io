@@ -1,8 +1,8 @@
 ---
 title: "유니티에서 싱글톤 패턴 구현하기, 활용하기"
 
-categories: [프로그래밍, 패러다임]
-tags: [프로그래밍, 유니티, C#, 싱글톤 패턴, 프로그래밍 패턴]
+categories: [프로그래밍, 패턴]
+tags: [프로그래밍, 프로그래밍 패턴, 유니티, C#, 싱글톤 패턴]
 start_with_ads: true
 
 toc: true

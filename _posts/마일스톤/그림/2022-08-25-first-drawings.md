@@ -1,8 +1,8 @@
 ---
 title: "디지털 드로잉 모음 #1"
 
-categories: [그림]
-tags: [그림, 드로잉, 사람, 총, 우비, 상자]
+categories: [마일스톤, 그림]
+tags: [마일스톤, 그림, 드로잉, 사람, 총, 우비, 상자]
 start_with_ads: false
 
 image:
@@ -15,9 +15,6 @@ toc_sticky: true
  
 date: 2022-08-25 14:38:00 +0900
 last_modified_at: 2022-08-25 14:38:00 +0900
-
-# redirect_from:
-#   - /posts/%EB%93%9C%EB%A1%9C%EC%9E%891/
 ---
 
 ![221025-반도체칩](/drawing/221025-반도체칩.webp){: .light .border }

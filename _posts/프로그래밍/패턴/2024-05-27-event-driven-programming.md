@@ -1,8 +1,8 @@
 ---
 title: "유니티에서 이벤트 주도적 프로그래밍 활용하기"
 
-categories: [프로그래밍, 패러다임]
-tags: [유니티]
+categories: [프로그래밍, 패턴]
+tags: [프로그래밍, 프로그래밍 패턴, 유니티, C#, 이벤트 주도적 프로그래밍]
 start_with_ads: true
 
 toc: true

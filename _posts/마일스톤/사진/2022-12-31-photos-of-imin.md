@@ -6,8 +6,8 @@ image:
     
 title: "[2022] 열심히 담은 일상"
 
-categories: [사진]
-tags: [사진, 감자튀김, 복도, 친구, 눈, 벚꽃, 구름, 크레인]
+categories: [마일스톤, 사진]
+tags: [마일스톤, 사진, 감자튀김, 복도, 친구, 눈, 벚꽃, 구름, 크레인]
 start_with_ads: false
 
 toc: false
@@ -15,9 +15,6 @@ toc_sticky: true
  
 date: 2022-12-31 14:53:00 +0900
 last_modified_at: 2023-04-09 16:42:00 +0900
-
-redirect_from:
-  - /posts/%EC%9E%84%EC%9D%B8%EB%85%84%EC%9D%98-%EC%82%AC%EC%A7%84/
 ---
 
 <!--

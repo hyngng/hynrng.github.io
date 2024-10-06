@@ -1,8 +1,8 @@
 ---
 title: "사진 없이 리뷰하는 AKG N5 하이브리드"
 
-categories: [제품리뷰, 무선이어폰]
-tags: [제품리뷰, 무선이어폰]
+categories: [사용후기, 무선이어폰]
+tags: [사용후기, 무선이어폰]
 start_with_ads: true
 
 toc: true
