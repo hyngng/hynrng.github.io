@@ -4,10 +4,10 @@ image:
     lqip: data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAADwAQCdASoQAAgAAUAmJQBOgB8xi/GXoBAA/vuITP1jzd5vh9i82itNyxKJOlCBXvOebik8444+JnSUJik6FdPY8GR+D5jZO/WAAA==
     alt: 개발중인 프로토타입
     
-title: "횡스크롤 감성 게임: 두 번째 중간 개발기"
+title: "'행선지', 두 번째 중간 개발기"
 
-categories: [프로그래밍, 마일스톤]
-tags: [프로그래밍, 유니티, C#, ARMONIA, 개발, 개발일지]
+categories: [마일스톤, 게임 개발]
+tags: [마일스톤, 게임 개발, 유니티, C#, ARMONIA, 개발, 개발일지]
 start_with_ads: true
 
 toc: true

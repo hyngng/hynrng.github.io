@@ -4,10 +4,10 @@ image:
     lqip: data:image/webp;base64,UklGRp4AAABXRUJQVlA4TJIAAAAvD8ABAHW4jW07cZZZFK05opg5dwVuh0KP63YPX9K8r/lX2LZtQ/9/b7pH/6uQQTkldeJfaiu1Vm5md+y6VXAnB01t6GKRzP0ax2haSBXAIpUOphDguA1NYDEqXRj3wIgpeMdtNWAhXjfv2IdZJp2CutpKacCzQSqv6wO8mG9t+BciZqCmJINcWYVt8M57GziHAA==
     alt: 예시 게임플레이
     
-title: "성장형 슈팅 게임: 개발 및 출시과정"
+title: "'큐빅 서바이벌': 개발 및 출시과정"
 
-categories: [프로그래밍, 마일스톤]
-tags: [프로그래밍, 유니티, C#, URP, PALETTE, 개발, 개발일지]
+categories: [마일스톤, 게임 개발]
+tags: [마일스톤, 게임 개발, 유니티, C#, URP, PALETTE, 개발, 개발일지]
 start_with_ads: true
 
 toc: true
