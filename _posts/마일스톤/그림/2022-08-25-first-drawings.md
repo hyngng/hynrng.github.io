@@ -8,7 +8,7 @@ start_with_ads: false
 image:
     path: /drawing/200000-생존사람.webp
     lqip: data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAADwAQCdASoQAAgAAgA0JaQAD4WwKYuRsAAA/v58LC1cLESP9ztg6FTwgeVVOIMR19dwzrRkt/f6yWyrN/pF2btgTAAAAA==
-    alt: 포스트 아포칼립스 느낌 그림
+    alt: 포스트아포칼립스 후웁 후웁
 
 toc: false
 toc_sticky: true
@@ -28,8 +28,20 @@ _고등학생 때 낙서 1_
 
 <br>
 
-![231214-사자남자](/drawing/231214-사자남자.webp){: .shadow }
+![200000-세탁기](/drawing/200000-세탁기.webp){: .light .border }
+![200000-세탁기](/drawing/200000-세탁기.webp){: .dark }
 _고등학생 때 낙서 2_
+
+<br>
+
+![231214-사자남자](/drawing/231214-사자남자.webp)
+_고등학생 때 낙서 3_
+
+<br>
+
+![200000-헨젤과그레텔](/drawing/200000-헨젤과그레텔.webp){: .light .border }
+![200000-헨젤과그레텔](/drawing/200000-헨젤과그레텔.webp){: .dark }
+_학교 과제 제출용_
 
 <br>
 
@@ -47,13 +59,13 @@ _모작 하면서 같이 그린 그림_
 
 ![231214-셔츠여자](/drawing/231214-셔츠여자.webp){: .light .border }
 ![231214-셔츠여자](/drawing/231214-셔츠여자.webp){: .dark }
-_고등학생 때 낙서 3_
+_고등학생 때 낙서 4_
 
 <br>
 
 ![200000-우비쓴남자](/drawing/200000-우비쓴남자.webp){: .light .border }
 ![200000-우비쓴남자](/drawing/200000-우비쓴남자.webp){: .dark }
-_고등학생 때 낙서 4_
+_고등학생 때 낙서 5_
 
 <br>
 
