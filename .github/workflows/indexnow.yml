@@ -12,6 +12,6 @@ jobs:
       - name: indexnow-action
         uses: bojieyang/indexnow-action@v2
         with:
-          sitemap-location: 'https://hynrng.github.io/sitemap'
+          sitemap-location: 'https://hyngng.github.io/sitemap'
           key: ${{ secrets.INDEXNOW_KEY }}
           endpoint: 'api.indexnow.org'
