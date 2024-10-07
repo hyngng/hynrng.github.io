@@ -57,7 +57,6 @@ h4 {
 
 /* region 정적인 모드 전환 */
 a:not(.site-title a, .post-tag, a.btn, a.nav-link, .url-button, .page-link, .tag), div.btn, .post-preview {
-  /* remove mode-toggle effect */
   transition: none !important;
 }
 
