@@ -69,8 +69,8 @@ Liquid::Template.register_filter(Jekyll::RemoveTagFilter)
 <div class="card-text content mt-0 mb-3">
   <p>
     {% include no-linenos.html content=post.content %}
-    {{ cleaned_content | remove_tag: 'h2', 'em', 'blockquote' | markdownify |
-                                       strip_html | truncate: 200 | escape }}
+    {{ cleaned_content | markdownify | remove_tag: 'h2', 'em', 'blockquote'
+                                     | strip_html | truncate: 200 | escape }}
   </p>
 </div>
 ```

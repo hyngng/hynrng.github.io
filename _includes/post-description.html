@@ -10,7 +10,7 @@
 {%- else -%}
   {%- include no-linenos.html content=post.content -%}
   {% comment %} region 수정됨 {% endcomment %}
-  {{- content | remove_tag: 'h2', 'em', 'blockquote', 'pre' | markdownify | strip_html -}}
+  {{- content | markdownify | remove_tag: 'h2', 'em', 'blockquote', 'pre' | strip_html -}}
   {% comment %} endregion 수정됨 {% endcomment %}
 {%- endif -%}
 {%- endcapture -%}
