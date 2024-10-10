@@ -4,8 +4,8 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-![hyngng](/info/hyngng-light.webp){: .light .w-50 lqip="/info/LQIP-LIGHT.webp" }
-![hyngng](/info/hyngng-dark.webp){: .dark .w-50 lqip="/info/LQIP-DARK.webp" }
+![hyngng](/info/hyngng-light.webp){: .light .w-25 lqip="/info/LQIP-LIGHT.webp" }
+![hyngng](/info/hyngng-dark.webp){: .dark .w-25 lqip="/info/LQIP-DARK.webp" }
 
 ## **환영합니다!**
 
